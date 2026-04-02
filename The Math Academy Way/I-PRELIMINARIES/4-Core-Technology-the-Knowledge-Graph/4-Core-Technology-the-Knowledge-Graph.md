@@ -4,9 +4,9 @@ Summary: Math Academy utilizes a knowledge graph, an interconnected structure of
 
 ## Understanding the Knowledge Graph
 
-#### | Linking Topics and Prerequisites
+#### Linking Topics and Prerequisites
 
-To understand how Math Academy leverages specific cognitive learning strategies, it is helpful to have high-level understanding of our knowledge graph, which organizes our curriculum in a way that enables algorithmic decision-making.
+To understand how Math Academy leverages specific cognitive learning strategies, it is helpful to have a high-level understanding of our knowledge graph, which organizes our curriculum in a way that enables algorithmic decision-making.
 
 Here, the word "graph" is a term that readers may be unfamiliar with. Usually, the word "graph" refers to a chart illustrating the relationship between two variables, such as a bar chart or a line chart. But in our context, the word "graph" refers to a diagram consisting of objects and arrows between them. This terminology is common in the mathematical field of graph theory.
 
@@ -20,8 +20,8 @@ However, if multiple arrows point to a higher topic, then that means the higher 
 
 To illustrate, the topic Adding Fractions With Unlike Denominators has been added to the top of the knowledge graph. As indicated by the arrows pointing to it, it has two prerequisites that the student needs to learn beforehand:
 
-- 1. Adding Fractions With Unlike Denominators Using Models
-- 2. Adding Fractions and Whole Numbers
+1. Adding Fractions With Unlike Denominators Using Models
+2. Adding Fractions and Whole Numbers
 
 ![](Images/_page_69_Figure_7.jpeg)
 
@@ -39,9 +39,9 @@ Fully zoomed out, Math Academy's entire curriculum consists of multiple thousand
 
 ![](Images/_page_71_Figure_2.jpeg)
 
-The knowledge graph above contains the following courses: 4th Grade Math, 5th Grade Math, Pre-Algebra, Algebra I, Geometry, Algebra II, Pre-Calculus, Calculus I, Calculus II, Linear Algebra, Multivariable Calculus, \*Differential Equations, \*Probability & Statistics, \*Discrete Mathematics, \*Abstract Algebra. (As of October 2023, this accounts for most, but not all, of the content in our system – courses not listed have large overlap with the preceding list. Asterisks indicate that a course is still under development.)
+The knowledge graph above contains the following courses: 4th Grade Math, 5th Grade Math, Pre-Algebra, Algebra I, Geometry, Algebra II, Pre-Calculus, Calculus I, Calculus II, Linear Algebra, Multivariable Calculus, \*Differential Equations, \*Probability & Statistics, \*Discrete Mathematics, \*Abstract Algebra. (As of October 2023, this accounts for most, but not all, of the content in our system - courses not listed have large overlap with the preceding list. Asterisks indicate that a course is still under development.)
 
-## | Course Graph
+## Course Graph
 
 On school and university websites, it is common to see courses arranged into a **course graph**, which can be interpreted as a highly-compressed version of a knowledge graph where a single entity represents hundreds of topics. Math Academy's course graph (as of October 2023) is shown below:
 
@@ -51,7 +51,7 @@ However, it is important to realize that each course is ultimately just a set of
 
 ## Using the Knowledge Graph
 
-### | Scaffolded Mastery Learning
+### Scaffolded Mastery Learning
 
 Math Academy's knowledge graph enables us to implement **mastery learning**, in which students demonstrate proficiency on **prerequisites** before moving on to more advanced topics.
 
@@ -67,16 +67,16 @@ To demonstrate mastery of a topic, a student must answer sufficiently many quest
 
 ![](Images/_page_74_Picture_4.jpeg)
 
-## | Additional Linkages
+## Additional Linkages
 
-#### > Key Prerequisites Enable Targeted Remediation
+#### Key Prerequisites Enable Targeted Remediation
 
 Each knowledge point is linked to one or more key prerequisite topics that represent the prerequisite knowledge that is most directly being used in that knowledge point. If a student ever fails a lesson twice at the same knowledge point, we automatically provide remedial reviews on the key prerequisites. This helps the student strengthen their foundations in the areas where they are most in need of additional practice, so that they are better prepared to pass the lesson the next time around.
 
 As a concrete example, suppose that while re-attempting the lesson *Exponents with Rational Bases*, a student
 
-- manages to pass Part 1: Expressing a Product Using an Exponent, e.g. expressing  $4 \times 4 \times 4$  as  $4^3$ , but
-- gets stuck again at Part 2: Evaluating an Exponential Expression, e.g. computing  $(-4)^3 = (-4) \times (-4) \times (-4)$ .
+- manages to pass Part 1: Expressing a Product Using an Exponent, e.g. expressing $4 \times 4 \times 4$ as $4^3$, but
+- gets stuck again at Part 2: Evaluating an Exponential Expression, e.g. computing $(-4)^3 = (-4) \times (-4) \times (-4)$.
 
 In this situation, the student has demonstrated that they understand the concept of an exponent, but they are struggling to use multiplication to compute the result.
 
@@ -84,7 +84,7 @@ Although multiplication occurs several steps back in the sequence of prerequisit
 
 ![](Images/_page_76_Figure_2.jpeg)
 
-#### > Encompassings Enable Turbo-Boosted Learning Speed
+#### Encompassings Enable Turbo-Boosted Learning Speed
 
 Our knowledge graph also stores encompassing relationships between topics. Advanced mathematical problems implicitly practice or "encompass" many simpler skills. Using sophisticated algorithms that capitalize on these encompassings, Math Academy enables students to spend most of their time learning new material while simultaneously making sure they keep getting practice on things they've previously learned. This results in turbo-boosted learning speed.
 
@@ -94,8 +94,8 @@ To illustrate, consider the following multiplication problem, in which we multip
 
 In order to perform the multiplication above, we have to multiply one-digit numbers and add a one-digit number to a two-digit number:
 
-- First, we multiply  $6 \times 9 = 54$ . We carry the 5 and write the 4 at the bottom.
-- Then, we multiply  $6 \times 3 = 18$  and add 18 + 5 = 23. We write 23 at the bottom.
+- First, we multiply $6 \times 9 = 54$. We carry the 5 and write the 4 at the bottom.
+- Then, we multiply $6 \times 3 = 18$ and add 18 + 5 = 23. We write 23 at the bottom.
 
 In other words, Multiplying a Two-Digit Number by a One-Digit Number **encompasses** Multiplying One-Digit Numbers and Adding a One-Digit Number to a Two-Digit Number.
 
@@ -103,9 +103,7 @@ We can visualize this using an **encompassing graph** as shown below. The encomp
 
 ![](Images/_page_77_Picture_7.jpeg)
 
-Now, suppose that a student is due for reviews on all three of these topics. Because of the encompassings, the only review that they will actually have to do is *Multiplying a Two-Digit* 
-
-Number by a One-Digit Number. When they complete this review, it will implicitly provide repetitions on the topics that it encompasses because the student has effectively practiced those skills as well.
+Now, suppose that a student is due for reviews on all three of these topics. Because of the encompassings, the only review that they will actually have to do is *Multiplying a Two-Digit Number by a One-Digit Number*. When they complete this review, it will implicitly provide repetitions on the topics that it encompasses because the student has effectively practiced those skills as well.
 
 ![](Images/_page_78_Figure_3.jpeg)
 

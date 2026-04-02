@@ -38,7 +38,7 @@ diagnostic - an adaptive exam that leverages the knowledge graph to quickly iden
 
 direct instruction - instruction that teaches knowledge to students explicitly as opposed to attempting to have students "construct their own knowledge" through unguided activities.
 
-discrimination learning - matching problems with the appropriate solution techniques. For instance, the equations  $x^2 + 3x + 2 = 0$  and x + 3x + 2 = 0 look similar but require wildly different solution techniques. See also: category induction learning.
+discrimination learning - matching problems with the appropriate solution techniques. For instance, the equations $x^2 + 3x + 2 = 0$ and $x + 3x + 2 = 0$ look similar but require wildly different solution techniques. See also: category induction learning.
 
 distributed practice - see spaced repetition.
 
@@ -73,7 +73,7 @@ foundations (foundational knowledge) - lower-grade topics that students need to 
 
 Fractional Implicit Repetition (FIRe) - Math Academy's novel spaced repetition model that generalizes spaced repetition from independent flashcard-like tasks to highly connected bodies of knowledge where repetitions on advanced topics should "trickle down" to update the repetition schedules of simpler topics that are implicitly practiced.
 
-#### frontier - see knowledge frontier.
+frontier - see knowledge frontier.
 
 gamification - when game-like elements (such as points and leaderboards) are integrated into student learning environments in ways that are aligned with the goals of the course, the motivations of the students, and the context of the educational setting, students typically not only learn more and engage more with the content, but also enjoy it more. However, these gamified elements need to be resistant to "hacking" behaviors that attempt to bypass learning by exploiting loopholes in the rules of the game.
 
@@ -109,7 +109,7 @@ learning rate - rate at which one's ability to perform a task improves over the 
 
 long-term memory - effortlessly holds indefinitely many facts, experiences, concepts, and procedures, for indefinitely long, in the form of strategic electrical wiring between neurons. Wiring induces a "domino effect" by which entire patterns of neurons are automatically activated as a result of initially activating a much smaller number of neurons in the pattern. See also: consolidation.
 
-#### massed practice - see blocked practice.
+massed practice - see blocked practice.
 
 mastery - to demonstrate mastery of a topic, a student must answer sufficiently many questions correctly (with sufficiently few mistakes) in each successive knowledge point in the lesson. Once this is accomplished, more advanced topics become available for the student to work on.
 
@@ -119,11 +119,11 @@ mastery learning - each individual student needs to demonstrate proficiency on p
 
 Mathematical Foundations (MF) sequence - a streamlined sequence of courses that covers elementary mathematics through calculus but cuts out roughly a third of topics that are not actually prerequisites for university math.
 
-#### mixed practice - see interleaving.
+mixed practice - see interleaving.
 
-narrow limits of change principle - The severe limitation of the working memory when processing novel information. Most people can only hold about 7 digits (or more generally 4 **chunks** of coherently grouped items) simultaneously and only for about 20 seconds. And that assumes they aren't needing to perform any mental manipulation of those items – if they do, then fewer items can be held due to competition for limited processing resources.
+narrow limits of change principle - The severe limitation of the working memory when processing novel information. Most people can only hold about 7 digits (or more generally 4 **chunks** of coherently grouped items) simultaneously and only for about 20 seconds. And that assumes they aren't needing to perform any mental manipulation of those items - if they do, then fewer items can be held due to competition for limited processing resources.
 
-**neuromyth** – a common yet scientifically inaccurate misunderstanding about the brain. Neuromyths can often be characterized as the oversimplification, misinterpretation, and/or misapplication of a nuanced complex scientific finding. One of the most widespread – and most widely debunked – neuromyths is that people learn better when they receive information in their preferred "learning style."
+**neuromyth** – a common yet scientifically inaccurate misunderstanding about the brain. Neuromyths can often be characterized as the oversimplification, misinterpretation, and/or misapplication of a nuanced complex scientific finding. One of the most widespread - and most widely debunked - neuromyths is that people learn better when they receive information in their preferred "learning style."
 
 **neuron** – a cell that transmits information through electrical activity. The brain is a gigantic network of roughly 100 billion neurons that are "wired up" with over 100 trillion connections between them.
 
@@ -199,9 +199,7 @@ worked example - a problem along with a step-by-step-demonstration of how to sol
 
 working memory - consists of short-term memory along with capabilities for organizing, manipulating, and generally "working" with the information stored in short-term memory. See also: cognitive load, cognitive overload, narrow limits of change principle, and rehearsal.
 
-working memory capacity (WMC) - the maximum amount of information that one can hold and manipulate in working memory. Working memory capacity is known to vary between individuals and is known to influence perceived effort, cognitive control, mind-wandering,
-
-abstraction ability, learning outcomes, and learning rate. See also: narrow limits of change principle.
+working memory capacity (WMC) - the maximum amount of information that one can hold and manipulate in working memory. Working memory capacity is known to vary between individuals and is known to influence perceived effort, cognitive control, mind-wandering, abstraction ability, learning outcomes, and learning rate. See also: narrow limits of change principle.
 
 XP (eXperience Points) - the currency of Math Academy's gamified reward system. Students earn XP upon successful completion of learning tasks, and XP is calibrated so that 1 XP represents 1 minute of fully-focused, fully-productive work for an average serious (but imperfect) student.
 

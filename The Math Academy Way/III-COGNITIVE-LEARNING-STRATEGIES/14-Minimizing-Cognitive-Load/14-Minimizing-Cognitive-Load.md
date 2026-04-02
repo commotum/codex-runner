@@ -52,18 +52,16 @@ The visualization doesn't stop at Calculus. It continues all the way through mor
 
 While it's important to use scaffolding to minimize cognitive load when students are learning new material, it's also important to gradually strip away the scaffolding as they become comfortable with that material so that the scaffolding does not become a crutch. This phenomenon is known as the expertise reversal effect: the instructional techniques that promote the most learning in beginners, promote the least learning in experts, and vice versa.
 
-On Math Academy, after a student completes an initial lesson on a topic, we gradually strip away scaffolding during later reviews. While we scaffold lessons by having students solve questions that are similar to worked examples (one worked example at a time), we mix up review
-
-problems so that it is not obvious which worked example is the best reference. This encourages students to solve review problems without referring to the worked examples - and while they can go back to the lesson and dig up a similar example for reference if they get really stuck on a review problem, even students who do this must reason about the structure of their problem to match it to helpful reference material.
+On Math Academy, after a student completes an initial lesson on a topic, we gradually strip away scaffolding during later reviews. While we scaffold lessons by having students solve questions that are similar to worked examples (one worked example at a time), we mix up review problems so that it is not obvious which worked example is the best reference. This encourages students to solve review problems without referring to the worked examples - and while they can go back to the lesson and dig up a similar example for reference if they get really stuck on a review problem, even students who do this must reason about the structure of their problem to match it to helpful reference material.
 
 We also continually quiz our students on the material that they have learned - and during quizzes, no scaffolding is provided. Quizzes are quick and frequent, but each quiz covers a wide variety of previously learned material. Additionally, quizzes are timed, and students are unable to refer back to lessons for reference.
 
-## **Key Papers**
+## Key Papers
 
 **Note:** "Importance" blurbs may include pieces of direct quotes referenced earlier in this chapter. If citing this chapter, cite from the body (above).
 
-• Swanson, H. L., & Beebe-Frankenberger, M. (2004). The relationship between working memory and mathematical problem solving in children at risk and not at risk for serious math difficulties. *Journal of educational psychology*, 96(3), 471.
+- Swanson, H. L., & Beebe-Frankenberger, M. (2004). The relationship between working memory and mathematical problem solving in children at risk and not at risk for serious math difficulties. *Journal of Educational Psychology*, 96(3), 471.
 
-Alloway, T. P., & Alloway, R. G. (2010). Investigating the predictive roles of working memory and IQ in academic attainment. Journal of experimental child psychology, 106(1), 20-29.
+- Alloway, T. P., & Alloway, R. G. (2010). Investigating the predictive roles of working memory and IQ in academic attainment. *Journal of Experimental Child Psychology*, 106(1), 20-29.
 
 Importance: Cognitive overload has massive negative ramifications for students: not only has working memory capacity been shown to predict performance in mathematical problem solving, but perhaps shockingly, it has also been shown to be a better predictor than IQ when predicting a young student's future academic success.

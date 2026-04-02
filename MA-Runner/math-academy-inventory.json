@@ -1,0 +1,300 @@
+{
+  "generated_at": "2026-04-02T21:49:23+00:00",
+  "book_root": "/home/jake/Developer/codex-runner/The Math Academy Way",
+  "documents": [
+    {
+      "title": "Glossary",
+      "relative_path": "BACK-MATTER/Glossary/Glossary.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/BACK-MATTER/Glossary/Glossary.md",
+      "directory": "BACK-MATTER/Glossary",
+      "file_name": "Glossary.md"
+    },
+    {
+      "title": "Notes for Future Additions",
+      "relative_path": "BACK-MATTER/Notes-for-Future-Additions/Notes-for-Future-Additions.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/BACK-MATTER/Notes-for-Future-Additions/Notes-for-Future-Additions.md",
+      "directory": "BACK-MATTER/Notes-for-Future-Additions",
+      "file_name": "Notes-for-Future-Additions.md"
+    },
+    {
+      "title": "References",
+      "relative_path": "BACK-MATTER/References/References.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/BACK-MATTER/References/References.md",
+      "directory": "BACK-MATTER/References",
+      "file_name": "References.md"
+    },
+    {
+      "title": "Contents",
+      "relative_path": "FRONT-MATTER/Contents/Contents.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/FRONT-MATTER/Contents/Contents.md",
+      "directory": "FRONT-MATTER/Contents",
+      "file_name": "Contents.md"
+    },
+    {
+      "title": "Preface",
+      "relative_path": "FRONT-MATTER/Preface/Preface.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/FRONT-MATTER/Preface/Preface.md",
+      "directory": "FRONT-MATTER/Preface",
+      "file_name": "Preface.md"
+    },
+    {
+      "title": "Chapter 1. The Two-Sigma Solution",
+      "relative_path": "I-PRELIMINARIES/1-The-Two-Sigma-Solution/1-The-Two-Sigma-Solution.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/I-PRELIMINARIES/1-The-Two-Sigma-Solution/1-The-Two-Sigma-Solution.md",
+      "directory": "I-PRELIMINARIES/1-The-Two-Sigma-Solution",
+      "file_name": "1-The-Two-Sigma-Solution.md"
+    },
+    {
+      "title": "Chapter 2. The Science of Learning",
+      "relative_path": "I-PRELIMINARIES/2-The-Science-of-Learning/2-The-Science-of-Learning.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/I-PRELIMINARIES/2-The-Science-of-Learning/2-The-Science-of-Learning.md",
+      "directory": "I-PRELIMINARIES/2-The-Science-of-Learning",
+      "file_name": "2-The-Science-of-Learning.md"
+    },
+    {
+      "title": "Chapter 3. Core Science: How the Brain Works",
+      "relative_path": "I-PRELIMINARIES/3-Core-Science-How-the-Brain-Works/3-Core-Science-How-the-Brain-Works.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/I-PRELIMINARIES/3-Core-Science-How-the-Brain-Works/3-Core-Science-How-the-Brain-Works.md",
+      "directory": "I-PRELIMINARIES/3-Core-Science-How-the-Brain-Works",
+      "file_name": "3-Core-Science-How-the-Brain-Works.md"
+    },
+    {
+      "title": "Chapter 4. Core Technology: the Knowledge Graph",
+      "relative_path": "I-PRELIMINARIES/4-Core-Technology-the-Knowledge-Graph/4-Core-Technology-the-Knowledge-Graph.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/I-PRELIMINARIES/4-Core-Technology-the-Knowledge-Graph/4-Core-Technology-the-Knowledge-Graph.md",
+      "directory": "I-PRELIMINARIES/4-Core-Technology-the-Knowledge-Graph",
+      "file_name": "4-Core-Technology-the-Knowledge-Graph.md"
+    },
+    {
+      "title": "Chapter 5. Accountability and Incentives",
+      "relative_path": "I-PRELIMINARIES/5-Accountability-and-Incentives/5-Accountability-and-Incentives.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/I-PRELIMINARIES/5-Accountability-and-Incentives/5-Accountability-and-Incentives.md",
+      "directory": "I-PRELIMINARIES/5-Accountability-and-Incentives",
+      "file_name": "5-Accountability-and-Incentives.md"
+    },
+    {
+      "title": "Chapter 6. The Persistence of Neuromyths",
+      "relative_path": "II-ADDRESSING-CRITICAL-MISCONCEPTIONS/6-The-Persistence-of-Neuromyths/6-The-Persistence-of-Neuromyths.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/II-ADDRESSING-CRITICAL-MISCONCEPTIONS/6-The-Persistence-of-Neuromyths/6-The-Persistence-of-Neuromyths.md",
+      "directory": "II-ADDRESSING-CRITICAL-MISCONCEPTIONS/6-The-Persistence-of-Neuromyths",
+      "file_name": "6-The-Persistence-of-Neuromyths.md"
+    },
+    {
+      "title": "Chapter 7. Myths & Realities about Individual Differences",
+      "relative_path": "II-ADDRESSING-CRITICAL-MISCONCEPTIONS/7-Myths-and-Realities-about-Individual-Differences/7-Myths-and-Realities-about-Individual-Differences.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/II-ADDRESSING-CRITICAL-MISCONCEPTIONS/7-Myths-and-Realities-about-Individual-Differences/7-Myths-and-Realities-about-Individual-Differences.md",
+      "directory": "II-ADDRESSING-CRITICAL-MISCONCEPTIONS/7-Myths-and-Realities-about-Individual-Differences",
+      "file_name": "7-Myths-and-Realities-about-Individual-Differences.md"
+    },
+    {
+      "title": "Chapter 8. Myths & Realities about Effective Practice",
+      "relative_path": "II-ADDRESSING-CRITICAL-MISCONCEPTIONS/8-Myths-and-Realities-about-Effective-Practice/8-Myths-and-Realities-about-Effective-Practice.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/II-ADDRESSING-CRITICAL-MISCONCEPTIONS/8-Myths-and-Realities-about-Effective-Practice/8-Myths-and-Realities-about-Effective-Practice.md",
+      "directory": "II-ADDRESSING-CRITICAL-MISCONCEPTIONS/8-Myths-and-Realities-about-Effective-Practice",
+      "file_name": "8-Myths-and-Realities-about-Effective-Practice.md"
+    },
+    {
+      "title": "Chapter 9. Myths & Realities about Mathematical Acceleration",
+      "relative_path": "II-ADDRESSING-CRITICAL-MISCONCEPTIONS/9-Myths-and-Realities-about-Mathematical-Acceleration/9-Myths-and-Realities-about-Mathematical-Acceleration.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/II-ADDRESSING-CRITICAL-MISCONCEPTIONS/9-Myths-and-Realities-about-Mathematical-Acceleration/9-Myths-and-Realities-about-Mathematical-Acceleration.md",
+      "directory": "II-ADDRESSING-CRITICAL-MISCONCEPTIONS/9-Myths-and-Realities-about-Mathematical-Acceleration",
+      "file_name": "9-Myths-and-Realities-about-Mathematical-Acceleration.md"
+    },
+    {
+      "title": "Chapter 10. Active Learning",
+      "relative_path": "III-COGNITIVE-LEARNING-STRATEGIES/10-Active-Learning/10-Active-Learning.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/10-Active-Learning/10-Active-Learning.md",
+      "directory": "III-COGNITIVE-LEARNING-STRATEGIES/10-Active-Learning",
+      "file_name": "10-Active-Learning.md"
+    },
+    {
+      "title": "[In Progress] Chapter 11. Direct Instruction",
+      "relative_path": "III-COGNITIVE-LEARNING-STRATEGIES/11-Direct-Instruction/11-Direct-Instruction.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/11-Direct-Instruction/11-Direct-Instruction.md",
+      "directory": "III-COGNITIVE-LEARNING-STRATEGIES/11-Direct-Instruction",
+      "file_name": "11-Direct-Instruction.md"
+    },
+    {
+      "title": "Chapter 12. Deliberate Practice",
+      "relative_path": "III-COGNITIVE-LEARNING-STRATEGIES/12-Deliberate-Practice/12-Deliberate-Practice.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/12-Deliberate-Practice/12-Deliberate-Practice.md",
+      "directory": "III-COGNITIVE-LEARNING-STRATEGIES/12-Deliberate-Practice",
+      "file_name": "12-Deliberate-Practice.md"
+    },
+    {
+      "title": "Chapter 13. Mastery Learning",
+      "relative_path": "III-COGNITIVE-LEARNING-STRATEGIES/13-Mastery-Learning/13-Mastery-Learning.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/13-Mastery-Learning/13-Mastery-Learning.md",
+      "directory": "III-COGNITIVE-LEARNING-STRATEGIES/13-Mastery-Learning",
+      "file_name": "13-Mastery-Learning.md"
+    },
+    {
+      "title": "Chapter 14. Minimizing Cognitive Load",
+      "relative_path": "III-COGNITIVE-LEARNING-STRATEGIES/14-Minimizing-Cognitive-Load/14-Minimizing-Cognitive-Load.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/14-Minimizing-Cognitive-Load/14-Minimizing-Cognitive-Load.md",
+      "directory": "III-COGNITIVE-LEARNING-STRATEGIES/14-Minimizing-Cognitive-Load",
+      "file_name": "14-Minimizing-Cognitive-Load.md"
+    },
+    {
+      "title": "Chapter 15. Developing Automaticity",
+      "relative_path": "III-COGNITIVE-LEARNING-STRATEGIES/15-Developing-Automaticity/15-Developing-Automaticity.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/15-Developing-Automaticity/15-Developing-Automaticity.md",
+      "directory": "III-COGNITIVE-LEARNING-STRATEGIES/15-Developing-Automaticity",
+      "file_name": "15-Developing-Automaticity.md"
+    },
+    {
+      "title": "Chapter 16. Layering",
+      "relative_path": "III-COGNITIVE-LEARNING-STRATEGIES/16-Layering/16-Layering.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/16-Layering/16-Layering.md",
+      "directory": "III-COGNITIVE-LEARNING-STRATEGIES/16-Layering",
+      "file_name": "16-Layering.md"
+    },
+    {
+      "title": "Chapter 17. Non-Interference",
+      "relative_path": "III-COGNITIVE-LEARNING-STRATEGIES/17-Non-Interference/17-Non-Interference.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/17-Non-Interference/17-Non-Interference.md",
+      "directory": "III-COGNITIVE-LEARNING-STRATEGIES/17-Non-Interference",
+      "file_name": "17-Non-Interference.md"
+    },
+    {
+      "title": "Chapter 18. Spaced Repetition (Distributed Practice)",
+      "relative_path": "III-COGNITIVE-LEARNING-STRATEGIES/18-Spaced-Repetition-Distributed-Practice/18-Spaced-Repetition-Distributed-Practice.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/18-Spaced-Repetition-Distributed-Practice/18-Spaced-Repetition-Distributed-Practice.md",
+      "directory": "III-COGNITIVE-LEARNING-STRATEGIES/18-Spaced-Repetition-Distributed-Practice",
+      "file_name": "18-Spaced-Repetition-Distributed-Practice.md"
+    },
+    {
+      "title": "Chapter 19. Interleaving (Mixed Practice)",
+      "relative_path": "III-COGNITIVE-LEARNING-STRATEGIES/19-Interleaving-Mixed-Practice/19-Interleaving-Mixed-Practice.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/19-Interleaving-Mixed-Practice/19-Interleaving-Mixed-Practice.md",
+      "directory": "III-COGNITIVE-LEARNING-STRATEGIES/19-Interleaving-Mixed-Practice",
+      "file_name": "19-Interleaving-Mixed-Practice.md"
+    },
+    {
+      "title": "Chapter 20. The Testing Effect (Retrieval Practice)",
+      "relative_path": "III-COGNITIVE-LEARNING-STRATEGIES/20-The-Testing-Effect-Retrieval-Practice/20-The-Testing-Effect-Retrieval-Practice.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/20-The-Testing-Effect-Retrieval-Practice/20-The-Testing-Effect-Retrieval-Practice.md",
+      "directory": "III-COGNITIVE-LEARNING-STRATEGIES/20-The-Testing-Effect-Retrieval-Practice",
+      "file_name": "20-The-Testing-Effect-Retrieval-Practice.md"
+    },
+    {
+      "title": "Chapter 21. Targeted Remediation",
+      "relative_path": "III-COGNITIVE-LEARNING-STRATEGIES/21-Targeted-Remediation/21-Targeted-Remediation.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/21-Targeted-Remediation/21-Targeted-Remediation.md",
+      "directory": "III-COGNITIVE-LEARNING-STRATEGIES/21-Targeted-Remediation",
+      "file_name": "21-Targeted-Remediation.md"
+    },
+    {
+      "title": "Chapter 22. Gamification",
+      "relative_path": "III-COGNITIVE-LEARNING-STRATEGIES/22-Gamification/22-Gamification.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/22-Gamification/22-Gamification.md",
+      "directory": "III-COGNITIVE-LEARNING-STRATEGIES/22-Gamification",
+      "file_name": "22-Gamification.md"
+    },
+    {
+      "title": "Chapter 23. Leveraging Cognitive Learning Strategies Requires Technology",
+      "relative_path": "III-COGNITIVE-LEARNING-STRATEGIES/23-Leveraging-Cognitive-Learning-Strategies-Requires-Technology/23-Leveraging-Cognitive-Learning-Strategies-Requires-Technology.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/23-Leveraging-Cognitive-Learning-Strategies-Requires-Technology/23-Leveraging-Cognitive-Learning-Strategies-Requires-Technology.md",
+      "directory": "III-COGNITIVE-LEARNING-STRATEGIES/23-Leveraging-Cognitive-Learning-Strategies-Requires-Technology",
+      "file_name": "23-Leveraging-Cognitive-Learning-Strategies-Requires-Technology.md"
+    },
+    {
+      "title": "[In Progress] Chapter 24. Parental Support",
+      "relative_path": "IV-COACHING/24-Parental-Support/24-Parental-Support.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/IV-COACHING/24-Parental-Support/24-Parental-Support.md",
+      "directory": "IV-COACHING/24-Parental-Support",
+      "file_name": "24-Parental-Support.md"
+    },
+    {
+      "title": "[In Progress] Chapter 25. In-Task Coaching",
+      "relative_path": "IV-COACHING/25-In-Task-Coaching/25-In-Task-Coaching.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/IV-COACHING/25-In-Task-Coaching/25-In-Task-Coaching.md",
+      "directory": "IV-COACHING/25-In-Task-Coaching",
+      "file_name": "25-In-Task-Coaching.md"
+    },
+    {
+      "title": "[In Progress] Chapter 26. Developing Habit",
+      "relative_path": "IV-COACHING/26-Developing-Habit/26-Developing-Habit.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/IV-COACHING/26-Developing-Habit/26-Developing-Habit.md",
+      "directory": "IV-COACHING/26-Developing-Habit",
+      "file_name": "26-Developing-Habit.md"
+    },
+    {
+      "title": "[In Progress] Chapter 27. Incentives and Motivation",
+      "relative_path": "IV-COACHING/27-Incentives-and-Motivation/27-Incentives-and-Motivation.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/IV-COACHING/27-Incentives-and-Motivation/27-Incentives-and-Motivation.md",
+      "directory": "IV-COACHING/27-Incentives-and-Motivation",
+      "file_name": "27-Incentives-and-Motivation.md"
+    },
+    {
+      "title": "[In Progress] Chapter 28. Lessons from Legendary Coaches",
+      "relative_path": "IV-COACHING/28-Lessons-from-Legendary-Coaches/28-Lessons-from-Legendary-Coaches.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/IV-COACHING/28-Lessons-from-Legendary-Coaches/28-Lessons-from-Legendary-Coaches.md",
+      "directory": "IV-COACHING/28-Lessons-from-Legendary-Coaches",
+      "file_name": "28-Lessons-from-Legendary-Coaches.md"
+    },
+    {
+      "title": "Chapter 29. Technical Deep Dive on Spaced Repetition",
+      "relative_path": "V-TECHNICAL-DEEP-DIVES/29-Technical-Deep-Dive-on-Spaced-Repetition/29-Technical-Deep-Dive-on-Spaced-Repetition.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/V-TECHNICAL-DEEP-DIVES/29-Technical-Deep-Dive-on-Spaced-Repetition/29-Technical-Deep-Dive-on-Spaced-Repetition.md",
+      "directory": "V-TECHNICAL-DEEP-DIVES/29-Technical-Deep-Dive-on-Spaced-Repetition",
+      "file_name": "29-Technical-Deep-Dive-on-Spaced-Repetition.md"
+    },
+    {
+      "title": "Chapter 30. Technical Deep Dive on Diagnostic Exams",
+      "relative_path": "V-TECHNICAL-DEEP-DIVES/30-Technical-Deep-Dive-on-Diagnostic-Exams/30-Technical-Deep-Dive-on-Diagnostic-Exams.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/V-TECHNICAL-DEEP-DIVES/30-Technical-Deep-Dive-on-Diagnostic-Exams/30-Technical-Deep-Dive-on-Diagnostic-Exams.md",
+      "directory": "V-TECHNICAL-DEEP-DIVES/30-Technical-Deep-Dive-on-Diagnostic-Exams",
+      "file_name": "30-Technical-Deep-Dive-on-Diagnostic-Exams.md"
+    },
+    {
+      "title": "Chapter 31. Technical Deep Dive on Learning Efficiency",
+      "relative_path": "V-TECHNICAL-DEEP-DIVES/31-Technical-Deep-Dive-on-Learning-Efficiency/31-Technical-Deep-Dive-on-Learning-Efficiency.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/V-TECHNICAL-DEEP-DIVES/31-Technical-Deep-Dive-on-Learning-Efficiency/31-Technical-Deep-Dive-on-Learning-Efficiency.md",
+      "directory": "V-TECHNICAL-DEEP-DIVES/31-Technical-Deep-Dive-on-Learning-Efficiency",
+      "file_name": "31-Technical-Deep-Dive-on-Learning-Efficiency.md"
+    },
+    {
+      "title": "Chapter 32. Technical Deep Dive on **Prioritizing Core Topics**",
+      "relative_path": "V-TECHNICAL-DEEP-DIVES/32-Technical-Deep-Dive-on-Prioritizing-Core-Topics/32-Technical-Deep-Dive-on-Prioritizing-Core-Topics.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/V-TECHNICAL-DEEP-DIVES/32-Technical-Deep-Dive-on-Prioritizing-Core-Topics/32-Technical-Deep-Dive-on-Prioritizing-Core-Topics.md",
+      "directory": "V-TECHNICAL-DEEP-DIVES/32-Technical-Deep-Dive-on-Prioritizing-Core-Topics",
+      "file_name": "32-Technical-Deep-Dive-on-Prioritizing-Core-Topics.md"
+    },
+    {
+      "title": "FAQ: Diagnostics and Curriculum",
+      "relative_path": "VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-Diagnostics-and-Curriculum/FAQ-Diagnostics-and-Curriculum.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-Diagnostics-and-Curriculum/FAQ-Diagnostics-and-Curriculum.md",
+      "directory": "VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-Diagnostics-and-Curriculum",
+      "file_name": "FAQ-Diagnostics-and-Curriculum.md"
+    },
+    {
+      "title": "FAQ: Miscellaneous",
+      "relative_path": "VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-Miscellaneous/FAQ-Miscellaneous.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-Miscellaneous/FAQ-Miscellaneous.md",
+      "directory": "VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-Miscellaneous",
+      "file_name": "FAQ-Miscellaneous.md"
+    },
+    {
+      "title": "FAQ: Student Behavior",
+      "relative_path": "VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-Student-Behavior/FAQ-Student-Behavior.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-Student-Behavior/FAQ-Student-Behavior.md",
+      "directory": "VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-Student-Behavior",
+      "file_name": "FAQ-Student-Behavior.md"
+    },
+    {
+      "title": "FAQ: The Practice Experience",
+      "relative_path": "VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-The-Practice-Experience/FAQ-The-Practice-Experience.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-The-Practice-Experience/FAQ-The-Practice-Experience.md",
+      "directory": "VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-The-Practice-Experience",
+      "file_name": "FAQ-The-Practice-Experience.md"
+    },
+    {
+      "title": "FAQ: XP and Practice Schedules",
+      "relative_path": "VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-XP-and-Practice-Schedules/FAQ-XP-and-Practice-Schedules.md",
+      "absolute_path": "/home/jake/Developer/codex-runner/The Math Academy Way/VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-XP-and-Practice-Schedules/FAQ-XP-and-Practice-Schedules.md",
+      "directory": "VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-XP-and-Practice-Schedules",
+      "file_name": "FAQ-XP-and-Practice-Schedules.md"
+    }
+  ]
+}

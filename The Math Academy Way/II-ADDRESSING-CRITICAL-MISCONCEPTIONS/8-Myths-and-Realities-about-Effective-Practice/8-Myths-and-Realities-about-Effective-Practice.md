@@ -4,9 +4,9 @@ Summary: The most effective learning techniques require substantial cognitive ef
 
 ## Effective Practice Does Not Emulate the Professional Workplace
 
-Myth: Effective methods of practice emulate what experts do in the professional workplace.
+**Myth:** Effective methods of practice emulate what experts do in the professional workplace.
 
-Reality: A well-known phenomenon in cognitive psychology is that instructional techniques that promote the most learning in experts, promote the least learning in beginners, and vice versa. This is called the expertise reversal effect (first introduced by Sweller et al., 2003). As Kirschner & Hendrick summarize (2024, pp.67):
+**Reality:** A well-known phenomenon in cognitive psychology is that instructional techniques that promote the most learning in experts, promote the least learning in beginners, and vice versa. This is called the expertise reversal effect (first introduced by Sweller et al., 2003). As Kirschner & Hendrick summarize (2024, pp.67):
 
 "As the novice is not a miniature expert, it's important to realize that what may work very well for an expert (e.g. discovery learning, problem-based learning [in the sense of working in groups to solve an open-ended problem], inquiry learning) usually doesn't work well or is even harmful and counterproductive for the novice (and vice versa)."
 
@@ -14,7 +14,7 @@ Additionally, in the professional workplace, employees engage in activities that
 
 #### Direct Instruction is Needed
 
-#### > Definition and Importance
+#### Definition and Importance
 
 It is true that many highly skilled professionals spend a lot of time solving open-ended problems, and in the process, discovering new knowledge as opposed to obtaining it through direct instruction. However, this does not mean that beginners should do the same. The expertise reversal effect suggests the opposite - that beginners (i.e. students) learn most effectively through direct instruction.
 
@@ -30,7 +30,7 @@ We also have a good deal more experimental evidence [since the 1960s] as to what
 
 After a half century of advocacy associated with instruction using minimal guidance, it appears that there is no body of sound research that supports using the technique with anyone other than the most expert students. Evidence from controlled, experimental (a.k.a. "gold standard") studies almost uniformly supports full and explicit instructional guidance rather than partial or minimal guidance for novice to intermediate learners. These findings and their associated theories suggest teachers should provide their students with clear, explicit instruction rather than merely assisting students in attempting to discover knowledge themselves."
 
-> Unguided Instruction has a History of Pseudoscience
+#### Unguided Instruction has a History of Pseudoscience
 
 Clark, Kirschner, & Sweller (2012) explain that unguided instruction persists by cloaking itself in a different disguise each time it is debunked:
 
@@ -72,9 +72,9 @@ Little positive evidence exists for discovery learning and it is often inferior.
 
 'Actual examination of the research literature allegedly supportive of learning by discovery reveals that valid evidence of this nature is virtually nonexistent. It appears that the various enthusiasts of the discovery method have been supporting each other research-wise by taking in each other's laundry, so to speak, that is, by citing each other's opinions and assertions as evidence and by generalizing wildly from equivocal and even negative findings."
 
-> Unguided Instruction is Logically and Scientifically Inconsistent
+#### Unguided Instruction is Logically and Scientifically Inconsistent
 
-Anderson, Reder, & Simon (1998) also explain that opponents of direct instruction are, ultimately, opponents of extensive practice – a position that is clearly problematic:
+Anderson, Reder, & Simon (1998) also explain that opponents of direct instruction are, ultimately, opponents of extensive practice - a position that is clearly problematic:
 
 "Some argue that direct instruction leads to 'routinization' of knowledge and drives out understanding:
 
@@ -92,7 +92,7 @@ A large body of research in psychology shows that part training is often more ef
 
 Along these lines, Clark, Kirschner, & Sweller (2012) further explain that, in addition to being supported by a mountain of experimental evidence, the superiority of direct instruction follows intuitively from modern understandings of working and long-term memory:
 
-"These two facts – that working memory is very limited when dealing with novel information, but that it is not limited when dealing with organized information stored in long-term memory explain why partially or minimally guided instruction typically is ineffective for novices, but can be effective for experts. When given a problem to solve, novices' only resource is their very constrained working memory. But experts have both their working memory and all the relevant knowledge and skill stored in long-term memory."
+"These two facts - that working memory is very limited when dealing with novel information, but that it is not limited when dealing with organized information stored in long-term memory explain why partially or minimally guided instruction typically is ineffective for novices, but can be effective for experts. When given a problem to solve, novices' only resource is their very constrained working memory. But experts have both their working memory and all the relevant knowledge and skill stored in long-term memory."
 
 As Sweller, Clark, and Kirschner (2010) elaborate elsewhere:
 
@@ -108,7 +108,7 @@ Whereas a lack of empirical evidence supporting the teaching of general problem-
 
 Studying worked examples is a form of direct, explicit instruction that is vital in all curriculum areas, especially areas that many students find difficult and that are critical to modern societies. Mathematics is such a discipline. Minimal instructional guidance in mathematics leads to minimal learning (Kirschner, Sweller, & Clark, 2006)."
 
-#### > Unguided Instruction Leads to Major Issues in Practice
+#### Unguided Instruction Leads to Major Issues in Practice
 
 Clark, Kirschner, & Sweller (2012) also describe what actually happens in classrooms that do not use direct instruction:
 
@@ -116,9 +116,9 @@ Clark, Kirschner, & Sweller (2012) also describe what actually happens in classr
 
 First, often only the brightest and most well-prepared students make the discovery.
 
-Second, many students, as noted above, simply become frustrated. Some may disengage, others may copy whatever the brightest students are doing – either way, they are not actually discovering anything.
+Second, many students, as noted above, simply become frustrated. Some may disengage, others may copy whatever the brightest students are doing - either way, they are not actually discovering anything.
 
-Third, some students believe they have discovered the correct information or solution, but they are mistaken and so they learn a misconception that can interfere with later learning and problem solving. Even after being shown the right answer, a student is likely to recall his or her discovery – not the correction.
+Third, some students believe they have discovered the correct information or solution, but they are mistaken and so they learn a misconception that can interfere with later learning and problem solving. Even after being shown the right answer, a student is likely to recall his or her discovery - not the correction.
 
 Fourth, even in the unlikely event that a problem or project is devised that all students succeed in completing, minimally guided instruction is much less efficient than explicit guidance. What can be taught directly in a 25-minute demonstration and discussion, followed by 15 minutes of independent practice with corrective feedback by a teacher, may take several class periods to learn via minimally guided projects and/or problem solving."
 
@@ -132,7 +132,7 @@ To emphasize, these issues are so problematic that they can actually result in n
 
 But despite these issues, the students who learn least in unguided settings still tend to prefer it because it feels less effortful:
 
-....[W]hen learners are asked to select between a more-guided or less-guided version of the same... course, less-skilled learners who choose the less-guided approach tend to like it even though they learn less from it. It appears that guided instruction helps less-skilled learners by providing task-specific learning strategies. However, these strategies require learners to engage in explicit, attention-driven effort and so tend not to be liked, even though they are helpful to learning."
+"...[W]hen learners are asked to select between a more-guided or less-guided version of the same... course, less-skilled learners who choose the less-guided approach tend to like it even though they learn less from it. It appears that guided instruction helps less-skilled learners by providing task-specific learning strategies. However, these strategies require learners to engage in explicit, attention-driven effort and so tend not to be liked, even though they are helpful to learning."
 
 Of course, experienced, effective teachers are well acquainted with these issues and (rightfully so) brush off any recommendations to use unguided learning:
 
@@ -140,7 +140,7 @@ Of course, experienced, effective teachers are well acquainted with these issues
 
 This sentiment is sharply echoed by Mayer (2004):
 
-....[T]he contribution of psychology is to help move educational reform efforts from the fuzzy and... unproductive world of educational ideology – which sometimes hides under the banner of various versions of constructivism - to the sharp and productive world of theory-based research on how people learn."
+"...[T]he contribution of psychology is to help move educational reform efforts from the fuzzy and... unproductive world of educational ideology - which sometimes hides under the banner of various versions of constructivism - to the sharp and productive world of theory-based research on how people learn."
 
 To top it all off, as Kirschner, Sweller, & Clark (2006) summarize, even on the rare occasion that a student does manage to learn in an unguided setting, their learning tends to be shallower than it would have been in a strongly guided setting:
 
@@ -150,9 +150,9 @@ Klahr and Nigam (2004), in a very important study, not only tested whether scien
 
 #### As Kirschner & Hendrick summarize (2024, pp.76):
 
-....[I]f you want your students to learn to solve problems, they first need both the declarative and procedural knowledge within the subject area of the problem in question. This is also true if you want to teach them to communicate, discuss, write, or whatever twenty-first century skill people are talking about. You can't communicate about something, write about something, discuss or argue about something, etc., without first knowing about that something and then also knowing the rules (i.e. the procedures) for doing it."
+"...[I]f you want your students to learn to solve problems, they first need both the declarative and procedural knowledge within the subject area of the problem in question. This is also true if you want to teach them to communicate, discuss, write, or whatever twenty-first century skill people are talking about. You can't communicate about something, write about something, discuss or argue about something, etc., without first knowing about that something and then also knowing the rules (i.e. the procedures) for doing it."
 
-### | Many Hands Make Light Work... and Light Learning
+### Many Hands Make Light Work... and Light Learning
 
 Professionals often work in groups because it gives them an economic advantage. Real-world projects are often extremely complex and require a massive amount of highly skilled labor across a wide variety of disciplines. The amount of work necessary to bring the project to fruition might exceed what one person can put forth over their entire lifetime, and the number of skill domains covered by the work might be more than any one person can hope to master in a single lifetime. This problem is solved by constructing a team where each member is highly skilled in one or more of the relevant domains, and there are enough members to complete the workload in a feasible amount of time.
 
@@ -172,25 +172,23 @@ Granted, fun, collaborative group activities can sometimes be useful for increas
 
 ## Effective Practice Requires Effort
 
-There is No Such Thing as Effortless Learning
+### There is No Such Thing as Effortless Learning
 
 **Myth:** There exist effective methods of practice that require low or no effort.
 
-Reality: Talent development takes work - not just a little work, but a lot of work. There is absolutely no confusion about this in the talent development community. Can you imagine asking an athletic coach to help you become a star player using training methods that don't tire you out and make you sweat?
+**Reality:** Talent development takes work - not just a little work, but a lot of work. There is absolutely no confusion about this in the talent development community. Can you imagine asking an athletic coach to help you become a star player using training methods that don't tire you out and make you sweat?
 
 A common theme in the science of learning is that effective learning feels like a workout with a personal trainer. It should center around deliberate practice, a type of active learning in which individualized training activities are specially chosen to improve specific aspects of performance through repetition and successive refinement. These practice activities are done entirely for the purpose of pushing one's limits and improving performance; consequently, they tend to be more effortful and less enjoyable.
 
 Unfortunately, many types of training methods are ineffective, but require little effort, and can therefore seem attractive to even the most well-intentioned, hardworking students because they create an illusion of competence (e.g. Karpicke, Butler, & Roediger, 2009; also called an illusion of comprehension in earlier works reviewed in e.g. Bjork & Bjork, 2023). Examples include looking at notes, rereading course materials, and highlighting. In a review of scientific studies on various methods of practice, low-effort methods like these were found to have the lowest utility in terms of promoting learning, retention, and application of knowledge (Dunlosky et al., 2013):
 
-| Utility  | Techniques                                                      |
-|----------|-----------------------------------------------------------------|
-| High     | Practice testing Distributed Practice                           |
-| Moderate | Interleaved Practice Elaborative interrogation Self-explanation |
-| Low      | Summarization<br>Highlighting                                   |
+| Utility | Techniques |
+|---|---|
+| High | Practice testing<br>Distributed practice |
+| Moderate | Interleaved practice<br>Elaborative interrogation<br>Self-explanation |
+| Low | Summarization<br>Highlighting<br>The keyword mnemonic<br>Imagery use for text learning<br>Rereading |
 
-The keyword mnemonic Imagery use for text learning Rereading
-
-On the other hand, the two highest-utility methods - practice testing and distributed practice are particularly effortful. The benefits of practice testing come from effortful retrieval of information, and the benefits of distributed practice come from spreading out practice sessions to allow for some amount of forgetting to set in between them (which thereby increases the level of effort required during subsequent practice sessions). As Brown, Roediger, & McDaniel (2014, pp.48) summarize:
+On the other hand, the two highest-utility methods - practice testing and distributed practice - are particularly effortful. The benefits of practice testing come from effortful retrieval of information, and the benefits of distributed practice come from spreading out practice sessions to allow for some amount of forgetting to set in between them (which thereby increases the level of effort required during subsequent practice sessions). As Brown, Roediger, & McDaniel (2014, pp.48) summarize:
 
 "Spacing out your practice feels less productive for the very reason that some forgetting has set in and you've got to work harder to recall the concepts. It doesn't feel like you're on top of it. What you don't sense in the moment is that this added effort is making the learning stronger."
 
@@ -206,32 +204,30 @@ As Qadir & Imran (2018) summarize, learning is all about creating desirable diff
 
 "While we intuitively dislike difficulties and thus try to avoid them, many difficulties (but not all) have a positive effect on learning. The well-known cognitive psychologist Bob Bjork coined the term 'desirable difficulties' for such difficulties that have a positive effect on learning.
 
-Learning – i.e., actual learning that requires the ability to remember and transfer concepts in the long term – requires effort ... Research has shown that while retrieval is harder with spaced learning and interleaving, resulting in the feeling that the learning is less accomplished, the resulting learning is actually deeper and will lead to easier retrieval in the future."
+Learning - i.e., actual learning that requires the ability to remember and transfer concepts in the long term - requires effort ... Research has shown that while retrieval is harder with spaced learning and interleaving, resulting in the feeling that the learning is less accomplished, the resulting learning is actually deeper and will lead to easier retrieval in the future."
 
 #### To Oppose Effortful Practice is to Oppose Talent Development
 
 **Myth:** Testing, repetition, computation, and competition detract from learning.
 
-Reality: In the world of talent development, nobody is confused about the importance of these methods. Can you imagine telling an athletic coach that things like competitive tryouts, repetitious drills, exhausting physical conditioning, and assigning playing time based on performance during scrimmage and competitive games against other teams, detract from developing athletic talent?
+**Reality:** In the world of talent development, nobody is confused about the importance of these methods. Can you imagine telling an athletic coach that things like competitive tryouts, repetitious drills, exhausting physical conditioning, and assigning playing time based on performance during scrimmage and competitive games against other teams, detract from developing athletic talent?
 
-#### > Testing and Repetition are Necessary
+#### Testing and Repetition are Necessary
 
 As we covered while debunking the previous myth, practice testing and distributed practice (also known as spaced repetition) are widely understood by researchers to be two of the most effective practice techniques. We have also discussed the importance of deliberate practice, individualized training activities specially chosen to improve specific aspects of a student's performance through repetition and successive refinement, which has been shown to be one of the most prominent underlying factors responsible for individual differences in performance, even among highly talented elite performers.
 
 It is not possible to rationally argue that one can maximize learning without engaging in testing and repetition. If someone attempts to argue that position, what they are really saying is that they disagree with the premise of maximizing learning. And that is fine - plenty of people would prefer for their education to maximize other things like fun and entertainment while, as a secondary concern, meeting some low bar for shallowly learning some surface-level basic skills. But that is a completely different and opposite thing from talent development.
 
-What's more, in a subject as hierarchical as math, where each advanced skill requires many simpler skills to be applied in complex ways, avoiding testing and repetition can lead to major struggle. To learn a complex skill, a student must first be fluent with the simpler component skills - and to comfortably perform the complex skill, a student must be fully automatic with the simpler component skills. If a student does not develop fluency and eventual automaticity on
+What's more, in a subject as hierarchical as math, where each advanced skill requires many simpler skills to be applied in complex ways, avoiding testing and repetition can lead to major struggle. To learn a complex skill, a student must first be fluent with the simpler component skills - and to comfortably perform the complex skill, a student must be fully automatic with the simpler component skills. If a student does not develop fluency and eventual automaticity on each skill, they will be doomed to struggle on the more advanced skills of which those simpler skills are components. Testing and repetition are the two learning strategies that most directly build fluency and eventual automaticity. (To be clear, repetition does not mean giving students excessive practice past the point of mastery, but rather, giving students enough practice to achieve mastery before moving them on to more advanced skills.)
 
-each skill, they will be doomed to struggle on the more advanced skills of which those simpler skills are components. Testing and repetition are the two learning strategies that most directly build fluency and eventual automaticity. (To be clear, repetition does not mean giving students excessive practice past the point of mastery, but rather, giving students enough practice to achieve mastery before moving them on to more advanced skills.)
-
-#### > Computation is Necessary
+#### Computation is Necessary
 
 There are several reasons why practicing computation is a necessary part of learning math.
 
-- 1. In the absence of computation, it's easy to lose touch with the concrete meaning of various symbols, procedures, and ideas. Computation keeps learners aware of what these things mean in terms of concrete numbers. In fact, the whole point of an abstract idea is to streamline and unify existing knowledge of concrete examples. Computational examples are to mathematics as experiences are to life.
-- 2. Is someone a talented basketball player if they can talk about the strategy of the game but cannot actually make any shots? No. The same applies to someone who can talk about mathematical ideas but is unable to perform computations.
-- 3. It is impossible to gain a full, holistic understanding of a subject without knowing the component skills. If someone can't shoot a basketball, how can they possibly understand how different shots compare in terms of difficulty, and what plays might open up good shots? The same is true in mathematics.
-- 4. Computation often helps build conceptual understanding. Math is full of ideas that cannot be properly understood without experience carrying out computations. (One of the clearest examples of this is the concept of the discriminant of a quadratic equation: if a student has experience computing solutions to quadratic equations using the quadratic formula, then they will find it much easier to observe that the b<sup>2</sup>-4ac term, known as the discriminant, controls the number of solutions.)
+1. In the absence of computation, it's easy to lose touch with the concrete meaning of various symbols, procedures, and ideas. Computation keeps learners aware of what these things mean in terms of concrete numbers. In fact, the whole point of an abstract idea is to streamline and unify existing knowledge of concrete examples. Computational examples are to mathematics as experiences are to life.
+2. Is someone a talented basketball player if they can talk about the strategy of the game but cannot actually make any shots? No. The same applies to someone who can talk about mathematical ideas but is unable to perform computations.
+3. It is impossible to gain a full, holistic understanding of a subject without knowing the component skills. If someone can't shoot a basketball, how can they possibly understand how different shots compare in terms of difficulty, and what plays might open up good shots? The same is true in mathematics.
+4. Computation often helps build conceptual understanding. Math is full of ideas that cannot be properly understood without experience carrying out computations. (One of the clearest examples of this is the concept of the discriminant of a quadratic equation: if a student has experience computing solutions to quadratic equations using the quadratic formula, then they will find it much easier to observe that the b<sup>2</sup>-4ac term, known as the discriminant, controls the number of solutions.)
 
 Math resources that don't give proper emphasis to computation end up having to water down their curriculum and cherry-pick problems, giving students the easiest possible problem-solving cases that don't require too much in the way of foundational skills. That can be exciting for students because they get enough conceptual understanding to feel like they have learned the material in proper depth even though they actually haven't.
 
@@ -243,9 +239,9 @@ Opponents of computation will sometimes claim that it unnecessarily slows down t
 
 More generally, when students are not made to clean up their silly mistakes on low-level skills, they eventually hit a wall where no matter how hard they try, they are unable to reliably perform advanced skills due to the compounding probability of silly mistakes in the component skills.
 
-Additionally, many students frequently claim that they made a silly mistake when in fact their mistake was indicative of a deeper conceptual misunderstanding. Sometimes this claim is in good faith (i.e., they honestly believe they made a silly mistake), other times it's in bad faith (i.e., they're trying to exploit the grading system to get credit they don't deserve), but regardless, it's something that needs to prevented.
+Additionally, many students frequently claim that they made a silly mistake when in fact their mistake was indicative of a deeper conceptual misunderstanding. Sometimes this claim is in good faith (i.e., they honestly believe they made a silly mistake), other times it's in bad faith (i.e., they're trying to exploit the grading system to get credit they don't deserve), but regardless, it's something that needs to be prevented.
 
-#### > Competition Can be Helpful and is Unavoidable in the Big Picture
+#### Competition Can be Helpful and is Unavoidable in the Big Picture
 
 While competition is not inherent to the learning process, appropriately structured competition does not necessarily detract from it either, and in many cases, can incentivize learners to increase the quantity and quality of practice to maximize their level of achievement. For instance, many Math Academy students are highly motivated by weekly leaderboards to maintain a consistent practice schedule.
 
@@ -255,7 +251,7 @@ That said, if a student is serious about developing their talent to a high enoug
 
 It's worth emphasizing that while competition gets a bad rap, its purpose is positive: generally speaking, the purpose of competition is to assign responsibilities to the people most capable of performing them and motivate those people to continue working hard and improving. The bad rap tends to be vocalized by people who are not aligned with this process - for instance, people who confuse their enjoyment of a job with their capability or value to society in performing it, or people who wait until the last minute to begin developing a talent and then experience a rude awakening when they realize that their level of capability is far behind that of other people.
 
-#### > Why the Myth Persists in Education (But Not in Talent Development)
+#### Why the Myth Persists in Education (But Not in Talent Development)
 
 Why does this myth persist in the practice of education, whereas there is no confusion in the field of talent development? One key factor is that in talent development, the optimization problem is clear: an individual's performance is to be maximized, so the methods used during practice are those that most efficiently convert effort into performance improvements. On the other hand, in education, there are many other factors (especially bureaucratic ones) that constrain and cloud the optimization problem. The end result is that teachers are incentivized to use easy, fun, low-accountability, hard-to-measure practice techniques that keep students, parents, and administrators off their back. Unfortunately, these practice techniques tend to be ineffective.
 
@@ -265,7 +261,7 @@ In education, however, many people are against testing. Typically, parents want 
 
 In this position, it is easy to dislike testing - if testing were to go away, then it would be easy to satisfy all parties involved by centering the class around discussions and fun activities. Students wouldn't have to work too hard, they would learn a little bit, they would receive good grades on the basis of participation, parents would be happy that their children are getting high grades and learning a bit without feeling too stressed, and administrators would be happy that parents are happy. It is only natural for those in this position to oppose testing and instead argue for the existence and importance of subjective forms of learning that cannot be objectively measured, even though such forms of learning are unscientific by definition.
 
-#### > Why Talent Development is Important in Math
+#### Why Talent Development is Important in Math
 
 Practitioners of talent development tend to be found in hierarchical skill domains like sports and music, where each advanced skill requires many simpler skills to be applied in complex ways. This is because it's hard to climb up the skill hierarchy without intentionally trying to do so.
 
@@ -279,36 +275,27 @@ When it comes to math, however, things become problematic. Like sports and music
 
 As a result, in math, de-prioritizing talent development leads to major issues. When students do the mathematical equivalent of playing kickball during class, and then are expected to do the mathematical equivalent of a backflip at the end of the year, it's easy to see how struggle and general negative feelings can arise.
 
-## **Key Papers**
+## Key Papers
 
 **Note:** "Importance" blurbs may include pieces of direct quotes referenced earlier in this chapter. If citing this chapter, cite from the body (above).
 
-• Clark, R., Kirschner, P. A., & Sweller, J. (2012). Putting students on the path to learning: The case for fully guided instruction. American Educator, 36(1), 5-11.
+- Clark, R., Kirschner, P. A., & Sweller, J. (2012). Putting students on the path to learning: The case for fully guided instruction. *American Educator*, 36(1), 5-11.
+- Sweller, J., Clark, R., & Kirschner, P. (2010). Teaching general problem-solving skills is not a substitute for, or a viable addition to, teaching mathematics. *Notices of the American Mathematical Society*, 57(10), 1303-1304.
+- Kirschner, P. A., Sweller, J., & Clark, R. E. (2006). Why minimal guidance during instruction does not work: An analysis of the failure of constructivist, discovery, problem-based, experiential, and inquiry-based teaching. *Educational Psychologist*, 41(2), 75-86.
+- Mayer, R. E. (2004). Should there be a three-strikes rule against pure discovery learning? *American Psychologist*, 59(1), 14.
+- Anderson, J. R., Reder, L. M., Simon, H. A., Ericsson, K. A., & Glaser, R. (1998). Radical constructivism and cognitive psychology. *Brookings Papers on Education Policy*, (1), 227-278.
 
-Sweller, J., Clark, R., & Kirschner, P. (2010). Teaching general problem-solving skills is not a substitute for, or a viable addition to, teaching mathematics. Notices of the American Mathematical Society, 57(10), 1303-1304.
+**Importance:** Decades of research support the fact that students learn most effectively through direct instruction. This also follows intuitively from modern understandings of working and long-term memory. The alternative, unguided instruction, can be so problematic as to actually result in negative educational progress.
 
-Kirschner, P. A., Sweller, J., & Clark, R. E. (2006). Why minimal guidance during instruction does not work: An analysis of the failure of constructivist, discovery, problem-based, experiential, and inquiry-based teaching. Educational psychologist, 41(2), 75-86.
-
-Mayer, R. E. (2004). Should there be a three-strikes rule against pure discovery learning?. American psychologist, 59(1), 14.
-
-Anderson, J. R., Reder, L. M., Simon, H. A., Ericsson, K. A., & Glaser, R. (1998). Radical constructivism and cognitive psychology. Brookings papers on education policy, (1), 227-278.
-
-Importance: Decades of research support the fact that students learn most effectively through direct instruction. This also follows intuitively from modern understandings of working and long-term memory. The alternative, unguided instruction, can be so problematic as to actually result in negative educational progress.
-
- Anderson, J. R., Reder, L. M., Simon, H. A., Ericsson, K. A., & Glaser, R. (1998). Radical constructivism and cognitive psychology. Brookings papers on education policy, (1), 227-278.
-
-Salomon, G., & Globerson, T. (1989). When teams do not function the way they ought to. International journal of Educational research, 13(1), 89-99.
+- Anderson, J. R., Reder, L. M., Simon, H. A., Ericsson, K. A., & Glaser, R. (1998). Radical constructivism and cognitive psychology. *Brookings Papers on Education Policy*, (1), 227-278.
+- Salomon, G., & Globerson, T. (1989). When teams do not function the way they ought to. *International Journal of Educational Research*, 13(1), 89-99.
 
 **Importance:** Group learning is generally inefficient, and is typically applied without the requisite structuring or scripting to make it effective, causing it to become detrimental instead.
 
-• Karpicke, J. D., Butler, A. C., & Roediger III, H. L. (2009). Metacognitive strategies in student learning: Do students practise retrieval when they study on their own?. Memory, 17(4), 471-479.
+- Karpicke, J. D., Butler, A. C., & Roediger III, H. L. (2009). Metacognitive strategies in student learning: Do students practise retrieval when they study on their own? *Memory*, 17(4), 471-479.
+- Bjork, E. L., & Bjork, R. A. (2023). Introducing Desirable Difficulties Into Practice and Instruction: Obstacles and Opportunities. In C. Overson, C. M. Hakala, L. L. Kordonowy, & V. A. Benassi (Eds.), *In Their Own Words: What Scholars and Teachers Want You to Know About Why and How to Apply the Science of Learning in Your Academic Setting* (pp. 111-21). Society for the Teaching of Psychology.
+- Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., & Willingham, D. T. (2013). Improving students' learning with effective learning techniques: Promising directions from cognitive and educational psychology. *Psychological Science in the Public Interest*, 14(1), 4-58.
+- Kang, S. H. (2016). Spaced repetition promotes efficient and effective learning: Policy implications for instruction. *Policy Insights from the Behavioral and Brain Sciences*, 3(1), 12-19.
+- Qadir, J., & Imran, M. A. (2018). Learning 101: The untaught basics. *IEEE Potentials*, 37(3), 33-38.
 
-Bjork, E. L., & Bjork, R. A. (2023). Introducing Desirable Difficulties Into Practice and Instruction: Obstacles and Opportunities. In C. Overson, C. M. Hakala, L. L. Kordonowy, & V. A. Benassi (Eds.), In Their Own Words: What Scholars and Teachers Want You to Know About Why and How to Apply the Science of Learning in Your Academic Setting (pp. 111-21). Society for the Teaching of Psychology.
-
-Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., & Willingham, D. T. (2013). Improving students' learning with effective learning techniques: Promising directions from cognitive and educational psychology. Psychological Science in the Public interest, 14(1), 4-58.
-
-Kang, S. H. (2016). Spaced repetition promotes efficient and effective learning: Policy implications for instruction. *Policy Insights from the Behavioral and Brain Sciences*, 3(1), 12-19.
-
-Qadir, J., & Imran, M. A. (2018). Learning 101: The untaught basics. IEEE Potentials, 37(3), 33-38.
-
-**Importance**: Many types of training methods are ineffective, but require little effort, and can therefore seem attractive to even the most well-intentioned, hardworking students because they create an illusion of competence. Examples include looking at notes, rereading course materials, and highlighting. On the other hand, the most effective methods – such as practice testing and distributive practice – are particularly effortful, and are even more effective (and, of course, even more effortful) when combined. Learning is all about creating desirable difficulties.
+**Importance:** Many types of training methods are ineffective, but require little effort, and can therefore seem attractive to even the most well-intentioned, hardworking students because they create an illusion of competence. Examples include looking at notes, rereading course materials, and highlighting. On the other hand, the most effective methods - such as practice testing and distributed practice - are particularly effortful, and are even more effective (and, of course, even more effortful) when combined. Learning is all about creating desirable difficulties.

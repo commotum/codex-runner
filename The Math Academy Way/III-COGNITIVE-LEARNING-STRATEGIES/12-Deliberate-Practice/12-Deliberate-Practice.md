@@ -16,7 +16,7 @@ Deliberate practice presents performers with tasks that are initially outside th
 
 Hence, the requirement for concentration sets deliberate practice apart from both mindless, routine performance and playful engagement, as the latter two types of activities would, if anything, merely strengthen the current mediating cognitive mechanisms rather than modify them to allow increases in the level of performance."
 
-Ericsson offers (2003, pp.72-73) a concrete and familiar example illustrating the distinction between deliberate and non-deliberate practice in the context of music:
+Ericsson offers (2003, pp. 72-73) a concrete and familiar example illustrating the distinction between deliberate and non-deliberate practice in the context of music:
 
 "As children, many people may have spent a lot of time practicing the piano with modest improvements, or known other people who did. When parents forced them to practice, many piano students would simply play the same piece repeatedly without full concentration on specific aspects of their performance. Under those circumstances the existing performance level becomes only more stable and 'practice' makes it permanent. The relation between current level of performance and the number of hours of 'practice' is weak for this type of beginner (Lehmann, 1997).
 
@@ -24,15 +24,13 @@ Successful practice requires identifying specific goals for how to change the pe
 
 Sometimes the pianist will still experience difficulties and work on specific exercises that eventually lead to desired changes. In music, there is a large body of training techniques that have been designed to help musicians develop control over performance and attain the desired speed and dexterity. The use of techniques designed to overcome weaknesses and increase control exemplifies the essence of deliberate practice."
 
-Below is another example, also offered by Ericsson and colleagues, illustrating deliberate practice the context of athletics (Plant et al., 2005):
+Below is another example, also offered by Ericsson and colleagues, illustrating deliberate practice in the context of athletics (Plant et al., 2005):
 
 ....[M]any people know recreational golf and tennis players whose performance has not improved in spite of 20-30 years of active participation. The mere act of regularly engaging in an activity for years and even decades does not appear to lead to improvements in performance, once an acceptable level of performance has been attained (Ericsson, 2002).
 
 For example, if someone misses a backhand volley during a tennis game, there may be a long time before the same person gets another chance at that same type of shot. When the chance finally comes, they are not prepared and are likely to miss a similar shot again. In contrast, a tennis coach can give tennis players repeated opportunities to hit backhand volleys that are progressively more challenging and eventually integrated into representative match play.
 
-However, unlike recreational play, such deliberate practice requires high levels of concentration with few outside distractions and is not typically spontaneous but carefully scheduled (Ericsson, 1996, 2002). A tennis player who takes advantage of this instruction and then engages in
-
-particular practice activities recommended by the teacher for a couple of hours in deeply focused manner (deliberate practice), may improve specific aspects of his or her game more than he or she otherwise might experience after many years of recreational play."
+However, unlike recreational play, such deliberate practice requires high levels of concentration with few outside distractions and is not typically spontaneous but carefully scheduled (Ericsson, 1996, 2002). A tennis player who takes advantage of this instruction and then engages in particular practice activities recommended by the teacher for a couple of hours in a deeply focused manner (deliberate practice), may improve specific aspects of his or her game more than he or she otherwise might experience after many years of recreational play."
 
 #### Deliberate Practice is Effective, Non-Deliberate Practice is Not
 
@@ -68,23 +66,14 @@ On Math Academy, students spend the entirety of their time engaged in deliberate
 
 In this way, learning on Math Academy feels like exercising with a personal trainer:
 
-- 1. The trainer quickly demonstrates an exercise, which you observe.
-- 2. You attempt the exercise, and the trainer corrects anything that is wrong with your form.
-- 3. You continue practicing the exercise, receiving feedback from the trainer, until you are able to complete it comfortably with proper form.
-
-your attempt
-
-Attempt the task Observe a new on your own task being done correctly Observe Attempt Active Learning Loop Master **Feedback** Practice the task Get feedback on
-
+1. The trainer quickly demonstrates an exercise, which you observe.
+2. You attempt the exercise, and the trainer corrects anything that is wrong with your form.
+3. You continue practicing the exercise, receiving feedback from the trainer, until you are able to complete it comfortably with proper form.
 4. The trainer introduces you to a more challenging exercise, and you go back to step 1.
 
 Like exercise with a personal trainer, learning with Math Academy requires effort. Building neural connections takes work, just like building muscle. We will challenge you, but we will not ask you to do anything that you're unprepared for.
 
-### | Cycle of Strain and Adaptation
-
-correctly until
-
-mastery
+### Cycle of Strain and Adaptation
 
 As Ericsson, Krampe, & Tesch-Romer (1993) describe, deliberate practice requires intense, near-maximal-effort training. The goal is to push the limit of one's performance capacity forward during each practice session.
 
@@ -100,9 +89,9 @@ These adaptations will eventually allow the individual to execute the given leve
 
 Even in contexts outside of sports, these adaptations can be detected as physical changes in the brain:
 
-....[A]thletic training involves pushing the associated physiological systems outside the comfort... zone to stimulate physiological growth and adaptation (Ericsson, 2001, 2002, 2003a, 2003c, 2003d). Furthermore, recent reviews (Gaser & Schlaug, 2003; Hill & Schneider, Chapter 37; Kolb & Whishaw, 1998) show that the function and structure of the brain is far more adaptable than previously thought possible.
+....[A]thletic training involves pushing the associated physiological systems outside the comfort zone to stimulate physiological growth and adaptation (Ericsson, 2001, 2002, 2003a, 2003c, 2003d). Furthermore, recent reviews (Gaser & Schlaug, 2003; Hill & Schneider, Chapter 37; Kolb & Whishaw, 1998) show that the function and structure of the brain is far more adaptable than previously thought possible.
 
-Especially, early and extended training has shown to change the cortical mapping of musicians (Elbert, Pantev, Wienbruch, Rockstoh, & Taub, 1995), the development of white matter in the brain (Bengtsson et al., 2005), the development of "turn out" of ballet dancers, the development of perfect pitch, and flexibility of fingers (Ericsson & Lehmann, 1996).
+Especially, early and extended training has been shown to change the cortical mapping of musicians (Elbert, Pantev, Wienbruch, Rockstoh, & Taub, 1995), the development of white matter in the brain (Bengtsson et al., 2005), the development of "turn out" of ballet dancers, the development of perfect pitch, and flexibility of fingers (Ericsson & Lehmann, 1996).
 
 In sum, elite performers search continuously for optimal training activities, with the most effective duration and intensity, that will appropriately strain the targeted physiological system to induce further adaptation without causing overuse and injury."
 
@@ -110,7 +99,7 @@ In sum, elite performers search continuously for optimal training activities, wi
 
 Deliberate practice requires repeatedly practicing skills that are beyond one's repertoire. However, this tends to be more effortful and less enjoyable, which can mislead non-experts to practice within their level of comfort.
 
-For instance, this was observed as a factor differentiating intermediate and expert Gaeilic football players (Coughlan et al., 2014):
+For instance, this was observed as a factor differentiating intermediate and expert Gaelic football players (Coughlan et al., 2014):
 
 "Expert and intermediate level Gaelic football players executed two types of kicks during an acquisition phase and pre-, post-, and retention tests. During acquisition, participants self-selected how they practiced and rated the characteristics of deliberate practice for effort and enjoyment.
 
@@ -142,17 +131,15 @@ When you're developing skills at peak efficiency, you are maximizing the difficu
 
 In that view, confidence is more of a "hindsight" thing than an "in-the-moment" thing. If you feel confident while engaging in maximum-efficiency learning, it's not because the task in front of you seems easy relative to your abilities, but because you've been in situations before where tasks felt challenging relative to your abilities but you've always managed to come out successful.
 
-One can also gain confidence by looking at progress over time. While the amount of progress over any single training session may feel small, consistent deliberate practice will lead to large performance gains over longer periods of time. When a student looks at training activities from
-
-months ago (e.g., math problems that felt hard at the time), and these activities now feel much easier than the student remembered, this can provide a large confidence boost.
+One can also gain confidence by looking at progress over time. While the amount of progress over any single training session may feel small, consistent deliberate practice will lead to large performance gains over longer periods of time. When a student looks at training activities from months ago (e.g., math problems that felt hard at the time), and these activities now feel much easier than the student remembered, this can provide a large confidence boost.
 
 ## Long-Term Compounding
 
-Expertise is the Product of Incremental Improvements Over Time
+#### Expertise is the Product of Incremental Improvements Over Time
 
 Lehtinen et al. (2017) are careful to note that a single round of deliberate practice will not result in instant expertise - rather, it is the compounding of these incremental improvements over a longer period of time that lead someone to become an expert:
 
-"The formation of expert-like practice activities is not a single event, but a long process in itself." The acquisition of high level competence in complex domains such as mathematics is a laborious process that needs deliberate practice during a number of years."
+"The formation of expert-like practice activities is not a single event, but a long process in itself. The acquisition of high level competence in complex domains such as mathematics is a laborious process that needs deliberate practice during a number of years."
 
 Anderson, Reder, & Simon (1998) elaborate further:
 
@@ -166,7 +153,7 @@ Consequently, as Ericsson, Krampe, & Tesch-Romer (1993) emphasize, long-term mot
 
 ....[D]eliberate practice requires effort and is not inherently enjoyable. Individuals are motivated to practice because practice improves performance. ... Thus, an understanding of the long-term consequences of deliberate practice is important."
 
-#### | Motivational Supplements are Not Substitutes for Deliberate Practice
+#### Motivational Supplements are Not Substitutes for Deliberate Practice
 
 To this end, classroom activities that are enjoyable, collaborative, and non-repetitive (such as group discussions and freeform/unstructured project-based or discovery learning) can sometimes be useful for increasing student motivation and softening the discomfort associated with deliberate practice.
 
@@ -179,7 +166,7 @@ Again, this is perhaps most obvious in the contexts of music and athletics:
 
 As is said about famous basketball player Kobe Bryant (Cacciola, 2020):
 
-"At the team's pre-Olympic training camp the following summer, Bryant was the first player to arrive. In fact, he beat most members of the coaching staff - and was getting in workouts at 5:30 a.m. ... The foundation for all of Bryant's feats - the 81-point game, the scoring titles, the series-clinching jump shots, the three championships he had already won with the Lakers – was his work ethic and desire. The spectacular was rooted in the mundane, in the monotony of hard labor."
+"At the team's pre-Olympic training camp the following summer, Bryant was the first player to arrive. In fact, he beat most members of the coaching staff - and was getting in workouts at 5:30 a.m. ... The foundation for all of Bryant's feats - the 81-point game, the scoring titles, the series-clinching jump shots, the three championships he had already won with the Lakers - was his work ethic and desire. The spectacular was rooted in the mundane, in the monotony of hard labor."
 
 The overall takeaway from this chapter is that by engaging in deliberate practice on Math Academy, you will gain the ability to reason coherently and solve problems in levels of math that you were previously unable to comprehend. But as any personal trainer will tell you: if you want to achieve your goals, you have to put in the work. Excellence is the product of effective training over a long period of time, and effective training requires intense effort focused in areas beyond your repertoire.
 
@@ -197,21 +184,20 @@ Many heated debates in math education stem from these misinterpretations of deli
 - Mindless repetition, doing the same thing over and over again without making performance-improving adjustments, is not deliberate practice.
 - Likewise, any activity that throttles the volume of action-feedback-adjustment cycles is not deliberate practice (e.g., excessively challenging problems or think-pair-share).
 
-## **Key Papers**
+## Key Papers
 
 **Note:** "Importance" blurbs may include pieces of direct quotes referenced earlier in this chapter. If citing this chapter, cite from the body (above).
 
-• Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C. (1993). The role of deliberate practice in the acquisition of expert performance. Psychological review, 100(3), 363.
-
-Ericsson, K. A. (2006). The influence of experience and deliberate practice on the development of superior expert performance. The Cambridge handbook of expertise and expert performance, 38(685-705), 2-2.
+- Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C. (1993). The role of deliberate practice in the acquisition of expert performance. *Psychological Review, 100*(3), 363.
+- Ericsson, K. A. (2006). The influence of experience and deliberate practice on the development of superior expert performance. *The Cambridge Handbook of Expertise and Expert Performance, 38*(685-705), 2-2.
 
 Importance: Deliberate practice consists of individualized training activities specially chosen to improve specific aspects of a student's performance through repetition and successive refinement. It is one of the most prominent underlying factors responsible for individual differences in performance, even among highly talented elite performers. However, it requires effort and is not inherently enjoyable. Individuals are motivated to practice because practice improves performance. Thus, an understanding of the long-term consequences of deliberate practice is important.
 
-• Ericsson, K. A. (2008). Deliberate practice and acquisition of expert performance: a general overview. Academic emergency medicine, 15(11), 988-994.
+- Ericsson, K. A. (2008). Deliberate practice and acquisition of expert performance: a general overview. *Academic Emergency Medicine, 15*(11), 988-994.
 
 *Importance:* The effectiveness of deliberate practice, and the ineffectiveness of non-deliberate practice, is so strong that metrics of professional experience that combine the two (such as "years of experience") have been found to only weakly predict actual performance - whereas, on its own, the amount of purely deliberate practice is a much stronger predictor.
 
- Lehtinen, E., Hannula-Sormunen, M., McMullen, J., & Gruber, H. (2017). Cultivating mathematical skills: From drill-and-practice to deliberate practice. ZDM, 49, 625-636.
+- Lehtinen, E., Hannula-Sormunen, M., McMullen, J., & Gruber, H. (2017). Cultivating mathematical skills: From drill-and-practice to deliberate practice. *ZDM, 49*, 625-636.
 
 Importance: It is "deliberate" practice that matters, not just any practice. Deliberate practice requires highly concentrated activities which might be, to some degree, aversive in nature. However, less experienced individuals like novices tend to focus their practice on more pleasant levels of effort. They practice things that they have already mastered, they try to avoid errors and failures, and they do not challenge their own learning.
 
@@ -223,6 +209,6 @@ The formation of expert-like practice activities is not a single event, but a lo
 
 ## Additional Resources
 
-- Parrish, S. The Ultimate Deliberate Practice Guide: How to Be the Best. FS.blog.
-- Clear, J. The Beginner's Guide to Deliberate Practice. James Clear.com.
-- Ericsson, K. A., Prietula, M. J., & Cokely, E. T. (2007). The making of an expert. Harvard business review, 85(7/8), 114.
+- Parrish, S. *The Ultimate Deliberate Practice Guide: How to Be the Best.* FS.blog.
+- Clear, J. *The Beginner's Guide to Deliberate Practice.* JamesClear.com.
+- Ericsson, K. A., Prietula, M. J., & Cokely, E. T. (2007). The making of an expert. *Harvard Business Review, 85*(7/8), 114.

@@ -12,9 +12,7 @@ Reality: The exact opposite is true. Different people generally have different w
 
 One of the most widespread - and most widely debunked - neuromyths is that people learn better when they receive information in their preferred "learning style." To quote the authors of one of the largest and most comprehensive studies on the persistence of neuromyths (Betts et al., 2019):
 
-"Learning styles is one of the most widespread myths in education (Pashler, McDaniel, Rohrer & Bjork, 2008; Reiner & Willingham, 2010; Roher & Pashler, 2012). Despite repeated testing of hypotheses relating to learning styles, there is no evidence to date showing that individuals learn
-
-better when they receive information in their preferred learning styles (Newtown & Miah, 2017; Newtown & Miah, 2017).
+"Learning styles is one of the most widespread myths in education (Pashler, McDaniel, Rohrer & Bjork, 2008; Reiner & Willingham, 2010; Rohrer & Pashler, 2012). Despite repeated testing of hypotheses relating to learning styles, there is no evidence to date showing that individuals learn better when they receive information in their preferred learning styles (Newton & Miah, 2017; Newton & Miah, 2017).
 
 In 2006, a learning styles challenge was put forth by a team of underwriters offering \$1,000 and then moving it up to \$5,000 to provide scientific evidence supporting this myth (Wallace, 2014). To date, there has not been a payout."
 
@@ -32,7 +30,7 @@ Finally, the third erroneous yet widely disseminated conclusion is that teachers
 
 "These so-called learning styles have been exposed as nonsense in research time after time. There are no 'image thinkers' or 'language thinkers'. Everyone thinks with both systems and everyone benefits from using both. The more often you use the two systems together, the stronger the trace in your memory and the better you will remember and thus learn."
 
-### | Working Memory Capacity (WMC) Differences are Relevant
+### Working Memory Capacity (WMC) Differences are Relevant
 
 However, one aspect of the brain that has been widely documented not only to vary between people, but also to affect people's general cognitive performance, is working memory capacity (WMC). As Conway et al. (2007) describe:
 
@@ -54,7 +52,7 @@ Engström, Landtblom, & Karlsson (2013) have explained why this happens: the hig
 
 "Low- and high-capacity participants showed an increase in activity as a function of increasing demands but differed in that high-capacity participants started from a lower level."
 
-#### > WMC Impacts Perceived Effort
+#### WMC Impacts Perceived Effort
 
 It comes as no surprise, then, that people with higher WMC will generally perceive a given task to be easier than people with lower WMC. Indeed, this has been demonstrated experimentally in a study that measured how difficult people found it to identify spoken words in the presence of background noise (Rudner et al., 2012):
 
@@ -64,7 +62,7 @@ It comes as no surprise, then, that people with higher WMC will generally percei
 
 [R]atings of listening effort may be an indicator of the relative degree of engagement of explicit processing resources in WM. Thus, a relation between WM and rated effort may indicate that persons with greater WM capacity are using fewer explicit processing resources"
 
-#### > WMC Impacts Abstraction Ability
+#### WMC Impacts Abstraction Ability
 
 Similarly, it has also been shown that high WMC facilitates abstraction, that is, seeing "the forest for the trees" by learning underlying rules as opposed to memorizing example-specific details (McDaniel et al., 2014). This is unsurprising, given that understanding large-scale patterns requires balancing many concepts simultaneously in WM.
 
@@ -86,7 +84,7 @@ Our hypothesis is that these performance differences reflect, in part, individua
 
 Abstraction learners demonstrated advantages over exemplar learners for transfer questions but not for retention questions. The results converge on the idea that individual differences displayed in how learners acquire and represent concepts persist from laboratory concept learning to learning complex concepts in science courses."
 
-#### > WMC Impacts Learning Speed
+#### WMC Impacts Learning Speed
 
 As one might infer from the impact of WMC on perceived effort and abstraction ability, WMC has also been shown to impact speed of learning, that is, the rate at which one's ability to perform a task improves over the course of exposure, instruction, and practice on the task (though the impact of WMC on task performance is diminished after the task is learned to a sufficient level of performance).
 
@@ -114,9 +112,9 @@ At the other end of the spectrum, Swanson & Siegel (2011) found that students wi
 
 "We argue that in the domain of reading and/or math, individuals with LD have smaller general working-memory capacity than their normal achieving counterparts and this capacity deficit is not entirely specific to their academic disability (i.e., reading or math). ... We find that in situations that place high demands on processing, individuals with LD have deficits related to controlled attentional processes (e.g., maintaining task relevant information in the face of distraction or interference) when compared to their chronological aged-matched counterparts.
 
-One conclusion from the experimental literature is that individual differences in WM (of which executive processing is a component) are directly related to achievement (e.g., reading comprehension) in individuals with average or above average intelligence (e.g., Daneman & Carpenter, 1980). Thus, children or adults with normal IOs have difficulty (or efficiency varies) in executive processing and that such difficulties are not restricted to those with depressed intelligence
+One conclusion from the experimental literature is that individual differences in WM (of which executive processing is a component) are directly related to achievement (e.g., reading comprehension) in individuals with average or above average intelligence (e.g., Daneman & Carpenter, 1980). Thus, children or adults with normal IQs have difficulty (or efficiency varies) in executive processing and that such difficulties are not restricted to those with depressed intelligence
 
-Our conclusions from approximately two decades of research are that WM deficits are fundamental problems of children and adults with LD. Further, these WM problems are related to difficulties in reading and mathematics, and perhaps writing. Although WM is obviously not the only skill that contributes to academic difficulties [e.g., vocabulary and syntactical skills are also important (Siegal and Ryan, 1988)], WM does play a significance role in accounting for individual differences in academic performance."
+Our conclusions from approximately two decades of research are that WM deficits are fundamental problems of children and adults with LD. Further, these WM problems are related to difficulties in reading and mathematics, and perhaps writing. Although WM is obviously not the only skill that contributes to academic difficulties [e.g., vocabulary and syntactical skills are also important (Siegal and Ryan, 1988)], WM does play a significant role in accounting for individual differences in academic performance."
 
 #### Lack of Evidence for WMC Training
 
@@ -142,7 +140,7 @@ It comes as no surprise, then, that Redick et al. (2015) recommend that students
 
 These recommendations are echoed (Anderson et al., 1998) by K. Anders Ericsson, one of the most influential researchers in the field of human expertise and performance:
 
-....[M]odern educators have trained many generalizable abilities such as creativity, general..." problem-solving methods, and critical thinking. However, decades of laboratory studies and theoretical analyses of the structure of human cognition have raised doubts on the possibility of training general skills and processes directly, independent of specific knowledge and tasks.
+....[M]odern educators have trained many generalizable abilities such as creativity, general problem-solving methods, and critical thinking. However, decades of laboratory studies and theoretical analyses of the structure of human cognition have raised doubts on the possibility of training general skills and processes directly, independent of specific knowledge and tasks.
 
 For example, research on thinking and problem solving show that successful performance depends on special knowledge and acquired skills, and studies of learning and skill acquisition show that improvements in performance are primarily limited to activities in the specific domain."
 
@@ -168,19 +166,19 @@ In this view, extra practice should not be viewed as limiting the progress of st
 
 We emphasize that this is fully compatible with, and in fact a necessary part of maintaining a growth mindset. Nobody's current level of knowledge is "fixed" or set in stone, and in order to support every student and maximize their learning, it's necessary to provide some students with more practice than others. The whole goal of adapting the amount of practice to individual differences in student learning speeds is to support maximum student growth. In fact, in the absence of such adaptivity student growth would certainly be stunted:
 
-• If a student is catching on slowly, and you don't give them enough practice and instead move them on to the next thing before they are able to do the current thing, then you'll soon push them so far out of their depth that they'll just be struggling all the time and not actually learning anything, thereby stunting their growth.
+- If a student is catching on slowly, and you don't give them enough practice and instead move them on to the next thing before they are able to do the current thing, then you'll soon push them so far out of their depth that they'll just be struggling all the time and not actually learning anything, thereby stunting their growth.
 
-• Likewise, if a student picks up on something really quickly and you make them practice it for way longer than they need to instead of allowing them to move onward to more advanced material, that's also stunting their growth.
+- Likewise, if a student picks up on something really quickly and you make them practice it for way longer than they need to instead of allowing them to move onward to more advanced material, that's also stunting their growth.
 
 To maximize each individual student's growth on each individual skill that they're learning, Math Academy gives each student enough practice to achieve mastery and allows them to move on to more advanced skills immediately after mastering the prerequisites.
 
-Your Mathematical Potential Has a Limit, but it's Likely Higher Than You Think
+## Your Mathematical Potential Has a Limit, but it's Likely Higher Than You Think
 
 **Myth:** Everybody can learn every level of math.
 
 **Reality:** Most people can learn basic math like arithmetic and some algebra – but beyond that, higher levels of math become increasingly abstract and technical, and fewer people have the cognitive resources to learn it quickly enough to make a career out of it, much less get to that point relatively early in their lives.
 
-#### Levels of Math
+### Levels of Math
 
 One problem with this myth is that most people do not understand just how deep the levels of mathematics can go, and how cognitively taxing it is to learn the deepest levels. Arithmetic is a completely different ballpark from graduate-level math (and beyond). Most people consider calculus to be "really advanced math," but calculus is not even halfway to the level at which expert mathematicians operate.
 
@@ -203,7 +201,7 @@ To put these levels in perspective, it can be helpful to draw an analogy to athl
 
 The reason why this is harder to accept in the context of mathematics than in the context of athletics is that we cannot observe the makeup and functioning of our brains as clearly as we can our bodies. But, as elaborated earlier in this chapter, individual differences in brains do exist (e.g. working memory capacity) and are relevant to key mathematical skills (e.g. abstraction ability).
 
-#### The Abstraction Ceiling
+### The Abstraction Ceiling
 
 To help lend some concreteness to something as abstract as "abstraction ability," it may help to hear the famed Douglas Hofstadter (2012) recount his firsthand experience of running up against an "abstraction ceiling" in his own brain while pursuing a PhD in mathematics:
 
@@ -217,9 +215,7 @@ To put it in terms of another down-home analogy, I was like a kid who is a big b
 
 On the other hand, I think that most people are probably capable of understanding such things as addition and multiplication of fractions, how to solve linear and quadratic equations, some Euclidean geometry, and maybe a tiny bit about functions and some inklings of what calculus is about."
 
-As Hofstadter describes, the abstraction ceiling is not a "hard" threshold, a level at which one is suddenly incapable of learning math, but rather a "soft" threshold, a level at which the amount of time and effort required to learn math begins to skyrocket until learning more advanced math is effectively no longer a productive use of one's time. Unlike a "hard" threshold, there are no absolute instances of "you can never do X," because X can always be accomplished with a sufficient amount of practice in a sufficiently scaffolded training environment. But as the amount of necessary practice skyrockets, the marginal return on investment of continued
-
-practice wanes, eventually falling below the opportunity cost of training in alternative domains. That breaking point is different for everyone. For Hofstadter, it was graduate-level math; for another person, it might be earlier or later (but almost certainly earlier).
+As Hofstadter describes, the abstraction ceiling is not a "hard" threshold, a level at which one is suddenly incapable of learning math, but rather a "soft" threshold, a level at which the amount of time and effort required to learn math begins to skyrocket until learning more advanced math is effectively no longer a productive use of one's time. Unlike a "hard" threshold, there are no absolute instances of "you can never do X," because X can always be accomplished with a sufficient amount of practice in a sufficiently scaffolded training environment. But as the amount of necessary practice skyrockets, the marginal return on investment of continued practice wanes, eventually falling below the opportunity cost of training in alternative domains. That breaking point is different for everyone. For Hofstadter, it was graduate-level math; for another person, it might be earlier or later (but almost certainly earlier).
 
 To clarify some common confusions:
 
@@ -235,7 +231,7 @@ Clarification: Most people's ceilings are severely and artificially lowered by f
 
 Clarification: In other words, he noticed that his personal ROI of climbing the math ladder (as determined by learning rate, interest, training efficiency, etc.) was getting low compared to other things he could be doing, such as writing said books.
 
-### | Learning Energy vs Level of Math
+### Learning Energy vs Level of Math
 
 The central insight is that the further you go in math, the more energy it requires to learn the next level up. Whether they realize it or not, everybody who learns math is on an exponential curve of energy (time and effort) versus the level of math. (A key feature of exponential curves is that they can look fairly flat at the beginning, but appear to skyrocket later on, despite there being a constant "multiplier" to get from one point to the next.)
 
@@ -263,30 +259,30 @@ In our original school program, we worked with students longitudinally, progress
 - However, by 7th grade (rest of geometry, Algebra II, Precalculus), clear separation in student performance would begin to emerge.
 - By the time students reached 8th grade (AP Calculus BC), the separation was extremely clear: some students were still absolutely knocking it out of the park while other students were struggling.
 
-By 8th grade the separation was clear enough to recommend that individual students either continue with the program (which covered university math during high school) or take an "off ramp" into a less accelerated math sequence (that was still more accelerated than the typical honors/AP track).
+By 8th grade, the separation was clear enough to recommend that individual students either continue with the program (which covered university math during high school) or take an "off ramp" into a less accelerated math sequence (that was still more accelerated than the typical honors/AP track).
 
-The same story played out during high school. Even for the students who were absolutely knocking it out of the park throughout 6th-8th grade, still hard to tell apart in terms of performance, we would see clear separation occur from 9th-12th grade.
+The same story played out during high school. Even for the students who were absolutely knocking it out of the park throughout 6th-8th grade and were still hard to tell apart in terms of performance, we would see clear separation occur from 9th-12th grade.
 
 This "initially hard to tell apart, followed by huge separation later on" phenomenon cannot be explained by a linear curve of total effort versus level of achievement. The curve must be concave up.
 
 To address the natural follow-up question: note that in our program, this phenomenon could not be explained by differences in initial background knowledge.
 
- We controlled for differences in initial background knowledge: students worked on our system, took a diagnostic test to determine their edge of mastery, and then received individualized, adaptive instruction to push that edge of mastery forwards, in accordance with the principles outlined in this document (mastery-based learning, spaced repetition, etc.).
+We controlled for differences in initial background knowledge: students worked on our system, took a diagnostic test to determine their edge of mastery, and then received individualized, adaptive instruction to push that edge of mastery forwards, in accordance with the principles outlined in this document (mastery-based learning, spaced repetition, etc.).
 
-• On top of that, in addition to meeting students where they were at, we found that they typically placed between 25-75% of the way through the Prealgebra course. (This was of course well above grade level, which was expected given how students were selected for the program. All 5th graders in the district took a middle school math placement exam in the spring, and students who scored at or above the 90th percentile were invited to join the program. The exam was a 7th grade math skills test, so it could measure a somewhat high skill level, but it was not designed to identify math aptitude.)
+- On top of that, in addition to meeting students where they were at, we found that they typically placed between 25-75% of the way through the Prealgebra course. (This was of course well above grade level, which was expected given how students were selected for the program. All 5th graders in the district took a middle school math placement exam in the spring, and students who scored at or above the 90th percentile were invited to join the program. The exam was a 7th grade math skills test, so it could measure a somewhat high skill level, but it was not designed to identify math aptitude.)
 
 Furthermore, in an elective course sequence within the high school program, we even experienced a scenario where there was heavy variation in background knowledge, that variation was not even correlated with long-term student performance.
 
 - Within the high school program, we taught an even-more-highly accelerated applied math/CS sequence for particularly gifted, interested, and motivated 10th-12th graders. It culminated in high school students doing masters/PhD-level coursework (reproducing academic research papers in artificial intelligence, building everything from scratch in Python). We called it Eurisko.
-- One key finding in Eurisko that it did not matter how much coding background knowledge a student came in with. Some students had taken a few years of coding in middle school and were already familiar with loops, conditionals, helper functions, classes, etc. Others hadn't and were encountering programming logic for the very first time. However, there was no meaningful separation in the Eurisko performance between these two groups of students. When predicting Eurisko performance, the most important factor was cognitive horsepower, and the second-most important factor was work ethic. If a student had enough cognitive horsepower and work ethic to succeed, then they were easily able to make up any difference in background knowledge.
+- One key finding in Eurisko was that it did not matter how much coding background knowledge a student came in with. Some students had taken a few years of coding in middle school and were already familiar with loops, conditionals, helper functions, classes, etc. Others hadn't and were encountering programming logic for the very first time. However, there was no meaningful separation in the Eurisko performance between these two groups of students. When predicting Eurisko performance, the most important factor was cognitive horsepower, and the second-most important factor was work ethic. If a student had enough cognitive horsepower and work ethic to succeed, then they were easily able to make up any difference in background knowledge.
 
-All Can Learn Some, Many Can Learn More, but Few Can Learn All
+## All Can Learn Some, Many Can Learn More, but Few Can Learn All
 
-> Nature or Nurture? Both Matter
+### Nature or Nurture? Both Matter
 
 This characterization is compatible with the usual findings of studies into the effects of nature and nurture on skill acquisition: both matter. Talent – the top speed at which one can acquire skills in a particular domain – matters, and so does hard work. As Kirschner & Hendrick describe (2024, pp.142):
 
-"If you are trying to convince students that innate ability accounts for 0% of success and effort accounts for 100% of success then you are misleading them. Instead of saving to students 'talent doesn't matter, only effort matters', what we should be saying to students is 'yes, talent and natural ability play a big part in success but effort matters on the margins, and the marginal gains can go on to yield significant gains."
+"If you are trying to convince students that innate ability accounts for 0% of success and effort accounts for 100% of success then you are misleading them. Instead of saying to students 'talent doesn't matter, only effort matters', what we should be saying to students is 'yes, talent and natural ability play a big part in success but effort matters on the margins, and the marginal gains can go on to yield significant gains."
 
 Lack of talent does not necessarily mean "you can't do this," but it does mean that someone lacking talent will need to work much harder, possibly to an infeasible extent, as compared to someone with talent. But because the human lifespan is so limited and human talents can be so diverse, "you need to work much harder than others to accomplish this" effectively means the same thing as "you probably won't do this because you'll find more efficient, productive, and fulfilling uses of your time doing other things."
 
@@ -314,7 +310,7 @@ While the development of expert performance depends on favorable environmental c
 
 This definition allows us to explain four facts that would otherwise be inexplicable. First, individuals vary immensely in how long it takes to acquire the expertise requisite for greatness (Simonton, 2000). ... Second, those who take less time to acquire expertise are actually better off than those who take more time (Simonton, 2000). ... Third, greatness is positively associated with broad interests, hobbies, and even versatility (e.g., Root-Bernstein, Bernstein, & Garnier, 1995; Root-Bernstein et al., 2008; Simonton, 1976; Sulloway, 1996). ... [I]t would seem impossible for anyone to become a great polymath if every domain always required a full decade to acquire sufficient expertise. Fourth and last, empirical research in both behavioral genetics and differential psychology has conclusively identified sets of abilities and traits that feature both substantial heritability coefficients and sizeable predictive validities (Bouchard & Lykken, 1999; Simonton, 2008b)."
 
-#### > Speed of Skill Acquisition Matters Because Time is Limited
+#### Speed of Skill Acquisition Matters Because Time is Limited
 
 Humans are subject to many real-world constraints like limited lifespans and the need to learn a marketable skill quickly enough to get a job that affords basic life amenities. Additionally, things are always competing for our attention: whenever something feels hard or uninteresting, there are many other opportunities to do things that we might find easier and at least as interesting. Consequently, we tend to be pulled in other directions once we enter a range where developing further expertise in a domain becomes overwhelmingly arduous. We switch to other things that we (often, correctly) feel are a better use of our limited time.
 
@@ -330,9 +326,7 @@ So, for all practical purposes, it is completely untrue that everyone can learn 
 
 There are at least two reasons why the "all can learn all" myth persists. First, the reality that "all can learn some, many can learn more, but few can learn all" can feel unfair and uncomfortable especially in the context of mathematics, since the students who are best at math tend to be viewed as the smartest.
 
-Second, people often overweight the importance of learning advanced math (and other technical subjects) to general success in life. In reality, lots of jobs, even those that are well-respected and lucrative, don't require advanced math. For instance, how many doctors, lawyers, members of Congress, and even university presidents can and do use calculus in their work? Few, if any. For professions like those, advanced math is not essential. (While it may be true that a larger-than-expected minority of people in such careers may have learned advanced math at
-
-some point, knowledge of advanced math itself is typically not one of the relevant factors contributing to one's ability to secure and maintain such a career.)
+Second, people often overweight the importance of learning advanced math (and other technical subjects) to general success in life. In reality, lots of jobs, even those that are well-respected and lucrative, don't require advanced math. For instance, how many doctors, lawyers, members of Congress, and even university presidents can and do use calculus in their work? Few, if any. For professions like those, advanced math is not essential. (While it may be true that a larger-than-expected minority of people in such careers may have learned advanced math at some point, knowledge of advanced math itself is typically not one of the relevant factors contributing to one's ability to secure and maintain such a career.)
 
 What's important is that everyone gain basic math skills, and people with quantitative talent who are interested in math and want to go into professions that use advanced math - not just aspiring mathematicians but also aspiring physicists, bioinformaticians, rocket scientists, machine learning engineers, etc. - don't take the "off ramp" too early and miss out on the opportunity to build a career around something they enjoy and are good at. We will address this idea more thoroughly in the next myth.
 
@@ -347,25 +341,21 @@ However, for trainers in particular, there are also other incentives at play tha
 
 In debunking the current myth, we demonstrated that the first position cannot be held rationally. However, believing in it can feel so empowering, and in turn so convincing, that it can be an effective position for a trainer to take to keep students and parents happy.
 
-Likewise, in the second position, while it is true that even professional trainers don't know with absolute certainty how their students (especially young students) will develop over time, they do
+Likewise, in the second position, while it is true that even professional trainers don't know with absolute certainty how their students (especially young students) will develop over time, they do generally have some or even a lot of information about whether a student has a gift/talent - and if not, then how likely it is that the gift/talent might emerge later in the child's development. Leveraging that information can be a critical part of helping a child enter an area where they have both the gifts/talents and the level of interest to eventually build a career that they enjoy.
 
-generally have some or even a lot of information about whether a student has a gift/talent - and if not, then how likely it is that the gift/talent might emerge later in the child's development. Leveraging that information can be a critical part of helping a child enter an area where they have both the gifts/talents and the level of interest to eventually build a career that they enjoy.
-
-#### | Struggle Does Not Imply Inability
+### Struggle Does Not Imply Inability
 
 **Myth:** If you do poorly in a math class, it means you are incapable of learning that level of math.
 
-Reality: If you do poorly in a math class, it doesn't necessarily mean that you are incapable of learning that level of math. There are a number of reasons that could be the root cause of your struggle. While it's true that everyone's mathematical potential has a limit, in practice the ceilings we hit rarely represent our true "abstraction ceiling" as described by Hofstadter. All sorts of factors can artificially lower our ceilings, such as missing foundations, ineffective practice habits, inability or unwillingness to engage in additional practice, or lack of motivation.
+**Reality:** If you do poorly in a math class, it doesn't necessarily mean that you are incapable of learning that level of math. There are a number of reasons that could be the root cause of your struggle. While it's true that everyone's mathematical potential has a limit, in practice the ceilings we hit rarely represent our true "abstraction ceiling" as described by Hofstadter. All sorts of factors can artificially lower our ceilings, such as missing foundations, ineffective practice habits, inability or unwillingness to engage in additional practice, or lack of motivation.
 
-#### > Struggle Can Be Caused by Missing Foundations
+#### Struggle Can Be Caused by Missing Foundations
 
 When people age, they accumulate biological damage that eventually reaches a tipping point and leads to a cascade of catastrophic health issues. The same thing happens to students learning mathematics.
 
 Students accumulate weaknesses and knowledge gaps as they progress through math - even a grade of B+ or A- means that there are things in the course that the student never completely grasped, much less mastered. Additionally, gaps can be created if a student takes a course that is not comprehensive and does not cover some topics that are assumed to be prior knowledge in higher-level courses. Once a student has accumulated a critical number of gaps (and by the way, a gap begets more gaps), then the student is doomed to struggle unless proper remediation is enacted to fill in those gaps.
 
-Math Academy automatically takes steps to detect and remediate each individual student's gaps in knowledge. However, remediation is extremely difficult to accomplish outside the context of an adaptive, automated learning system. It rarely happens in the classroom - teachers just don't have the bandwidth to spend enough time with each student to figure out exactly which pieces of foundational knowledge are missing. And while remediation can often be performed by a
-
-skilled tutor, it generally requires many tutoring sessions over a long period of time, continuing indefinitely into the future to prevent new gaps from forming, which makes it prohibitively expensive for most families.
+Math Academy automatically takes steps to detect and remediate each individual student's gaps in knowledge. However, remediation is extremely difficult to accomplish outside the context of an adaptive, automated learning system. It rarely happens in the classroom - teachers just don't have the bandwidth to spend enough time with each student to figure out exactly which pieces of foundational knowledge are missing. And while remediation can often be performed by a skilled tutor, it generally requires many tutoring sessions over a long period of time, continuing indefinitely into the future to prevent new gaps from forming, which makes it prohibitively expensive for most families.
 
 Students usually stop taking math classes once they amass a critical number of knowledge gaps. The usual sequence of events starts with students trying to imitate procedures cookbook-style, without really understanding what's going on, because they can't intuitively grasp any of the new material that they're being taught. Soon after that, they find themselves unable to solve any problems that involve critical thinking or many steps.
 
@@ -374,12 +364,12 @@ It's similar to how professional athletes usually retire not because they're too
 Students will almost assuredly accumulate these deficits in traditional classrooms. It's only the most gifted and motivated students who are able and willing to identify and "self-repair" their gaps on their own.
 
 - In traditional classrooms, students often get stuck on foundational topics but are required to complete homework on more advanced topics, leading them to "scrape by" without really understanding the subject matter.
-- Students also do not review material learned in previous years, and often do not even review material from the course that they're in unless they are preparing for a test. This leads them to quickly forget what they've learned, requiring re-learning scratch if and when those topics show up again in the future.
+- Students also do not review material learned in previous years, and often do not even review material from the course that they're in unless they are preparing for a test. This leads them to quickly forget what they've learned, requiring re-learning from scratch if and when those topics show up again in the future.
 - Often, traditional courses are not even comprehensive! It's not uncommon for instructors to run out of time before the end of the year and skip sections of the textbook.
 
 Math Academy, however, remedies these issues so that students never end up with knowledge holes.
 
-• By practicing mastery learning, we ensure that students are not required to complete more advanced topics until they have demonstrated proficiency on the prerequisites.
+- By practicing mastery learning, we ensure that students are not required to complete more advanced topics until they have demonstrated proficiency on the prerequisites.
 
 This way, students are always ready to properly absorb the new concepts being learned.
 
@@ -388,7 +378,7 @@ This way, students are always ready to properly absorb the new concepts being le
 
 Even if students enter Math Academy with knowledge holes, we automatically take steps to detect and repair them. Our diagnostic exams not only assess course content, but also lower-grade foundations, so that we can identify and fill in every individual student's gaps in foundational knowledge.
 
-#### > Struggle Can Be Caused by Ineffective Practice
+#### Struggle Can Be Caused by Ineffective Practice
 
 As we explained when summarizing the science of learning, effective learning feels like a workout with a personal trainer. It should center around deliberate practice, a type of active learning in which individualized training activities are specially chosen to improve specific aspects of performance through repetition and successive refinement.
 
@@ -396,15 +386,12 @@ We will cover active learning and deliberate practice in more depth in later cha
 
 - Effective learning is active, not passive. It is not effective to attempt to learn by passively watching videos, attending lectures, reading books, or re-reading notes.
 - Deliberate practice requires repeatedly practicing skills that are beyond one's repertoire. However, this tends to be more effortful and less enjoyable, which can mislead non-experts to practice within their level of comfort.
-- Classroom activities that are enjoyable, collaborative, and non-repetitive (such as group discussions and freeform/unstructured project-based or discovery learning) can sometimes be useful for increasing student motivation and softening the discomfort associated with deliberate practice - but they are only supplements, not substitutes, for
-
-deliberate practice.
-
-• Deliberate practice must be a part of a consistent routine. The power of deliberate practice comes from compounding of incremental improvements over a longer period of time. It is not a "quick fix" like cramming before an exam.
+- Classroom activities that are enjoyable, collaborative, and non-repetitive (such as group discussions and freeform/unstructured project-based or discovery learning) can sometimes be useful for increasing student motivation and softening the discomfort associated with deliberate practice - but they are only supplements, not substitutes for deliberate practice.
+- Deliberate practice must be a part of a consistent routine. The power of deliberate practice comes from compounding of incremental improvements over a longer period of time. It is not a "quick fix" like cramming before an exam.
 
 On Math Academy, students spend the entirety of their time engaged in deliberate practice by solving problems (and receiving feedback) on new topics and topics most in need of review. We intersperse active problem-solving with instruction so that students receive minimum effective doses of information right before they use it to actively solve problems and receive feedback.
 
-#### > Struggle Can Be Caused by Insufficient Practice
+#### Struggle Can Be Caused by Insufficient Practice
 
 Struggle can be caused by needing more practice than other students (or, equivalently, the pace of the class might be too fast). This is not necessarily a catastrophic issue in itself because it can usually be remedied by engaging in further practice. However, it can cause problems if coupled with other factors such as the following:
 
@@ -416,12 +403,11 @@ Struggle can be caused by needing more practice than other students (or, equival
 Math Academy remedies all but the last of these issues:
 
 - Our content is about 10x more finely scaffolded than what you'd find elsewhere.
-- If a student struggles during a task, we give more questions that is, more chances to learn and demonstrate their learning.
+- If a student struggles during a task, we give more questions, that is, more chances to learn and demonstrate their learning.
 - We have quick, frequent quizzes where questions are similar to (but not the same as) those learned during lessons.
+- We even tailor the speed of the spaced repetition process to every separate student on every separate topic to ensure that students are getting just enough review to retain information over the long term.
 
-• We even tailor the speed of the spaced repetition process to every separate student on every separate topic to ensure that students are getting just enough review to retain information over the long term.
-
-#### > Struggle Can Be Caused by Lack of Motivation
+#### Struggle Can Be Caused by Lack of Motivation
 
 Properly motivated students are usually driven by one or more of the following factors:
 
@@ -432,7 +418,7 @@ Properly motivated students are usually driven by one or more of the following f
 
 If a student is not driven by any of the motivational factors above, they may "check out" or otherwise struggle due to a lack of interest in learning the material.
 
-#### | Analogy to Lifespans
+### Analogy to Lifespans
 
 The key takeaway from this section is that your mathematical potential has a limit, but it's likely higher than you think. If this idea still feels unclear, then it may help to draw an analogy to human lifespans.
 
@@ -442,7 +428,7 @@ The same is true in athletics. Even if you practice effectively for longer than 
 
 Mathematics is no different. Even if you devote your life to effective study, there is no guarantee that you will become a world-class mathematician. But by putting a serious effort into effective study, you will learn far more math and open far more career doors than you would otherwise.
 
-#### | Student Bite Size vs Curriculum Portion Size
+### Student Bite Size vs Curriculum Portion Size
 
 Thinking deeply about the role of instruction in supporting learners, it's possible to arrive at the following misconception.
 
@@ -470,7 +456,7 @@ The amended metaphor: Students eat meals of information at similar bite rates wh
 
 This type of learning environment would maximize each student's individual potential, free of ceiling effects. Critically, however, students would not progress through it at the same rate: equal bite rates does *not* imply equal rates of food volume intake.
 
-#### > Consistency with Observations
+#### Consistency with Observations
 
 This framing of favorable learning conditions ("student bite size equals curriculum portion size") is consistent with the phenomenon that math becomes hard for different students at different levels. The following factors affect students differentially as they move up the levels of math:
 
@@ -482,17 +468,17 @@ It is also consistent with the concept of soft and hard ceilings on the highest 
 - Say we have a student with low generalization ability and high forgetting rate. Then a favorable curriculum takes more time to work through (as compared to a favorable curriculum for an average student) due to increased granularity and review, and that multiplier increases as they go up the levels of math.
 - At some point "it requires lots of practice to learn" becomes synonymous with "can't learn" first in a soft sense of "the benefits of engaging in this much practice do not outweigh the opportunity costs of neglecting to develop my skills in other domains that I find easier," and then in a hard sense of "the amount of practice required exceeds the sum of waking hours over the remainder of my life."
 
-## **Key Papers**
+## Key Papers
 
 **Note:** "Importance" blurbs may include pieces of direct quotes referenced earlier in this chapter. If citing this chapter, cite from the body (above).
 
-• Grospietsch, F., & Lins, I. (2021, July). Review on the prevalence and persistence of neuromyths in education-Where we stand and what Is still needed. In Frontiers in Education (Vol. 6, p. 665752). Frontiers Media SA.
+- Grospietsch, F., & Lins, I. (2021, July). Review on the prevalence and persistence of neuromyths in education - Where we stand and what is still needed. In Frontiers in Education (Vol. 6, p. 665752). Frontiers Media SA.
 
 Betts, K., Miller, M., Tokuhama-Espinosa, T., Shewokis, P. A., Anderson, A., Borja, C., ... & Dekker, S. (2019). International Report: Neuromyths and Evidence-Based Practices in Higher Education. Online Learning Consortium.
 
 Importance: One of the most widespread – and most widely debunked – neuromyths is that people learn better when they receive information in their preferred "learning style."
 
-• Conway, A., Jarrold, C., Kane, M., Miyake, A., & Towse, J. (2007). Variation in Working Memory: An Introduction. In Conway, A., Jarrold, C., Kane, M., Miyake, A., & Towse, J. (Eds.), *Variation in working memory* (pp.3-17). Oxford University Press.
+- Conway, A., Jarrold, C., Kane, M., Miyake, A., & Towse, J. (2007). Variation in Working Memory: An Introduction. In Conway, A., Jarrold, C., Kane, M., Miyake, A., & Towse, J. (Eds.), *Variation in working memory* (pp.3-17). Oxford University Press.
 
 Vogel, E. K., & Machizawa, M. G. (2004). Neural activity predicts individual differences in visual working memory capacity. Nature, 428(6984), 748-751.
 
@@ -500,17 +486,17 @@ Engström, M., Landtblom, A. M., & Karlsson, T. (2013). Brain and effort: brain 
 
 Importance: One aspect of the brain that has been widely documented not only to vary between people, but also to affect people's general cognitive performance, is working memory capacity (WMC). These differences in working memory capacity have been characterized not only at a psychological level, but also at the physical level of brain activity measures.
 
-• Rudner, M., Lunner, T., Behrens, T., Thorén, E. S., & Rönnberg, J. (2012). Working memory capacity may influence perceived effort during aided speech recognition in noise. Journal of the American Academy of Audiology, 23(08), 577-589.
+- Rudner, M., Lunner, T., Behrens, T., Thorén, E. S., & Rönnberg, J. (2012). Working memory capacity may influence perceived effort during aided speech recognition in noise. Journal of the American Academy of Audiology, 23(08), 577-589.
 
 Importance: People with higher WMC will generally perceive a given task to be easier than people with lower WMC.
 
-• McDaniel, M. A., Cahill, M. J., Robbins, M., & Wiener, C. (2014). Individual differences in learning and transfer: stable tendencies for learning exemplars versus abstracting rules. *Journal of Experimental Psychology: General, 143(2), 668.* 
+- McDaniel, M. A., Cahill, M. J., Robbins, M., & Wiener, C. (2014). Individual differences in learning and transfer: stable tendencies for learning exemplars versus abstracting rules. *Journal of Experimental Psychology: General, 143(2), 668.* 
 
 McDaniel, M. A., Cahill, M. J., Frey, R. F., Rauch, M., Doele, J., Ruvolo, D., & Daschbach, M. M. (2018). Individual differences in learning exemplars versus abstracting rules: Associations with exam performance in college science. Journal of Applied Research in Memory and Cognition, 7(2), 241-251.
 
 Importance: It has also been shown that high WMC facilitates abstraction, that is, seeing "the forest for the trees" by learning underlying rules as opposed to memorizing example-specific details. Individual differences in abstraction ability have been shown to impact educational outcomes.
 
-• McDaniel, M. A., Cahill, M. J., Robbins, M., & Wiener, C. (2014). Individual differences in learning and transfer: stable tendencies for learning exemplars versus abstracting rules. Journal of Experimental Psychology: General, 143(2), 668.
+- McDaniel, M. A., Cahill, M. J., Robbins, M., & Wiener, C. (2014). Individual differences in learning and transfer: stable tendencies for learning exemplars versus abstracting rules. Journal of Experimental Psychology: General, 143(2), 668.
 
 Reber, P. J., & Kotovsky, K. (1997). Implicit learning in problem solving: The role of working memory capacity. Journal of Experimental Psychology: General, 126(2), 178.
 
@@ -520,11 +506,9 @@ Kulasegaram, K. M., Grierson, L. E., & Norman, G. R. (2013). The roles of delibe
 
 Swanson, H. L., & Siegel, L. (2011). Learning disabilities as a working memory deficit. Experimental Psychology, 49(1), 5-28.
 
-**Importance**: WMC has also been shown to impact speed of learning, that is, the rate at which one's ability to
+**Importance**: WMC has also been shown to impact speed of learning, that is, the rate at which one's ability to perform a task improves over the course of exposure, instruction, and practice on the task. This effect extends beyond laboratory settings into real-life contexts of academics and professional expertise.
 
-perform a task improves over the course of exposure, instruction, and practice on the task. This effect extends beyond laboratory settings into real-life contexts of academics and professional expertise.
-
-• Redick, T. S., Shipstead, Z., Wiemers, E. A., Melby-Lervåg, M., & Hulme, C. (2015). What's working in working memory training? An educational perspective. Educational Psychology Review, 27(4), 617-633.
+- Redick, T. S., Shipstead, Z., Wiemers, E. A., Melby-Lervåg, M., & Hulme, C. (2015). What's working in working memory training? An educational perspective. Educational Psychology Review, 27(4), 617-633.
 
 Reber, P. J., & Kotovsky, K. (1997). Implicit learning in problem solving: The role of working memory capacity. Journal of Experimental Psychology: General, 126(2), 178.
 
@@ -532,11 +516,11 @@ Unsworth, N., & Engle, R. W. (2005). Individual differences in working memory ca
 
 Importance: While it is possible to train and improve on tasks that are typically used to measure WMC, evidence is currently lacking that these task-specific performance improvements actually represent an increase in WMC that can be transferred to more general contexts. However, the impact of WMC on task performance is diminished after the task is learned to a sufficient level of performance, and is minimal for tasks that have been learned to the level of automatic processing.
 
-• Hofstadter, D., & Carter, K. (2012). Some Reflections on Mathematics from a Mathematical Non-mathematician. Mathematics in School, 41(5), 2-4.
+- Hofstadter, D., & Carter, K. (2012). Some Reflections on Mathematics from a Mathematical Non-mathematician. Mathematics in School, 41(5), 2-4.
 
 **Importance**: The further one goes in math, the more energy it requires to learn the next level up. This leads to an "abstraction ceiling" - not a "hard" threshold, a level at which one is suddenly incapable of learning math, but rather a "soft" threshold, a level at which the amount of time and effort required to learn math begins to skyrocket until learning more advanced math is effectively no longer a productive use of one's time.
 
-• Simonton, D. K. (2007). Talent and expertise: The empirical evidence for genetic endowment. High Ability Studies, 18(1), 83-84.
+- Simonton, D. K. (2007). Talent and expertise: The empirical evidence for genetic endowment. High Ability Studies, 18(1), 83-84.
 
 Simonton, D. K. (2013). If innate talent doesn't exist, where do the data disappear?. The complexity of greatness: Beyond talent or practice, 17-26.
 

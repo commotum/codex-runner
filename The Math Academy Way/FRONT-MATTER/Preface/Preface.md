@@ -2,9 +2,9 @@
 
 This book answers the following questions:
 
-- 1. What techniques exist to maximize student learning and talent development, particularly in the context of math?
-- 2. Why are these techniques so impactful, and if they are indeed so impactful, then why are they so often absent from traditional classrooms?
-- 3. How does Math Academy leverage these techniques?
+1. What techniques exist to maximize student learning and talent development, particularly in the context of math?
+2. Why are these techniques so impactful, and if they are indeed so impactful, then why are they so often absent from traditional classrooms?
+3. How does Math Academy leverage these techniques?
 
 The book is admittedly verbose with numerous lengthy quotes pulled from the literature, but we believe these receipts are vital for building trust with the reader. Too often, writeups in the field of education cite references that don't even support their claims. Consequently, when faced with the decision to (a) build credibility by quoting the literature extensively, versus (b) streamline our communication, we have chosen to lean towards credibility. It is our experience that if credibility is anything but high, no communication will occur.
 

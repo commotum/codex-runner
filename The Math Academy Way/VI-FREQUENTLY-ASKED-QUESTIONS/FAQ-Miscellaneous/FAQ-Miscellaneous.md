@@ -11,11 +11,8 @@ Math Academy's key value proposition is that it maximizes every student's learni
 - Not hyper-scaffolded. Students will periodically run into situations where they are confused about a logical leap that has taken place. It often takes a long time to resolve the confusion and figure out the logical rationale (if the student figures it out at all).
 - Doesn't track student knowledge and implement mastery learning (i.e., does not ensure that the student has mastered the prerequisites before moving on to new material). Students will feel a large gap between their level of knowledge and the new material, which leads to more confusion and time wasted trying to figure out what prerequisite knowledge they are missing and how to learn it. Often, students will be unable to pinpoint all their missing prerequisite knowledge and will consequently be unable to fully grasp new material, even if they grasp it partially.
 - No spaced review. Students will quickly become rusty on the material that they learn. Not only will students come out of their course of study having forgotten much of the content, but even during the course, they will constantly be forgetting the prerequisites for new material that they attempt to learn.
-- Doesn't adapt to the student's level of performance. Students waste a lot of time doing the wrong amount of work. Sometimes a student will grasp a topic quickly and do far more practice than is necessary; other times they will struggle with a topic and not get enough
-
-practice to reach mastery.
-
-• Leaves the definition of mastery open to interpretation by the learner. It is difficult for a student to know when they have mastered a topic well enough to continue moving forward. Even in good faith, students often think that they have learned a topic well enough when they actually haven't - and they will not realize this unless their mastery is being evaluated by an expert. On the flipside, students can also take things too far in the way of perfectionism, spinning their wheels on the same topic for days or when there is a minor point that doesn't make perfect intuitive sense, when it would be more productive to keep moving forward and solidify their understanding by building on top of it.
+- Doesn't adapt to the student's level of performance. Students waste a lot of time doing the wrong amount of work. Sometimes a student will grasp a topic quickly and do far more practice than is necessary; other times they will struggle with a topic and not get enough practice to reach mastery.
+- Leaves the definition of mastery open to interpretation by the learner. It is difficult for a student to know when they have mastered a topic well enough to continue moving forward. Even in good faith, students often think that they have learned a topic well enough when they actually haven't - and they will not realize this unless their mastery is being evaluated by an expert. On the flipside, students can also take things too far in the way of perfectionism, spinning their wheels on the same topic for days or when there is a minor point that doesn't make perfect intuitive sense, when it would be more productive to keep moving forward and solidify their understanding by building on top of it.
 
 This list could be continued endlessly with other items discussed earlier in the body of this book, but the point is that all of these sources of inefficiency introduce unproductive friction into the learning process, lowering a student's educational progress per unit time and effort that they put towards learning.
 
@@ -23,7 +20,7 @@ Math Academy removes as much of this learning friction as possible, maximizing s
 
 It's worth noting that efficiency is important not only because students make faster progress, but also because they are less likely to quit. Typically, people get off the train and stop learning math once it begins to feel too inefficient relative to other opportunities in life. In anything one does, once the progress-to-work ratio becomes too low, one will lose interest and focus on other endeavors where their progress-to-work ratio is higher. Efficiency keeps that progress-to-work ratio as high as possible, keeping students on the math learning train as long as possible.
 
-### > Why isn't Math Academy free?
+> Why isn't Math Academy free?
 
 Math Academy requires payment because it takes so much time & effort to build. Additionally, it must be priced in a way that the company's solvency is not dependent on a massive user base.
 
@@ -31,7 +28,7 @@ Math Academy is intent on using the most effective training techniques, but most
 
 When an education company depends on a massive base of learners, most of whom are not serious enough to engage in that level of intensity and frequency in their training, it requires the company to employ ineffective learning strategies that do not repel unserious students. The company must convince their students that they've managed to learn things despite putting in little to no work. (This can be accomplished, for instance, by cherry-picking the simplest cases of each topic and letting students move on despite poor performance on prerequisite material.) Unlike such companies, Math Academy is in the business of optimizing real learning - not just the perception of it - for students who are willing to put in serious work.
 
-At the same time, of course, we do want to make mathematical talent development accessible to more and more people. As discussed in Chapter 1: before Math Academy, if a student wanted to replace their traditional schooling with the equivalent duration of 1-on-1 coaching from a personal trainer who develops their mathematical talent using a personalized training program that is tailored and constantly adapting to their individual needs, they would have to obtain it from a private tutor for a typical price of at least \$50/hour. Year-round talent development, with a daily work time that is in line with the amount of time that students would be working anyway during the school year (conservatively, 1 hour per weekday) would cost \$50 × 5 days/week × 52 weeks/year = \$13,000/year.
+At the same time, of course, we do want to make mathematical talent development accessible to more and more people. As discussed in [Chapter 1](../../I-PRELIMINARIES/1-The-Two-Sigma-Solution/1-The-Two-Sigma-Solution.md): before Math Academy, if a student wanted to replace their traditional schooling with the equivalent duration of 1-on-1 coaching from a personal trainer who develops their mathematical talent using a personalized training program that is tailored and constantly adapting to their individual needs, they would have to obtain it from a private tutor for a typical price of at least \$50/hour. Year-round talent development, with a daily work time that is in line with the amount of time that students would be working anyway during the school year (conservatively, 1 hour per weekday) would cost \$50 × 5 days/week × 52 weeks/year = \$13,000/year.
 
 Bringing that figure down to \$499/year (26x cheaper) via Math Academy makes mathematical talent development accessible to many, many more people. That's not everyone, and there are still people who are priced out, but providing a 26x cheaper option is a good starting point towards a goal of making mathematical talent development accessible to more and more people.
 
@@ -55,7 +52,7 @@ In order to keep good on that promise, we have to use a lot of sophisticated alg
 
 We do have some ideas for features that will give students more agency over what they're learning, but it's going to take some work because we have to be careful not to allow students to make decisions that throttle their learning efficiency. The approach that we've been thinking about is less like "select whatever topic you want at any time" and more like "tell us what your specific goal is and we'll put you on the most efficient path to that goal." Of course, none of that is fully-baked yet, but it's something that's on our mind and that we're working on.
 
-#### > Why can't I edit my knowledge profile?
+> Why can't I edit my knowledge profile?
 
 Learners have a tendency to massively overestimate self-reported knowledge, and then fault the resulting instruction for moving too quickly, not explaining enough, or otherwise being too challenging, when the issue is really that they lack sufficient mastery of prerequisites. To construct an accurate knowledge profile, the system must infer it from a student's demonstrated ability to solve problems.
 
@@ -94,17 +91,14 @@ While it may be subtle, removing the "I don't know" button is a crucial safeguar
 
 Many people who have (unsuccessfully) attempted to apply AI to education have focused too much on the "explanation" part and not enough on scaffolding, navigating, and managing the entire learning process.
 
-It's easy to go on a wild goose chase building an explanation AI. You fall in love with the idea of AI having conversational dialogue with students, and then you get lost in the weeds of
-
-complexity. You solve just enough of the problem to produce a cool demo, yet you're still hopelessly far away from self-service learning in real life.
+It's easy to go on a wild goose chase building an explanation AI. You fall in love with the idea of AI having conversational dialogue with students, and then you get lost in the weeds of complexity. You solve just enough of the problem to produce a cool demo, yet you're still hopelessly far away from self-service learning in real life.
 
 Dialogue isn't even necessary. We simply hardcode explanations into bite-size pieces, served at just the right moment. And we close the feedback loop by having students solve problems, which they need to do anyway. (Their "response" is whether they got it correct.)
 
-Sure, hard-coding explanations feels tedious, takes a lot of work, and doesn't have produce the same "wow" factor as an AI that generates responses from scratch - but it's a practical solution that lets us move on to other components of the AI that are just as important (i.e., the entirety of this book). Just to name a few such components:
+Sure, hard-coding explanations feels tedious, takes a lot of work, and doesn't produce the same "wow" factor as an AI that generates responses from scratch - but it's a practical solution that lets us move on to other components of the AI that are just as important (i.e., the entirety of this book). Just to name a few such components:
 
 - After a minimum effective dose of explanation, the AI needs to switch over to active problem-solving. Students should begin with simple cases and then climb up the ladder of difficulty, covering all cases that they could reasonably be expected to solve on a future assessment.
 - Assessments should be frequent and broad in coverage, and students should be assigned personalized remedial reviews based on what they answered incorrectly.
-- Students should progress through the curriculum in a personalized mastery-based manner, only being presented with new topics when they have (as individuals, not just as a group) demonstrated mastery of the prerequisite material.
 - Students should progress through the curriculum in a personalized mastery-based manner, only being presented with new topics when they have (as individuals, not just as a group) demonstrated mastery of the prerequisite material.
 - After a student has learned a topic, they should periodically review it using spaced repetition, a systematic way of reviewing previously-learned material to retain it indefinitely into the future.
 - If a student ever struggles, the system should not lower the bar for success on the learning task (e.g., by giving away hints). Rather, it should strengthen a student's area of weakness so that they can clear the bar fully and independently on their next attempt.

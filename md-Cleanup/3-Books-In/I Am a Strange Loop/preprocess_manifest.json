@@ -1,8 +1,9 @@
 {
   "book_dir": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/I Am a Strange Loop",
-  "generated_at": "2026-04-02T23:14:04+00:00",
+  "generated_at": "2026-04-02T23:25:37+00:00",
   "progress_json": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/I Am a Strange Loop/book_progress.json",
   "prompt_path": "/home/jake/Developer/codex-runner/md-Cleanup/0-Preprocess/prompt-preprocess.md",
+  "schema_path": "/home/jake/Developer/codex-runner/md-Cleanup/0-Preprocess/toc-schema.json",
   "source_markdown": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/I Am a Strange Loop/I Am a Strange Loop.md",
   "structured_root": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/I Am a Strange Loop/_structured"
 }

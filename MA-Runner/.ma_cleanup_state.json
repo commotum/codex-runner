@@ -163,6 +163,10 @@
     "/home/jake/Developer/codex-runner/The Math Academy Way/VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-The-Practice-Experience/FAQ-The-Practice-Experience.md": {
       "completed_at": "2026-04-02T23:15:34+00:00",
       "source_sha256": "f50f672cf6c5b9b1a1ab2e156f8779a6a816739d08777e568057aa199cb43c95"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-XP-and-Practice-Schedules/FAQ-XP-and-Practice-Schedules.md": {
+      "completed_at": "2026-04-02T23:17:18+00:00",
+      "source_sha256": "62c018a9da0a9c3a37079c7b91add1850bd2696a67b32bc6ec90113da779c695"
     }
   }
 }

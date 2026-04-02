@@ -4,3 +4,8 @@
 2026-04-02T23:14:04+00:00 run_start count=1 dry_run=False overwrite=False
 2026-04-02T23:14:04+00:00 book_start path=/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/I Am a Strange Loop
 2026-04-02T23:14:04+00:00 command_start cmd=/home/jake/Developer/codex-runner/.venv/bin/python3 /home/jake/Developer/codex-runner/md-Cleanup/0-Preprocess/script-preprocess.py --book-dir /home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/I Am a Strange Loop
+2026-04-02T23:25:37+00:00 run_start count=1 dry_run=False overwrite=False
+2026-04-02T23:25:37+00:00 book_start path=/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/I Am a Strange Loop
+2026-04-02T23:25:37+00:00 command_start cmd=/home/jake/Developer/codex-runner/.venv/bin/python3 /home/jake/Developer/codex-runner/md-Cleanup/0-Preprocess/script-preprocess.py --book-dir /home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/I Am a Strange Loop
+2026-04-02T23:26:32+00:00 command_end rc=0
+2026-04-02T23:26:32+00:00 command_start cmd=/home/jake/Developer/codex-runner/.venv/bin/python3 /home/jake/Developer/codex-runner/md-Cleanup/1-Process/script-process.py --book-dir /home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/I Am a Strange Loop

@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "book_title": { "type": "string" },
+    "contents_heading": { "type": ["string", "null"] },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "group": { "type": "string" },
+          "folder_slug": { "type": "string" },
+          "kind": { "type": "string" }
+        },
+        "required": ["title", "group", "folder_slug", "kind"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["book_title", "contents_heading", "sections"],
+  "additionalProperties": false
+}

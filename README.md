@@ -3,6 +3,12 @@
 Best practices for codex-runners: queue-based batch processors that feed tasks to
 Codex CLI and write outputs to the filesystem in a reliable, resumable way.
 
+## Git LFS
+- This repo tracks large binary assets with Git LFS, including images, PDFs,
+  archives, media files, fonts, and model/binary artifacts.
+- After cloning, run `git lfs install` once on your machine, then `git lfs pull`
+  in the repo if your Git client does not fetch LFS objects automatically.
+
 ## How runners work
 - Build a queue from a concrete source (for example, a CSV column or a file list).
 - For each entry, derive a stable file stem and resolve the source path.

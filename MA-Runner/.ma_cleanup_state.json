@@ -83,6 +83,14 @@
     "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/16-Layering/16-Layering.md": {
       "completed_at": "2026-04-02T22:34:29+00:00",
       "source_sha256": "3ee601aa3cbcd0b70ed42cfc649172528013cb17b8a61bf66d91ad671965375f"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/17-Non-Interference/17-Non-Interference.md": {
+      "completed_at": "2026-04-02T22:35:13+00:00",
+      "source_sha256": "9cff00f58e39d703715a7d27e33c44752dc69beea41b6d1ee276443b62995fa3"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/18-Spaced-Repetition-Distributed-Practice/18-Spaced-Repetition-Distributed-Practice.md": {
+      "completed_at": "2026-04-02T22:38:37+00:00",
+      "source_sha256": "f666990d274236b606b12dfbaec5f46afd5426c38ab1073934cb99bd5983ec66"
     }
   }
 }

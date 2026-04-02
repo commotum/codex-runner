@@ -39,7 +39,6 @@ It's worth emphasizing that, unlike Math Academy, other spaced repetition system
 Remember that to achieve maximum learning efficiency, Math Academy uses a process that we call repetition compression. We gather all topics that have due repetitions, and then compress this set into a much smaller set of tasks that
 
 1. covers all of the due repetitions, and
-
 2. will lead to the greatest overall gain in spaced repetitions across your entire knowledge profile (while simultaneously climbing the knowledge graph evenly to maintain a broad spread of choices for future optimization).
 
 You can think of Math Academy as a turbo-boosted educational engine, where repetition compression is our combustion mechanism.
@@ -48,40 +47,40 @@ But remember that an engine can't actually move a car unless it is supplied with
 
 The same applies to Math Academy. In order to experience the turbo-boosting,
 
-- 1. you have to put in a sufficient amount of work that can be converted into educational progress, and
-- 2. the quality of your work has to be high enough to avoid excessive friction during the learning process.
+1. you have to put in a sufficient amount of work that can be converted into educational progress, and
+2. the quality of your work has to be high enough to avoid excessive friction during the learning process.
 
-#### | Performance
+#### Performance
 
 By looking at your **performance** (pass rate and accuracy) across various types of learning tasks, we are able to calculate a learning efficiency percentage that estimates how close you are to the maximum possible efficiency for your course.
 
 If you maintain a high learning efficiency, then you can make a lot of progress in your course by doing a relatively small amount of work. But if you have a low learning efficiency, then you will have to do significantly more work to make the same amount of progress.
 
-| Learning Efficiency | How Much Work to Complete a Course |  |
-|---------------------|------------------------------------|--|
-| 1.00                | 1x                                 |  |
-| 0.80                | 1.25x                              |  |
-| 0.67                | 1.5x                               |  |
-| 0.50                | 2x                                 |  |
-| 0.25                | 4x                                 |  |
+| Learning Efficiency | How Much Work to Complete a Course |
+|---------------------|------------------------------------|
+| 1.00                | 1x                                 |
+| 0.80                | 1.25x                              |
+| 0.67                | 1.5x                               |
+| 0.50                | 2x                                 |
+| 0.25                | 4x                                 |
 
 #### Pace
 
 In Math Academy, work is measured in **eXperience Points** (**XP**). One XP represents one minute of fully-focused, fully-productive work for an average serious (but imperfect) student. The amount of XP that you complete per weekday (on average) is called your pace.
 
-#### > Learning Efficiency vs Pace
+#### Learning Efficiency vs Pace
 
 Although the quality of your work is the single greatest factor that affects your learning efficiency, your pace can affect your learning efficiency as well. The faster you push your knowledge frontier forward, the further your knowledge frontier is ahead of your due reviews, and the more likely it is that we can find good topics to "knock out" a large number of your due reviews.
 
 We empirically determined the following relationship:
 
-learning efficiency 
+learning efficiency
 $$\propto$$
- pace<sup>0.1</sup>
+pace<sup>0.1</sup>
 
-This means that if you double your pace, your learning efficiency increases by about  $2^{0.1} = 7\%$ . Likewise, if you cut your pace in half, your learning efficiency decreases by about 7%.
+This means that if you double your pace, your learning efficiency increases by about $2^{0.1} = 7\%$. Likewise, if you cut your pace in half, your learning efficiency decreases by about 7%.
 
-#### > Pace vs Time to Completion
+#### Pace vs Time to Completion
 
 In a normal class period during a school day, it's reasonable to expect at least 40 minutes of fully-focused, fully-productive work. This corresponds to a baseline pace of 40 XP per weekday.
 
@@ -89,14 +88,14 @@ When we benchmark the amount of XP in our courses, we simulate an average studen
 
 Below is a table that shows how long it would take you to complete a 3000 XP course, depending on your pace. Note that learning efficiencies are computed relative to the baseline pace of 40 XP/weekday (so a pace of 40 XP/weekday corresponds to an efficiency of 1, and higher paces correspond to efficiencies greater than 1).
 
-| Pace<br>(XP/weekday) | Efficiency Multiplier (pace/40) <sup>0.1</sup> | How Long To Complete a Course  Benchmarked at 3000 XP  weekdays = 3000/(pace*multiplier) |
-|----------------------|------------------------------------------------|------------------------------------------------------------------------------------------|
-| 160                  | 1.15                                           | 3 weeks                                                                                  |
-| 80                   | 1.07                                           | 7 weeks                                                                                  |
-| 40                   | 1.00                                           | 15 weeks                                                                                 |
-| 20                   | 0.93                                           | 32 weeks                                                                                 |
-| 10                   | 0.87                                           | 69 weeks (~1.3 years)                                                                    |
-| 5                    | 0.81                                           | 148 weeks (~3 years)                                                                     |
+| Pace<br>(XP/weekday) | Efficiency Multiplier<br>(pace/40)<sup>0.1</sup> | How Long To Complete a Course<br>Benchmarked at 3000 XP<br>weekdays = 3000/(pace*multiplier) |
+|----------------------|--------------------------------------------------|------------------------------------------------------------------------------------------------|
+| 160                  | 1.15                                             | 3 weeks                                                                                        |
+| 80                   | 1.07                                             | 7 weeks                                                                                        |
+| 40                   | 1.00                                             | 15 weeks                                                                                       |
+| 20                   | 0.93                                             | 32 weeks                                                                                       |
+| 10                   | 0.87                                             | 69 weeks (~1.3 years)                                                                          |
+| 5                    | 0.81                                             | 148 weeks (~3 years)                                                                           |
 
 To put this in perspective: in a traditional classroom, each weekday involves 50 minutes of class plus the same duration of homework after school. On this schedule, it takes students a full school year (36 weeks) to complete a course.
 

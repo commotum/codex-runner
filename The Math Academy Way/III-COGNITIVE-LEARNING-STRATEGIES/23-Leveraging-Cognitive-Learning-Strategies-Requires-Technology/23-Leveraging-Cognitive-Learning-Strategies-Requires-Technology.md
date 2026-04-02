@@ -4,39 +4,37 @@ Summary: While there is plenty of room for teachers to make better use of cognit
 
 ## High-Level Context
 
-The Problem: Cognitive Learning Strategies Remain Underused
+### The Problem: Cognitive Learning Strategies Remain Underused
 
 It is common knowledge among researchers that the cognitive learning strategies discussed in previous chapters have the potential to drastically improve the depth, pace, and overall success of student learning. These strategies have been identified and researched extensively since the early to mid-1900s, with key findings being successfully reproduced over and over again since then. However, as discussed in chapter 2, the disappointing reality is that the practice of education has barely changed, and in many ways remains in direct opposition to these strategies.
 
 #### The Blame: Teachers are Victims of Circumstance
 
-So, what happened? Why does the potential of these cognitive learning strategies remain unrealized, and who - or what - is to blame?
+So, what happened? Why does the potential of these cognitive learning strategies remain unrealized, and who, or what, is to blame?
 
-We do not wish to direct the blame at teachers. For instance, one cannot blame Sherman (1992) who did everything in his power to leverage mastery-based learning within his own classroom and promote its widespread adoption - for having his efforts opposed and ultimately overpowered by various forces at play within the education system. Likewise, one cannot blame other teachers who have thought about ways to capitalize on these cognitive learning strategies to improve student learning, but, for one reason or another, found it too difficult to integrate them into their classroom in practice.
+We do not wish to direct the blame at teachers. For instance, one cannot blame Sherman (1992), who did everything in his power to leverage mastery-based learning within his own classroom and promote its widespread adoption, for having his efforts opposed and ultimately overpowered by various forces at play within the education system. Likewise, one cannot blame other teachers who have thought about ways to capitalize on these cognitive learning strategies to improve student learning, but, for one reason or another, found it too difficult to integrate them into their classroom in practice.
 
-Teachers are victims of circumstance. The education system - like any other system whose intended function (promoting learning) is limited by the scarce resources (teachers and funding) available to achieve that function - has developed its own conventions while seeking the closest thing to a solution to an intractable problem. As the education system has evolved over hundreds of years, these conventions have accumulated and ossified into hard-baked constraints that outlive their usefulness. Many constraints are no longer helpful to the goal of promoting learning, yet remain deeply ingrained and act to resist change.
+Teachers are victims of circumstance. The education system, like any other system whose intended function (promoting learning) is limited by the scarce resources (teachers and funding) available to achieve that function, has developed its own conventions while seeking the closest thing to a solution to an intractable problem. As the education system has evolved over hundreds of years, these conventions have accumulated and ossified into hard-baked constraints that outlive their usefulness. Many constraints are no longer helpful to the goal of promoting learning, yet remain deeply ingrained and act to resist change.
 
-#### As summarized by Sherman (1992):
+#### As summarized by Sherman (1992)
 
-"...[T]he investment in keeping things as they are may be impossible to overcome. ... Improving instruction is the goal, but only in the context of not changing anything that is important to any vested interest. ... [When the role of the teacher] does not conform to what most people think of as teaching; this is a problem and an obstacle to implementation."
+> "...[T]he investment in keeping things as they are may be impossible to overcome. ... Improving instruction is the goal, but only in the context of not changing anything that is important to any vested interest. ... [When the role of the teacher] does not conform to what most people think of as teaching; this is a problem and an obstacle to implementation."
 
 ### The Solution: Technology Changes Everything
 
 In the past, scarcity of resources (teachers and funding) has made it impossible to fully leverage cognitive learning strategies in traditional classrooms. This scarcity persists today. However, a new variable has also entered the equation: technology.
 
-Technology changes everything. Individualized digital learning environments are now technologically possible and commercially viable. Technology not only lets us circumvent the opposing inertia in the education system, but also helps us leverage cognitive learning strategies
-
-to a degree that would not be feasible for even the most agreeable and hard-working human teacher.
+Technology changes everything. Individualized digital learning environments are now technologically possible and commercially viable. Technology not only lets us circumvent the opposing inertia in the education system, but also helps us leverage cognitive learning strategies to a degree that would not be feasible for even the most agreeable and hard-working human teacher.
 
 #### Resistance to Additional Effort
 
-One force keeping cognitive learning strategies out of the classroom is that they require additional effort from teachers and students. Again, we do not say this with the intent to cast blame - it is simply a fact that as humans, we tend to resist additional effort, especially when we (like teachers) are already tired or (like young students) do not fully understand the long-term consequences of our decisions.
+One force keeping cognitive learning strategies out of the classroom is that they require additional effort from teachers and students. Again, we do not say this with the intent to cast blame; it is simply a fact that as humans, we tend to resist additional effort, especially when we (like teachers) are already tired or (like young students) do not fully understand the long-term consequences of our decisions.
 
-Teachers are already under a high level of baseline stress while facing strenuous - and often conflicting - demands from administrators, parents, and students. When it comes to promoting learning, teachers can keep all parties satisfied (or, perhaps, not too dissatisfied) by checking the boxes on long-standing conventions of the educational system: some lectures, some homework, several quizzes, and a couple tests. There's only so much you can deride a teacher for meeting the societal and institutional expectations that are placed on them, but not going above and beyond.
+Teachers are already under a high level of baseline stress while facing strenuous, and often conflicting, demands from administrators, parents, and students. When it comes to promoting learning, teachers can keep all parties satisfied (or, perhaps, not too dissatisfied) by checking the boxes on long-standing conventions of the educational system: some lectures, some homework, several quizzes, and a couple tests. There's only so much you can deride a teacher for meeting the societal and institutional expectations that are placed on them, but not going above and beyond.
 
-The same applies to students. Like a child who prefers to eat junk food and watch TV, but manages to complete their chores and eat the vegetables on their dinner plate, there's only so much you can deride a student for showing up to class, being undisruptive, and performing well enough on homework and tests to earn a passing grade, but not going above and beyond to maximize their learning and retention - especially when they are too young to fully grasp the long-term impact of their present habits on their future life.
+The same applies to students. Like a child who prefers to eat junk food and watch TV, but manages to complete their chores and eat the vegetables on their dinner plate, there's only so much you can deride a student for showing up to class, being undisruptive, and performing well enough on homework and tests to earn a passing grade, but not going above and beyond to maximize their learning and retention, especially when they are too young to fully grasp the long-term impact of their present habits on their future life.
 
-Additionally, it is unreasonable to expect students to be highly motivated to maximize their learning in every subject when a reality of human nature is that most people are unmotivated to do most things. The tiny subset of things that a person is motivated to do in life are called their career and hobbies, and most people only have at most one career and a few hobbies. Everything else – i.e., the vast majority of things – are chores.
+Additionally, it is unreasonable to expect students to be highly motivated to maximize their learning in every subject when a reality of human nature is that most people are unmotivated to do most things. The tiny subset of things that a person is motivated to do in life are called their career and hobbies, and most people only have at most one career and a few hobbies. Everything else, i.e., the vast majority of things, is chores.
 
 #### Active Learning
 
@@ -50,27 +48,27 @@ On the whole, it's way easier for a teacher to just talk and write on the board 
 
 #### Non-Interference, Interleaving, and Spaced Repetition
 
-#### > Shuffling Instructional Material
+#### Shuffling Instructional Material
 
 As discussed in chapter 17, conceptually related pieces of knowledge can interfere with each other's recall, especially when taught simultaneously or in close succession. To minimize the impact of interference, new concepts should be taught alongside dissimilar material. However, it is easier for teachers to work in batch, creating week-by-week class lesson plans around groups of related material.
 
 Additionally, the instructional material that's provided to teachers is typically structured around curricular units of related content. While it may make sense to structure a reference book this way (for ease of lookup), this organization does not reflect the optimal order to actually teach the material. As a result, a teacher wishing to leverage non-interference would have to invest additional time and effort into "shuffling" their instructional material while ensuring that every topic comes later than its prerequisites in the shuffled order.
 
-Similar effort is required to leverage interleaving, which, as discussed in chapter 18, involves spreading out review problems over multiple review assignments that each cover a broad mix of previously-learned topics. Most textbooks are structured the opposite way - in blocks, where a single skill is practiced many times consecutively. As a result, a teacher typically cannot just grab an interleaved assignment "off the shelf" - rather, they will need to invest time and effort to manually allocate problems across interleaved assignments and keep track of how much practice they've given the class on each topic.
+Similar effort is required to leverage interleaving, which, as discussed in chapter 18, involves spreading out review problems over multiple review assignments that each cover a broad mix of previously learned topics. Most textbooks are structured the opposite way, in blocks, where a single skill is practiced many times consecutively. As a result, a teacher typically cannot just grab an interleaved assignment "off the shelf"; rather, they will need to invest time and effort to manually allocate problems across interleaved assignments and keep track of how much practice they've given the class on each topic.
 
-#### > Opening a Can of Worms on Forgetting
+#### Opening a Can of Worms on Forgetting
 
 Interleaving can open a can of worms on who doesn't remember what: when students are doing a variety of different things and are not able to mindlessly apply one type of procedure to one type of problem, they may need reminders of how and when to apply various solution techniques, they may make a variety of different types of mistakes, and they may have scattered questions in class the next day about the previous day's homework. The same thing happens during spaced repetition, which, as discussed in chapter 18, involves spacing out reviews over time.
 
-Opening this can of worms is actually a good thing because it provides an immense amount of information about what each student needs to work on - but it can feel overwhelming for teachers to have so many student needs at one time, especially when the teacher is under pressure for the class to cover a set amount of content by a fixed deadline, and the teacher feels like remediating student forgetting is "slowing down" their progress towards that goal.
+Opening this can of worms is actually a good thing because it provides an immense amount of information about what each student needs to work on, but it can feel overwhelming for teachers to have so many student needs at one time, especially when the teacher is under pressure for the class to cover a set amount of content by a fixed deadline, and the teacher feels like remediating student forgetting is "slowing down" their progress towards that goal.
 
-Of course, good teachers understand the importance of continual review and periodically revisit previously-learned material to help their students retain it. However, as discussed in chapter 18, optimizing retention through true spaced repetition requires a massive, inhuman amount of bookkeeping and computation. Carrying out even a loose approximation of spaced repetition for the class as a whole requires an immense level of effort. Given the additional stress that continual review creates for teachers, it's easier to just stick to the status quo and cram a class or two of review before each major test.
+Of course, good teachers understand the importance of continual review and periodically revisit previously learned material to help their students retain it. However, as discussed in chapter 18, optimizing retention through true spaced repetition requires a massive, inhuman amount of bookkeeping and computation. Carrying out even a loose approximation of spaced repetition for the class as a whole requires an immense level of effort. Given the additional stress that continual review creates for teachers, it's easier to just stick to the status quo and cram a class or two of review before each major test.
 
-#### | Testing Effect
+#### Testing Effect
 
-Good, highly-engaged teachers understand the importance of quizzes and give regular weekly or biweekly quizzes (which is reasonably frequent, though a higher frequency would be ideal). However, unless these quizzes are built into some existing curriculum that they are working from, it takes a lot of work to create those quizzes, grade them, and go over mistakes with students. And that's not all:
+Good, highly engaged teachers understand the importance of quizzes and give regular weekly or biweekly quizzes (which is reasonably frequent, though a higher frequency would be ideal). However, unless these quizzes are built into some existing curriculum that they are working from, it takes a lot of work to create those quizzes, grade them, and go over mistakes with students. And that's not all:
 
-- Ideally, students who don't do so well will be given the opportunity to demonstrate learning from their mistakes on a retake quiz with different (but similar) questions which effectively doubles the teacher's workload relating to quizzes.
+- Ideally, students who don't do so well will be given the opportunity to demonstrate learning from their mistakes on a retake quiz with different, but similar, questions, which effectively doubles the teacher's workload relating to quizzes.
 - In a class of more than a handful of students, there is always a good chance that one or more students will be absent due to sickness, medical appointments, or other things, in which case the teacher has to schedule make-up quizzes.
 - Especially at the high school and university levels, a minority of students may cause further headache by routinely complaining that questions they missed were unfair (and should be thrown out) or begging for undeserved partial credit.
 
@@ -100,19 +98,19 @@ Suddenly, you realize that you don't care at all about how much time, effort, an
 
 To accomplish this, every moment you have with the child will be devoted to getting the child to the point where they are able to do all of these things independently.
 
-- · You will of course introduce each skill along with a quick demonstration, but you won't ramble about anything that's irrelevant because your goal will be to have them start attempting to solve problems on each skill as soon as possible.
+- You will of course introduce each skill along with a quick demonstration, but you won't ramble about anything that's irrelevant because your goal will be to have them start attempting to solve problems on each skill as soon as possible.
 - You will provide corrective feedback on every single problem that they solve, talking them through the correct solution whenever they make a mistake. If they do well, you will quickly move them onwards to more difficult problems, but if they struggle, you will give them however much practice they need to master the skill before moving forwards.
-- You will cover a mix of different topics every day and continually feed them review problems on previously-learned skills (but not too much review – just a "minimal effective dose" to restore their memory on any topics that they might be in danger of forgetting).
+- You will cover a mix of different topics every day and continually feed them review problems on previously learned skills (but not too much review, just a "minimal effective dose" to restore their memory on any topics that they might be in danger of forgetting).
 - You will also provide frequent timed quizzes on a mixture of different problem types, go over their quizzes with them, give them more practice on anything they missed on the quizzes, and give them a retake to make sure they learned from their mistakes.
 - Lastly, you will gamify the experience in a way that incentivizes the child to put their best effort forward all the time.
 
 ## Heterogeneity of Student Knowledge Profiles
 
-## | Tutoring the King's Kid vs Teaching Many Kings' Kids
+## Tutoring the King's Kid vs Teaching Many Kings' Kids
 
 The "tutoring the king's kid" anecdote illustrates that there is no law of physics preventing a teacher from putting forth the work needed to deliver an optimal learning experience to a single student: rather, it is a matter of accountability and incentives.
 
-However, a key assumption in the anecdote is that the teacher is working with a single student. If the same story were told with a class full of 30 children, each from a king who will execute the teacher if their own child fails the test, then it would emphasize a different perspective: the teacher may be doomed because no matter how hard the they try, they will not be able to deliver that same optimal learning experience to every student in the class. Regardless of the level of accountability and incentives, the amount of work required would be inhuman.
+However, a key assumption in the anecdote is that the teacher is working with a single student. If the same story were told with a class full of 30 children, each from a king who will execute the teacher if their own child fails the test, then it would emphasize a different perspective: the teacher may be doomed because no matter how hard they try, they will not be able to deliver that same optimal learning experience to every student in the class. Regardless of the level of accountability and incentives, the amount of work required would be inhuman.
 
 Loosely speaking, it boils down to the physics of learning. The reason why it's so much harder to teach 30 students than to teach a single student is that the 30 students all have unique, heterogeneous knowledge profiles.
 
@@ -124,17 +122,17 @@ Moreover, and more subtly, even students who earned the exact same grade in a pr
 
 ![](Images/_page_325_Figure_2.jpeg)
 
-#### | Student Knowledge Profiles Naturally Tend Towards Heterogeneity
+#### Student Knowledge Profiles Naturally Tend Towards Heterogeneity
 
 Even in an unrealistic hypothetical scenario where all the students in a class were academic "clones" of one another with exactly the same knowledge profiles, learning speeds, and levels of motivation, their knowledge profiles would naturally diverge over time as the class went on. Despite having the same academic profile, each student would be missing class or spacing out at different times, and as a result, some students would struggle with some topics more than others. (Missing class and spacing out are effectively the same thing, just on different time scales: they differ only in frequency and duration.)
 
-Everyone spaces out sometimes - even adults. It happens constantly, even to people who are consciously trying to pay attention. People have a hard time focusing when they have other things on their minds: what they're going to eat for lunch, their plans for the weekend, anxiety about a personal relationship, etc. The author of this book spaced out at least twice while writing the four paragraphs in this subsection.
+Everyone spaces out sometimes, even adults. It happens constantly, even to people who are consciously trying to pay attention. People have a hard time focusing when they have other things on their minds: what they're going to eat for lunch, their plans for the weekend, anxiety about a personal relationship, etc. The author of this book spaced out at least twice while writing the four paragraphs in this subsection.
 
 This is especially true for students, who also face an endless list of mini-distractions in a classroom. For instance, a student might need to spend 30 seconds ruffling through their backpack for another pencil/pen or piece of paper (or their friend might ask them for one of those things). Or, a student may need to miss several minutes of class to use the bathroom.
 
-Regardless of whether it is their fault or not, students are momentarily distracted at different times and they miss things. These differences compound over time unless the teacher immediately detects and fully remediates them at the instant that they arise - but this requires an inhuman amount of work, so teachers aren't doing it unless they have technology that does it.
+Regardless of whether it is their fault or not, students are momentarily distracted at different times and they miss things. These differences compound over time unless the teacher immediately detects and fully remediates them at the instant that they arise, but this requires an inhuman amount of work, so teachers aren't doing it unless they have technology that does it.
 
-#### | Every Student in the Class Effectively Needs a Private Tutor
+#### Every Student in the Class Effectively Needs a Private Tutor
 
 The heterogeneity of student knowledge profiles means that different students need different amounts of practice, on different skills, at different times. Consequently, to deliver an optimal learning experience to all students in the class, the teacher must effectively function as a private tutor for every individual student. Needless to say, no matter how a teacher attempts this, it's an intractable problem if their class consists of more than a few students. Even if a teacher tries their hardest, they will not be able to deliver an optimal learning experience to every student in the class.
 
@@ -147,5 +145,3 @@ To even know the specific problem types that each student needs to work on, the 
 Furthermore, even on the rare occasion that a teacher manages to find a type of problem that is productive for all students in the class, different students will require different amounts of practice to master the solution technique. Some students will catch on quickly and be ready to move on to more difficult problems after solving just a couple problems of the given type, while other students will require many more attempts before they are able to solve problems of the given type successfully on their own. Additionally, some students will solve problems quickly while others will require more time.
 
 In the absence of technology, it is impossible for a single human teacher to deliver an optimal learning experience to a classroom of many students with heterogeneous knowledge profiles, who all need to work on different types of problems and receive immediate feedback on each attempt. However, technology changes everything. By automatically leveraging cognitive learning strategies to their fullest extent, Math Academy is able to deliver an optimized, adaptive, personalized learning experience to each individual student. Math Academy students are perpetually engaged in productive problem-solving, with immediate feedback (and remediation when necessary), on the specific types of problems (and in the specific types of settings) that will move the needle the most for their personal learning progress.
-
-# IV. COACHING

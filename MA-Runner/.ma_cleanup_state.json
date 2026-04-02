@@ -91,6 +91,66 @@
     "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/18-Spaced-Repetition-Distributed-Practice/18-Spaced-Repetition-Distributed-Practice.md": {
       "completed_at": "2026-04-02T22:38:37+00:00",
       "source_sha256": "f666990d274236b606b12dfbaec5f46afd5426c38ab1073934cb99bd5983ec66"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/19-Interleaving-Mixed-Practice/19-Interleaving-Mixed-Practice.md": {
+      "completed_at": "2026-04-02T22:41:03+00:00",
+      "source_sha256": "09096d7f656d358520c101bc6e467a0688acd2bbfc0824207b3844942f459e05"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/20-The-Testing-Effect-Retrieval-Practice/20-The-Testing-Effect-Retrieval-Practice.md": {
+      "completed_at": "2026-04-02T22:43:47+00:00",
+      "source_sha256": "bbcbd53cea0146e026353aecae8f6ce54926431209bfac2053b116ee67d9b458"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/21-Targeted-Remediation/21-Targeted-Remediation.md": {
+      "completed_at": "2026-04-02T22:45:04+00:00",
+      "source_sha256": "40b515f428b4c5e02be9c16b70dd633524ee4bf7502fa9721b0227efac765316"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/22-Gamification/22-Gamification.md": {
+      "completed_at": "2026-04-02T22:46:28+00:00",
+      "source_sha256": "42a9a269fb6d8071ed2d611679cb0dac604459b031899f33694797b30e221660"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/III-COGNITIVE-LEARNING-STRATEGIES/23-Leveraging-Cognitive-Learning-Strategies-Requires-Technology/23-Leveraging-Cognitive-Learning-Strategies-Requires-Technology.md": {
+      "completed_at": "2026-04-02T22:48:56+00:00",
+      "source_sha256": "25f8ef61a82f945064312c564ac701d9685a8116aeb13bf5ae41fa15d23ff1bb"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/IV-COACHING/24-Parental-Support/24-Parental-Support.md": {
+      "completed_at": "2026-04-02T22:50:40+00:00",
+      "source_sha256": "fd3ea72870ac26b33dc8180573d9873e93bea760f5b0f6776d979e122f14d7e9"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/IV-COACHING/25-In-Task-Coaching/25-In-Task-Coaching.md": {
+      "completed_at": "2026-04-02T22:52:38+00:00",
+      "source_sha256": "9a5058249ecee9dbea90500b9bd2ec3757834719083f17ed84e5ea5523128df7"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/IV-COACHING/26-Developing-Habit/26-Developing-Habit.md": {
+      "completed_at": "2026-04-02T22:55:02+00:00",
+      "source_sha256": "33cf5f552b3d8d4a48120052bf16c61c68464304d39ab9e8c3b003bb78e5c820"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/IV-COACHING/27-Incentives-and-Motivation/27-Incentives-and-Motivation.md": {
+      "completed_at": "2026-04-02T22:56:51+00:00",
+      "source_sha256": "0c43930434dc263672c015a283da5fee3eb6c5422f6c30b9f3911175cf073f3d"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/IV-COACHING/28-Lessons-from-Legendary-Coaches/28-Lessons-from-Legendary-Coaches.md": {
+      "completed_at": "2026-04-02T22:57:31+00:00",
+      "source_sha256": "502be60ba9224f29c042638c7821069cd0ca8aceed7ee54a350cf08192372e46"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/V-TECHNICAL-DEEP-DIVES/29-Technical-Deep-Dive-on-Spaced-Repetition/29-Technical-Deep-Dive-on-Spaced-Repetition.md": {
+      "completed_at": "2026-04-02T22:59:13+00:00",
+      "source_sha256": "64e0b114f8d0a05a5fdeb0cbd32f77a76c4dad449fc5c2fa9335d414afa09dd4"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/V-TECHNICAL-DEEP-DIVES/30-Technical-Deep-Dive-on-Diagnostic-Exams/30-Technical-Deep-Dive-on-Diagnostic-Exams.md": {
+      "completed_at": "2026-04-02T23:00:49+00:00",
+      "source_sha256": "36d3913b7bed150810f9c51cc2151afa282d2fa574a0991996cc71893bd51b0d"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/V-TECHNICAL-DEEP-DIVES/31-Technical-Deep-Dive-on-Learning-Efficiency/31-Technical-Deep-Dive-on-Learning-Efficiency.md": {
+      "completed_at": "2026-04-02T23:02:57+00:00",
+      "source_sha256": "b8e23d3fe80ebe888b7a601c14b2a7b3766ae125a9e59c1682021bec702472ec"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/V-TECHNICAL-DEEP-DIVES/32-Technical-Deep-Dive-on-Prioritizing-Core-Topics/32-Technical-Deep-Dive-on-Prioritizing-Core-Topics.md": {
+      "completed_at": "2026-04-02T23:03:41+00:00",
+      "source_sha256": "4d0586ae461a6cc180d1c0302a57f6babfb207801b788e278b8ae63061a957b9"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-Diagnostics-and-Curriculum/FAQ-Diagnostics-and-Curriculum.md": {
+      "completed_at": "2026-04-02T23:06:42+00:00",
+      "source_sha256": "80feebd6c8d6e180ce7359197ae4e75c1e7d55102b0419735cb0e249787c97fd"
     }
   }
 }

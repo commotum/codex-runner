@@ -1,6 +1,6 @@
 # Chapter 29. Technical Deep Dive on Spaced Repetition
 
-**Note:** this chapter elaborates on concepts introduced in chapter 18.
+**Note:** This chapter elaborates on concepts introduced in [chapter 18](../../III-COGNITIVE-LEARNING-STRATEGIES/18-Spaced-Repetition-Distributed-Practice/18-Spaced-Repetition-Distributed-Practice.md).
 
 Summary: Math Academy employs Fractional Implicit Repetition (FIRe), a novel spaced repetition algorithm, to calculate student learning profiles. FIRe generalizes spaced repetition to hierarchical knowledge, allowing repetitions on advanced topics to implicitly trickle down to simpler topics. The algorithm handles partial encompassings and extends repetition flows through fractional encompassings, optimizing credit distribution. The speed of the spaced repetition process is calibrated to each individual student on each individual topic, where student ability and topic difficulty are competing factors.
 
@@ -8,10 +8,10 @@ Summary: Math Academy employs Fractional Implicit Repetition (FIRe), a novel spa
 
 To calculate student spaced repetition profiles, Math Academy uses a novel spaced repetition algorithm called Fractional Implicit Repetition (FIRe). FIRe generalizes spaced repetition to hierarchical bodies of knowledge where
 
-- 1. repetitions on advanced topics "trickle down" implicitly to simpler topics through encompassing relationships, and
-- 2. simpler topics receiving lots of implicit repetitions discount the repetitions appropriately (since they are often too early to count for full credit towards the next repetition).
+1. repetitions on advanced topics "trickle down" implicitly to simpler topics through encompassing relationships, and
+2. simpler topics receiving lots of implicit repetitions discount the repetitions appropriately (since they are often too early to count for full credit towards the next repetition).
 
-### | Concrete Example
+### Concrete Example
 
 As a concrete example, recall that Multiplying a Two-Digit Number by a One-Digit Number encompasses Multiplying One-Digit Numbers and Adding a One-Digit Number to a Two-Digit Number.
 
@@ -23,9 +23,9 @@ On the other hand, if you fail a repetition on Adding a One-Digit Number to a Tw
 
 ![](Images/_page_363_Figure_5.jpeg)
 
-### | Visualizing Repetition Flow
+### Visualizing Repetition Flow
 
-Note that repetition flows can extend many layers deep - not just to directly encompassed topics, but also to "second-order" topics that are encompassed by the encompassed topics, and then to third-order topics that are encompassed by second-order topics, and so on.
+Note that repetition flows can extend many layers deep, not just to directly encompassed topics, but also to "second-order" topics that are encompassed by the encompassed topics, and then to third-order topics that are encompassed by second-order topics, and so on.
 
 Visually, credit travels downwards through the knowledge graph like lightning bolts.
 
@@ -35,13 +35,11 @@ Penalties travel upwards through the knowledge graph like growing trees.
 
 ![](Images/_page_364_Picture_7.jpeg)
 
-### | Partial Encompassings
+### Partial Encompassings
 
 FIRe also naturally handles cases of partial encompassings, in which only some part of a simpler topic is practiced implicitly in an advanced topic. This occurs more frequently in higher-level math.
 
-For instance, in calculus, advanced integration techniques like integration by parts require you to calculate integrals of a variety of mathematical functions such as polynomials, exponentials,
-
-and trigonometric functions. But some of those functions might only appear in a portion of the integration by parts problems. So, if you complete a repetition on integration by parts, you should only receive a fraction of a repetition towards each partially-encompassed topic.
+For instance, in calculus, advanced integration techniques like integration by parts require you to calculate integrals of a variety of mathematical functions such as polynomials, exponentials, and trigonometric functions. But some of those functions might only appear in a portion of the integration by parts problems. So, if you complete a repetition on integration by parts, you should only receive a fraction of a repetition towards each partially-encompassed topic.
 
 In the diagram below, we label encompassings with numerical weights that represent what fraction of each simpler topic is practiced during the more advanced topic. You can loosely interpret each weight as representing the probability that a random problem from the advanced topic encompasses a random problem from the simpler topic.
 
@@ -49,8 +47,8 @@ In the diagram below, we label encompassings with numerical weights that represe
 
 FIRe extends repetition flows many layers deep through fractional encompassings as well. The end result is that repetitions
 
-- 1. travel unhindered along a "trunk" of full encompassings, and
-- 2. fade off along partial encompassings branching outwards from the trunk.
+1. travel unhindered along a "trunk" of full encompassings, and
+2. fade off along partial encompassings branching outwards from the trunk.
 
 ![](Images/_page_365_Picture_8.jpeg)
 
@@ -62,15 +60,15 @@ Because encompassing weights are set by a domain expert, it is not feasible to s
 
 It turns out that it is not actually necessary to explicitly set every weight in the matrix. It suffices to set only the weights for topic pairs where
 
-- 1. the weight has a nontrivial value,
-- 2. the weight cannot otherwise be inferred using repetition flow, and
-- 3. the distance between the topics in the prerequisite graph is low,
+1. the weight has a nontrivial value,
+2. the weight cannot otherwise be inferred using repetition flow, and
+3. the distance between the topics in the prerequisite graph is low,
 
 and assume that all other weights not computed implicitly during repetition flow are zero. The reasoning behind these conditions is as follows:
 
-- 1. The magnitude of the weight represents the magnitude of the implicit repetition credit. In order for an implicit repetition to make an impact on staving off explicit reviews, it has to be associated with a nontrivial amount of credit.
-- 2. If repetition flow can infer a weight, then nothing will change if the weight is set explicitly (unless the explicitly-set weight is being used to correct a value that would otherwise be inferred by repetition flow).
-- 3. If two topics are far apart in the prerequisite graph, then their weight will not make much of an impact on staving off reviews, even if it is a full encompassing. In that case, by the time the student reaches the more advanced topic, they will already have done most of their explicit reviews on the simpler topic.
+1. The magnitude of the weight represents the magnitude of the implicit repetition credit. In order for an implicit repetition to make an impact on staving off explicit reviews, it has to be associated with a nontrivial amount of credit.
+2. If repetition flow can infer a weight, then nothing will change if the weight is set explicitly (unless the explicitly-set weight is being used to correct a value that would otherwise be inferred by repetition flow).
+3. If two topics are far apart in the prerequisite graph, then their weight will not make much of an impact on staving off reviews, even if it is a full encompassing. In that case, by the time the student reaches the more advanced topic, they will already have done most of their explicit reviews on the simpler topic.
 
 Conveniently, the weights that satisfy the above conditions tend to be those along direct and key prerequisite edges, the number of which scales linearly with the number of topics.
 
@@ -93,13 +91,13 @@ Intuitively, the top of the mastery floor marks the dividing line regarding whet
 
 ## Student-Topic Learning Speeds
 
-#### | Ratio of Student Ability and Topic Difficulty
+#### Ratio of Student Ability and Topic Difficulty
 
-Student ability and topic difficulty are competing factors - high student ability speeds up the overall student-topic learning speed, while high topic difficulty slows it down. So, to compute a student-topic learning speed, we compute
+Student ability and topic difficulty are competing factors: high student ability speeds up the overall student-topic learning speed, while high topic difficulty slows it down. So, to compute a student-topic learning speed, we compute
 
-- 1. the speedup due to student ability,
-- 2. the slowdown due to topic difficulty, and then
-- 3. their ratio.
+1. the speedup due to student ability,
+2. the slowdown due to topic difficulty, and then
+3. their ratio.
 
 $$student\text{-topic learning speed} = \frac{speedup\ due\ to\ student\ ability}{slowdown\ due\ to\ topic\ difficulty}$$
 
@@ -110,9 +108,9 @@ $$student\text{-topic learning speed} = \frac{speedup\ due\ to\ student\ ability
 |                                                                      | Moderate | faster          | baseline | slower   |  |
 |                                                                      | Hard     | baseline        | slower   | slowest  |  |
 
-### | Measuring Student Ability at the Level of Individual Topics
+### Measuring Student Ability at the Level of Individual Topics
 
-**Student ability** is measured at the granular level of individual topics - we keep track of accuracy across answers, giving more weight to recent answers, and also propagating
+**Student ability** is measured at the granular level of individual topics. We keep track of accuracy across answers, giving more weight to recent answers, and also propagating
 
 - correct answers down to simpler encompassed topics and
 - incorrect answers up to more advanced topics that encompass the answered topic.
@@ -121,87 +119,41 @@ To choose the initial starting value for a topic's accuracy, we make a predictio
 
 ![](Images/_page_369_Figure_3.jpeg)
 
-### | Measuring Topic Difficulty
+### Measuring Topic Difficulty
 
 **Topic difficulty** is measured by computing the topic's accuracy across all instances when one of its questions was answered by a serious student on an assessment.
 
-In theory, if student abilities could be measured on each topic with perfect fidelity, then topic difficulties would no longer be needed and student-topic learning speeds could be based entirely on student abilities. But in practice, there are two reasons why it is helpful to rely on topic
+In theory, if student abilities could be measured on each topic with perfect fidelity, then topic difficulties would no longer be needed and student-topic learning speeds could be based entirely on student abilities. But in practice, there are two reasons why it is helpful to rely on topic difficulty as well:
 
-#### difficulty as well:
-
-- 1. It improves the initial prediction. Although we already have information about the particular student's learning speed on other topics, the topic difficulty provides information about the particular topic's learning speed for other students. This is an independent, information-rich signal.
-- 2. It naturally acts as a correction factor. When topic difficulty is high, it decreases the learning speed - which is desirable given that high topic difficulty is caused by low assessment performance, which is in turn (largely) caused by students not getting enough review. Similarly, when topic difficulty is low, it increases the learning speed - which is desirable given that low topic difficulty is caused by extremely high assessment performance, which indicates that students might not need as much review as they are receiving.
+1. It improves the initial prediction. Although we already have information about the particular student's learning speed on other topics, the topic difficulty provides information about the particular topic's learning speed for other students. This is an independent, information-rich signal.
+2. It naturally acts as a correction factor. When topic difficulty is high, it decreases the learning speed, which is desirable given that high topic difficulty is caused by low assessment performance, which is in turn (largely) caused by students not getting enough review. Similarly, when topic difficulty is low, it increases the learning speed, which is desirable given that low topic difficulty is caused by extremely high assessment performance, which indicates that students might not need as much review as they are receiving.
 
 ## High-Level Structure
 
 At a high level, the structure of Math Academy's spaced repetition model can be summarized as follows:
 
+```text
+repNum \rightarrow max(0, repNum + speed \cdot decay^{failed} \cdot rawDelta)
+memory \rightarrow max(0, memory + rawDelta)(0.5)^{days/interval}
 ```
-repNum \rightarrow max (0, repNum + speed \cdot decay^{failed} \cdot rawDelta)
-memory \rightarrow \max(0, memory + rawDelta)(0.5)^{days/interval}
-```
 
-• repNum = how many successful rounds of spaced repetition the student has accumulated on a particular topic.
-
-In following definitions, a "repetition" is a successful review at the appropriate time.
-
+- repNum = how many successful rounds of spaced repetition the student has accumulated on a particular topic.
+- In the following definitions, a "repetition" is a successful review at the appropriate time.
 - days = how many days it's been since the previous repetition.
-- interval = the ideal number of days to be spaced between repetition repNum and repetition repNum+1.
-- memory = how well the student is expected to remember now that it's been some time since the previous repetition. Memory decays over time and the next repetition becomes
-
-due when the memory becomes sufficiently low.
-
+- interval = the ideal number of days to be spaced between repetition `repNum` and repetition `repNum+1`.
+- memory = how well the student is expected to remember now that it's been some time since the previous repetition. Memory decays over time, and the next repetition becomes due when the memory becomes sufficiently low.
 - speed = the learning speed for the student on this particular topic, based on how well the student is performing. Governs how quickly the student moves forwards or backwards through the spaced repetition process.
-- *failed* = 1 if repetition was failed and 0 if it was passed.
-- rawDelta = how much raw spaced repetition credit the student earned during the repetition, ignoring speed and decay. rawDelta is positive if the repetition was passed and negative if failed.
+- failed = 1 if repetition was failed and 0 if it was passed.
+- rawDelta = how much raw spaced repetition credit the student earned during the repetition, ignoring speed and decay. `rawDelta` is positive if the repetition was passed and negative if failed.
 
-The higher the quality of work in a passed repetition, or the worse the quality of work in a failed repetition, the larger the magnitude of rawDelta.
+The higher the quality of work in a passed repetition, or the worse the quality of work in a failed repetition, the larger the magnitude of `rawDelta`.
 
-The magnitude of rawDelta is also discounted if the repetition was completed early relative to the desired interval, i.e., if memory is sufficiently high.
-
-Note that successful work (positive credit) on an advanced topic is also counted towards any simpler topics that are implicitly practiced as component skills, and unsuccessful work (negative credit) on a simpler topic is also counted towards any more advanced topics of which that simpler topic is a component skill.
-
-• decay = the speed at which the student moves backwards in the spaced repetition process, relative to their forwards speed, if they fail a repetition.
-
-decay is a positive quantity that starts at 1 and grows larger as the repetition becomes more overdue relative to its ideal interval, i.e., as memory becomes severely low.
-
-decay was introduced to model severe knowledge decay like the notorious "summer slide," where topics learned shortly before the end of the previous school year may be forgotten so severely over summer vacation that they need to be reviewed more frequently or even completely re-taught at the start of the following year.
-
-#### High-Level Structure of Math Academy's Spaced Repetition Model
-
-repNum = how many successful rounds of spaced repetition the student has accumulated on a particular topic.
-
-A "repetition" is a successful review at the appropriate time.
-
-speed = the learning speed for the student on this particular topic, based on how well the student is performing.
-
-Governs how quickly the student moves forwards or backwards through the spaced repetition process.
-
-failed = 1 if repetition was failed and 0 if it was passed.
-
-decay = the speed at which the student moves backwards in the spaced repetition process, relative to their forwards speed, if they fail a repetition.
-
-decay is a positive quantity that starts at 1 and grows larger as the repetition becomes more overdue relative to its ideal interval, i.e., as memory becomes severely low.
-
-decay was introduced to model severe knowledge decay like the notorious "summer slide," where topics learned shortly before the end of the previous school year may be forgotten so severely over summer vacation that they need to be reviewed more frequently or even completely re-taught at the start of the following year.
-
-$$repNum \rightarrow max \left(0, repNum + speed \cdot decay^{failed} \cdot rawDelta\right)$$
- $memory \rightarrow max \left(0, memory + rawDelta\right) (0.5)^{days/interval}$ 
-
-memory = how well the student is expected to remember now that it's been some time since the previous repetition.
-
-Memory decays over time and the next repetition becomes due when the memory becomes sufficiently low.
-
-Memory is also used to discount a repetition when it is too early to count for full credit.
-
-rawDelta = how much raw spaced repetition credit the student earned during the repetition, ignoring speed and decay, rawDelta is positive if the repetition was passed and negative if failed.
-
-The higher the quality of work in a passed repetition, or the worse the quality of work in a failed repetition, the larger the magnitude of rawDelta.
-
-The magnitude of rawDelta is also discounted if the repetition was completed early relative to the desired interval, i.e., if memory is sufficiently high.
+The magnitude of `rawDelta` is also discounted if the repetition was completed early relative to the desired interval, i.e., if memory is sufficiently high.
 
 Note that successful work (positive credit) on an advanced topic is also counted towards any simpler topics that are implicitly practiced as component skills, and unsuccessful work (negative credit) on a simpler topic is also counted towards any more advanced topics of which that simpler topic is a component skill.
 
-days = how many days it's been since the previous repetition.
+- decay = the speed at which the student moves backwards in the spaced repetition process, relative to their forwards speed, if they fail a repetition.
 
-interval = the ideal number of days to be spaced between repetition repNum and repetition repNum+1.
+`decay` is a positive quantity that starts at 1 and grows larger as the repetition becomes more overdue relative to its ideal interval, i.e., as memory becomes severely low.
+
+`decay` was introduced to model severe knowledge decay like the notorious "summer slide," where topics learned shortly before the end of the previous school year may be forgotten so severely over summer vacation that they need to be reviewed more frequently or even completely re-taught at the start of the following year.

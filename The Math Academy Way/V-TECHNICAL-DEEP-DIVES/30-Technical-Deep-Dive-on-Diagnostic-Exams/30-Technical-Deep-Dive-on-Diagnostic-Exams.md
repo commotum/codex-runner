@@ -22,14 +22,14 @@ As a result, our diagnostic assessment algorithm is highly leveraged on both acc
 
 ## Knowledge Confidence and Conditional Completion
 
-### | Theory
+### Theory
 
 During diagnostics, Math Academy also measures knowledge confidence, i.e., our confidence in our classification of whether the student knows or does not know a topic. Most diagnostics complete with fairly high confidence across the student's entire knowledge profile, but occasionally, there can be areas of low confidence. These do not arise from a lack of diagnostic coverage, but rather, from conflicting evidence in a student's responses.
 
-#### There are two main types of conflicts:
+#### There Are Two Main Types of Conflicts
 
-- 1. Prerequisite-Postrequisite Conflict: a student answers a more advanced topic correctly but a simpler question incorrectly, which may indicate a gap in the student's knowledge.
-- 2. Accuracy-Time Conflict: a student submits a correct answer but takes an excessively long time to solve the problem, which may indicate that they have not yet mastered the corresponding topic.
+1. Prerequisite-Postrequisite Conflict: a student answers a more advanced topic correctly but a simpler question incorrectly, which may indicate a gap in the student's knowledge.
+2. Accuracy-Time Conflict: a student submits a correct answer but takes an excessively long time to solve the problem, which may indicate that they have not yet mastered the corresponding topic.
 
 To handle these conflicts, we carefully weight positive and negative evidence against each other to form a highly nuanced diagnosis of student knowledge that adapts appropriately to future observations, just like a tutor would.
 
@@ -37,19 +37,19 @@ In particular, if the evidence balances out to "just barely" place a student out
 
 #### Example
 
-#### As an example, suppose
+As an example, suppose
 
 - student A answers many questions correctly on their diagnostic but takes excessively long on most questions, while
 - student B answers fewer questions correctly but supplies correct answers quickly and confidently.
 
-#### Then
+Then
 
 - student A will have a higher amount of overall knowledge, a significant portion of which is low-confidence (and may be quickly pruned back if they struggle), while
 - student B will have less overall knowledge but may have more high-confidence knowledge.
 
 ![](Images/_page_377_Figure_2.jpeg)
 
-#### | Implementation
+#### Implementation
 
 To achieve this behavior, we weight diagnostic evidence using a plus-minus balance at each topic.
 
@@ -94,5 +94,5 @@ There's a lot of nuance that goes into selecting a good diagnostic question for 
 
 So, each diagnostic question should be chosen as the simplest question that
 
-- 1. would convince an expert tutor or teacher that the student has mastered the corresponding topic, and
-- 2. exercises all of the topic's prerequisites.
+1. would convince an expert tutor or teacher that the student has mastered the corresponding topic, and
+2. exercises all of the topic's prerequisites.

@@ -159,6 +159,10 @@
     "/home/jake/Developer/codex-runner/The Math Academy Way/VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-Student-Behavior/FAQ-Student-Behavior.md": {
       "completed_at": "2026-04-02T23:10:14+00:00",
       "source_sha256": "257992c56dd9c53ee421e30e95e488468cf283523a4acad7eefe6219df38385c"
+    },
+    "/home/jake/Developer/codex-runner/The Math Academy Way/VI-FREQUENTLY-ASKED-QUESTIONS/FAQ-The-Practice-Experience/FAQ-The-Practice-Experience.md": {
+      "completed_at": "2026-04-02T23:15:34+00:00",
+      "source_sha256": "f50f672cf6c5b9b1a1ab2e156f8779a6a816739d08777e568057aa199cb43c95"
     }
   }
 }

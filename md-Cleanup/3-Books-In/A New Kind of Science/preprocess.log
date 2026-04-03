@@ -1,0 +1,2 @@
+2026-04-03T00:39:02+00:00 run_start book_dir=/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science dry_run=False
+2026-04-03T00:39:02+00:00 codex_launch cmd=codex exec -C /home/jake/Developer/codex-runner --add-dir '/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science' --add-dir /home/jake/Developer/codex-runner/md-Cleanup/0-Preprocess --output-schema /home/jake/Developer/codex-runner/md-Cleanup/0-Preprocess/toc-schema.json

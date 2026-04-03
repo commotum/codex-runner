@@ -11,6 +11,9 @@ PROCESS_SCRIPT = os.path.join(os.path.dirname(__file__), "..", "1-Process", "scr
 DEFAULT_BOOKS_IN = os.path.join(os.path.dirname(__file__), "..", "3-Books-In")
 DEFAULT_BOOKS_OUT = os.path.join(os.path.dirname(__file__), "..", "4-Books-Out")
 DEFAULT_LOG_PATH = os.path.join(os.path.dirname(__file__), "pipeline.log")
+STRUCTURED_DIRNAME = "_structured"
+STRUCTURED_BUCKET = "Structured"
+UNSTRUCTURED_BUCKET = "Un-Structured"
 
 
 def now_iso():
@@ -42,17 +45,52 @@ def run_command(cmd, log_path):
     return result.returncode
 
 
+def remove_path(path):
+    if os.path.isdir(path):
+        shutil.rmtree(path)
+    else:
+        os.remove(path)
+
+
 def move_book(book_dir, books_out, overwrite, log_path):
-    destination = os.path.join(books_out, os.path.basename(book_dir))
-    if os.path.exists(destination):
-        if not overwrite:
-            raise FileExistsError(destination)
-        if os.path.isdir(destination):
-            shutil.rmtree(destination)
-        else:
-            os.remove(destination)
-    shutil.move(book_dir, destination)
-    log_event(log_path, f"book_moved source={book_dir} destination={destination}")
+    book_name = os.path.basename(book_dir)
+    structured_source = os.path.join(book_dir, STRUCTURED_DIRNAME)
+    structured_bucket = os.path.join(books_out, STRUCTURED_BUCKET)
+    unstructured_bucket = os.path.join(books_out, UNSTRUCTURED_BUCKET)
+    structured_destination = os.path.join(structured_bucket, book_name)
+    unstructured_destination = os.path.join(unstructured_bucket, book_name)
+
+    os.makedirs(structured_bucket, exist_ok=True)
+    os.makedirs(unstructured_bucket, exist_ok=True)
+
+    for destination in [structured_destination, unstructured_destination]:
+        if os.path.exists(destination):
+            if not overwrite:
+                raise FileExistsError(destination)
+            remove_path(destination)
+
+    if os.path.isdir(structured_source):
+        shutil.move(structured_source, structured_destination)
+        log_event(
+            log_path,
+            f"structured_moved source={structured_source} destination={structured_destination}",
+        )
+
+    os.makedirs(unstructured_destination, exist_ok=True)
+    for name in os.listdir(book_dir):
+        source_path = os.path.join(book_dir, name)
+        destination_path = os.path.join(unstructured_destination, name)
+        shutil.move(source_path, destination_path)
+
+    try:
+        os.rmdir(book_dir)
+    except OSError:
+        pass
+
+    log_event(
+        log_path,
+        f"unstructured_moved source={book_dir} destination={unstructured_destination}",
+    )
 
 
 def main():
@@ -75,6 +113,8 @@ def main():
         print(f"Books-in directory not found: {books_in}")
         return 1
     os.makedirs(books_out, exist_ok=True)
+    os.makedirs(os.path.join(books_out, STRUCTURED_BUCKET), exist_ok=True)
+    os.makedirs(os.path.join(books_out, UNSTRUCTURED_BUCKET), exist_ok=True)
 
     candidates = list_book_dirs(books_in)
     if args.book:

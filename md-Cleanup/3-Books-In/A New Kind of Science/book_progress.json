@@ -1,0 +1,16 @@
+{
+  "book_title": "A New Kind of Science",
+  "contents_heading": null,
+  "generated_at": "2026-04-03T00:39:02+00:00",
+  "sections": [],
+  "source_markdown": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/A New Kind of Science.md",
+  "stages": {
+    "contents_extracted": false,
+    "section_folders_created": false,
+    "sections_extracted": false,
+    "structured_root_created": true,
+    "structured_root_created_at": "2026-04-03T00:39:02+00:00"
+  },
+  "structured_root": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured",
+  "updated_at": "2026-04-03T00:39:02+00:00"
+}

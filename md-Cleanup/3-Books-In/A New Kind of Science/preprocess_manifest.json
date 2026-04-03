@@ -1,0 +1,9 @@
+{
+  "book_dir": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science",
+  "generated_at": "2026-04-03T00:39:02+00:00",
+  "progress_json": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/book_progress.json",
+  "prompt_path": "/home/jake/Developer/codex-runner/md-Cleanup/0-Preprocess/prompt-preprocess.md",
+  "schema_path": "/home/jake/Developer/codex-runner/md-Cleanup/0-Preprocess/toc-schema.json",
+  "source_markdown": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/A New Kind of Science.md",
+  "structured_root": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured"
+}

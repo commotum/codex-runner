@@ -5,7 +5,8 @@
 1. scan `3-Books-In`
 2. preprocess each book
 3. process each extracted section tree
-4. move the completed book directory to `4-Books-Out`
+4. move the raw original book folder contents to `4-Books-Out/Un-Structured/<Book Name>`
+5. move the extracted `_structured` tree to `4-Books-Out/Structured/<Book Name>`
 
 Example:
 

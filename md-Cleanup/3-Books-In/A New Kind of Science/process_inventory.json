@@ -1,0 +1,108 @@
+{
+  "documents": [
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured/BACK-MATTER/Colophon/Colophon.md",
+      "directory": "BACK-MATTER/Colophon",
+      "file_name": "Colophon.md",
+      "relative_path": "BACK-MATTER/Colophon/Colophon.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured/BACK-MATTER/Index/Index.md",
+      "directory": "BACK-MATTER/Index",
+      "file_name": "Index.md",
+      "relative_path": "BACK-MATTER/Index/Index.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured/BACK-MATTER/Notes/Notes.md",
+      "directory": "BACK-MATTER/Notes",
+      "file_name": "Notes.md",
+      "relative_path": "BACK-MATTER/Notes/Notes.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured/CHAPTERS/Fundamental-Physics/Fundamental-Physics.md",
+      "directory": "CHAPTERS/Fundamental-Physics",
+      "file_name": "Fundamental-Physics.md",
+      "relative_path": "CHAPTERS/Fundamental-Physics/Fundamental-Physics.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured/CHAPTERS/Implications-for-Everyday-Systems/Implications-for-Everyday-Systems.md",
+      "directory": "CHAPTERS/Implications-for-Everyday-Systems",
+      "file_name": "Implications-for-Everyday-Systems.md",
+      "relative_path": "CHAPTERS/Implications-for-Everyday-Systems/Implications-for-Everyday-Systems.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured/CHAPTERS/Mechanisms-in-Programs-and-Nature/Mechanisms-in-Programs-and-Nature.md",
+      "directory": "CHAPTERS/Mechanisms-in-Programs-and-Nature",
+      "file_name": "Mechanisms-in-Programs-and-Nature.md",
+      "relative_path": "CHAPTERS/Mechanisms-in-Programs-and-Nature/Mechanisms-in-Programs-and-Nature.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured/CHAPTERS/Processes-of-Perception-and-Analysis/Processes-of-Perception-and-Analysis.md",
+      "directory": "CHAPTERS/Processes-of-Perception-and-Analysis",
+      "file_name": "Processes-of-Perception-and-Analysis.md",
+      "relative_path": "CHAPTERS/Processes-of-Perception-and-Analysis/Processes-of-Perception-and-Analysis.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured/CHAPTERS/Starting-from-Randomness/Starting-from-Randomness.md",
+      "directory": "CHAPTERS/Starting-from-Randomness",
+      "file_name": "Starting-from-Randomness.md",
+      "relative_path": "CHAPTERS/Starting-from-Randomness/Starting-from-Randomness.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured/CHAPTERS/Systems-Based-on-Numbers/Systems-Based-on-Numbers.md",
+      "directory": "CHAPTERS/Systems-Based-on-Numbers",
+      "file_name": "Systems-Based-on-Numbers.md",
+      "relative_path": "CHAPTERS/Systems-Based-on-Numbers/Systems-Based-on-Numbers.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured/CHAPTERS/The-Crucial-Experiment/The-Crucial-Experiment.md",
+      "directory": "CHAPTERS/The-Crucial-Experiment",
+      "file_name": "The-Crucial-Experiment.md",
+      "relative_path": "CHAPTERS/The-Crucial-Experiment/The-Crucial-Experiment.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured/CHAPTERS/The-Foundations-for-a-New-Kind-of-Science/The-Foundations-for-a-New-Kind-of-Science.md",
+      "directory": "CHAPTERS/The-Foundations-for-a-New-Kind-of-Science",
+      "file_name": "The-Foundations-for-a-New-Kind-of-Science.md",
+      "relative_path": "CHAPTERS/The-Foundations-for-a-New-Kind-of-Science/The-Foundations-for-a-New-Kind-of-Science.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured/CHAPTERS/The-Notion-of-Computation/The-Notion-of-Computation.md",
+      "directory": "CHAPTERS/The-Notion-of-Computation",
+      "file_name": "The-Notion-of-Computation.md",
+      "relative_path": "CHAPTERS/The-Notion-of-Computation/The-Notion-of-Computation.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured/CHAPTERS/The-Principle-of-Computational-Equivalence/The-Principle-of-Computational-Equivalence.md",
+      "directory": "CHAPTERS/The-Principle-of-Computational-Equivalence",
+      "file_name": "The-Principle-of-Computational-Equivalence.md",
+      "relative_path": "CHAPTERS/The-Principle-of-Computational-Equivalence/The-Principle-of-Computational-Equivalence.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured/CHAPTERS/The-World-of-Simple-Programs/The-World-of-Simple-Programs.md",
+      "directory": "CHAPTERS/The-World-of-Simple-Programs",
+      "file_name": "The-World-of-Simple-Programs.md",
+      "relative_path": "CHAPTERS/The-World-of-Simple-Programs/The-World-of-Simple-Programs.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured/CHAPTERS/Two-Dimensions-and-Beyond/Two-Dimensions-and-Beyond.md",
+      "directory": "CHAPTERS/Two-Dimensions-and-Beyond",
+      "file_name": "Two-Dimensions-and-Beyond.md",
+      "relative_path": "CHAPTERS/Two-Dimensions-and-Beyond/Two-Dimensions-and-Beyond.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured/FRONT-MATTER/Contents/Contents.md",
+      "directory": "FRONT-MATTER/Contents",
+      "file_name": "Contents.md",
+      "relative_path": "FRONT-MATTER/Contents/Contents.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured/FRONT-MATTER/Preface/Preface.md",
+      "directory": "FRONT-MATTER/Preface",
+      "file_name": "Preface.md",
+      "relative_path": "FRONT-MATTER/Preface/Preface.md"
+    }
+  ],
+  "generated_at": "2026-04-03T00:39:39+00:00",
+  "structured_root": "/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured"
+}

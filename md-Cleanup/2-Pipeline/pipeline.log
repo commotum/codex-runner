@@ -15,3 +15,5 @@
 2026-04-03T00:39:02+00:00 run_start count=1 dry_run=False overwrite=False
 2026-04-03T00:39:02+00:00 book_start path=/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science
 2026-04-03T00:39:02+00:00 command_start cmd=/home/jake/Developer/codex-runner/.venv/bin/python3 /home/jake/Developer/codex-runner/md-Cleanup/0-Preprocess/script-preprocess.py --book-dir /home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science
+2026-04-03T00:39:39+00:00 command_end rc=0
+2026-04-03T00:39:39+00:00 command_start cmd=/home/jake/Developer/codex-runner/.venv/bin/python3 /home/jake/Developer/codex-runner/md-Cleanup/1-Process/script-process.py --book-dir /home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science

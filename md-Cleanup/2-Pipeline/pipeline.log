@@ -17,3 +17,7 @@
 2026-04-03T00:39:02+00:00 command_start cmd=/home/jake/Developer/codex-runner/.venv/bin/python3 /home/jake/Developer/codex-runner/md-Cleanup/0-Preprocess/script-preprocess.py --book-dir /home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science
 2026-04-03T00:39:39+00:00 command_end rc=0
 2026-04-03T00:39:39+00:00 command_start cmd=/home/jake/Developer/codex-runner/.venv/bin/python3 /home/jake/Developer/codex-runner/md-Cleanup/1-Process/script-process.py --book-dir /home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science
+2026-04-03T01:41:27+00:00 command_end rc=0
+2026-04-03T01:41:27+00:00 structured_moved source=/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science/_structured destination=/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/Structured/A New Kind of Science
+2026-04-03T01:41:27+00:00 unstructured_moved source=/home/jake/Developer/codex-runner/md-Cleanup/3-Books-In/A New Kind of Science destination=/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/Un-Structured/A New Kind of Science
+2026-04-03T01:41:27+00:00 run_end

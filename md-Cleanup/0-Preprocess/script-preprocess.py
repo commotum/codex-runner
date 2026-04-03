@@ -8,6 +8,7 @@ import shutil
 import subprocess
 import sys
 import time
+import unicodedata
 from html import unescape
 
 try:
@@ -61,6 +62,8 @@ MIN_SECTION_BYTES = 20
 IMAGE_PATTERN = re.compile(r"!\[[^\]]*\]\(([^)]+)\)")
 HEADING_PATTERN = re.compile(r"^\s{0,3}#{1,6}\s+(.*?)\s*$")
 CHAPTER_PATTERN = re.compile(r"chapter\s+(\d+)\b", re.IGNORECASE)
+CHAPTER_TITLE_PATTERN = re.compile(r"^\s*chapter\s+(\d+)\s*[-:.]?\s*(.+?)\s*$", re.IGNORECASE)
+LOWERCASE_WORDS = {"a", "an", "and", "as", "at", "by", "for", "from", "in", "of", "on", "or", "the", "to", "vs", "via"}
 
 
 def now_iso():
@@ -133,6 +136,9 @@ def find_source_markdown(book_dir):
 
 def normalize_text(value):
     value = unescape(value or "")
+    value = unicodedata.normalize("NFKD", value)
+    value = value.encode("ascii", "ignore").decode("ascii")
+    value = value.replace("'", "")
     value = re.sub(r"<[^>]+>", " ", value)
     value = re.sub(r"[*_`~]", "", value)
     value = value.replace("&", " and ")
@@ -154,6 +160,35 @@ def slugify(value):
     value = re.sub(r"[^A-Za-z0-9]+", "-", value)
     value = re.sub(r"-{2,}", "-", value).strip("-")
     return value or "Section"
+
+
+def title_case_token(token, position, total):
+    if not token:
+        return token
+    lower = token.lower()
+    if position != 0 and position != total - 1 and lower in LOWERCASE_WORDS:
+        return lower
+    if len(token) == 1 and token.isalpha():
+        return token.upper()
+    return token[:1].upper() + token[1:].lower()
+
+
+def title_case_slug_from_text(value):
+    raw_tokens = [part for part in re.split(r"[^A-Za-z0-9]+", normalize_text(value)) if part]
+    if not raw_tokens:
+        return "Section"
+    tokens = [title_case_token(token, index, len(raw_tokens)) for index, token in enumerate(raw_tokens)]
+    return "-".join(tokens)
+
+
+def section_slug_from_title(title):
+    normalized = normalize_text(title)
+    chapter_match = CHAPTER_TITLE_PATTERN.match(normalized)
+    if chapter_match:
+        chapter_number = chapter_match.group(1)
+        remainder = title_case_slug_from_text(chapter_match.group(2))
+        return f"{chapter_number}-{remainder}" if remainder else chapter_number
+    return title_case_slug_from_text(normalized)
 
 
 def natural_section_filename(folder_slug, title):
@@ -317,8 +352,7 @@ def build_sections_from_toc(toc_payload):
     for index, item in enumerate(toc_payload.get("sections", []), start=1):
         title = normalize_text(item.get("title", ""))
         group = infer_group_slug(item.get("group", "CHAPTERS"))
-        folder_slug = item.get("folder_slug") or slugify(title)
-        folder_slug = slugify(folder_slug)
+        folder_slug = section_slug_from_title(title)
         file_name = natural_section_filename(folder_slug, title)
         sections.append(
             {

@@ -24,12 +24,18 @@ Requirements:
   - FAQ section
 - Do not include subsection titles inside a chapter as separate extraction units.
 - Preserve the source order.
-- Use stable readable folder slugs.
+- Use stable readable folder slugs that match the style of `The Math Academy Way`.
 - Use major grouping folders when clearly present from the contents or headings.
 
 Slug rules:
 
+- For numbered chapters, use `N-Title-Case-Words` style, for example:
+  - `6-The-Persistence-of-Neuromyths`
+  - not `chapter-6-the-persistence-of-neuromyths`
+- Do not include a `chapter` prefix in the slug.
 - Preserve leading chapter numbers where present.
+- Use title-cased slug components rather than lowercase slugs.
+- Keep small connector words lowercase where natural, such as `and`, `of`, `the`, `in`, `on`, `to`, `for`.
 - Convert `&` to `and`.
 - Remove Markdown formatting markers and simplify punctuation.
 - Replace spaces with hyphens.

@@ -1,0 +1,228 @@
+{
+  "documents": [
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/BACK-MATTER/Bibliography/Bibliography.md",
+      "directory": "BACK-MATTER/Bibliography",
+      "file_name": "Bibliography.md",
+      "relative_path": "BACK-MATTER/Bibliography/Bibliography.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/BACK-MATTER/Epilogue/Epilogue.md",
+      "directory": "BACK-MATTER/Epilogue",
+      "file_name": "Epilogue.md",
+      "relative_path": "BACK-MATTER/Epilogue/Epilogue.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/BACK-MATTER/Index/Index.md",
+      "directory": "BACK-MATTER/Index",
+      "file_name": "Index.md",
+      "relative_path": "BACK-MATTER/Index/Index.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/BACK-MATTER/Notes/Notes.md",
+      "directory": "BACK-MATTER/Notes",
+      "file_name": "Notes.md",
+      "relative_path": "BACK-MATTER/Notes/Notes.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/BACK-MATTER/Permissions-and-Acknowledgments/Permissions-and-Acknowledgments.md",
+      "directory": "BACK-MATTER/Permissions-and-Acknowledgments",
+      "file_name": "Permissions-and-Acknowledgments.md",
+      "relative_path": "BACK-MATTER/Permissions-and-Acknowledgments/Permissions-and-Acknowledgments.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/1-On-Souls-and-Their-Sizes/1-On-Souls-and-Their-Sizes.md",
+      "directory": "CHAPTERS/1-On-Souls-and-Their-Sizes",
+      "file_name": "1-On-Souls-and-Their-Sizes.md",
+      "relative_path": "CHAPTERS/1-On-Souls-and-Their-Sizes/1-On-Souls-and-Their-Sizes.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/10-Godels-Quintessential-Strange-Loop/10-Godels-Quintessential-Strange-Loop.md",
+      "directory": "CHAPTERS/10-Godels-Quintessential-Strange-Loop",
+      "file_name": "10-Godels-Quintessential-Strange-Loop.md",
+      "relative_path": "CHAPTERS/10-Godels-Quintessential-Strange-Loop/10-Godels-Quintessential-Strange-Loop.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/11-How-Analogy-Makes-Meaning/11-How-Analogy-Makes-Meaning.md",
+      "directory": "CHAPTERS/11-How-Analogy-Makes-Meaning",
+      "file_name": "11-How-Analogy-Makes-Meaning.md",
+      "relative_path": "CHAPTERS/11-How-Analogy-Makes-Meaning/11-How-Analogy-Makes-Meaning.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/12-On-Downward-Causality/12-On-Downward-Causality.md",
+      "directory": "CHAPTERS/12-On-Downward-Causality",
+      "file_name": "12-On-Downward-Causality.md",
+      "relative_path": "CHAPTERS/12-On-Downward-Causality/12-On-Downward-Causality.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/13-The-Elusive-Apple-of-My-I/13-The-Elusive-Apple-of-My-I.md",
+      "directory": "CHAPTERS/13-The-Elusive-Apple-of-My-I",
+      "file_name": "13-The-Elusive-Apple-of-My-I.md",
+      "relative_path": "CHAPTERS/13-The-Elusive-Apple-of-My-I/13-The-Elusive-Apple-of-My-I.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/14-Strangeness-in-the-I-of-the-Beholder/14-Strangeness-in-the-I-of-the-Beholder.md",
+      "directory": "CHAPTERS/14-Strangeness-in-the-I-of-the-Beholder",
+      "file_name": "14-Strangeness-in-the-I-of-the-Beholder.md",
+      "relative_path": "CHAPTERS/14-Strangeness-in-the-I-of-the-Beholder/14-Strangeness-in-the-I-of-the-Beholder.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/15-Entwinement/15-Entwinement.md",
+      "directory": "CHAPTERS/15-Entwinement",
+      "file_name": "15-Entwinement.md",
+      "relative_path": "CHAPTERS/15-Entwinement/15-Entwinement.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/16-Grappling-With-the-Deepest-Mystery/16-Grappling-With-the-Deepest-Mystery.md",
+      "directory": "CHAPTERS/16-Grappling-With-the-Deepest-Mystery",
+      "file_name": "16-Grappling-With-the-Deepest-Mystery.md",
+      "relative_path": "CHAPTERS/16-Grappling-With-the-Deepest-Mystery/16-Grappling-With-the-Deepest-Mystery.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/17-How-We-Live-in-Each-Other/17-How-We-Live-in-Each-Other.md",
+      "directory": "CHAPTERS/17-How-We-Live-in-Each-Other",
+      "file_name": "17-How-We-Live-in-Each-Other.md",
+      "relative_path": "CHAPTERS/17-How-We-Live-in-Each-Other/17-How-We-Live-in-Each-Other.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/18-The-Blurry-Glow-of-Human-Identity/18-The-Blurry-Glow-of-Human-Identity.md",
+      "directory": "CHAPTERS/18-The-Blurry-Glow-of-Human-Identity",
+      "file_name": "18-The-Blurry-Glow-of-Human-Identity.md",
+      "relative_path": "CHAPTERS/18-The-Blurry-Glow-of-Human-Identity/18-The-Blurry-Glow-of-Human-Identity.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/19-Consciousness-Thinking/19-Consciousness-Thinking.md",
+      "directory": "CHAPTERS/19-Consciousness-Thinking",
+      "file_name": "19-Consciousness-Thinking.md",
+      "relative_path": "CHAPTERS/19-Consciousness-Thinking/19-Consciousness-Thinking.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/2-This-Teetering-Bulb-of-Dread-and-Dream/2-This-Teetering-Bulb-of-Dread-and-Dream.md",
+      "directory": "CHAPTERS/2-This-Teetering-Bulb-of-Dread-and-Dream",
+      "file_name": "2-This-Teetering-Bulb-of-Dread-and-Dream.md",
+      "relative_path": "CHAPTERS/2-This-Teetering-Bulb-of-Dread-and-Dream/2-This-Teetering-Bulb-of-Dread-and-Dream.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/20-A-Courteous-Crossing-of-Words/20-A-Courteous-Crossing-of-Words.md",
+      "directory": "CHAPTERS/20-A-Courteous-Crossing-of-Words",
+      "file_name": "20-A-Courteous-Crossing-of-Words.md",
+      "relative_path": "CHAPTERS/20-A-Courteous-Crossing-of-Words/20-A-Courteous-Crossing-of-Words.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/21-A-Brief-Brush-With-Cartesian-Egos/21-A-Brief-Brush-With-Cartesian-Egos.md",
+      "directory": "CHAPTERS/21-A-Brief-Brush-With-Cartesian-Egos",
+      "file_name": "21-A-Brief-Brush-With-Cartesian-Egos.md",
+      "relative_path": "CHAPTERS/21-A-Brief-Brush-With-Cartesian-Egos/21-A-Brief-Brush-With-Cartesian-Egos.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/22-A-Tango-With-Zombies-and-Dualism/22-A-Tango-With-Zombies-and-Dualism.md",
+      "directory": "CHAPTERS/22-A-Tango-With-Zombies-and-Dualism",
+      "file_name": "22-A-Tango-With-Zombies-and-Dualism.md",
+      "relative_path": "CHAPTERS/22-A-Tango-With-Zombies-and-Dualism/22-A-Tango-With-Zombies-and-Dualism.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/23-Killing-a-Couple-of-Sacred-Cows/23-Killing-a-Couple-of-Sacred-Cows.md",
+      "directory": "CHAPTERS/23-Killing-a-Couple-of-Sacred-Cows",
+      "file_name": "23-Killing-a-Couple-of-Sacred-Cows.md",
+      "relative_path": "CHAPTERS/23-Killing-a-Couple-of-Sacred-Cows/23-Killing-a-Couple-of-Sacred-Cows.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/24-On-Magnanimity-and-Friendship/24-On-Magnanimity-and-Friendship.md",
+      "directory": "CHAPTERS/24-On-Magnanimity-and-Friendship",
+      "file_name": "24-On-Magnanimity-and-Friendship.md",
+      "relative_path": "CHAPTERS/24-On-Magnanimity-and-Friendship/24-On-Magnanimity-and-Friendship.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/3-The-Causal-Potency-of-Patterns/3-The-Causal-Potency-of-Patterns.md",
+      "directory": "CHAPTERS/3-The-Causal-Potency-of-Patterns",
+      "file_name": "3-The-Causal-Potency-of-Patterns.md",
+      "relative_path": "CHAPTERS/3-The-Causal-Potency-of-Patterns/3-The-Causal-Potency-of-Patterns.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/4-Loops-Goals-and-Loopholes/4-Loops-Goals-and-Loopholes.md",
+      "directory": "CHAPTERS/4-Loops-Goals-and-Loopholes",
+      "file_name": "4-Loops-Goals-and-Loopholes.md",
+      "relative_path": "CHAPTERS/4-Loops-Goals-and-Loopholes/4-Loops-Goals-and-Loopholes.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/5-On-Video-Feedback/5-On-Video-Feedback.md",
+      "directory": "CHAPTERS/5-On-Video-Feedback",
+      "file_name": "5-On-Video-Feedback.md",
+      "relative_path": "CHAPTERS/5-On-Video-Feedback/5-On-Video-Feedback.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/6-Of-Selves-and-Symbols/6-Of-Selves-and-Symbols.md",
+      "directory": "CHAPTERS/6-Of-Selves-and-Symbols",
+      "file_name": "6-Of-Selves-and-Symbols.md",
+      "relative_path": "CHAPTERS/6-Of-Selves-and-Symbols/6-Of-Selves-and-Symbols.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/7-The-Epi-Phenomenon/7-The-Epi-Phenomenon.md",
+      "directory": "CHAPTERS/7-The-Epi-Phenomenon",
+      "file_name": "7-The-Epi-Phenomenon.md",
+      "relative_path": "CHAPTERS/7-The-Epi-Phenomenon/7-The-Epi-Phenomenon.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/8-Embarking-on-a-Strange-Loop-Safari/8-Embarking-on-a-Strange-Loop-Safari.md",
+      "directory": "CHAPTERS/8-Embarking-on-a-Strange-Loop-Safari",
+      "file_name": "8-Embarking-on-a-Strange-Loop-Safari.md",
+      "relative_path": "CHAPTERS/8-Embarking-on-a-Strange-Loop-Safari/8-Embarking-on-a-Strange-Loop-Safari.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/CHAPTERS/9-Pattern-and-Provability/9-Pattern-and-Provability.md",
+      "directory": "CHAPTERS/9-Pattern-and-Provability",
+      "file_name": "9-Pattern-and-Provability.md",
+      "relative_path": "CHAPTERS/9-Pattern-and-Provability/9-Pattern-and-Provability.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/FRONT-MATTER/A-Note-from-the-Publisher/A-Note-from-the-Publisher.md",
+      "directory": "FRONT-MATTER/A-Note-from-the-Publisher",
+      "file_name": "A-Note-from-the-Publisher.md",
+      "relative_path": "FRONT-MATTER/A-Note-from-the-Publisher/A-Note-from-the-Publisher.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/FRONT-MATTER/Contents/Contents.md",
+      "directory": "FRONT-MATTER/Contents",
+      "file_name": "Contents.md",
+      "relative_path": "FRONT-MATTER/Contents/Contents.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/FRONT-MATTER/Dedication/Dedication.md",
+      "directory": "FRONT-MATTER/Dedication",
+      "file_name": "Dedication.md",
+      "relative_path": "FRONT-MATTER/Dedication/Dedication.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/FRONT-MATTER/Praise-for-I-Am-a-Strange-Loop/Praise-for-I-Am-a-Strange-Loop.md",
+      "directory": "FRONT-MATTER/Praise-for-I-Am-a-Strange-Loop",
+      "file_name": "Praise-for-I-Am-a-Strange-Loop.md",
+      "relative_path": "FRONT-MATTER/Praise-for-I-Am-a-Strange-Loop/Praise-for-I-Am-a-Strange-Loop.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/FRONT-MATTER/Preface/Preface.md",
+      "directory": "FRONT-MATTER/Preface",
+      "file_name": "Preface.md",
+      "relative_path": "FRONT-MATTER/Preface/Preface.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/FRONT-MATTER/Prologue/Prologue.md",
+      "directory": "FRONT-MATTER/Prologue",
+      "file_name": "Prologue.md",
+      "relative_path": "FRONT-MATTER/Prologue/Prologue.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/FRONT-MATTER/Title-Page/Title-Page.md",
+      "directory": "FRONT-MATTER/Title-Page",
+      "file_name": "Title-Page.md",
+      "relative_path": "FRONT-MATTER/Title-Page/Title-Page.md"
+    },
+    {
+      "absolute_path": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured/FRONT-MATTER/Words-of-Thanks/Words-of-Thanks.md",
+      "directory": "FRONT-MATTER/Words-of-Thanks",
+      "file_name": "Words-of-Thanks.md",
+      "relative_path": "FRONT-MATTER/Words-of-Thanks/Words-of-Thanks.md"
+    }
+  ],
+  "generated_at": "2026-04-02T23:26:32+00:00",
+  "structured_root": "/home/jake/Developer/codex-runner/md-Cleanup/4-Books-Out/I Am a Strange Loop/_structured"
+}

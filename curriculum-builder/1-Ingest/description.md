@@ -4,7 +4,7 @@ The **Description** explains where the course sits in a sequence, who it is for,
 
 Across the sequence, the subject matter escalates in a clean progression. **Mathematical Foundations I** covers arithmetic, fractions, ratios, the number system, exponents, equations, functions, polynomials, and foundational geometry. **Mathematical Foundations II** moves into quadratics, advanced functions, exponentials/logarithms, rational/radical functions, trigonometry, limits, introductory calculus, vectors, statistics, and probability. **Mathematical Foundations III** shifts into deeper calculus, sequences and series, conics, parametric and polar curves, advanced trigonometry, complex numbers, differential equations, 3D vectors, matrices/linear transformations, and probability distributions.   
 
-A few structural patterns are especially worth preserving in a reusable template. First, the **outcomes are broader than the content units**; they describe what learners can do, not just what topics appear. Second, the **content numbering is hierarchical and explicit**: unit `1`, module `1.1`, topic `1.1.1`. Third, each unit heading includes a **topic count** such as “32 topics” or “50 topics,” and those counts align with the listed lessons under that unit. That makes the outline readable both as a syllabus summary and as a curriculum inventory.   
+A few structural patterns are especially worth preserving in a reusable template. First, the **outcomes are broader than the content units**; they describe what learners can do, not just what topics appear. Second, the **content numbering is hierarchical and explicit**: unit `1`, module `1.1`, topic `1.1.1`. Third, each unit heading includes a **topic count** such as “32 topics” or “50 topics,” and those counts align with the listed lessons under that unit. When generating a new outline, treat that as a final formatting step: finish the unit, count the listed topics, and then insert the topic count in the unit heading. That makes the outline readable both as a syllabus summary and as a curriculum inventory.   
 
 Here is a reusable markdown template that matches that pattern for any course:
 
@@ -140,7 +140,5 @@ To keep the result closest to the Mathematical Foundations files, use these rule
 * keep **Overview** short,
 * make **Outcomes** broad and skill-based,
 * make **Content** detailed and hierarchical,
-* keep the unit topic count accurate,
-* avoid adding grading, policies, textbook lists, or meeting schedules unless you specifically want a more traditional university syllabus.   
+* when finished with each unit, count the listed topics and insert the unit topic count,
 
-I also made a copy-paste-ready markdown file here: [Reusable-Course-Outline-Template.md](sandbox:/mnt/data/Reusable-Course-Outline-Template.md).

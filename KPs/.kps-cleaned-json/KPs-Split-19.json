@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "title": "Mapping signal support under reversal",
+      "description": "determine how the interval where a signal exists flips across the time axis under reversal."
+    },
+    {
+      "title": "Rewriting a time-reversed piecewise signal",
+      "description": "replace $t$ with $-t$, simplify the expression, and transform the interval consistently."
+    },
+    {
+      "title": "Conceptualizing reversed temporal behavior",
+      "description": "describe how time reversal flips the order in which signal events occur."
+    },
+    {
+      "title": "Interpreting time reversal physically",
+      "description": "connect time reversal to playing a signal backward in time."
+    },
+    {
+      "title": "Comparing the effects of three operations",
+      "description": "identify whether each operation changes a signal's start time, time scale, or time direction."
+    }
+  ]
+}

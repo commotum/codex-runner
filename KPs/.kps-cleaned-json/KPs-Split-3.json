@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "title": "Determining whether a ratio is rational",
+      "description": "decide whether a ratio is rational and use that result to assess periodic behavior."
+    },
+    {
+      "title": "Using the cosine product-to-sum identity",
+      "description": "rewrite a product of cosines as a sum of cosine terms."
+    },
+    {
+      "title": "Determining whether a continuous-time signal is periodic",
+      "description": "check whether a signal repeats after some positive time $T$."
+    },
+    {
+      "title": "Finding the fundamental period",
+      "description": "identify the smallest repeating interval of a periodic signal."
+    },
+    {
+      "title": "Finding the period of a pulse train",
+      "description": "read the repeat interval of a repeating pulse waveform."
+    }
+  ]
+}

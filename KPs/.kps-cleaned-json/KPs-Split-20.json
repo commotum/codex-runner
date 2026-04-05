@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "title": "Analyzing transformed exponential signals",
+      "description": "apply shifting, scaling, and reversal to exponential signals while preserving the correct piecewise branches."
+    },
+    {
+      "title": "Reading continuous-time signal notation",
+      "description": "interpret $x(t)$ as a signal whose amplitude varies over time."
+    },
+    {
+      "title": "Reading piecewise-defined signals",
+      "description": "determine which expression describes the signal on each time interval."
+    },
+    {
+      "title": "Recognizing periodicity and fundamental period",
+      "description": "identify when a signal repeats and determine its smallest repeating interval."
+    },
+    {
+      "title": "Forming the magnitude-squared signal",
+      "description": "compute $|x(t)|^2$ as the quantity used in energy and power calculations."
+    }
+  ]
+}

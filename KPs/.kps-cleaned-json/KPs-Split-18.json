@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "title": "Tracking feature times under scaling",
+      "description": "map important times such as $T_1$ and $T_2$ to their new locations after compression or expansion."
+    },
+    {
+      "title": "Rewriting a scaled piecewise signal",
+      "description": "solve for the new time intervals after replacing $t$ with $at$ or $t/a$."
+    },
+    {
+      "title": "Distinguishing shifting from scaling",
+      "description": "tell whether an operation moves a signal in time or changes its time rate."
+    },
+    {
+      "title": "Interpreting time scaling physically",
+      "description": "connect time scaling to playback speed, such as making a recording play faster or slower."
+    },
+    {
+      "title": "Interpreting time reversal",
+      "description": "understand that $x(-t)$ mirrors a signal across the vertical axis at $t=0$."
+    }
+  ]
+}

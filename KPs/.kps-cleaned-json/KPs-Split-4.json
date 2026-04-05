@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "title": "Reading the parameters of a sinusoid",
+      "description": "extract amplitude, angular frequency, and phase from $A\\sin(\\omega_0 t+\\phi)$."
+    },
+    {
+      "title": "Converting between period and angular frequency",
+      "description": "use the relationship between $T$ and $\\omega_0$ for a sinusoid."
+    },
+    {
+      "title": "Interpreting sinusoid phase",
+      "description": "understand phase as setting where the sinusoid starts and how it shifts in time."
+    },
+    {
+      "title": "Identifying harmonics",
+      "description": "recognize first, second, third, and higher harmonics as integer multiples of a fundamental frequency."
+    },
+    {
+      "title": "Computing harmonic angular frequencies",
+      "description": "use $\\omega_k = k\\omega_0$ to determine a harmonic's angular frequency."
+    }
+  ]
+}

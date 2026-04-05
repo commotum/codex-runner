@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "title": "Interpreting frequency sign geometrically",
+      "description": "understand positive and negative frequency as opposite directions of rotation in the complex plane."
+    },
+    {
+      "title": "Adding same-frequency cosines with phasors",
+      "description": "convert each cosine to a phasor, add the phasors, and retain the common $e^{j\\omega t}$ factor."
+    },
+    {
+      "title": "Forming the resultant phasor",
+      "description": "combine same-frequency terms into one equivalent phasor with net amplitude and phase."
+    },
+    {
+      "title": "Converting a resultant phasor to a cosine",
+      "description": "rewrite the summed phasor in polar form as a single cosine in amplitude-phase form."
+    },
+    {
+      "title": "Solving a full phasor addition problem",
+      "description": "carry out phasor conversion, complex-domain addition, and conversion back to one real sinusoid."
+    }
+  ]
+}

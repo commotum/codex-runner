@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "title": "Evaluating a definite integral",
+      "description": "compute accumulated quantity over a finite interval."
+    },
+    {
+      "title": "Evaluating improper integrals",
+      "description": "evaluate or interpret integrals taken over infinite intervals."
+    },
+    {
+      "title": "Understanding limit-based averaging",
+      "description": "understand an average as a limit taken as the time window extends to infinity."
+    },
+    {
+      "title": "Integrating common signal expressions",
+      "description": "handle constants, polynomials, and decaying exponentials when evaluating integrals."
+    },
+    {
+      "title": "Interpreting signal size as a scalar",
+      "description": "understand signal size as a scalar that reflects both amplitude and duration."
+    }
+  ]
+}

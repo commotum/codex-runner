@@ -1,0 +1,16 @@
+{
+  "entries": [
+    {
+      "title": "Computing energy of a finite-energy signal",
+      "description": "apply the energy formula to a signal with finite support or exponential decay."
+    },
+    {
+      "title": "Computing power of a periodic signal",
+      "description": "apply the one-period power formula to a repeating waveform such as a ramp or sawtooth."
+    },
+    {
+      "title": "Distinguishing decay from repetition",
+      "description": "recognize that decaying signals tend to be energy signals, while repeating signals tend to be power signals."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "title": "Computing the fundamental period of a complex exponential",
+      "description": "find $T_0=\\frac{2\\pi}{\\omega}$ for the signal's smallest positive repeat time."
+    },
+    {
+      "title": "Interpreting general repetition times",
+      "description": "recognize that any integer multiple of $T_0$ is also a valid repeat time."
+    },
+    {
+      "title": "Using the rotating-phasor picture",
+      "description": "explain periodicity geometrically by tracking the phasor's motion around the unit circle."
+    },
+    {
+      "title": "Reading continuous-time signal notation",
+      "description": "interpret $x(t)$ as a time-dependent signal whose value changes with the input $t$."
+    },
+    {
+      "title": "Interpreting piecewise-defined signals",
+      "description": "read a signal whose defining expression changes across different time intervals."
+    }
+  ]
+}

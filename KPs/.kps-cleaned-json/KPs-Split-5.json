@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "title": "Recognizing harmonic components in examples",
+      "description": "classify specific sinusoidal terms as the fundamental or as higher harmonics."
+    },
+    {
+      "title": "Finding a common period for two periodic signals",
+      "description": "determine whether two repeating signals share a common repeat interval."
+    },
+    {
+      "title": "Testing whether a sum of periodic signals is periodic",
+      "description": "use the rational-ratio condition on periods to decide whether a linear combination repeats."
+    },
+    {
+      "title": "Distinguishing linear and nonlinear signal operations",
+      "description": "classify addition as a linear operation and multiplication as a nonlinear one."
+    },
+    {
+      "title": "Expanding the product of two sinusoids",
+      "description": "use the product-to-sum identity to expose sum- and difference-frequency components."
+    }
+  ]
+}

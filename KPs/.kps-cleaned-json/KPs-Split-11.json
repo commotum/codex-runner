@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "title": "Interpreting real exponential growth and decay",
+      "description": "tell from the sign of the exponent whether a signal grows, decays, or stays constant."
+    },
+    {
+      "title": "Defining signal periodicity",
+      "description": "use $x(t+T)=x(t)$ as the condition for a repeating signal."
+    },
+    {
+      "title": "Defining a generalized exponential signal",
+      "description": "interpret $x(t)=e^{st}$ with $s=\\sigma+j\\omega$ as the general exponential form."
+    },
+    {
+      "title": "Interpreting the roles of $\\sigma$ and $\\omega$",
+      "description": "identify $\\sigma$ as the growth or decay term and $\\omega$ as the oscillation term."
+    },
+    {
+      "title": "Expanding a generalized exponential",
+      "description": "rewrite $e^{(\\sigma+j\\omega)t}$ as $e^{\\sigma t}e^{j\\omega t}$ to separate growth from oscillation."
+    }
+  ]
+}

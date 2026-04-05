@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "title": "Identifying a signal's support",
+      "description": "determine the interval where a signal is nonzero or where a particular branch applies."
+    },
+    {
+      "title": "Substituting expressions into a signal argument",
+      "description": "replace $t$ with expressions like $t-1$, $3t$, or $-t$ inside a signal formula."
+    },
+    {
+      "title": "Simplifying transformed expressions",
+      "description": "rewrite substituted formulas cleanly, especially when exponential terms are involved."
+    },
+    {
+      "title": "Solving interval inequalities after substitution",
+      "description": "transform time intervals correctly after substitution, including reversing inequalities when multiplying by $-1$."
+    },
+    {
+      "title": "Tracking key time points under transformation",
+      "description": "identify start points, endpoints, and feature locations, then determine how they move on the time axis."
+    }
+  ]
+}

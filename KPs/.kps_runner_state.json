@@ -1,0 +1,172 @@
+{
+  "completed": {
+    "KPs-Split-1.md": {
+      "completed_at": "2026-04-05T21:35:36+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-1.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "6e50e25fc6d99030fbbfadd318f7bcad7251008969caf3a3fb46559c09618934"
+    },
+    "KPs-Split-10.md": {
+      "completed_at": "2026-04-05T21:39:43+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-10.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "6afe2e24ea5c91f5d915ec71b049f2399208b7c473af3cf24f37e4054c6b70ba"
+    },
+    "KPs-Split-11.md": {
+      "completed_at": "2026-04-05T21:40:17+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-11.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "ebcb3e4defd600fc17a627d6e3a8b8428a3eb62c9c05b083388d6bdd926aee80"
+    },
+    "KPs-Split-12.md": {
+      "completed_at": "2026-04-05T21:40:49+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-12.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "972515ee493d24e12978660fdae38c937118b713acbc758ee57d5799e3896e26"
+    },
+    "KPs-Split-13.md": {
+      "completed_at": "2026-04-05T21:41:10+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-13.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "7b375681f5b640d82072927a4692f566e75ae26c8bbc83a4482f4fce8b95bf16"
+    },
+    "KPs-Split-14.md": {
+      "completed_at": "2026-04-05T21:41:37+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-14.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "74029e2675455d3c0979b67143518dbcb497f40f9feb84d739fe3de135bc7445"
+    },
+    "KPs-Split-15.md": {
+      "completed_at": "2026-04-05T21:41:59+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-15.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "0677ed1461eae608c0deacc8f36196005c45af85fb746c051fca5534aaa24c5e"
+    },
+    "KPs-Split-16.md": {
+      "completed_at": "2026-04-05T21:42:20+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-16.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "1c9c76bb4fb5e8dea51dd1a51572e419b0912a3cd1d92592e265dc2ce38e1695"
+    },
+    "KPs-Split-17.md": {
+      "completed_at": "2026-04-05T21:42:58+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-17.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "39f109b149f8ba9217e8c228091fbbdb28ec7ea18ffaf15924436208b4185647"
+    },
+    "KPs-Split-18.md": {
+      "completed_at": "2026-04-05T21:43:19+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-18.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "88e97c0d63a2081c20cd4f19a07665cee9628d02f93aa3a4c1ab509070c83f61"
+    },
+    "KPs-Split-19.md": {
+      "completed_at": "2026-04-05T21:43:44+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-19.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "f4cd44ce907ee0fb7ab5cbd42765633cb846a3dc433c89bbcd9e5552e37c6db9"
+    },
+    "KPs-Split-2.md": {
+      "completed_at": "2026-04-05T21:36:34+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-2.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "a67092dde1fd03b43d2e6591052030d76a305563f6ebc53ea371b241ce7bf940"
+    },
+    "KPs-Split-20.md": {
+      "completed_at": "2026-04-05T21:44:04+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-20.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "61e3944e9941968488228fb03b823bab2fbf39bdba1e13cc2bc1b5fd3f8fdbac"
+    },
+    "KPs-Split-21.md": {
+      "completed_at": "2026-04-05T21:44:24+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-21.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "72ba3b75fee1aad67f662b4bb89fd32542a15dc38ba7937ff3fdbb2d9f81e524"
+    },
+    "KPs-Split-22.md": {
+      "completed_at": "2026-04-05T21:44:46+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-22.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "dd2afa49757470b16a61684cb1b1de3a0b67a979a04c47b4591dc7efc70bebc1"
+    },
+    "KPs-Split-23.md": {
+      "completed_at": "2026-04-05T21:45:09+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-23.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "a5c0f448b12dc13ed32b45aaaf44cde515421e967c94589e845bd6259022cb28"
+    },
+    "KPs-Split-24.md": {
+      "completed_at": "2026-04-05T21:45:23+00:00",
+      "expected_count": 3,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-24.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "89674e0a8268ee1602234a97e3db0de9173efc72d1997eb78a1ade4601e69c04"
+    },
+    "KPs-Split-3.md": {
+      "completed_at": "2026-04-05T21:36:55+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-3.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "726710b63350a16f94191c177e7c594c17501726ec719479fe6d795f5b7ccd4e"
+    },
+    "KPs-Split-4.md": {
+      "completed_at": "2026-04-05T21:37:30+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-4.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "74eeae14fb7ddae229044ad2891671e04d47537423f605142843940799da7f65"
+    },
+    "KPs-Split-5.md": {
+      "completed_at": "2026-04-05T21:37:47+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-5.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "7481834fd55227e1b72b84319fb54beff02fb6f04a4e388601802087f9131d5f"
+    },
+    "KPs-Split-6.md": {
+      "completed_at": "2026-04-05T21:38:10+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-6.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "998052630833535b647950e5816ce78fa430f20636db5cb17a71aa2e7dabc6a9"
+    },
+    "KPs-Split-7.md": {
+      "completed_at": "2026-04-05T21:38:33+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-7.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "3ae4a0bc6d89de002f1ee44b213052647f56dd94fc284eda86a44034d6674a28"
+    },
+    "KPs-Split-8.md": {
+      "completed_at": "2026-04-05T21:39:01+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-8.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "dafdd7e69f058dc0da3aa8299eda70fe69458c6234b5e1908c082cd9ab39791f"
+    },
+    "KPs-Split-9.md": {
+      "completed_at": "2026-04-05T21:39:23+00:00",
+      "expected_count": 5,
+      "output_json": "/home/jake/Developer/codex-runner/KPs/.kps-cleaned-json/KPs-Split-9.json",
+      "runner_signature": "58aa0c4b9fc52ec8f06f5bfd4bdccbe93192274a36f727788b983b85173eb18e",
+      "source_hash": "4ff0221ec8b7bb4c45e8fa110bfbfeb8afaf94393648369df1848cc733c82760"
+    }
+  }
+}

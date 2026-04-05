@@ -1,4 +1,4 @@
-1. **Recognizing a complex exponential signal** – read (z(t)=Ae^{j(\omega_0 t+\phi)}) as a signal with magnitude, angular frequency, and phase.
+1. **Recognizing a complex exponential signal** – read $z(t)=Ae^{j(\omega_0 t+\phi)}$ as a signal with magnitude, angular frequency, and phase.
 
 2. **Converting a complex exponential to rectangular form** – expand the signal into explicit real and imaginary pieces.
 
@@ -6,9 +6,9 @@
 
 4. **Interpreting a complex exponential in the complex plane** – view the signal as a complex quantity with magnitude and angle that change meaningfully over time.
 
-5. **Reading phasors at (t=0)** – interpret (z(0)=Ae^{j\phi}) as the initial phasor with starting angle (\phi).
+5. **Reading phasors at $t=0$** – interpret $z(0)=Ae^{j\phi}$ as the initial phasor with starting angle $\phi$.
 
-6. **Interpreting angular frequency as rotation rate** – connect (\omega_0) to how fast the phasor turns in the complex plane.
+6. **Interpreting angular frequency as rotation rate** – connect $\omega_0$ to how fast the phasor turns in the complex plane.
 
 7. **Real-axis projection of a phasor** – understand the cosine component as the projection of the rotating phasor onto the real axis.
 

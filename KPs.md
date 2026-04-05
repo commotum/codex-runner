@@ -1,14 +1,24 @@
-* **Recognizing a complex exponential signal** – read (z(t)=Ae^{j(\omega_0 t+\phi)}) as a signal with magnitude, angular frequency, and phase.
-* **Converting a complex exponential to rectangular form** – expand the signal into explicit real and imaginary pieces.
-* **Extracting the real and imaginary waveforms** – identify the cosine waveform as the real part and the sine waveform as the imaginary part.
-* **Interpreting a complex exponential in the complex plane** – view the signal as a complex quantity with magnitude and angle that change meaningfully over time.
-* **Reading phasors at (t=0)** – interpret (z(0)=Ae^{j\phi}) as the initial phasor with starting angle (\phi).
-* **Interpreting angular frequency as rotation rate** – connect (\omega_0) to how fast the phasor turns in the complex plane.
-* **Real-axis projection of a phasor** – understand the cosine component as the projection of the rotating phasor onto the real axis.
-* **Imaginary-axis projection of a phasor** – understand the sine component as the projection of the rotating phasor onto the imaginary axis.
-* **Reading projection values at special angles** – determine when the real or imaginary component becomes zero or reaches an extreme from the total angle.
-* **Connecting phasor motion to time-domain sinusoids** – understand why a rotating phasor traces sine and cosine waves over time.
-* **Using complex exponentials as compact sinusoid representations** – treat exponential form as a cleaner representation for analysis and later signal-processing work.
+1. **Recognizing a complex exponential signal** – read (z(t)=Ae^{j(\omega_0 t+\phi)}) as a signal with magnitude, angular frequency, and phase.
+
+2. **Converting a complex exponential to rectangular form** – expand the signal into explicit real and imaginary pieces.
+
+3. **Extracting the real and imaginary waveforms** – identify the cosine waveform as the real part and the sine waveform as the imaginary part.
+
+4. **Interpreting a complex exponential in the complex plane** – view the signal as a complex quantity with magnitude and angle that change meaningfully over time.
+
+5. **Reading phasors at (t=0)** – interpret (z(0)=Ae^{j\phi}) as the initial phasor with starting angle (\phi).
+
+6. **Interpreting angular frequency as rotation rate** – connect (\omega_0) to how fast the phasor turns in the complex plane.
+
+7. **Real-axis projection of a phasor** – understand the cosine component as the projection of the rotating phasor onto the real axis.
+
+8. **Imaginary-axis projection of a phasor** – understand the sine component as the projection of the rotating phasor onto the imaginary axis.
+
+9. **Reading projection values at special angles** – determine when the real or imaginary component becomes zero or reaches an extreme from the total angle.
+
+10. **Connecting phasor motion to time-domain sinusoids** – understand why a rotating phasor traces sine and cosine waves over time.
+
+11. **Using complex exponentials as compact sinusoid representations** – treat exponential form as a cleaner representation for analysis and later signal-processing work.
 
 
 NEEDS CLEANING:

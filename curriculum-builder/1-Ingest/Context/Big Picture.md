@@ -1,7 +1,4 @@
-When extracting lesson-sized skills from lecture notes, it can help to look for material such as key facts students should know cold, important equivalences or alternate forms, mappings between representations, concepts, procedures, strategies or heuristics, representation skills, interpretation skills, common failure points or misconceptions, likely bottlenecks or missing prerequisites, and end-to-end performance capabilities. Not every lecture will contain all of these, but they are useful lenses for deciding which skills are distinct enough to extract as standalone items.
-
-
-Ok, here's what we're gonna do. We need a runner built according to the best practices found in Codex-SDK.md and Runner.md and we're gonna call it ingest (so we'll have prompt-ingest.md and script-ingest.py). This will serve as the first stage of our curriculum-builder pipeline which should follow all the best practices according to Pipeliner.md. But for now let's do the following
+Ok, here's what we're gonna do. We need a runner built according to the best practices found in Codex-SDK.md and Runner.md and we're gonna call it ingest. It has multiple prompts for various portions of the runner that are all context dependent and will be activated by various triggers detected by our single runner script script-ingest.py. The prompts will be found in curriculum-builder/1-Ingest/Prompts . This will serve as the first stage of our curriculum-builder pipeline which should follow all the best practices according to Pipeliner.md. But for now let's do the following
 
 script-ingest.py
 
@@ -12,8 +9,8 @@ The ingestion script has three major phases/components. It is responsible for:
 
 Source Management:
 
-1. script-ingest.py starts by comparing the top level folders of curriculum-builder/0-Source against the entries in curriculum-builder/0-Source/Courses.csv and if there are any new folders to be added then it launches a single runner per new folder with the curriculum-builder/1-Ingest/prompt-name.md prompt. This prompt needs to be revised and polished so that it fits the standards of Runner.md and our other best practices. You'll need to read it and fix it to understand how it handles the course index Courses.csv
-2. After all top level folders are registered in the index, script-ingest.py should then compare the full contents of each course recursively all the way through and comparing the folder's contents with the document index found in 
+1. script-ingest.py starts by comparing the top level folders of curriculum-builder/0-Source against the entries in curriculum-builder/0-Source/Courses.csv and if there are any new folders to be added then it launches a single runner per new folder with the curriculum-builder/1-Ingest/prompt-name.md prompt. This prompt needs to be revised and polished so that it fits the standards of Runner.md and our other best practices. You'll need to read it and fix it to understand how it handles the course index Courses.csv.
+2. After all top level folders are registered in the index, script-ingest.py should then compare the full contents of each course recursively all the way through and comparing the folder's contents with the document index found in the root of that folder. 
 
 
 

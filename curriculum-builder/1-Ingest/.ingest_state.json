@@ -1,0 +1,32 @@
+{
+  "indexed_courses": {
+    "CTS": {
+      "added_count": 37,
+      "completed_at": "2026-04-07T00:38:44+00:00",
+      "contents_index": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/CTS-Contents.csv",
+      "row_count": 37,
+      "stale_count": 0
+    }
+  },
+  "last_targets": {
+    "generated_at": "2026-04-07T00:38:44+00:00",
+    "path": "curriculum-builder/1-Ingest/ingest-targets.json",
+    "target_count": 37
+  },
+  "registered_courses": {
+    "Continuous-Time-Signal-Processing": {
+      "completed_at": "2026-04-07T00:38:27+00:00",
+      "course_id": "CTS",
+      "course_name": "Continuous Time Signal Processing",
+      "output_json": "curriculum-builder/1-Ingest/.course-name-json/Continuous-Time-Signal-Processing.json",
+      "prompt_signature": "cade81e044b69cea872e66f22e1687e5ff4dcebe0dec8f7385afaac088fac3ea"
+    },
+    "Discrete-Time-Signal-Processing": {
+      "completed_at": "2026-04-07T00:38:44+00:00",
+      "course_id": "DTS",
+      "course_name": "Discrete Time Signal Processing",
+      "output_json": "curriculum-builder/1-Ingest/.course-name-json/Discrete-Time-Signal-Processing.json",
+      "prompt_signature": "cade81e044b69cea872e66f22e1687e5ff4dcebe0dec8f7385afaac088fac3ea"
+    }
+  }
+}

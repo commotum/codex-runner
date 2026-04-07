@@ -15,6 +15,11 @@ import time
 import uuid
 from pathlib import Path
 
+try:
+    from tqdm import tqdm
+except ImportError:  # pragma: no cover
+    tqdm = None
+
 
 RUNNER_VERSION = "2026-04-06-ingest-v1"
 MAX_LOG_CHARS = 4000
@@ -41,6 +46,33 @@ LOG_LOCK = threading.Lock()
 
 def now_iso():
     return datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")
+
+
+def progress_enabled():
+    return tqdm is not None and sys.stderr.isatty()
+
+
+class NullProgress:
+    def __init__(self, iterable):
+        self._iterable = iterable
+
+    def __iter__(self):
+        return iter(self._iterable)
+
+    def set_postfix_str(self, text, refresh=True):
+        return None
+
+    def update(self, n=1):
+        return None
+
+    def close(self):
+        return None
+
+
+def make_progress(iterable, desc, unit):
+    if not progress_enabled():
+        return NullProgress(iterable)
+    return tqdm(iterable, desc=desc, unit=unit, dynamic_ncols=True)
 
 
 def log_event(message):
@@ -485,7 +517,9 @@ def sync_contents_index(course_dir, course_row, state, dry_run):
 
 def build_targets_manifest(source_root, indexed_courses):
     targets = []
-    for entry in indexed_courses:
+    progress = make_progress(indexed_courses, desc="Phase 3/3 Acquiring targets", unit="course")
+    for entry in progress:
+        progress.set_postfix_str(entry["course_id"])
         course_dir = entry["course_dir"]
         contents_path = entry["contents_path"]
         for row in entry["rows"]:
@@ -509,6 +543,7 @@ def build_targets_manifest(source_root, indexed_courses):
                     "source_path": repo_relative(source_path),
                 }
             )
+    progress.close()
 
     return {
         "generated_at": now_iso(),
@@ -590,19 +625,25 @@ def main():
 
     course_dirs = discover_course_dirs(source_root)
     course_rows = load_courses_index(courses_csv_path)
+    selected_course_dirs = select_course_dirs(course_dirs, course_rows, args.course)
+    if args.course and not selected_course_dirs:
+        raise SystemExit("no course folders matched the requested filters")
+
     slug_map = courses_by_slug(course_rows)
     new_course_dirs = [
-        course_dir for course_dir in course_dirs if slugify_text(course_dir.name) not in slug_map
+        course_dir for course_dir in selected_course_dirs if slugify_text(course_dir.name) not in slug_map
     ]
 
     log_event(
-        f"run_start source_root={source_root} course_dir_count={len(course_dirs)} new_course_count={len(new_course_dirs)} dry_run={args.dry_run}"
+        f"run_start source_root={source_root} course_dir_count={len(course_dirs)} selected_course_count={len(selected_course_dirs)} new_course_count={len(new_course_dirs)} dry_run={args.dry_run}"
     )
 
     if new_course_dirs and not args.dry_run:
         if shutil.which(shlex.split(CODEX_CMD)[0]) is None:
             raise SystemExit(f"missing Codex CLI: {CODEX_CMD}")
-        for course_dir in new_course_dirs:
+        progress = make_progress(new_course_dirs, desc="Phase 1/3 Registering courses", unit="course")
+        for course_dir in progress:
+            progress.set_postfix_str(course_dir.name)
             register_new_course(
                 course_dir,
                 courses_csv_path,
@@ -612,17 +653,19 @@ def main():
                 state,
                 args.dry_run,
             )
+        progress.close()
         slug_map = courses_by_slug(course_rows)
     elif new_course_dirs:
-        for course_dir in new_course_dirs:
+        progress = make_progress(new_course_dirs, desc="Phase 1/3 Registering courses", unit="course")
+        for course_dir in progress:
+            progress.set_postfix_str(course_dir.name)
             log_event(f"dry_run_new_course_pending folder={course_dir.name}")
-
-    selected_course_dirs = select_course_dirs(course_dirs, course_rows, args.course)
-    if args.course and not selected_course_dirs:
-        raise SystemExit("no course folders matched the requested filters")
+        progress.close()
 
     indexed_courses = []
-    for course_dir in selected_course_dirs:
+    progress = make_progress(selected_course_dirs, desc="Phase 2/3 Syncing contents", unit="course")
+    for course_dir in progress:
+        progress.set_postfix_str(course_dir.name)
         course_row = slug_map.get(slugify_text(course_dir.name))
         if not course_row:
             log_event(
@@ -630,6 +673,7 @@ def main():
             )
             continue
         indexed_courses.append(sync_contents_index(course_dir, course_row, state, args.dry_run))
+    progress.close()
 
     manifest = build_targets_manifest(source_root, indexed_courses)
     if args.dry_run:
@@ -652,6 +696,7 @@ def main():
         json.dumps(
             {
                 "courses_discovered": len(course_dirs),
+                "courses_selected": len(selected_course_dirs),
                 "new_courses": len(new_course_dirs),
                 "courses_indexed": len(indexed_courses),
                 "target_count": manifest["target_count"],

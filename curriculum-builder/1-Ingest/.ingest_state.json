@@ -1,17 +1,29 @@
 {
+  "generated_topics": {
+    "CTS-SRC-0002": {
+      "completed_at": "2026-04-07T01:37:20+00:00",
+      "course_id": "CTS",
+      "document_kind": "lecture",
+      "entry_count": 17,
+      "output_csv": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Topics/CTS-SRC-0002-Topics.csv",
+      "output_json": "curriculum-builder/1-Ingest/.lecture-topics-json/CTS-SRC-0002.json",
+      "prompt_signature": "0bdd34cc53e6ef6aa7653d257586f325367f9ef04da1962173fa10bab558de32",
+      "source_path": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lectures/Week 1/1.2 Complex Exponentials.md"
+    }
+  },
   "indexed_courses": {
     "CTS": {
-      "added_count": 37,
-      "completed_at": "2026-04-07T00:38:44+00:00",
+      "added_count": 0,
+      "completed_at": "2026-04-07T01:35:15+00:00",
       "contents_index": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/CTS-Contents.csv",
       "row_count": 37,
       "stale_count": 0
     }
   },
   "last_targets": {
-    "generated_at": "2026-04-07T00:38:44+00:00",
+    "generated_at": "2026-04-07T01:35:15+00:00",
     "path": "curriculum-builder/1-Ingest/ingest-targets.json",
-    "target_count": 37
+    "target_count": 1
   },
   "registered_courses": {
     "Continuous-Time-Signal-Processing": {

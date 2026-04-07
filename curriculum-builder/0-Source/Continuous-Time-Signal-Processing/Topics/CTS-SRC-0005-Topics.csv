@@ -1,0 +1,29 @@
+title,description
+Reading continuous-time signal notation,interpret $x(t)$ as a time-dependent signal whose value changes with the input $t$.
+Interpreting piecewise-defined signals,read a signal whose defining expression changes across different time intervals.
+Identifying a signal's support,determine the interval where a signal is nonzero or where a particular branch applies.
+Substituting expressions into a signal argument,"replace $t$ with expressions like $t-1$, $3t$, or $-t$ inside a signal formula."
+Simplifying transformed expressions,"rewrite substituted formulas cleanly, especially when exponential terms are involved."
+Solving interval inequalities after substitution,"transform time intervals correctly after substitution, including reversing inequalities when multiplying by $-1$."
+Tracking key time points under transformation,"identify start points, endpoints, and feature locations, then determine how they move on the time axis."
+Recognizing basic time-domain signal operations,"distinguish among shifting, scaling, and reversal as three different signal transformations."
+Interpreting time shifting,understand that shifting moves a signal left or right without changing its basic shape.
+Delaying a signal,apply $x(t-T)$ and interpret it as shifting the signal right by $T$.
+Advancing a signal,apply $x(t+T)$ and interpret it as shifting the signal left by $T$.
+Reading shift direction from the sign,determine whether a form like $x(t-a)$ represents a delay or an advance.
+Rewriting a shifted piecewise signal,substitute the shifted argument into each branch and adjust the corresponding time intervals.
+Interpreting time shifting physically,connect a time shift to earlier or later arrival of the same waveform.
+Interpreting time scaling,understand that scaling changes how quickly a signal unfolds in time rather than when it begins.
+Compressing a signal in time,apply $x(at)$ with $a>1$ and interpret it as making the signal run faster.
+Expanding a signal in time,apply $x(t/a)$ with $a>1$ and interpret it as making the signal run slower.
+Tracking feature times under scaling,map important times such as $T_1$ and $T_2$ to their new locations after compression or expansion.
+Rewriting a scaled piecewise signal,solve for the new time intervals after replacing $t$ with $at$ or $t/a$.
+Distinguishing shifting from scaling,tell whether an operation moves a signal in time or changes its time rate.
+Interpreting time scaling physically,"connect time scaling to playback speed, such as making a recording play faster or slower."
+Interpreting time reversal,understand that $x(-t)$ mirrors a signal across the vertical axis at $t=0$.
+Mapping signal support under reversal,determine how the interval where a signal exists flips across the time axis under reversal.
+Rewriting a time-reversed piecewise signal,"replace $t$ with $-t$, simplify the expression, and transform the interval consistently."
+Conceptualizing reversed temporal behavior,describe how time reversal flips the order in which signal events occur.
+Interpreting time reversal physically,connect time reversal to playing a signal backward in time.
+Comparing the effects of three operations,"identify whether each operation changes a signal's start time, time scale, or time direction."
+Analyzing transformed exponential signals,"apply shifting, scaling, and reversal to exponential signals while preserving the correct piecewise branches."

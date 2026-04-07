@@ -1,0 +1,96 @@
+{
+  "entries": [
+    {
+      "description": "interpret a complex quantity as the sum of its real and imaginary parts.",
+      "title": "Reading complex-number form"
+    },
+    {
+      "description": "split and regroup expressions such as $e^{a+b}$ and $e^{at+bt}$.",
+      "title": "Applying exponent laws to exponentials"
+    },
+    {
+      "description": "convert between $e^{j\\theta}$ and $\\cos \\theta + j\\sin \\theta$.",
+      "title": "Using Euler's formula"
+    },
+    {
+      "description": "identify $\\Re\\{\\cdot\\}$ and $\\Im\\{\\cdot\\}$ from a complex expression.",
+      "title": "Extracting real and imaginary parts"
+    },
+    {
+      "description": "understand cosine and sine as oscillations and $\\omega$ as angular frequency.",
+      "title": "Interpreting basic sinusoids"
+    },
+    {
+      "description": "tell from the sign of the exponent whether a signal grows, decays, or stays constant.",
+      "title": "Interpreting real exponential growth and decay"
+    },
+    {
+      "description": "use $x(t+T)=x(t)$ as the condition for a repeating signal.",
+      "title": "Defining signal periodicity"
+    },
+    {
+      "description": "interpret $x(t)=e^{st}$ with $s=\\sigma+j\\omega$ as the general exponential form.",
+      "title": "Defining a generalized exponential signal"
+    },
+    {
+      "description": "identify $\\sigma$ as the growth or decay term and $\\omega$ as the oscillation term.",
+      "title": "Interpreting the roles of $\\sigma$ and $\\omega$"
+    },
+    {
+      "description": "rewrite $e^{(\\sigma+j\\omega)t}$ as $e^{\\sigma t}e^{j\\omega t}$ to separate growth from oscillation.",
+      "title": "Expanding a generalized exponential"
+    },
+    {
+      "description": "use Euler's formula to rewrite the signal in cosine and sine components.",
+      "title": "Converting a generalized exponential to cosine-sine form"
+    },
+    {
+      "description": "identify the cosine term as the real part and the sine term as the imaginary part.",
+      "title": "Extracting the real and imaginary components"
+    },
+    {
+      "description": "determine whether the signal is constant, growing, or decaying when $\\omega=0$.",
+      "title": "Analyzing the pure exponential case"
+    },
+    {
+      "description": "interpret $e^{j\\omega t}$ as a pure complex sinusoid when $\\sigma=0$.",
+      "title": "Analyzing the pure oscillatory case"
+    },
+    {
+      "description": "determine how changing $|\\omega|$ changes the rate of oscillation.",
+      "title": "Relating $\\omega$ to oscillation speed"
+    },
+    {
+      "description": "interpret $\\sigma \\neq 0,\\ \\omega \\neq 0$ as simultaneous oscillation with exponential growth or decay.",
+      "title": "Analyzing the mixed exponential case"
+    },
+    {
+      "description": "use the sign of $\\sigma$ to determine whether the oscillation decays or increases in amplitude.",
+      "title": "Identifying damped and growing sinusoids"
+    },
+    {
+      "description": "understand $\\pm e^{\\sigma t}$ as amplitude bounds that contain the oscillation.",
+      "title": "Interpreting exponential envelopes"
+    },
+    {
+      "description": "recognize generalized exponentials as models for damped oscillatory behavior in physical systems.",
+      "title": "Connecting generalized exponentials to physical systems"
+    },
+    {
+      "description": "derive the condition under which a pure complex exponential repeats over time.",
+      "title": "Applying the periodicity test to $e^{j\\omega t}$"
+    },
+    {
+      "description": "find $T_0=\\frac{2\\pi}{\\omega}$ for the signal's smallest positive repeat time.",
+      "title": "Computing the fundamental period of a complex exponential"
+    },
+    {
+      "description": "recognize that any integer multiple of $T_0$ is also a valid repeat time.",
+      "title": "Interpreting general repetition times"
+    },
+    {
+      "description": "explain periodicity geometrically by tracking the phasor's motion around the unit circle.",
+      "title": "Using the rotating-phasor picture"
+    }
+  ]
+}

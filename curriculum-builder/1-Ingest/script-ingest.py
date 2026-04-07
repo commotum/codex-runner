@@ -40,6 +40,21 @@ COURSE_NAME_OUTPUT_DIR = STAGE_DIR / ".course-name-json"
 LECTURE_TOPICS_PROMPT_PATH = PROMPTS_DIR / "lecture-topics.md"
 LECTURE_TOPICS_SCHEMA_PATH = PROMPTS_DIR / "lecture-topics.schema.json"
 LECTURE_TOPICS_OUTPUT_DIR = STAGE_DIR / ".lecture-topics-json"
+REFERENCE_LECTURE_MD_PATH = (
+    PIPELINE_ROOT
+    / "0-Source"
+    / "Continuous-Time-Signal-Processing"
+    / "Lectures"
+    / "Week 1"
+    / "1.2 Complex Exponentials.md"
+)
+REFERENCE_TOPICS_CSV_PATH = (
+    PIPELINE_ROOT
+    / "0-Source"
+    / "Continuous-Time-Signal-Processing"
+    / "Topics"
+    / "CTS-SRC-0002-Topics.csv"
+)
 STATE_PATH = STAGE_DIR / ".ingest_state.json"
 LOG_PATH = STAGE_DIR / "ingest.log"
 TARGETS_PATH = STAGE_DIR / "ingest-targets.json"
@@ -306,6 +321,8 @@ def build_lecture_topics_prompt(prompt_template, source_md_path, topics_csv_path
     prompt = prompt_template
     replacements = {
         "[SOURCE_MD_ABS_PATH]": str(source_md_path.resolve()),
+        "[REFERENCE_LECTURE_MD_ABS_PATH]": str(REFERENCE_LECTURE_MD_PATH.resolve()),
+        "[REFERENCE_TOPICS_CSV_ABS_PATH]": str(REFERENCE_TOPICS_CSV_PATH.resolve()),
         "[TOPICS_CSV_ABS_PATH]": str(topics_csv_path.resolve()),
     }
     for key, value in replacements.items():

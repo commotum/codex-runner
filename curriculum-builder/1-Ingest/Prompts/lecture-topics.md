@@ -2,6 +2,8 @@ You are extracting lesson-sized skill entries from one lecture note for the inge
 
 Inputs
 - Source lecture Markdown: `[SOURCE_MD_ABS_PATH]`
+- Reference lecture example: `[REFERENCE_LECTURE_MD_ABS_PATH]`
+- Reference extracted topics example: `[REFERENCE_TOPICS_CSV_ABS_PATH]`
 - For context only: the runner will convert your JSON response into the final per-document CSV at `[TOPICS_CSV_ABS_PATH]`
 
 Task
@@ -22,7 +24,11 @@ Prefer completeness over elegance.
 A slightly longer but instructionally complete list is better than a short, polished list that compresses away prerequisite bottlenecks or merges multiple teachable moves into one entry.
 Missing a direct prerequisite or collapsing two real lessons into one is worse than including two nearby but distinct entries.
 
-Use only the source lecture for content decisions.
+Reference example
+Read the reference lecture and its extracted topics example to understand the target level of completeness, lesson boundaries, title style, description style, and prerequisite handling.
+
+Use the reference pair only as an example of what a good extraction looks like.
+Use only the source lecture for deciding which entries belong in the current output.
 Do not invent skills that are not clearly supported by the lecture.
 However, do not require a prerequisite to be announced as a formal section heading before you include it. If the lecture clearly relies on a skill to read notation, interpret a diagram, understand a derivation, or execute a later procedure, and that skill is directly supported by the lecture, include it.
 
@@ -164,9 +170,9 @@ A good default order is:
 Title rules
 - Output the cleaned title text only.
 - Keep it short, specific, and teachable, usually 4 to 9 words.
-- Make it read like a competency label, not pasted lecture notes.
+- Make it read like a lesson-sized skill name, not pasted lecture notes.
 - Prefer gerund-led titles such as `Recognizing...`, `Identifying...`, `Reading...`, `Interpreting...`, `Converting...`, `Extracting...`, `Applying...`, `Connecting...`, or `Using...`.
-- A compact noun phrase is acceptable only if it still clearly reads like one lesson-sized skill.
+- A compact noun phrase or title-case lesson title is acceptable only if it still clearly reads like one lesson-sized skill.
 - The title must name one skill or concept only.
 - Do not end the title with a period.
 

@@ -1,0 +1,72 @@
+{
+  "entries": [
+    {
+      "description": "convert between $e^{j\\theta}$ and $\\cos(\\theta)+j\\sin(\\theta)$ as equivalent representations.",
+      "title": "Using Euler's formula"
+    },
+    {
+      "description": "read the cosine term as the real part and the sine term as the imaginary part of $Ae^{j(\\omega t+\\phi)}$.",
+      "title": "Identifying real and imaginary parts of a complex exponential"
+    },
+    {
+      "description": "read $Ae^{j\\phi}$ as a magnitude-angle representation of a complex quantity.",
+      "title": "Interpreting polar form of a complex number"
+    },
+    {
+      "description": "rewrite $a+jb$ as $|V|e^{j\\angle V}$ by computing magnitude and angle.",
+      "title": "Converting complex numbers between rectangular and polar form"
+    },
+    {
+      "description": "combine phasors by summing their real parts and imaginary parts separately.",
+      "title": "Adding complex numbers in rectangular form"
+    },
+    {
+      "description": "recognize values like $e^{j\\pi/2}=j$ and standard reference angles in phasor work.",
+      "title": "Using special-angle values in the complex plane"
+    },
+    {
+      "description": "express $A\\cos(\\omega t+\\phi)$ as the real part of $Ae^{j(\\omega t+\\phi)}$.",
+      "title": "Writing a cosine as a complex exponential"
+    },
+    {
+      "description": "separate $Ae^{j(\\omega t+\\phi)}$ into a fixed phasor $Ae^{j\\phi}$ and a rotating factor $e^{j\\omega t}$.",
+      "title": "Factoring a sinusoid into phasor form"
+    },
+    {
+      "description": "treat $V=Ae^{j\\phi}$ as a stationary complex quantity that carries amplitude and phase.",
+      "title": "Defining and interpreting a phasor"
+    },
+    {
+      "description": "determine whether a complex exponential rotates clockwise or counterclockwise from the sign of $\\omega$.",
+      "title": "Linking frequency sign to rotation direction"
+    },
+    {
+      "description": "use Euler identities to convert sine and cosine into sums or differences of exponentials.",
+      "title": "Rewriting sine and cosine with exponentials"
+    },
+    {
+      "description": "recognize a real cosine as two counter-rotating exponentials with frequencies $+\\omega$ and $-\\omega$.",
+      "title": "Interpreting cosine as frequency components"
+    },
+    {
+      "description": "understand positive and negative frequency as opposite directions of rotation in the complex plane.",
+      "title": "Interpreting frequency sign geometrically"
+    },
+    {
+      "description": "convert each cosine to a phasor, add the phasors, and retain the common $e^{j\\omega t}$ factor.",
+      "title": "Adding same-frequency cosines with phasors"
+    },
+    {
+      "description": "combine same-frequency terms into one equivalent phasor with net amplitude and phase.",
+      "title": "Forming the resultant phasor"
+    },
+    {
+      "description": "rewrite the summed phasor in polar form as a single cosine in amplitude-phase form.",
+      "title": "Converting a resultant phasor to a cosine"
+    },
+    {
+      "description": "carry out phasor conversion, complex-domain addition, and conversion back to one real sinusoid.",
+      "title": "Solving a full phasor addition problem"
+    }
+  ]
+}

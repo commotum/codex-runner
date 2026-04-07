@@ -1,27 +1,83 @@
 {
   "generated_topics": {
-    "CTS-SRC-0002": {
-      "completed_at": "2026-04-07T17:12:19+00:00",
+    "CTS-SRC-0001": {
+      "completed_at": "2026-04-07T20:01:39+00:00",
       "course_id": "CTS",
       "document_kind": "lecture",
-      "entry_count": 8,
+      "entry_count": 22,
+      "output_csv": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Topics/CTS-SRC-0001-Topics.csv",
+      "output_json": "curriculum-builder/1-Ingest/.lecture-topics-json/CTS-SRC-0001.json",
+      "prompt_signature": "049cc256e23d09f4789ad72eb77466b23074b5525c4a1a32a6cf9741c0c19c2d",
+      "seed_source": "curriculum-builder/1-Ingest/Context/Kps.csv",
+      "source_path": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lectures/Week 1/1.1 Periodic Signals.md"
+    },
+    "CTS-SRC-0002": {
+      "completed_at": "2026-04-07T20:01:39+00:00",
+      "course_id": "CTS",
+      "document_kind": "lecture",
+      "entry_count": 17,
       "output_csv": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Topics/CTS-SRC-0002-Topics.csv",
       "output_json": "curriculum-builder/1-Ingest/.lecture-topics-json/CTS-SRC-0002.json",
-      "prompt_signature": "703dd0717085d107be978c8a048a9ed60047d930cc4b289ef7fa4126788d1387",
+      "prompt_signature": "049cc256e23d09f4789ad72eb77466b23074b5525c4a1a32a6cf9741c0c19c2d",
+      "seed_source": "curriculum-builder/1-Ingest/Context/Kps.csv",
       "source_path": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lectures/Week 1/1.2 Complex Exponentials.md"
+    },
+    "CTS-SRC-0003": {
+      "completed_at": "2026-04-07T20:01:39+00:00",
+      "course_id": "CTS",
+      "document_kind": "lecture",
+      "entry_count": 17,
+      "output_csv": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Topics/CTS-SRC-0003-Topics.csv",
+      "output_json": "curriculum-builder/1-Ingest/.lecture-topics-json/CTS-SRC-0003.json",
+      "prompt_signature": "049cc256e23d09f4789ad72eb77466b23074b5525c4a1a32a6cf9741c0c19c2d",
+      "seed_source": "curriculum-builder/1-Ingest/Context/Kps.csv",
+      "source_path": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lectures/Week 1/1.3 Problem Solving with Complex Exponentials.md"
+    },
+    "CTS-SRC-0004": {
+      "completed_at": "2026-04-07T20:01:39+00:00",
+      "course_id": "CTS",
+      "document_kind": "lecture",
+      "entry_count": 23,
+      "output_csv": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Topics/CTS-SRC-0004-Topics.csv",
+      "output_json": "curriculum-builder/1-Ingest/.lecture-topics-json/CTS-SRC-0004.json",
+      "prompt_signature": "049cc256e23d09f4789ad72eb77466b23074b5525c4a1a32a6cf9741c0c19c2d",
+      "seed_source": "curriculum-builder/1-Ingest/Context/Kps.csv",
+      "source_path": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lectures/Week 1/1.4 Exponential Signals.md"
+    },
+    "CTS-SRC-0005": {
+      "completed_at": "2026-04-07T20:01:39+00:00",
+      "course_id": "CTS",
+      "document_kind": "lecture",
+      "entry_count": 28,
+      "output_csv": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Topics/CTS-SRC-0005-Topics.csv",
+      "output_json": "curriculum-builder/1-Ingest/.lecture-topics-json/CTS-SRC-0005.json",
+      "prompt_signature": "049cc256e23d09f4789ad72eb77466b23074b5525c4a1a32a6cf9741c0c19c2d",
+      "seed_source": "curriculum-builder/1-Ingest/Context/Kps.csv",
+      "source_path": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lectures/Week 1/1.5 Signal Operations.md"
+    },
+    "CTS-SRC-0006": {
+      "completed_at": "2026-04-07T20:01:39+00:00",
+      "course_id": "CTS",
+      "document_kind": "lecture",
+      "entry_count": 22,
+      "output_csv": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Topics/CTS-SRC-0006-Topics.csv",
+      "output_json": "curriculum-builder/1-Ingest/.lecture-topics-json/CTS-SRC-0006.json",
+      "prompt_signature": "049cc256e23d09f4789ad72eb77466b23074b5525c4a1a32a6cf9741c0c19c2d",
+      "seed_source": "curriculum-builder/1-Ingest/Context/Kps.csv",
+      "source_path": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lectures/Week 1/1.6 Size of a Signal.md"
     }
   },
   "indexed_courses": {
     "CTS": {
       "added_count": 0,
-      "completed_at": "2026-04-07T18:43:55+00:00",
+      "completed_at": "2026-04-07T18:45:22+00:00",
       "contents_index": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/CTS-Contents.csv",
       "row_count": 37,
       "stale_count": 0
     }
   },
   "last_targets": {
-    "generated_at": "2026-04-07T17:09:29+00:00",
+    "generated_at": "2026-04-07T18:45:22+00:00",
     "path": "curriculum-builder/1-Ingest/ingest-targets.json",
     "target_count": 1
   },

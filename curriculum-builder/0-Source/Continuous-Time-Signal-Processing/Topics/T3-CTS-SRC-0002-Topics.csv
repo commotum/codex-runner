@@ -1,9 +1,0 @@
-title,description
-Expanding Complex Exponentials with Euler's Formula,expand R e^{j\theta} into cosine and sine terms with separate real and imaginary parts.
-Reading Signal Parameters from Exponential Form,"identify the magnitude, angular frequency, and phase parameters in A e^{j(\omega_0 t + \phi)}."
-Extracting Real and Imaginary Signal Components,determine \Re\{z(t)\} and \Im\{z(t)\} by expanding a complex exponential signal.
-Reading Magnitude and Angle in the Plane,read |z(t)| and \angle z(t) directly from the exponential form in the complex plane.
-Reading the Initial Phasor at t=0,evaluate z(0) to find the phasor's initial magnitude and starting angle.
-Interpreting Phasor Rotation from Angular Frequency,interpret \omega_0 as the counterclockwise rotation rate of a constant-magnitude phasor.
-Reading Projections onto the Real Axis,read \Re\{z(t)\} as the real-axis projection that forms a cosine signal.
-Reading Projections onto the Imaginary Axis,read \Im\{z(t)\} as the imaginary-axis projection that forms a sine signal.

@@ -1,0 +1,24 @@
+title,description
+Reading complex-number form,interpret a complex quantity as the sum of its real and imaginary parts.
+Applying exponent laws to exponentials,split and regroup expressions such as $e^{a+b}$ and $e^{at+bt}$.
+Using Euler's formula,convert between $e^{j\theta}$ and $\cos \theta + j\sin \theta$.
+Extracting real and imaginary parts,identify $\Re\{\cdot\}$ and $\Im\{\cdot\}$ from a complex expression.
+Interpreting basic sinusoids,understand cosine and sine as oscillations and $\omega$ as angular frequency.
+Interpreting real exponential growth and decay,"tell from the sign of the exponent whether a signal grows, decays, or stays constant."
+Defining signal periodicity,use $x(t+T)=x(t)$ as the condition for a repeating signal.
+Defining a generalized exponential signal,interpret $x(t)=e^{st}$ with $s=\sigma+j\omega$ as the general exponential form.
+Interpreting the roles of $\sigma$ and $\omega$,identify $\sigma$ as the growth or decay term and $\omega$ as the oscillation term.
+Expanding a generalized exponential,rewrite $e^{(\sigma+j\omega)t}$ as $e^{\sigma t}e^{j\omega t}$ to separate growth from oscillation.
+Converting a generalized exponential to cosine-sine form,use Euler's formula to rewrite the signal in cosine and sine components.
+Extracting the real and imaginary components,identify the cosine term as the real part and the sine term as the imaginary part.
+Analyzing the pure exponential case,"determine whether the signal is constant, growing, or decaying when $\omega=0$."
+Analyzing the pure oscillatory case,interpret $e^{j\omega t}$ as a pure complex sinusoid when $\sigma=0$.
+Relating $\omega$ to oscillation speed,determine how changing $|\omega|$ changes the rate of oscillation.
+Analyzing the mixed exponential case,"interpret $\sigma \neq 0,\ \omega \neq 0$ as simultaneous oscillation with exponential growth or decay."
+Identifying damped and growing sinusoids,use the sign of $\sigma$ to determine whether the oscillation decays or increases in amplitude.
+Interpreting exponential envelopes,understand $\pm e^{\sigma t}$ as amplitude bounds that contain the oscillation.
+Connecting generalized exponentials to physical systems,recognize generalized exponentials as models for damped oscillatory behavior in physical systems.
+Applying the periodicity test to $e^{j\omega t}$,derive the condition under which a pure complex exponential repeats over time.
+Computing the fundamental period of a complex exponential,find $T_0=\frac{2\pi}{\omega}$ for the signal's smallest positive repeat time.
+Interpreting general repetition times,recognize that any integer multiple of $T_0$ is also a valid repeat time.
+Using the rotating-phasor picture,explain periodicity geometrically by tracking the phasor's motion around the unit circle.

@@ -34,12 +34,15 @@ REPO_ROOT = PIPELINE_ROOT.parent
 SOURCE_ROOT_DEFAULT = PIPELINE_ROOT / "0-Source"
 COURSES_CSV_DEFAULT = SOURCE_ROOT_DEFAULT / "Courses.csv"
 PROMPTS_DIR = STAGE_DIR / "Prompts"
+SCHEMAS_DIR = STAGE_DIR / "Schemas"
+RUNTIME_DIR = STAGE_DIR / ".runtime"
+LOGS_DIR = RUNTIME_DIR / "logs"
+STATE_DIR = RUNTIME_DIR / "state"
+TEMP_OUTPUT_DIR = RUNTIME_DIR / "tmp"
 COURSE_NAME_PROMPT_PATH = PROMPTS_DIR / "course-name.md"
-COURSE_NAME_SCHEMA_PATH = PROMPTS_DIR / "course-name.schema.json"
-COURSE_NAME_OUTPUT_DIR = STAGE_DIR / ".course-name-json"
+COURSE_NAME_SCHEMA_PATH = SCHEMAS_DIR / "course-name.schema.json"
 LECTURE_TOPICS_PROMPT_PATH = PROMPTS_DIR / "lecture-topics.md"
-LECTURE_TOPICS_SCHEMA_PATH = PROMPTS_DIR / "lecture-topics.schema.json"
-LECTURE_TOPICS_OUTPUT_DIR = STAGE_DIR / ".lecture-topics-json"
+LECTURE_TOPICS_SCHEMA_PATH = SCHEMAS_DIR / "lecture-topics.schema.json"
 REFERENCE_LECTURE_MD_PATH = (
     PIPELINE_ROOT
     / "0-Source"
@@ -55,9 +58,9 @@ REFERENCE_TOPICS_CSV_PATH = (
     / "Topics"
     / "CTS-SRC-0002-Topics.csv"
 )
-STATE_PATH = STAGE_DIR / ".ingest_state.json"
-LOG_PATH = STAGE_DIR / "ingest.log"
-TARGETS_PATH = STAGE_DIR / "ingest-targets.json"
+STATE_PATH = STATE_DIR / "ingest-state.json"
+LOG_PATH = LOGS_DIR / "ingest.log"
+TARGETS_PATH = STATE_DIR / "ingest-targets.json"
 CODEX_CMD = "codex"
 TOPICS_DIRNAME = "Topics"
 TOPICS_CSV_FIELDNAMES = ["title", "description"]
@@ -180,16 +183,15 @@ def save_state(state):
 
 
 def clean_stale_temp_files(source_root):
-    for output_dir in (COURSE_NAME_OUTPUT_DIR, LECTURE_TOPICS_OUTPUT_DIR):
-        if output_dir.exists():
-            for path in output_dir.glob("*.tmp.*"):
-                try:
-                    path.unlink()
-                    log_event(f"stale_temp_removed path={path}")
-                except Exception as exc:
-                    log_event(f"stale_temp_remove_failed path={path} error={exc}")
-    for pattern in (".ingest_state.json.tmp.*", ".ingest-targets.json.tmp.*"):
-        for path in STAGE_DIR.glob(pattern):
+    if TEMP_OUTPUT_DIR.exists():
+        for path in TEMP_OUTPUT_DIR.glob("*.tmp.*"):
+            try:
+                path.unlink()
+                log_event(f"stale_temp_removed path={path}")
+            except Exception as exc:
+                log_event(f"stale_temp_remove_failed path={path} error={exc}")
+    for pattern in ("ingest-state.json.tmp.*", "ingest-targets.json.tmp.*"):
+        for path in STATE_DIR.glob(pattern):
             try:
                 path.unlink()
                 log_event(f"stale_temp_removed path={path}")
@@ -244,6 +246,11 @@ def write_json(path, payload):
     with temp_path.open("w", encoding="utf-8") as handle:
         json.dump(payload, handle, indent=2, sort_keys=True)
     os.replace(temp_path, path)
+
+
+def make_temp_json_path(stem):
+    TEMP_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    return TEMP_OUTPUT_DIR / f"{stem}.tmp.{uuid.uuid4().hex}.json"
 
 
 def render_csv_text(fieldnames, rows):
@@ -486,24 +493,18 @@ def write_topics_csv(path, entries):
 
 def register_new_course(course_dir, courses_csv_path, prompt_template, course_rows, prompt_signature, state, dry_run):
     prompt = build_course_name_prompt(prompt_template, courses_csv_path, course_dir.name)
-    output_path = COURSE_NAME_OUTPUT_DIR / f"{course_dir.name}.json"
-    temp_output_path = COURSE_NAME_OUTPUT_DIR / f"{course_dir.name}.tmp.{uuid.uuid4().hex}.json"
 
     if dry_run:
-        log_event(f"dry_run_course_register folder={course_dir.name} output={output_path}")
+        log_event(f"dry_run_course_register folder={course_dir.name}")
         return None
 
-    COURSE_NAME_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    run_codex(prompt, COURSE_NAME_SCHEMA_PATH, temp_output_path)
-    course_row = validate_course_output(temp_output_path, course_dir.name, course_rows)
-    normalized_payload = {
-        "course_id": course_row["course-id"],
-        "course_name": course_row["course-name"],
-        "source_folder": course_dir.name,
-    }
-    write_json(output_path, normalized_payload)
-    if temp_output_path.exists():
-        temp_output_path.unlink()
+    temp_output_path = make_temp_json_path(f"course-name-{course_dir.name}")
+    try:
+        run_codex(prompt, COURSE_NAME_SCHEMA_PATH, temp_output_path)
+        course_row = validate_course_output(temp_output_path, course_dir.name, course_rows)
+    finally:
+        if temp_output_path.exists():
+            temp_output_path.unlink()
 
     updated_rows = list(course_rows)
     updated_rows.append(course_row)
@@ -514,7 +515,6 @@ def register_new_course(course_dir, courses_csv_path, prompt_template, course_ro
         "completed_at": now_iso(),
         "course_id": course_row["course-id"],
         "course_name": course_row["course-name"],
-        "output_json": repo_relative(output_path),
         "prompt_signature": prompt_signature,
     }
     save_state(state)
@@ -640,11 +640,6 @@ def sync_contents_index(course_dir, course_row, state, dry_run):
 def build_topics_csv_path(course_dir, document_id):
     return course_dir / TOPICS_DIRNAME / f"{document_id}-Topics.csv"
 
-
-def build_topics_json_path(document_id):
-    return LECTURE_TOPICS_OUTPUT_DIR / f"{document_id}.json"
-
-
 def stamp_document_ingested(contents_path, course_id, document_id, ingested_at):
     rows = load_contents_index(contents_path, course_id)
     updated = False
@@ -744,10 +739,6 @@ def generate_topics_for_target(
     contents_path = REPO_ROOT / target["contents_index"]
     source_path = REPO_ROOT / target["source_path"]
     topics_csv_path = build_topics_csv_path(course_dir, target["document_id"])
-    topics_json_path = build_topics_json_path(target["document_id"])
-    temp_output_path = topics_json_path.with_name(
-        f"{topics_json_path.name}.tmp.{uuid.uuid4().hex}"
-    )
     prompt = build_lecture_topics_prompt(
         lecture_prompt_template,
         source_path,
@@ -759,15 +750,17 @@ def generate_topics_for_target(
             "dry_run_topic_generation "
             f"document_id={target['document_id']} "
             f"source={source_path} "
-            f"topics_csv={topics_csv_path} "
-            f"topics_json={topics_json_path}"
+            f"topics_csv={topics_csv_path}"
         )
         return {"status": "dry-run", "document_id": target["document_id"], "entry_count": 0}
 
-    LECTURE_TOPICS_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    run_codex(prompt, LECTURE_TOPICS_SCHEMA_PATH, temp_output_path)
-    validated_payload = validate_topics_output(temp_output_path)
-    write_json(topics_json_path, validated_payload)
+    temp_output_path = make_temp_json_path(target["document_id"])
+    try:
+        run_codex(prompt, LECTURE_TOPICS_SCHEMA_PATH, temp_output_path)
+        validated_payload = validate_topics_output(temp_output_path)
+    finally:
+        if temp_output_path.exists():
+            temp_output_path.unlink()
     write_topics_csv(topics_csv_path, validated_payload["entries"])
 
     completed_at = now_iso()
@@ -783,7 +776,6 @@ def generate_topics_for_target(
         "document_kind": target["document_kind"],
         "entry_count": len(validated_payload["entries"]),
         "output_csv": repo_relative(topics_csv_path),
-        "output_json": repo_relative(topics_json_path),
         "prompt_signature": lecture_prompt_signature,
         "source_path": target["source_path"],
     }
@@ -794,8 +786,6 @@ def generate_topics_for_target(
         f"entry_count={len(validated_payload['entries'])} "
         f"topics_csv={topics_csv_path}"
     )
-    if temp_output_path.exists():
-        temp_output_path.unlink()
     return {
         "status": "generated",
         "document_id": target["document_id"],

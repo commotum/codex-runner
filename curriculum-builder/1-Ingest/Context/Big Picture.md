@@ -1,3 +1,5 @@
+PART 1 - WE'VE COMPLETED THIS ALREADY, THIS IS JUST A COPY OF WHAT I ASKED FOR.
+
 Ok, here's what we're gonna do. We need a runner built according to the best practices found in Codex-SDK.md and Runner.md and we're gonna call it ingest. It has multiple prompts for various portions of the runner that are all context dependent and will be activated by various triggers detected by our single runner script script-ingest.py. The prompts will be found in curriculum-builder/1-Ingest/Prompts . This will serve as the first stage of our curriculum-builder pipeline which should follow all the best practices according to Pipeliner.md. But for now let's do the following
 
 script-ingest.py
@@ -22,6 +24,8 @@ Topic Generation:
 For each document in the set list, a new runner will start a new session to generate lesson topics from it. We'll get to that next. But for now, let's finish off the first two parts. Sound good?
 
 ---
+
+PART 2 - THIS IS WHAT WE NEED TO FINISH RIGHT NOW. THIS IS STILL PART OF OUR SINGLE RUNNER, 1 SCRIPT, SEVERAL PROMPTS.
 
 Now that the administrative stuff has been handled, it's time to dig into our star player, the topic generation runners.
 
@@ -55,3 +59,4 @@ Can you help me fix the prompt, and add that functionality to the script?
 
 ---
 
+Can you help me finish part 2?

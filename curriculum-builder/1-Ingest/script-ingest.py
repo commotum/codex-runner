@@ -40,7 +40,6 @@ COURSE_NAME_OUTPUT_DIR = STAGE_DIR / ".course-name-json"
 LECTURE_TOPICS_PROMPT_PATH = PROMPTS_DIR / "lecture-topics.md"
 LECTURE_TOPICS_SCHEMA_PATH = PROMPTS_DIR / "lecture-topics.schema.json"
 LECTURE_TOPICS_OUTPUT_DIR = STAGE_DIR / ".lecture-topics-json"
-STYLE_REFERENCE_CSV_PATH = STAGE_DIR / "Context" / "Kps.csv"
 STATE_PATH = STAGE_DIR / ".ingest_state.json"
 LOG_PATH = STAGE_DIR / "ingest.log"
 TARGETS_PATH = STAGE_DIR / "ingest-targets.json"
@@ -303,51 +302,11 @@ def build_course_name_prompt(prompt_template, courses_csv_path, folder_basename)
     return prompt
 
 
-def extract_lecture_code(document_path):
-    basename = Path(document_path).stem
-    match = re.match(r"^(\d+\.\d+)\b", basename)
-    return match.group(1) if match else ""
-
-
-def load_style_reference_catalog(path):
-    rows = read_csv_rows(path, ["lecture", "title", "description"])
-    catalog = []
-    for row in rows:
-        if not row["title"] or not row["description"]:
-            continue
-        catalog.append(
-            {
-                "lecture": row["lecture"],
-                "title": row["title"],
-                "description": row["description"],
-            }
-        )
-    if not catalog:
-        raise ValueError(f"style reference CSV is empty: {path}")
-    return catalog
-
-
-def build_style_reference_csv(style_catalog, document_path):
-    lecture_code = extract_lecture_code(document_path)
-    ordered_rows = list(style_catalog)
-    if lecture_code:
-        matching_rows = [row for row in style_catalog if row["lecture"] == lecture_code]
-        if matching_rows:
-            ordered_rows = matching_rows
-    csv_rows = [
-        {"title": row["title"], "description": row["description"]} for row in ordered_rows
-    ]
-    return render_csv_text(["title", "description"], csv_rows)
-
-
-def build_lecture_topics_prompt(
-    prompt_template, source_md_path, topics_csv_path, style_reference_csv
-):
+def build_lecture_topics_prompt(prompt_template, source_md_path, topics_csv_path):
     prompt = prompt_template
     replacements = {
         "[SOURCE_MD_ABS_PATH]": str(source_md_path.resolve()),
         "[TOPICS_CSV_ABS_PATH]": str(topics_csv_path.resolve()),
-        "[TARGET_STYLE_REFERENCE_CSV]": style_reference_csv,
     }
     for key, value in replacements.items():
         prompt = prompt.replace(key, value)
@@ -755,7 +714,6 @@ def generate_topics_for_target(
     target,
     lecture_prompt_template,
     lecture_prompt_signature,
-    style_catalog,
     state,
     dry_run,
 ):
@@ -773,12 +731,10 @@ def generate_topics_for_target(
     temp_output_path = topics_json_path.with_name(
         f"{topics_json_path.name}.tmp.{uuid.uuid4().hex}"
     )
-    style_reference_csv = build_style_reference_csv(style_catalog, target["document_path"])
     prompt = build_lecture_topics_prompt(
         lecture_prompt_template,
         source_path,
         topics_csv_path,
-        style_reference_csv,
     )
 
     if dry_run:
@@ -914,7 +870,6 @@ def main():
     lecture_prompt_signature = build_prompt_signature(
         LECTURE_TOPICS_PROMPT_PATH, LECTURE_TOPICS_SCHEMA_PATH
     )
-    style_catalog = load_style_reference_catalog(STYLE_REFERENCE_CSV_PATH)
     state = load_state()
 
     course_dirs = discover_course_dirs(source_root)
@@ -1012,7 +967,6 @@ def main():
             target,
             lecture_prompt_template,
             lecture_prompt_signature,
-            style_catalog,
             state,
             args.dry_run,
         )

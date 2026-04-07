@@ -1,0 +1,14 @@
+title,description
+Recognizing the unit step function,determine whether u(t) equals 0 or 1 at a given time from its piecewise definition.
+Identifying the jump at t=0,identify t=0 as the jump where the unit step changes abruptly from 0 to 1.
+Interpreting the unit step as a switch,interpret u(t) as turning a signal off before its switching time and on afterward.
+Reading shifted unit step functions,determine the turn-on time of u(t-a) from the shift parameter a.
+Starting signals with the unit step,multiply a signal by u(t) to force it to start at t=0.
+Converting step-gated signals to piecewise form,rewrite a product with a unit step as separate expressions before and after its switching time.
+Forming rectangular pulses from shifted steps,construct a pulse that is one between two times by subtracting shifted unit steps.
+Restricting signals to finite intervals,multiply a signal by u(t-a)-u(t-b) to keep it only on a chosen interval.
+Decomposing target signals into pieces,split a desired waveform into simpler components supported on different time intervals.
+Writing line equations for signal segments,write a line equation from a desired slope and reference point for a signal segment.
+Building linear segments with step windows,combine a line equation with a rectangular step window to realize one segment of a piecewise signal.
+Combining windowed segments into one signal,add separately windowed components to build a complete piecewise waveform.
+Simplifying step-function signal expressions,expand and rearrange grouped windowed terms into a standard sum of shifted-step components.

@@ -65,19 +65,39 @@
       "prompt_signature": "049cc256e23d09f4789ad72eb77466b23074b5525c4a1a32a6cf9741c0c19c2d",
       "seed_source": "curriculum-builder/1-Ingest/Context/Kps.csv",
       "source_path": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lectures/Week 1/1.6 Size of a Signal.md"
+    },
+    "CTS-SRC-0007": {
+      "completed_at": "2026-04-07T20:10:24+00:00",
+      "course_id": "CTS",
+      "document_kind": "lecture",
+      "entry_count": 13,
+      "output_csv": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Topics/CTS-SRC-0007-Topics.csv",
+      "output_json": "curriculum-builder/1-Ingest/.lecture-topics-json/CTS-SRC-0007.json",
+      "prompt_signature": "e400e297125f150df0e2cc9349526df70acc89c9a2fa9f8696f5faf0f7bc9fc9",
+      "source_path": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lectures/Week 2/2.1 Unit Step Function and Forming Different Functions using Unit Step function.md"
+    },
+    "CTS-SRC-0010": {
+      "completed_at": "2026-04-07T20:22:34+00:00",
+      "course_id": "CTS",
+      "document_kind": "lecture",
+      "entry_count": 15,
+      "output_csv": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Topics/CTS-SRC-0010-Topics.csv",
+      "output_json": "curriculum-builder/1-Ingest/.lecture-topics-json/CTS-SRC-0010.json",
+      "prompt_signature": "e400e297125f150df0e2cc9349526df70acc89c9a2fa9f8696f5faf0f7bc9fc9",
+      "source_path": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lectures/Week 3/3.1 Introduction to Continuous-Time Systems.md"
     }
   },
   "indexed_courses": {
     "CTS": {
       "added_count": 0,
-      "completed_at": "2026-04-07T18:45:22+00:00",
+      "completed_at": "2026-04-07T20:18:23+00:00",
       "contents_index": "curriculum-builder/0-Source/Continuous-Time-Signal-Processing/CTS-Contents.csv",
       "row_count": 37,
       "stale_count": 0
     }
   },
   "last_targets": {
-    "generated_at": "2026-04-07T18:45:22+00:00",
+    "generated_at": "2026-04-07T20:18:23+00:00",
     "path": "curriculum-builder/1-Ingest/ingest-targets.json",
     "target_count": 1
   },

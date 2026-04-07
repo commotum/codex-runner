@@ -1,0 +1,16 @@
+title,description
+Reading continuous-time system notation,identify $x(t)$ as the input signal and $y(t)$ as the output signal in continuous-time notation.
+Interpreting the black-box system model,interpret a system block as a process that transforms an input signal into an output signal.
+Describing systems by input-output relationships,view system analysis as determining how the output signal depends on the input signal.
+Recognizing filtering as signal refinement,interpret a filter as a system that turns a noisy input into a cleaner output.
+Mapping physical variables to input and output signals,identify which physical quantity plays the role of $x(t)$ and which plays $y(t)$ in a model.
+Applying Ohm's law in an RC circuit,write the resistor current as $(v_s(t)-v_c(t))/R$ from the voltage difference across the resistor.
+Applying the capacitor current relation,write the capacitor current as $C dv_c(t)/dt$ from the capacitor voltage.
+Deriving the RC circuit differential equation,combine the RC current relations and rearrange them into a differential equation for $v_c(t)$ and $v_s(t)$.
+Modeling retarding force with linear drag,represent the automobile's retarding force as $F_r(t)=ρ v(t)$.
+Applying Newton's second law to automobile motion,write the automobile force balance as $F_a(t)-F_r(t)=m dv(t)/dt$.
+Deriving the automobile differential equation,substitute the drag model and rearrange to obtain a differential equation relating $v(t)$ and $F_a(t)$.
+Converting physical equations to input-output form,"rewrite equations in variables such as $v_s$, $v_c$, $F_a$, and $v$ using $x(t)$ and $y(t)$."
+Reading coefficient definitions in system models,"identify constants such as $a=1/RC$, $b=ρ/m$, and $c=1/m$ from physical parameters."
+Recognizing first-order system equations,identify an input-output differential equation involving the first derivative of the output as first order.
+Recognizing systems beyond time-domain signals,"identify that systems can process spatial signals such as images, not only time signals."

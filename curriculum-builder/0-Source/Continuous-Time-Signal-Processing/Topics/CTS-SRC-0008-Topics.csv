@@ -1,0 +1,17 @@
+title,description
+Recognizing the unit impulse definition,read δ(t) as an impulse at t=0 that is zero elsewhere and has total integral 1.
+Interpreting impulse area instead of amplitude,"interpret the impulse arrow as zero width, infinite height, and unit area rather than a finite amplitude."
+Comparing continuous-time and discrete-time impulses,compare δ(t) with δ[n] and identify why the continuous-time impulse is not a value of 1 at zero.
+Reading rectangular pulse parameters,identify the width ε and height 1/ε of the rectangular pulse δ_ε(t).
+Verifying unit area of the pulse approximation,compute the area of δ_ε(t) as ε·(1/ε)=1.
+Connecting pulse limits to the impulse,"interpret ε→0 as width vanishing, height growing without bound, and area staying 1."
+Interpreting the impulse as a generalized function,view δ(t) through its effect in integrals instead of ordinary pointwise values.
+Reading scaled impulse weight,identify k as the total area and weight of kδ(t).
+Applying impulse multiplication at zero,simplify f(t)δ(t) to f(0)δ(t) when the function is continuous at zero.
+Reading shifted impulse location,locate δ(t-T) at t=T and keep its total area equal to 1.
+Applying shifted impulse multiplication,simplify f(t)δ(t-T) to f(T)δ(t-T) when the function is continuous at T.
+Applying the sampling property,evaluate ∫_{-∞}^{∞} f(t)δ(t-T)dt as f(T).
+Using impulses to extract values,use ∫_{-∞}^{∞} f(t)δ(t-T)dt to obtain a signal value at a chosen time.
+Recognizing the unit step function,determine whether u(t) equals 0 or 1 from its piecewise definition.
+Connecting impulse integration to the unit step,rewrite ∫_{-∞}^{t}δ(τ)dτ as the unit step u(t).
+Differentiating the unit step into the impulse,identify du(t)/dt as the impulse δ(t).

@@ -1,72 +1,36 @@
 {
   "entries": [
     {
-      "description": "read $z(t)=Ae^{j(\\omega_0 t+\\phi)}$ as a signal with magnitude, angular frequency, and phase.",
-      "title": "Recognizing a complex exponential signal"
+      "description": "expand R e^{j\\theta} into cosine and sine terms with separate real and imaginary parts.",
+      "title": "Expanding Complex Exponentials with Euler's Formula"
     },
     {
-      "description": "expand the signal into explicit real and imaginary pieces.",
-      "title": "Converting a complex exponential to rectangular form"
+      "description": "identify the magnitude, angular frequency, and phase parameters in A e^{j(\\omega_0 t + \\phi)}.",
+      "title": "Reading Signal Parameters from Exponential Form"
     },
     {
-      "description": "identify the cosine waveform as the real part and the sine waveform as the imaginary part.",
-      "title": "Extracting the real and imaginary waveforms"
+      "description": "determine \\Re\\{z(t)\\} and \\Im\\{z(t)\\} by expanding a complex exponential signal.",
+      "title": "Extracting Real and Imaginary Signal Components"
     },
     {
-      "description": "view the signal as a complex quantity with constant magnitude and time-varying angle.",
-      "title": "Interpreting a complex exponential in the complex plane"
+      "description": "read |z(t)| and \\angle z(t) directly from the exponential form in the complex plane.",
+      "title": "Reading Magnitude and Angle in the Plane"
     },
     {
-      "description": "interpret $z(0)=Ae^{j\\phi}$ as the initial phasor with starting angle $\\phi$.",
-      "title": "Reading phasors at $t=0$"
+      "description": "evaluate z(0) to find the phasor's initial magnitude and starting angle.",
+      "title": "Reading the Initial Phasor at t=0"
     },
     {
-      "description": "connect $\\omega_0$ to how fast the phasor turns in the complex plane.",
-      "title": "Interpreting angular frequency as rotation rate"
+      "description": "interpret \\omega_0 as the counterclockwise rotation rate of a constant-magnitude phasor.",
+      "title": "Interpreting Phasor Rotation from Angular Frequency"
     },
     {
-      "description": "understand the cosine component as the projection of the rotating phasor onto the real axis.",
-      "title": "Real-axis projection of a phasor"
+      "description": "read \\Re\\{z(t)\\} as the real-axis projection that forms a cosine signal.",
+      "title": "Reading Projections onto the Real Axis"
     },
     {
-      "description": "understand the sine component as the projection of the rotating phasor onto the imaginary axis.",
-      "title": "Imaginary-axis projection of a phasor"
-    },
-    {
-      "description": "determine when the real or imaginary component becomes zero or reaches an extreme from the total angle.",
-      "title": "Reading projection values at special angles"
-    },
-    {
-      "description": "understand why a rotating phasor traces sine and cosine waves over time.",
-      "title": "Connecting phasor motion to time-domain sinusoids"
-    },
-    {
-      "description": "treat exponential form as a cleaner representation for analysis and later signal-processing work.",
-      "title": "Using complex exponentials as compact sinusoid representations"
-    },
-    {
-      "description": "identify amplitude, angular frequency, and phase in expressions like $A\\cos(\\omega t+\\phi)$ or $A\\sin(\\omega t+\\phi)$.",
-      "title": "Reading sinusoid parameters"
-    },
-    {
-      "description": "interpret angles like $\\pi/2$ and $\\pi$ as positions in a rotation.",
-      "title": "Interpreting radians and standard angles"
-    },
-    {
-      "description": "distinguish the real component of a complex number from its imaginary component.",
-      "title": "Identifying real and imaginary parts"
-    },
-    {
-      "description": "view a complex number as a point or vector on the real and imaginary axes.",
-      "title": "Interpreting a complex number in the plane"
-    },
-    {
-      "description": "describe a complex number by its length and direction.",
-      "title": "Describing magnitude and angle"
-    },
-    {
-      "description": "rewrite exponential form as cosine plus $j$ sine, and move between the two forms.",
-      "title": "Applying Euler's formula to exponentials"
+      "description": "read \\Im\\{z(t)\\} as the imaginary-axis projection that forms a sine signal.",
+      "title": "Reading Projections onto the Imaginary Axis"
     }
   ]
 }

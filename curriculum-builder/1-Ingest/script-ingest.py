@@ -45,7 +45,7 @@ LOG_PATH = STAGE_DIR / "ingest.log"
 TARGETS_PATH = STAGE_DIR / "ingest-targets.json"
 CODEX_CMD = "codex"
 TOPICS_DIRNAME = "Topics"
-TOPICS_CSV_FIELDNAMES = ["tile", "description"]
+TOPICS_CSV_FIELDNAMES = ["title", "description"]
 
 LOG_LOCK = threading.Lock()
 
@@ -460,7 +460,7 @@ def validate_topics_output(output_path):
 
 
 def build_topics_csv_rows(entries):
-    return [{"tile": entry["title"], "description": entry["description"]} for entry in entries]
+    return [{"title": entry["title"], "description": entry["description"]} for entry in entries]
 
 
 def write_topics_csv(path, entries):

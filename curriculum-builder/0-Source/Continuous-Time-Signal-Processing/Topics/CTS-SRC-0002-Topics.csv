@@ -1,18 +1,9 @@
-tile,description
-Recognizing a complex exponential signal,"read $z(t)=Ae^{j(\omega_0 t+\phi)}$ as a signal with magnitude, angular frequency, and phase."
-Converting a complex exponential to rectangular form,expand the signal into explicit real and imaginary pieces.
-Extracting the real and imaginary waveforms,identify the cosine waveform as the real part and the sine waveform as the imaginary part.
-Interpreting a complex exponential in the complex plane,view the signal as a complex quantity with constant magnitude and time-varying angle.
-Reading phasors at $t=0$,interpret $z(0)=Ae^{j\phi}$ as the initial phasor with starting angle $\phi$.
-Interpreting angular frequency as rotation rate,connect $\omega_0$ to how fast the phasor turns in the complex plane.
-Real-axis projection of a phasor,understand the cosine component as the projection of the rotating phasor onto the real axis.
-Imaginary-axis projection of a phasor,understand the sine component as the projection of the rotating phasor onto the imaginary axis.
-Reading projection values at special angles,determine when the real or imaginary component becomes zero or reaches an extreme from the total angle.
-Connecting phasor motion to time-domain sinusoids,understand why a rotating phasor traces sine and cosine waves over time.
-Using complex exponentials as compact sinusoid representations,treat exponential form as a cleaner representation for analysis and later signal-processing work.
-Reading sinusoid parameters,"identify amplitude, angular frequency, and phase in expressions like $A\cos(\omega t+\phi)$ or $A\sin(\omega t+\phi)$."
-Interpreting radians and standard angles,interpret angles like $\pi/2$ and $\pi$ as positions in a rotation.
-Identifying real and imaginary parts,distinguish the real component of a complex number from its imaginary component.
-Interpreting a complex number in the plane,view a complex number as a point or vector on the real and imaginary axes.
-Describing magnitude and angle,describe a complex number by its length and direction.
-Applying Euler's formula to exponentials,"rewrite exponential form as cosine plus $j$ sine, and move between the two forms."
+title,description
+Expanding Complex Exponentials with Euler's Formula,expand R e^{j\theta} into cosine and sine terms with separate real and imaginary parts.
+Reading Signal Parameters from Exponential Form,"identify the magnitude, angular frequency, and phase parameters in A e^{j(\omega_0 t + \phi)}."
+Extracting Real and Imaginary Signal Components,determine \Re\{z(t)\} and \Im\{z(t)\} by expanding a complex exponential signal.
+Reading Magnitude and Angle in the Plane,read |z(t)| and \angle z(t) directly from the exponential form in the complex plane.
+Reading the Initial Phasor at t=0,evaluate z(0) to find the phasor's initial magnitude and starting angle.
+Interpreting Phasor Rotation from Angular Frequency,interpret \omega_0 as the counterclockwise rotation rate of a constant-magnitude phasor.
+Reading Projections onto the Real Axis,read \Re\{z(t)\} as the real-axis projection that forms a cosine signal.
+Reading Projections onto the Imaginary Axis,read \Im\{z(t)\} as the imaginary-axis projection that forms a sine signal.

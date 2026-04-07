@@ -3,6 +3,7 @@ import argparse
 import csv
 import datetime
 import hashlib
+import io
 import json
 import os
 import re
@@ -36,10 +37,16 @@ PROMPTS_DIR = STAGE_DIR / "Prompts"
 COURSE_NAME_PROMPT_PATH = PROMPTS_DIR / "course-name.md"
 COURSE_NAME_SCHEMA_PATH = PROMPTS_DIR / "course-name.schema.json"
 COURSE_NAME_OUTPUT_DIR = STAGE_DIR / ".course-name-json"
+LECTURE_TOPICS_PROMPT_PATH = PROMPTS_DIR / "lecture-topics.md"
+LECTURE_TOPICS_SCHEMA_PATH = PROMPTS_DIR / "lecture-topics.schema.json"
+LECTURE_TOPICS_OUTPUT_DIR = STAGE_DIR / ".lecture-topics-json"
+STYLE_REFERENCE_CSV_PATH = STAGE_DIR / "Context" / "Kps.csv"
 STATE_PATH = STAGE_DIR / ".ingest_state.json"
 LOG_PATH = STAGE_DIR / "ingest.log"
 TARGETS_PATH = STAGE_DIR / "ingest-targets.json"
 CODEX_CMD = "codex"
+TOPICS_DIRNAME = "Topics"
+TOPICS_CSV_FIELDNAMES = ["tile", "description"]
 
 LOG_LOCK = threading.Lock()
 
@@ -124,7 +131,12 @@ def build_prompt_signature(prompt_path, schema_path):
 
 def load_state():
     if not STATE_PATH.exists():
-        return {"registered_courses": {}, "indexed_courses": {}, "last_targets": {}}
+        return {
+            "registered_courses": {},
+            "indexed_courses": {},
+            "generated_topics": {},
+            "last_targets": {},
+        }
     try:
         with STATE_PATH.open("r", encoding="utf-8") as handle:
             payload = json.load(handle)
@@ -132,11 +144,17 @@ def load_state():
             raise ValueError("state root is not an object")
         payload.setdefault("registered_courses", {})
         payload.setdefault("indexed_courses", {})
+        payload.setdefault("generated_topics", {})
         payload.setdefault("last_targets", {})
         return payload
     except Exception as exc:
         log_event(f"state_load_failed path={STATE_PATH} error={exc}")
-        return {"registered_courses": {}, "indexed_courses": {}, "last_targets": {}}
+        return {
+            "registered_courses": {},
+            "indexed_courses": {},
+            "generated_topics": {},
+            "last_targets": {},
+        }
 
 
 def save_state(state):
@@ -148,13 +166,14 @@ def save_state(state):
 
 
 def clean_stale_temp_files(source_root):
-    if COURSE_NAME_OUTPUT_DIR.exists():
-        for path in COURSE_NAME_OUTPUT_DIR.glob("*.tmp.*"):
-            try:
-                path.unlink()
-                log_event(f"stale_temp_removed path={path}")
-            except Exception as exc:
-                log_event(f"stale_temp_remove_failed path={path} error={exc}")
+    for output_dir in (COURSE_NAME_OUTPUT_DIR, LECTURE_TOPICS_OUTPUT_DIR):
+        if output_dir.exists():
+            for path in output_dir.glob("*.tmp.*"):
+                try:
+                    path.unlink()
+                    log_event(f"stale_temp_removed path={path}")
+                except Exception as exc:
+                    log_event(f"stale_temp_remove_failed path={path} error={exc}")
     for pattern in (".ingest_state.json.tmp.*", ".ingest-targets.json.tmp.*"):
         for path in STAGE_DIR.glob(pattern):
             try:
@@ -213,6 +232,20 @@ def write_json(path, payload):
     os.replace(temp_path, path)
 
 
+def render_csv_text(fieldnames, rows):
+    buffer = io.StringIO()
+    writer = csv.DictWriter(buffer, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
+    writer.writeheader()
+    writer.writerows(rows)
+    return buffer.getvalue().strip()
+
+
+def ensure_codex_available():
+    executable = shlex.split(CODEX_CMD)[0]
+    if shutil.which(executable) is None:
+        raise SystemExit(f"missing Codex CLI: {CODEX_CMD}")
+
+
 def ensure_courses_csv(path, dry_run):
     if path.exists():
         return
@@ -268,6 +301,64 @@ def build_course_name_prompt(prompt_template, courses_csv_path, folder_basename)
     for key, value in replacements.items():
         prompt = prompt.replace(key, value)
     return prompt
+
+
+def extract_lecture_code(document_path):
+    basename = Path(document_path).stem
+    match = re.match(r"^(\d+\.\d+)\b", basename)
+    return match.group(1) if match else ""
+
+
+def load_style_reference_catalog(path):
+    rows = read_csv_rows(path, ["lecture", "title", "description"])
+    catalog = []
+    for row in rows:
+        if not row["title"] or not row["description"]:
+            continue
+        catalog.append(
+            {
+                "lecture": row["lecture"],
+                "title": row["title"],
+                "description": row["description"],
+            }
+        )
+    if not catalog:
+        raise ValueError(f"style reference CSV is empty: {path}")
+    return catalog
+
+
+def build_style_reference_csv(style_catalog, document_path):
+    lecture_code = extract_lecture_code(document_path)
+    ordered_rows = list(style_catalog)
+    if lecture_code:
+        matching_rows = [row for row in style_catalog if row["lecture"] == lecture_code]
+        if matching_rows:
+            ordered_rows = matching_rows
+    csv_rows = [
+        {"title": row["title"], "description": row["description"]} for row in ordered_rows
+    ]
+    return render_csv_text(["title", "description"], csv_rows)
+
+
+def build_lecture_topics_prompt(
+    prompt_template, source_md_path, topics_csv_path, style_reference_csv
+):
+    prompt = prompt_template
+    replacements = {
+        "[SOURCE_MD_ABS_PATH]": str(source_md_path.resolve()),
+        "[TOPICS_CSV_ABS_PATH]": str(topics_csv_path.resolve()),
+        "[TARGET_STYLE_REFERENCE_CSV]": style_reference_csv,
+    }
+    for key, value in replacements.items():
+        prompt = prompt.replace(key, value)
+    return prompt
+
+
+def detect_document_kind(document_path):
+    normalized_path = document_path.replace("\\", "/")
+    if normalized_path.startswith("Lectures/") and normalized_path.lower().endswith(".md"):
+        return "lecture"
+    return "unknown"
 
 
 def build_codex_command(schema_path, output_path):
@@ -364,6 +455,59 @@ def validate_course_output(output_path, folder_basename, course_rows):
     return {"course-id": course_id, "course-name": course_name}
 
 
+def validate_topics_output(output_path):
+    with output_path.open("r", encoding="utf-8") as handle:
+        payload = json.load(handle)
+
+    if not isinstance(payload, dict):
+        raise ValueError("topics output root must be an object")
+    if set(payload.keys()) != {"entries"}:
+        raise ValueError("topics output must contain only the entries field")
+
+    entries = payload.get("entries")
+    if not isinstance(entries, list) or not entries:
+        raise ValueError("topics entries must be a non-empty array")
+
+    normalized_entries = []
+    seen_titles = set()
+    for index, entry in enumerate(entries, start=1):
+        if not isinstance(entry, dict):
+            raise ValueError(f"topics entry {index} must be an object")
+        if set(entry.keys()) != {"title", "description"}:
+            raise ValueError(f"topics entry {index} must contain only title and description")
+
+        title = (entry.get("title") or "").strip()
+        description = (entry.get("description") or "").strip()
+        if not title:
+            raise ValueError(f"topics entry {index} has empty title")
+        if not description:
+            raise ValueError(f"topics entry {index} has empty description")
+        if "\n" in title or "\r" in title:
+            raise ValueError(f"topics entry {index} title must be single-line")
+        if "\n" in description or "\r" in description:
+            raise ValueError(f"topics entry {index} description must be single-line")
+        if title.endswith("."):
+            raise ValueError(f"topics entry {index} title must not end with a period")
+        if not description.endswith("."):
+            raise ValueError(f"topics entry {index} description must end with a period")
+
+        normalized_title = title.casefold()
+        if normalized_title in seen_titles:
+            raise ValueError(f"duplicate topics title: {title}")
+        seen_titles.add(normalized_title)
+        normalized_entries.append({"title": title, "description": description})
+
+    return {"entries": normalized_entries}
+
+
+def build_topics_csv_rows(entries):
+    return [{"tile": entry["title"], "description": entry["description"]} for entry in entries]
+
+
+def write_topics_csv(path, entries):
+    write_csv_rows(path, TOPICS_CSV_FIELDNAMES, build_topics_csv_rows(entries))
+
+
 def register_new_course(course_dir, courses_csv_path, prompt_template, course_rows, prompt_signature, state, dry_run):
     prompt = build_course_name_prompt(prompt_template, courses_csv_path, course_dir.name)
     output_path = COURSE_NAME_OUTPUT_DIR / f"{course_dir.name}.json"
@@ -411,6 +555,8 @@ def discover_source_documents(course_root):
             continue
         rel_path = path.relative_to(course_root)
         if any(part.startswith(".") for part in rel_path.parts):
+            continue
+        if TOPICS_DIRNAME in rel_path.parts:
             continue
         if len(rel_path.parts) == 1 and rel_path.name.endswith("-Contents.csv"):
             continue
@@ -515,15 +661,40 @@ def sync_contents_index(course_dir, course_row, state, dry_run):
     }
 
 
-def build_targets_manifest(source_root, indexed_courses):
+def build_topics_csv_path(course_dir, document_id):
+    return course_dir / TOPICS_DIRNAME / f"{document_id}-Topics.csv"
+
+
+def build_topics_json_path(document_id):
+    return LECTURE_TOPICS_OUTPUT_DIR / f"{document_id}.json"
+
+
+def stamp_document_ingested(contents_path, course_id, document_id, ingested_at):
+    rows = load_contents_index(contents_path, course_id)
+    updated = False
+    for row in rows:
+        if row["document-id"] == document_id:
+            row["document-ingested"] = ingested_at
+            updated = True
+            break
+    if not updated:
+        raise ValueError(f"document-id not found in {contents_path}: {document_id}")
+    write_csv_rows(
+        contents_path,
+        ["index", "document-id", "document-path", "document-ingested"],
+        rows,
+    )
+
+
+def build_targets_manifest(source_root, indexed_courses, include_ingested=False):
     targets = []
-    progress = make_progress(indexed_courses, desc="Phase 3/3 Acquiring targets", unit="course")
+    progress = make_progress(indexed_courses, desc="Phase 3/4 Acquiring targets", unit="course")
     for entry in progress:
         progress.set_postfix_str(entry["course_id"])
         course_dir = entry["course_dir"]
         contents_path = entry["contents_path"]
         for row in entry["rows"]:
-            if (row["document-ingested"] or "").strip():
+            if not include_ingested and (row["document-ingested"] or "").strip():
                 continue
             source_path = course_dir / row["document-path"]
             if not source_path.exists():
@@ -539,7 +710,9 @@ def build_targets_manifest(source_root, indexed_courses):
                     "contents_index": repo_relative(contents_path),
                     "document_index": row["index"],
                     "document_id": row["document-id"],
+                    "document_kind": detect_document_kind(row["document-path"]),
                     "document_path": row["document-path"],
+                    "document_ingested": row["document-ingested"],
                     "source_path": repo_relative(source_path),
                 }
             )
@@ -551,6 +724,109 @@ def build_targets_manifest(source_root, indexed_courses):
         "source_root": repo_relative(source_root),
         "target_count": len(targets),
         "targets": targets,
+    }
+
+
+def target_matches_document_filter(target, requested):
+    requested_lower = requested.strip().lower()
+    if not requested_lower:
+        return False
+    candidates = {
+        target["document_id"],
+        target["document_path"],
+        target["source_path"],
+        Path(target["document_path"]).name,
+        Path(target["document_path"]).stem,
+    }
+    return any(requested_lower in candidate.lower() for candidate in candidates)
+
+
+def select_targets(targets, requested_documents):
+    if not requested_documents:
+        return list(targets)
+    selected = []
+    for target in targets:
+        if any(target_matches_document_filter(target, requested) for requested in requested_documents):
+            selected.append(target)
+    return selected
+
+
+def generate_topics_for_target(
+    target,
+    lecture_prompt_template,
+    lecture_prompt_signature,
+    style_catalog,
+    state,
+    dry_run,
+):
+    if target["document_kind"] != "lecture":
+        log_event(
+            f"target_topic_generation_skipped document_id={target['document_id']} reason=unsupported_kind kind={target['document_kind']}"
+        )
+        return {"status": "skipped", "document_id": target["document_id"], "entry_count": 0}
+
+    course_dir = REPO_ROOT / target["course_root"]
+    contents_path = REPO_ROOT / target["contents_index"]
+    source_path = REPO_ROOT / target["source_path"]
+    topics_csv_path = build_topics_csv_path(course_dir, target["document_id"])
+    topics_json_path = build_topics_json_path(target["document_id"])
+    temp_output_path = topics_json_path.with_name(
+        f"{topics_json_path.name}.tmp.{uuid.uuid4().hex}"
+    )
+    style_reference_csv = build_style_reference_csv(style_catalog, target["document_path"])
+    prompt = build_lecture_topics_prompt(
+        lecture_prompt_template,
+        source_path,
+        topics_csv_path,
+        style_reference_csv,
+    )
+
+    if dry_run:
+        log_event(
+            "dry_run_topic_generation "
+            f"document_id={target['document_id']} "
+            f"source={source_path} "
+            f"topics_csv={topics_csv_path} "
+            f"topics_json={topics_json_path}"
+        )
+        return {"status": "dry-run", "document_id": target["document_id"], "entry_count": 0}
+
+    LECTURE_TOPICS_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    run_codex(prompt, LECTURE_TOPICS_SCHEMA_PATH, temp_output_path)
+    validated_payload = validate_topics_output(temp_output_path)
+    write_json(topics_json_path, validated_payload)
+    write_topics_csv(topics_csv_path, validated_payload["entries"])
+
+    completed_at = now_iso()
+    stamp_document_ingested(
+        contents_path,
+        target["course_id"],
+        target["document_id"],
+        completed_at,
+    )
+    state["generated_topics"][target["document_id"]] = {
+        "completed_at": completed_at,
+        "course_id": target["course_id"],
+        "document_kind": target["document_kind"],
+        "entry_count": len(validated_payload["entries"]),
+        "output_csv": repo_relative(topics_csv_path),
+        "output_json": repo_relative(topics_json_path),
+        "prompt_signature": lecture_prompt_signature,
+        "source_path": target["source_path"],
+    }
+    save_state(state)
+    log_event(
+        "topics_generated "
+        f"document_id={target['document_id']} "
+        f"entry_count={len(validated_payload['entries'])} "
+        f"topics_csv={topics_csv_path}"
+    )
+    if temp_output_path.exists():
+        temp_output_path.unlink()
+    return {
+        "status": "generated",
+        "document_id": target["document_id"],
+        "entry_count": len(validated_payload["entries"]),
     }
 
 
@@ -579,7 +855,7 @@ def select_course_dirs(course_dirs, course_rows, requested):
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Source management and target acquisition for curriculum-builder ingestion."
+        description="Source management, target acquisition, and topic generation for curriculum-builder ingestion."
     )
     parser.add_argument(
         "--source-root",
@@ -596,6 +872,17 @@ def parse_args():
         action="append",
         default=[],
         help="Limit processing to specific course folders, slugs, ids, or names.",
+    )
+    parser.add_argument(
+        "--document",
+        action="append",
+        default=[],
+        help="Limit topic generation to specific document ids, basenames, or paths.",
+    )
+    parser.add_argument(
+        "--overwrite",
+        action="store_true",
+        help="Regenerate topics for documents even if document-ingested is already set.",
     )
     parser.add_argument(
         "--dry-run",
@@ -619,8 +906,15 @@ def main():
     clean_stale_temp_files(source_root)
     ensure_courses_csv(courses_csv_path, args.dry_run)
 
-    prompt_template = COURSE_NAME_PROMPT_PATH.read_text(encoding="utf-8")
-    prompt_signature = build_prompt_signature(COURSE_NAME_PROMPT_PATH, COURSE_NAME_SCHEMA_PATH)
+    course_prompt_template = COURSE_NAME_PROMPT_PATH.read_text(encoding="utf-8")
+    course_prompt_signature = build_prompt_signature(
+        COURSE_NAME_PROMPT_PATH, COURSE_NAME_SCHEMA_PATH
+    )
+    lecture_prompt_template = LECTURE_TOPICS_PROMPT_PATH.read_text(encoding="utf-8")
+    lecture_prompt_signature = build_prompt_signature(
+        LECTURE_TOPICS_PROMPT_PATH, LECTURE_TOPICS_SCHEMA_PATH
+    )
+    style_catalog = load_style_reference_catalog(STYLE_REFERENCE_CSV_PATH)
     state = load_state()
 
     course_dirs = discover_course_dirs(source_root)
@@ -635,35 +929,41 @@ def main():
     ]
 
     log_event(
-        f"run_start source_root={source_root} course_dir_count={len(course_dirs)} selected_course_count={len(selected_course_dirs)} new_course_count={len(new_course_dirs)} dry_run={args.dry_run}"
+        "run_start "
+        f"source_root={source_root} "
+        f"course_dir_count={len(course_dirs)} "
+        f"selected_course_count={len(selected_course_dirs)} "
+        f"new_course_count={len(new_course_dirs)} "
+        f"document_filter_count={len(args.document)} "
+        f"overwrite={args.overwrite} "
+        f"dry_run={args.dry_run}"
     )
 
     if new_course_dirs and not args.dry_run:
-        if shutil.which(shlex.split(CODEX_CMD)[0]) is None:
-            raise SystemExit(f"missing Codex CLI: {CODEX_CMD}")
-        progress = make_progress(new_course_dirs, desc="Phase 1/3 Registering courses", unit="course")
+        ensure_codex_available()
+        progress = make_progress(new_course_dirs, desc="Phase 1/4 Registering courses", unit="course")
         for course_dir in progress:
             progress.set_postfix_str(course_dir.name)
             register_new_course(
                 course_dir,
                 courses_csv_path,
-                prompt_template,
+                course_prompt_template,
                 course_rows,
-                prompt_signature,
+                course_prompt_signature,
                 state,
                 args.dry_run,
             )
         progress.close()
         slug_map = courses_by_slug(course_rows)
     elif new_course_dirs:
-        progress = make_progress(new_course_dirs, desc="Phase 1/3 Registering courses", unit="course")
+        progress = make_progress(new_course_dirs, desc="Phase 1/4 Registering courses", unit="course")
         for course_dir in progress:
             progress.set_postfix_str(course_dir.name)
             log_event(f"dry_run_new_course_pending folder={course_dir.name}")
         progress.close()
 
     indexed_courses = []
-    progress = make_progress(selected_course_dirs, desc="Phase 2/3 Syncing contents", unit="course")
+    progress = make_progress(selected_course_dirs, desc="Phase 2/4 Syncing contents", unit="course")
     for course_dir in progress:
         progress.set_postfix_str(course_dir.name)
         course_row = slug_map.get(slugify_text(course_dir.name))
@@ -675,7 +975,16 @@ def main():
         indexed_courses.append(sync_contents_index(course_dir, course_row, state, args.dry_run))
     progress.close()
 
-    manifest = build_targets_manifest(source_root, indexed_courses)
+    manifest = build_targets_manifest(
+        source_root,
+        indexed_courses,
+        include_ingested=args.overwrite,
+    )
+    manifest["targets"] = select_targets(manifest["targets"], args.document)
+    manifest["target_count"] = len(manifest["targets"])
+    if args.document and not manifest["targets"]:
+        raise SystemExit("no documents matched the requested filters")
+
     if args.dry_run:
         log_event(
             f"dry_run_targets_ready target_count={manifest['target_count']} selected_courses={len(indexed_courses)}"
@@ -692,6 +1001,27 @@ def main():
             f"targets_manifest_written path={TARGETS_PATH} target_count={manifest['target_count']}"
         )
 
+    topics_generated = 0
+    topics_skipped = 0
+    progress = make_progress(manifest["targets"], desc="Phase 4/4 Generating topics", unit="doc")
+    if manifest["targets"] and not args.dry_run:
+        ensure_codex_available()
+    for target in progress:
+        progress.set_postfix_str(target["document_id"])
+        result = generate_topics_for_target(
+            target,
+            lecture_prompt_template,
+            lecture_prompt_signature,
+            style_catalog,
+            state,
+            args.dry_run,
+        )
+        if result["status"] == "generated":
+            topics_generated += 1
+        elif result["status"] == "skipped":
+            topics_skipped += 1
+    progress.close()
+
     print(
         json.dumps(
             {
@@ -700,6 +1030,8 @@ def main():
                 "new_courses": len(new_course_dirs),
                 "courses_indexed": len(indexed_courses),
                 "target_count": manifest["target_count"],
+                "topics_generated": topics_generated,
+                "topics_skipped": topics_skipped,
                 "dry_run": args.dry_run,
                 "targets_manifest": repo_relative(TARGETS_PATH),
             },
@@ -708,7 +1040,12 @@ def main():
         )
     )
     log_event(
-        f"run_complete selected_courses={len(indexed_courses)} target_count={manifest['target_count']} dry_run={args.dry_run}"
+        "run_complete "
+        f"selected_courses={len(indexed_courses)} "
+        f"target_count={manifest['target_count']} "
+        f"topics_generated={topics_generated} "
+        f"topics_skipped={topics_skipped} "
+        f"dry_run={args.dry_run}"
     )
 
 

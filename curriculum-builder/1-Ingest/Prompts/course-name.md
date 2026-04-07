@@ -1,12 +1,24 @@
-If the input is a directory name (already correctly formatted with dash-separated words), produce a single CSV line with:
+You are registering one top-level source folder into the course index.
 
-1. The course-id (a 3 character identifier for the course)
-2. The course-name (the same name converted to clean English with spaces and title case)
+Read the existing course index completely:
 
-Match the course-id and naming style to the entries in curriculum-builder/0-Source/Courses.csv where applicable; otherwise infer a reasonable 3-character code and formatted name.
+`[COURSES_CSV_ABS_PATH]`
 
-A. Develop a 3-character all-caps course-id using a mnemonic code derived from the course name that is short, recognizable, and unique. Prefer initials from the main words (Continuous Time Signal Processing → CTS), and use numbers only if needed for sequence or distinction.
+The folder basename to register is:
 
-B. Generate the course-name by converting the directory name into a properly formatted English title: replace dashes with spaces and apply title case (Discrete-Time-Signal-Processing → Discrete Time Signal Processing).
+`[COURSE_FOLDER_BASENAME]`
 
-Output only one CSV line per input.
+Return JSON only, matching the provided schema, with:
+
+- `course_id`
+- `course_name`
+
+Requirements:
+
+- Use only the folder basename and the existing CSV.
+- If an existing CSV row already corresponds to the same course after normalizing its `course_name` into dash-separated lowercase words, reuse that exact `course_id` and `course_name`.
+- Otherwise generate a new `course_id` that is exactly 3 characters, all caps letters or digits, mnemonic, recognizable, and unique within the existing CSV.
+- Prefer initials from the main words when natural, and use digits only if needed for distinction.
+- Generate `course_name` by converting the folder basename into a clean English title: replace dashes with spaces and use title case while preserving meaningful numerals or abbreviations.
+- The resulting `course_name` must normalize back to the same folder basename.
+- Do not output CSV, markdown, commentary, or extra fields.

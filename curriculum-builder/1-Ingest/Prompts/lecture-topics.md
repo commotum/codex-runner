@@ -8,12 +8,6 @@ The runner will write the final per-document CSV to:
 
 `[TOPICS_CSV_ABS_PATH]`
 
-These CSV rows are style examples only. Use them to calibrate tone, granularity, and phrasing, not as a required checklist for this lecture:
-
-```csv
-[TARGET_STYLE_REFERENCE_CSV]
-```
-
 Task:
 
 Extract the lecture notes into a clean list of lesson-sized skills, including prerequisite skills. At the row level, the target pattern is:

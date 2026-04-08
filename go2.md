@@ -31,6 +31,10 @@ However, I think it's unlikely that even by reducing something to a single lectu
 
 So here's what I think the pipeline might be? And I would love your suggestions on how to make this more like a map reduce so that I can accomplish my goal.
 
-1. Ingestion - For each document in the source set (lecture notes, homework assignments, etc) segment the content into sections. For example, maybe the first half of the lecture is about one skill, and the second is about another, does that make sense? and generate a list of topics/skills and subskills etc, that we can add to the graph. We probably need a separate runner for each type of source document, and honestly, it may be possible that we need a pipeline just for this step. This step doesn't need to be perfect in terms of topic/skill selection, but it should still have highly structured precise outputs that can be fed to the next step.
+1. Ingestion - For each document in the source set (lecture notes, homework assignments, etc) segment the content into sections based on topic. For example, some lectures may cover a wide ranging set of skills, and others may be more focused, maybe using many examples to cover a single skill. 
+
+
+
+maybe the first half of the lecture is about one skill, and the second is about another, does that make sense? and generate a list of topics/skills and subskills etc, that we can add to the graph. We probably need a separate runner for each type of source document, and honestly, it may be possible that we need a pipeline just for this step. This step doesn't need to be perfect in terms of topic/skill selection, but it should still have highly structured precise outputs that can be fed to the next step.
 
 2. 

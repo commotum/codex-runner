@@ -72,7 +72,7 @@ console.log(result);
 
 const thread2 = codex.resumeThread(threadId);
 
-const result2 = await thread.run("Pick up where you left off");
+const result2 = await thread2.run("Pick up where you left off");
 
 console.log(result2);
 ```

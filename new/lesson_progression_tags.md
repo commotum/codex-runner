@@ -1,6 +1,6 @@
 # Lesson progression tags
 
-This document compresses each lesson into a progression map of tightly scoped sections, where each line highlights how a problem type incrementally increases in complexity relative to the previous one. The focus is on identifying structural changes—such as added steps, reversals, representation shifts, or edge cases—rather than re-explaining concepts. Each topic moves from a base form to layered variants, showing how similar-looking problems diverge through small but meaningful increases in reasoning depth.
+This document demonstrates how MathAcademy composes lessons as a progression of tightly scoped sections. Each line highlights how a problem type incrementally increases in complexity relative to the previous one. The focus is on identifying structural changes—such as added steps, reversals, representation shifts, or edge cases—rather than re-explaining concepts. Each topic moves from a base form to layered variants, showing how similar-looking problems diverge through small but meaningful increases in reasoning depth.
 
 ---
 

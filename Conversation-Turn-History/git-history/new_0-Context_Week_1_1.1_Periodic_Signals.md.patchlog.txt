@@ -1,0 +1,496 @@
+commit 971c4067f4c2764594e4a42ac5e45412da003334
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-11 11:06:04 -0700
+
+    .
+---
+ new/0-Context/Week 1/1.1 Periodic Signals.md | 130 +++++++++++++++++++++++++++
+ 1 file changed, 130 insertions(+)
+
+diff --git a/new/0-Context/Week 1/1.1 Periodic Signals.md b/new/0-Context/Week 1/1.1 Periodic Signals.md
+new file mode 100644
+index 0000000..9efb5c1
+--- /dev/null
++++ b/new/0-Context/Week 1/1.1 Periodic Signals.md	
+@@ -0,0 +1,130 @@
++## Lecture Outline (Periodic Signals, Harmonics, and Periodicity of Signal Combinations)
++
++### 1. Periodic Continuous-Time Signals
++- A continuous-time signal is periodic if it repeats after some positive time $T$:
++  $$ x(t) = x(t+T), \quad T>0 $$
++- More generally, the repetition condition can be written as:
++  $$ x(t) = x(t+nT), \quad n \in \mathbb{Z} $$
++- $T$ is called the **fundamental period**.
++
++---
++
++### 2. Example: Periodic Pulse Train
++- A pulse train that repeats every $2$ seconds has period:
++  $$ T = 2 \text{ s} $$
++- The signal also repeats after any integer multiple of the period:
++  $$ x(t) = x(t+nT) $$
++
++---
++
++### 3. Real-Valued Sinusoidal Signals
++- General form:
++  $$ x(t) = A\sin(\omega_0 t+\phi) $$
++- Parameters:
++  - $A$: amplitude
++  - $\omega_0$: fundamental angular frequency in radians/second
++  - $\phi$: phase angle in radians
++- Relationship between period and angular frequency:
++  $$ \omega_0 = \frac{2\pi}{T} $$
++
++---
++
++### 4. Physical Examples of Sinusoidal Behavior
++- Sinusoids appear naturally in many real systems, including:
++  - Generator / AC voltage waveforms
++  - Undamped mass-spring oscillations
++- These examples motivate why sinusoidal signals are so important in signals and systems.
++
++---
++
++### 5. Role of Phase
++- The phase $\phi$ determines where the sinusoid starts at $t=0$.
++- Changing the phase shifts the waveform in time.
++- Phase can also convert between sine and cosine forms.
++
++---
++
++### 6. Harmonics
++- Harmonics are sinusoidal components whose frequencies are integer multiples of a fundamental frequency:
++  $$ \omega_k = k\omega_0, \quad k=1,2,3,\dots $$
++- The $k$th harmonic oscillates faster than the fundamental by a factor of $k$.
++
++---
++
++### 7. Harmonic Examples
++- First harmonic:
++  $$ x_1(t) = \frac{1}{2}\cos(2\pi t), \quad \omega_1 = 1\cdot 2\pi $$
++- Second harmonic:
++  $$ x_2(t) = \cos(4\pi t), \quad \omega_2 = 2\cdot 2\pi = 4\pi $$
++- Third harmonic:
++  $$ x_3(t) = \frac{1}{3}\cos(6\pi t), \quad \omega_3 = 3\cdot 2\pi = 6\pi $$
++
++---
++
++### 8. Why Harmonics Matter
++- Periodic signals can be represented as sums of harmonically related sinusoids.
++- This leads directly into later topics such as Fourier series and Fourier transforms.
++
++---
++
++### 9. Periodicity of the Sum of Two Periodic Signals
++- Suppose:
++  $$ x(t) = x(t+mT_1) $$
++  $$ y(t) = y(t+nT_2) $$
++  where $m,n \in \mathbb{Z}$.
++- Form a linear combination:
++  $$ z(t) = ax(t) + by(t) $$
++- For $z(t)$ to be periodic with period $T$, the periods must satisfy:
++  $$ T = mT_1 = nT_2 $$
++- Equivalently:
++  $$ \frac{T_1}{T_2} = \frac{n}{m} $$
++- Therefore, the sum of two periodic signals is periodic if the ratio of their periods is **rational**.
++
++---
++
++### 10. Linear vs. Nonlinear Operations
++- Addition is a **linear** operation:
++  $$ z(t) = ax(t)+by(t) $$
++- Multiplication is a **nonlinear** operation:
++  $$ z(t) = x(t)y(t) $$
++
++---
++
++### 11. Product of Two Sinusoids
++- Let:
++  $$ x(t) = \cos(\omega_1 t), \quad y(t) = \cos(\omega_2 t) $$
++- Then:
++  $$ z(t) = \cos(\omega_1 t)\cos(\omega_2 t) $$
++- Using the product-to-sum identity:
++  $$ z(t) = \frac{1}{2}\cos((\omega_1-\omega_2)t) + \frac{1}{2}\cos((\omega_1+\omega_2)t) $$
++
++---
++
++### 12. Equal-Frequency Case
++- If both signals have the same period $T$, then:
++  $$ \omega_1 = \omega_2 = \omega = \frac{2\pi}{T} $$
++- The product becomes:
++  $$ z(t) = \frac{1}{2} + \frac{1}{2}\cos(2\omega t) $$
++- This contains:
++  - a DC term:
++    $$ \frac{1}{2} $$
++  - a second harmonic:
++    $$ \frac{1}{2}\cos(2\omega t) $$
++
++---
++
++### 13. Key Takeaway About Nonlinear Operations
++- Nonlinear operations can generate higher-order harmonics even when the original signals only contain the fundamental frequency.
++- In this example, multiplying two sinusoids at frequency $\omega$ produces a component at $2\omega$.
++
++---
++
++### 14. Main Conclusions
++- A continuous-time signal is periodic if:
++  $$ x(t) = x(t+nT) $$
++- A sinusoid satisfies:
++  $$ \omega_0 = \frac{2\pi}{T} $$
++- Harmonics are given by:
++  $$ \omega_k = k\omega_0 $$
++- The sum of periodic signals is periodic if their period ratio is rational.
++- Nonlinear operations such as multiplication can create new harmonic components.
+\ No newline at end of file
+
+commit 0f974b9235c8eb2864ab7377cec690d9e4e2d251
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-08 08:08:44 -0700
+
+    .
+---
+ new/0-Context/Week 1/1.1 Periodic Signals.md | 130 ---------------------------
+ 1 file changed, 130 deletions(-)
+
+diff --git a/new/0-Context/Week 1/1.1 Periodic Signals.md b/new/0-Context/Week 1/1.1 Periodic Signals.md
+deleted file mode 100644
+index 9efb5c1..0000000
+--- a/new/0-Context/Week 1/1.1 Periodic Signals.md	
++++ /dev/null
+@@ -1,130 +0,0 @@
+-## Lecture Outline (Periodic Signals, Harmonics, and Periodicity of Signal Combinations)
+-
+-### 1. Periodic Continuous-Time Signals
+-- A continuous-time signal is periodic if it repeats after some positive time $T$:
+-  $$ x(t) = x(t+T), \quad T>0 $$
+-- More generally, the repetition condition can be written as:
+-  $$ x(t) = x(t+nT), \quad n \in \mathbb{Z} $$
+-- $T$ is called the **fundamental period**.
+-
+----
+-
+-### 2. Example: Periodic Pulse Train
+-- A pulse train that repeats every $2$ seconds has period:
+-  $$ T = 2 \text{ s} $$
+-- The signal also repeats after any integer multiple of the period:
+-  $$ x(t) = x(t+nT) $$
+-
+----
+-
+-### 3. Real-Valued Sinusoidal Signals
+-- General form:
+-  $$ x(t) = A\sin(\omega_0 t+\phi) $$
+-- Parameters:
+-  - $A$: amplitude
+-  - $\omega_0$: fundamental angular frequency in radians/second
+-  - $\phi$: phase angle in radians
+-- Relationship between period and angular frequency:
+-  $$ \omega_0 = \frac{2\pi}{T} $$
+-
+----
+-
+-### 4. Physical Examples of Sinusoidal Behavior
+-- Sinusoids appear naturally in many real systems, including:
+-  - Generator / AC voltage waveforms
+-  - Undamped mass-spring oscillations
+-- These examples motivate why sinusoidal signals are so important in signals and systems.
+-
+----
+-
+-### 5. Role of Phase
+-- The phase $\phi$ determines where the sinusoid starts at $t=0$.
+-- Changing the phase shifts the waveform in time.
+-- Phase can also convert between sine and cosine forms.
+-
+----
+-
+-### 6. Harmonics
+-- Harmonics are sinusoidal components whose frequencies are integer multiples of a fundamental frequency:
+-  $$ \omega_k = k\omega_0, \quad k=1,2,3,\dots $$
+-- The $k$th harmonic oscillates faster than the fundamental by a factor of $k$.
+-
+----
+-
+-### 7. Harmonic Examples
+-- First harmonic:
+-  $$ x_1(t) = \frac{1}{2}\cos(2\pi t), \quad \omega_1 = 1\cdot 2\pi $$
+-- Second harmonic:
+-  $$ x_2(t) = \cos(4\pi t), \quad \omega_2 = 2\cdot 2\pi = 4\pi $$
+-- Third harmonic:
+-  $$ x_3(t) = \frac{1}{3}\cos(6\pi t), \quad \omega_3 = 3\cdot 2\pi = 6\pi $$
+-
+----
+-
+-### 8. Why Harmonics Matter
+-- Periodic signals can be represented as sums of harmonically related sinusoids.
+-- This leads directly into later topics such as Fourier series and Fourier transforms.
+-
+----
+-
+-### 9. Periodicity of the Sum of Two Periodic Signals
+-- Suppose:
+-  $$ x(t) = x(t+mT_1) $$
+-  $$ y(t) = y(t+nT_2) $$
+-  where $m,n \in \mathbb{Z}$.
+-- Form a linear combination:
+-  $$ z(t) = ax(t) + by(t) $$
+-- For $z(t)$ to be periodic with period $T$, the periods must satisfy:
+-  $$ T = mT_1 = nT_2 $$
+-- Equivalently:
+-  $$ \frac{T_1}{T_2} = \frac{n}{m} $$
+-- Therefore, the sum of two periodic signals is periodic if the ratio of their periods is **rational**.
+-
+----
+-
+-### 10. Linear vs. Nonlinear Operations
+-- Addition is a **linear** operation:
+-  $$ z(t) = ax(t)+by(t) $$
+-- Multiplication is a **nonlinear** operation:
+-  $$ z(t) = x(t)y(t) $$
+-
+----
+-
+-### 11. Product of Two Sinusoids
+-- Let:
+-  $$ x(t) = \cos(\omega_1 t), \quad y(t) = \cos(\omega_2 t) $$
+-- Then:
+-  $$ z(t) = \cos(\omega_1 t)\cos(\omega_2 t) $$
+-- Using the product-to-sum identity:
+-  $$ z(t) = \frac{1}{2}\cos((\omega_1-\omega_2)t) + \frac{1}{2}\cos((\omega_1+\omega_2)t) $$
+-
+----
+-
+-### 12. Equal-Frequency Case
+-- If both signals have the same period $T$, then:
+-  $$ \omega_1 = \omega_2 = \omega = \frac{2\pi}{T} $$
+-- The product becomes:
+-  $$ z(t) = \frac{1}{2} + \frac{1}{2}\cos(2\omega t) $$
+-- This contains:
+-  - a DC term:
+-    $$ \frac{1}{2} $$
+-  - a second harmonic:
+-    $$ \frac{1}{2}\cos(2\omega t) $$
+-
+----
+-
+-### 13. Key Takeaway About Nonlinear Operations
+-- Nonlinear operations can generate higher-order harmonics even when the original signals only contain the fundamental frequency.
+-- In this example, multiplying two sinusoids at frequency $\omega$ produces a component at $2\omega$.
+-
+----
+-
+-### 14. Main Conclusions
+-- A continuous-time signal is periodic if:
+-  $$ x(t) = x(t+nT) $$
+-- A sinusoid satisfies:
+-  $$ \omega_0 = \frac{2\pi}{T} $$
+-- Harmonics are given by:
+-  $$ \omega_k = k\omega_0 $$
+-- The sum of periodic signals is periodic if their period ratio is rational.
+-- Nonlinear operations such as multiplication can create new harmonic components.
+\ No newline at end of file
+
+commit 9a5dc75e2f8122262a9995c24968b541f6f1363f
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-07 17:55:04 -0700
+
+    .
+---
+ .../Lectures => new/0-Context}/Week 1/1.1 Periodic Signals.md             | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+diff --git a/curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lectures/Week 1/1.1 Periodic Signals.md b/new/0-Context/Week 1/1.1 Periodic Signals.md
+similarity index 100%
+copy from curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lectures/Week 1/1.1 Periodic Signals.md
+copy to new/0-Context/Week 1/1.1 Periodic Signals.md
+
+commit 5a9c16da705fd01810c79e412d34c22c195b7f14
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-06 16:48:30 -0700
+
+    .
+---
+ .../Lectures/Week 1/1.1 Periodic Signals.md                               | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+diff --git a/curriculum-builder/0-Source/Continuous Time Signal Processing/Lectures/Week 1/1.1 Periodic Signals.md b/curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lectures/Week 1/1.1 Periodic Signals.md
+similarity index 100%
+rename from curriculum-builder/0-Source/Continuous Time Signal Processing/Lectures/Week 1/1.1 Periodic Signals.md
+rename to curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lectures/Week 1/1.1 Periodic Signals.md
+
+commit 9ae1b499c14eed6c77e399a65ea9184b52b3cfc9
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-06 15:21:37 -0700
+
+    .
+---
+ .../Lectures/Week 1/1.1 Periodic Signals.md                               | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+diff --git a/curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lectures/Week 1/1.1 Periodic Signals.md b/curriculum-builder/0-Source/Continuous Time Signal Processing/Lectures/Week 1/1.1 Periodic Signals.md
+similarity index 100%
+rename from curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lectures/Week 1/1.1 Periodic Signals.md
+rename to curriculum-builder/0-Source/Continuous Time Signal Processing/Lectures/Week 1/1.1 Periodic Signals.md
+
+commit d16ba716d14715e2aa9fb6a22dff50153e50defd
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-06 15:02:12 -0700
+
+    .
+---
+ .../{Lecture => Lectures}/Week 1/1.1 Periodic Signals.md                  | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+diff --git a/curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lecture/Week 1/1.1 Periodic Signals.md b/curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lectures/Week 1/1.1 Periodic Signals.md
+similarity index 100%
+rename from curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lecture/Week 1/1.1 Periodic Signals.md
+rename to curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lectures/Week 1/1.1 Periodic Signals.md
+
+commit f99ab753813899c982f22e9fc8e0c3b262291458
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-04 12:41:45 -0700
+
+    .
+---
+ .../Lecture/Week 1/1.1 Periodic Signals.md         | 130 +++++++++++++++++++++
+ 1 file changed, 130 insertions(+)
+
+diff --git a/curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lecture/Week 1/1.1 Periodic Signals.md b/curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lecture/Week 1/1.1 Periodic Signals.md
+new file mode 100644
+index 0000000..9efb5c1
+--- /dev/null
++++ b/curriculum-builder/0-Source/Continuous-Time-Signal-Processing/Lecture/Week 1/1.1 Periodic Signals.md	
+@@ -0,0 +1,130 @@
++## Lecture Outline (Periodic Signals, Harmonics, and Periodicity of Signal Combinations)
++
++### 1. Periodic Continuous-Time Signals
++- A continuous-time signal is periodic if it repeats after some positive time $T$:
++  $$ x(t) = x(t+T), \quad T>0 $$
++- More generally, the repetition condition can be written as:
++  $$ x(t) = x(t+nT), \quad n \in \mathbb{Z} $$
++- $T$ is called the **fundamental period**.
++
++---
++
++### 2. Example: Periodic Pulse Train
++- A pulse train that repeats every $2$ seconds has period:
++  $$ T = 2 \text{ s} $$
++- The signal also repeats after any integer multiple of the period:
++  $$ x(t) = x(t+nT) $$
++
++---
++
++### 3. Real-Valued Sinusoidal Signals
++- General form:
++  $$ x(t) = A\sin(\omega_0 t+\phi) $$
++- Parameters:
++  - $A$: amplitude
++  - $\omega_0$: fundamental angular frequency in radians/second
++  - $\phi$: phase angle in radians
++- Relationship between period and angular frequency:
++  $$ \omega_0 = \frac{2\pi}{T} $$
++
++---
++
++### 4. Physical Examples of Sinusoidal Behavior
++- Sinusoids appear naturally in many real systems, including:
++  - Generator / AC voltage waveforms
++  - Undamped mass-spring oscillations
++- These examples motivate why sinusoidal signals are so important in signals and systems.
++
++---
++
++### 5. Role of Phase
++- The phase $\phi$ determines where the sinusoid starts at $t=0$.
++- Changing the phase shifts the waveform in time.
++- Phase can also convert between sine and cosine forms.
++
++---
++
++### 6. Harmonics
++- Harmonics are sinusoidal components whose frequencies are integer multiples of a fundamental frequency:
++  $$ \omega_k = k\omega_0, \quad k=1,2,3,\dots $$
++- The $k$th harmonic oscillates faster than the fundamental by a factor of $k$.
++
++---
++
++### 7. Harmonic Examples
++- First harmonic:
++  $$ x_1(t) = \frac{1}{2}\cos(2\pi t), \quad \omega_1 = 1\cdot 2\pi $$
++- Second harmonic:
++  $$ x_2(t) = \cos(4\pi t), \quad \omega_2 = 2\cdot 2\pi = 4\pi $$
++- Third harmonic:
++  $$ x_3(t) = \frac{1}{3}\cos(6\pi t), \quad \omega_3 = 3\cdot 2\pi = 6\pi $$
++
++---
++
++### 8. Why Harmonics Matter
++- Periodic signals can be represented as sums of harmonically related sinusoids.
++- This leads directly into later topics such as Fourier series and Fourier transforms.
++
++---
++
++### 9. Periodicity of the Sum of Two Periodic Signals
++- Suppose:
++  $$ x(t) = x(t+mT_1) $$
++  $$ y(t) = y(t+nT_2) $$
++  where $m,n \in \mathbb{Z}$.
++- Form a linear combination:
++  $$ z(t) = ax(t) + by(t) $$
++- For $z(t)$ to be periodic with period $T$, the periods must satisfy:
++  $$ T = mT_1 = nT_2 $$
++- Equivalently:
++  $$ \frac{T_1}{T_2} = \frac{n}{m} $$
++- Therefore, the sum of two periodic signals is periodic if the ratio of their periods is **rational**.
++
++---
++
++### 10. Linear vs. Nonlinear Operations
++- Addition is a **linear** operation:
++  $$ z(t) = ax(t)+by(t) $$
++- Multiplication is a **nonlinear** operation:
++  $$ z(t) = x(t)y(t) $$
++
++---
++
++### 11. Product of Two Sinusoids
++- Let:
++  $$ x(t) = \cos(\omega_1 t), \quad y(t) = \cos(\omega_2 t) $$
++- Then:
++  $$ z(t) = \cos(\omega_1 t)\cos(\omega_2 t) $$
++- Using the product-to-sum identity:
++  $$ z(t) = \frac{1}{2}\cos((\omega_1-\omega_2)t) + \frac{1}{2}\cos((\omega_1+\omega_2)t) $$
++
++---
++
++### 12. Equal-Frequency Case
++- If both signals have the same period $T$, then:
++  $$ \omega_1 = \omega_2 = \omega = \frac{2\pi}{T} $$
++- The product becomes:
++  $$ z(t) = \frac{1}{2} + \frac{1}{2}\cos(2\omega t) $$
++- This contains:
++  - a DC term:
++    $$ \frac{1}{2} $$
++  - a second harmonic:
++    $$ \frac{1}{2}\cos(2\omega t) $$
++
++---
++
++### 13. Key Takeaway About Nonlinear Operations
++- Nonlinear operations can generate higher-order harmonics even when the original signals only contain the fundamental frequency.
++- In this example, multiplying two sinusoids at frequency $\omega$ produces a component at $2\omega$.
++
++---
++
++### 14. Main Conclusions
++- A continuous-time signal is periodic if:
++  $$ x(t) = x(t+nT) $$
++- A sinusoid satisfies:
++  $$ \omega_0 = \frac{2\pi}{T} $$
++- Harmonics are given by:
++  $$ \omega_k = k\omega_0 $$
++- The sum of periodic signals is periodic if their period ratio is rational.
++- Nonlinear operations such as multiplication can create new harmonic components.
+\ No newline at end of file

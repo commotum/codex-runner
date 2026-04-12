@@ -1,0 +1,33 @@
+*** Begin Patch
+*** Update File: /home/jake/Developer/codex-runner/new/0-Context/Week 1/1.1 Topics.md
+@@
+ # 1.1 Topics
+ 
+-1. **Periodic Continuous-Time Signals**  
+-   Core move: recognize periodicity and identify the fundamental period.  
+-   This comes from sections 1-2.
+-
+-2. **Real-Valued Sinusoids**  
+-   Core move: read amplitude, angular frequency, period, and phase from `A sin(ω₀t + φ)`.  
+-   This comes from sections 3-5.  
+-   The physical examples belong here as support, not as their own lesson.
+-
+-3. **Harmonics**  
+-   Core move: identify harmonics as integer multiples of a fundamental frequency.  
+-   This comes from sections 6-8.
+-
+-4. **When the Sum of Two Periodic Signals Is Periodic**  
+-   Core move: determine periodicity of a sum using the common-period / rational-ratio condition.  
+-   This is section 9, with section 10 partly serving as setup.
+-
+-5. **Products of Sinusoids and Harmonic Generation**  
+-   Core move: use the product-to-sum identity and recognize that nonlinear operations can create new harmonic components.  
+-   This comes from sections 10-13.
+-
+-Section 14 should not become its own lesson. It is a summary.
++1. Recognizing Periodic Continuous-Time Signals - determine whether a continuous-time signal is periodic and find its fundamental period.
++2. Reading Parameters of Real-Valued Sinusoids - read the amplitude, angular frequency, period, and phase of a sinusoid.
++3. Identifying Harmonics from Fundamental Frequency - determine whether a sinusoid is a harmonic of a given fundamental frequency.
++4. Determining When Sums Stay Periodic - determine whether a sum of periodic signals is periodic from their period ratio.
++5. Applying Product-to-Sum to Signal Products - rewrite a product of sinusoids to identify the frequencies it contains.
+*** End Patch

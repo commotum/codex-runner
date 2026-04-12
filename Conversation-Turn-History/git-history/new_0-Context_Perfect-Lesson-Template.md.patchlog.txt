@@ -1,0 +1,375 @@
+commit 971c4067f4c2764594e4a42ac5e45412da003334
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-11 11:06:04 -0700
+
+    .
+---
+ new/0-Context/Perfect-Lesson-Template.md | 99 ++++++++++++++++++++++++++++++++
+ 1 file changed, 99 insertions(+)
+
+diff --git a/new/0-Context/Perfect-Lesson-Template.md b/new/0-Context/Perfect-Lesson-Template.md
+new file mode 100644
+index 0000000..70630a4
+--- /dev/null
++++ b/new/0-Context/Perfect-Lesson-Template.md
+@@ -0,0 +1,99 @@
++# [Lesson Title]
++<!-- Use a narrow title that names the actual skill, not the whole chapter. -->
++<!-- Example: Identifying the Real and Imaginary Parts of a Complex Number -->
++
++## Lesson Target
++By the end of this lesson, you will be able to [perform one specific skill].
++<!-- Why: the student needs the exact move up front. -->
++<!-- Example: By the end of this lesson, you will be able to identify the real and imaginary parts of a complex number. -->
++
++## When to Use This
++[Describe the cue or pattern that tells the student this skill applies.]
++<!-- Why: the student must learn when the move is relevant. -->
++<!-- Example: Use this when a number contains a real part and a multiple of i, or can be rewritten in that form. -->
++
++## What You Need First
++- [Prerequisite 1]
++- [Prerequisite 2]
++<!-- Why: each new step should rest on something already secure. Keep this short. -->
++
++## Core Idea
++[Explain the new idea in 2–5 sentences. State the rule, relationship, or procedure explicitly. Define any new term the first time it appears.]
++<!-- Why: the lesson should be explicit without becoming long or dense. -->
++
++## Step 1: [Simplest canonical case]
++
++### Explanation
++[Explain the first micro-step in the cleanest possible case.]
++
++### Worked Example
++[Show the full solution, one step per line.]
++
++### Try It
++1. [Mirrored problem]
++2. [Mirrored problem]
++
++### Answer Check
++1. [Answer]
++2. [Answer]
++<!-- Why: the student should perform the exact move immediately after seeing it. -->
++
++## Step 2: [Same skill, one new wrinkle]
++
++### Explanation
++[Keep the same core move. Add only one new complication.]
++
++### Worked Example
++[Show the full solution clearly.]
++
++### Try It
++1. [Mirrored problem]
++2. [Mirrored problem]
++
++### Answer Check
++1. [Answer]
++2. [Answer]
++<!-- Why: each new step should grow directly out of the last one. -->
++
++## Step 3: [Same skill, slightly more advanced variant or common edge case]
++
++### Explanation
++[Introduce the next reachable variation of the same skill.]
++
++### Worked Example
++[Show the reasoning fully.]
++
++### Try It
++1. [Mirrored problem]
++2. [Mirrored problem]
++
++### Answer Check
++1. [Answer]
++2. [Answer]
++<!-- Why: repeated work on the same move with controlled variation strengthens the skill. -->
++
++## Watch Out
++[Name one likely mistake and correct it.]
++<!-- Why: if there is a predictable confusion, make it visible before it hardens. -->
++<!-- Omit this section if there is no likely confusion. -->
++
++## Mastery Check
++1. [Independent problem]
++2. [Independent problem]
++3. [Independent problem]
++4. [Optional]
++5. [Optional]
++<!-- Why: the student should now do the full move without immediate prompting. -->
++
++## Answers
++1. [Answer]
++2. [Answer]
++3. [Answer]
++4. [Answer]
++5. [Answer]
++
++## Summary
++- Use this when [cue].
++- Do this by [procedure].
++- Remember that [single key warning or pattern].
++<!-- Why: end by compressing the lesson into a short reusable rule. -->
+\ No newline at end of file
+
+commit 0f974b9235c8eb2864ab7377cec690d9e4e2d251
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-08 08:08:44 -0700
+
+    .
+---
+ new/0-Context/Perfect-Lesson-Template.md | 99 --------------------------------
+ 1 file changed, 99 deletions(-)
+
+diff --git a/new/0-Context/Perfect-Lesson-Template.md b/new/0-Context/Perfect-Lesson-Template.md
+deleted file mode 100644
+index 70630a4..0000000
+--- a/new/0-Context/Perfect-Lesson-Template.md
++++ /dev/null
+@@ -1,99 +0,0 @@
+-# [Lesson Title]
+-<!-- Use a narrow title that names the actual skill, not the whole chapter. -->
+-<!-- Example: Identifying the Real and Imaginary Parts of a Complex Number -->
+-
+-## Lesson Target
+-By the end of this lesson, you will be able to [perform one specific skill].
+-<!-- Why: the student needs the exact move up front. -->
+-<!-- Example: By the end of this lesson, you will be able to identify the real and imaginary parts of a complex number. -->
+-
+-## When to Use This
+-[Describe the cue or pattern that tells the student this skill applies.]
+-<!-- Why: the student must learn when the move is relevant. -->
+-<!-- Example: Use this when a number contains a real part and a multiple of i, or can be rewritten in that form. -->
+-
+-## What You Need First
+-- [Prerequisite 1]
+-- [Prerequisite 2]
+-<!-- Why: each new step should rest on something already secure. Keep this short. -->
+-
+-## Core Idea
+-[Explain the new idea in 2–5 sentences. State the rule, relationship, or procedure explicitly. Define any new term the first time it appears.]
+-<!-- Why: the lesson should be explicit without becoming long or dense. -->
+-
+-## Step 1: [Simplest canonical case]
+-
+-### Explanation
+-[Explain the first micro-step in the cleanest possible case.]
+-
+-### Worked Example
+-[Show the full solution, one step per line.]
+-
+-### Try It
+-1. [Mirrored problem]
+-2. [Mirrored problem]
+-
+-### Answer Check
+-1. [Answer]
+-2. [Answer]
+-<!-- Why: the student should perform the exact move immediately after seeing it. -->
+-
+-## Step 2: [Same skill, one new wrinkle]
+-
+-### Explanation
+-[Keep the same core move. Add only one new complication.]
+-
+-### Worked Example
+-[Show the full solution clearly.]
+-
+-### Try It
+-1. [Mirrored problem]
+-2. [Mirrored problem]
+-
+-### Answer Check
+-1. [Answer]
+-2. [Answer]
+-<!-- Why: each new step should grow directly out of the last one. -->
+-
+-## Step 3: [Same skill, slightly more advanced variant or common edge case]
+-
+-### Explanation
+-[Introduce the next reachable variation of the same skill.]
+-
+-### Worked Example
+-[Show the reasoning fully.]
+-
+-### Try It
+-1. [Mirrored problem]
+-2. [Mirrored problem]
+-
+-### Answer Check
+-1. [Answer]
+-2. [Answer]
+-<!-- Why: repeated work on the same move with controlled variation strengthens the skill. -->
+-
+-## Watch Out
+-[Name one likely mistake and correct it.]
+-<!-- Why: if there is a predictable confusion, make it visible before it hardens. -->
+-<!-- Omit this section if there is no likely confusion. -->
+-
+-## Mastery Check
+-1. [Independent problem]
+-2. [Independent problem]
+-3. [Independent problem]
+-4. [Optional]
+-5. [Optional]
+-<!-- Why: the student should now do the full move without immediate prompting. -->
+-
+-## Answers
+-1. [Answer]
+-2. [Answer]
+-3. [Answer]
+-4. [Answer]
+-5. [Answer]
+-
+-## Summary
+-- Use this when [cue].
+-- Do this by [procedure].
+-- Remember that [single key warning or pattern].
+-<!-- Why: end by compressing the lesson into a short reusable rule. -->
+\ No newline at end of file
+
+commit a0be2dda66d38d316cf6086bebb6de4fa24ffe42
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-07 14:45:43 -0700
+
+    .
+---
+ .../2-Not-Yet => new/0-Context}/Perfect-Lesson-Template.md                | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+diff --git a/curriculum-builder/2-Not-Yet/Perfect-Lesson-Template.md b/new/0-Context/Perfect-Lesson-Template.md
+similarity index 100%
+rename from curriculum-builder/2-Not-Yet/Perfect-Lesson-Template.md
+rename to new/0-Context/Perfect-Lesson-Template.md
+
+commit d05233b44758fd319436ffa7b973fed37fecb544
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-06 14:52:05 -0700
+
+    .
+---
+ curriculum-builder/{1-Ingest => 2-Not-Yet}/Perfect-Lesson-Template.md | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+diff --git a/curriculum-builder/1-Ingest/Perfect-Lesson-Template.md b/curriculum-builder/2-Not-Yet/Perfect-Lesson-Template.md
+similarity index 100%
+rename from curriculum-builder/1-Ingest/Perfect-Lesson-Template.md
+rename to curriculum-builder/2-Not-Yet/Perfect-Lesson-Template.md
+
+commit 238274b107c49992dab6de847d795d85294aa39e
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-04 15:18:08 -0700
+
+    .
+---
+ .../1-Ingest/Perfect-Lesson-Template.md            | 99 ++++++++++++++++++++++
+ 1 file changed, 99 insertions(+)
+
+diff --git a/curriculum-builder/1-Ingest/Perfect-Lesson-Template.md b/curriculum-builder/1-Ingest/Perfect-Lesson-Template.md
+new file mode 100644
+index 0000000..70630a4
+--- /dev/null
++++ b/curriculum-builder/1-Ingest/Perfect-Lesson-Template.md
+@@ -0,0 +1,99 @@
++# [Lesson Title]
++<!-- Use a narrow title that names the actual skill, not the whole chapter. -->
++<!-- Example: Identifying the Real and Imaginary Parts of a Complex Number -->
++
++## Lesson Target
++By the end of this lesson, you will be able to [perform one specific skill].
++<!-- Why: the student needs the exact move up front. -->
++<!-- Example: By the end of this lesson, you will be able to identify the real and imaginary parts of a complex number. -->
++
++## When to Use This
++[Describe the cue or pattern that tells the student this skill applies.]
++<!-- Why: the student must learn when the move is relevant. -->
++<!-- Example: Use this when a number contains a real part and a multiple of i, or can be rewritten in that form. -->
++
++## What You Need First
++- [Prerequisite 1]
++- [Prerequisite 2]
++<!-- Why: each new step should rest on something already secure. Keep this short. -->
++
++## Core Idea
++[Explain the new idea in 2–5 sentences. State the rule, relationship, or procedure explicitly. Define any new term the first time it appears.]
++<!-- Why: the lesson should be explicit without becoming long or dense. -->
++
++## Step 1: [Simplest canonical case]
++
++### Explanation
++[Explain the first micro-step in the cleanest possible case.]
++
++### Worked Example
++[Show the full solution, one step per line.]
++
++### Try It
++1. [Mirrored problem]
++2. [Mirrored problem]
++
++### Answer Check
++1. [Answer]
++2. [Answer]
++<!-- Why: the student should perform the exact move immediately after seeing it. -->
++
++## Step 2: [Same skill, one new wrinkle]
++
++### Explanation
++[Keep the same core move. Add only one new complication.]
++
++### Worked Example
++[Show the full solution clearly.]
++
++### Try It
++1. [Mirrored problem]
++2. [Mirrored problem]
++
++### Answer Check
++1. [Answer]
++2. [Answer]
++<!-- Why: each new step should grow directly out of the last one. -->
++
++## Step 3: [Same skill, slightly more advanced variant or common edge case]
++
++### Explanation
++[Introduce the next reachable variation of the same skill.]
++
++### Worked Example
++[Show the reasoning fully.]
++
++### Try It
++1. [Mirrored problem]
++2. [Mirrored problem]
++
++### Answer Check
++1. [Answer]
++2. [Answer]
++<!-- Why: repeated work on the same move with controlled variation strengthens the skill. -->
++
++## Watch Out
++[Name one likely mistake and correct it.]
++<!-- Why: if there is a predictable confusion, make it visible before it hardens. -->
++<!-- Omit this section if there is no likely confusion. -->
++
++## Mastery Check
++1. [Independent problem]
++2. [Independent problem]
++3. [Independent problem]
++4. [Optional]
++5. [Optional]
++<!-- Why: the student should now do the full move without immediate prompting. -->
++
++## Answers
++1. [Answer]
++2. [Answer]
++3. [Answer]
++4. [Answer]
++5. [Answer]
++
++## Summary
++- Use this when [cue].
++- Do this by [procedure].
++- Remember that [single key warning or pattern].
++<!-- Why: end by compressing the lesson into a short reusable rule. -->
+\ No newline at end of file

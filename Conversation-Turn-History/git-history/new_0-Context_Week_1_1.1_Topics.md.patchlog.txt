@@ -1,0 +1,326 @@
+commit 971c4067f4c2764594e4a42ac5e45412da003334
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-11 11:06:04 -0700
+
+    .
+---
+ new/0-Context/Week 1/1.1 Topics.md | 93 ++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 93 insertions(+)
+
+diff --git a/new/0-Context/Week 1/1.1 Topics.md b/new/0-Context/Week 1/1.1 Topics.md
+new file mode 100644
+index 0000000..995608e
+--- /dev/null
++++ b/new/0-Context/Week 1/1.1 Topics.md	
+@@ -0,0 +1,93 @@
++# 1.1 Topics
++
++1. **Recognizing Periodic Continuous-Time Signals** - determine whether a continuous-time signal is periodic and find its fundamental period.
++   Core move: apply the periodicity condition to identify a repeating interval and decide whether it is fundamental.
++   Prerequisite math topics:
++   - Function notation and interpreting expressions like `x(t)`.
++   - Integers and integer multiples.
++   - Reading repeating structure from a graph or interval description.
++   Pre-existing MA prerequisites:
++   - `Introduction to Functions`
++   - `Visual Representations of Functions`
++   - `Graphs of Functions`
++   - `Periodic Functions`
++   This comes from sections 1-2.
++
++2. **Reading Parameters of Real-Valued Sinusoids** - read the amplitude, angular frequency, period, and phase of a sinusoid.
++   Core move: extract the parameters of a sinusoid from its standard form and connect angular frequency to period.
++   Prerequisite math topics:
++   - Basic sine and cosine functions.
++   - Radian measure and working with `pi`.
++   - Solving simple equations such as `omega_0 = 2pi / T`.
++   - Reading coefficients and constants from an algebraic expression.
++   Pre-existing MA prerequisites:
++   - `Introduction to Radians`
++   - `Trigonometric Ratios With Radians`
++   - `Graphing Sine and Cosine`
++   - `Describing Properties of the Sine Function`
++   - `Describing Properties of the Cosine Function`
++   - `Horizontal Translations of Trigonometric Functions`
++   - `Properties of Transformed Sine and Cosine Functions`
++   - `Constructing Algebraic Expressions`
++   - `Evaluating Linear Expressions`
++   - `Identifying Coefficients and Constants`
++   This comes from sections 3-5.
++   The physical examples belong here as support, not as their own lesson.
++
++3. **Identifying Harmonics from Fundamental Frequency** - determine whether a sinusoid is a harmonic of a given fundamental frequency.
++   Core move: compare a sinusoid's frequency to a fundamental frequency and identify the harmonic number.
++   Prerequisite math topics:
++   - Integer multiples and divisibility.
++   - Ratios and proportional reasoning.
++   - Radian measure with `pi`-based frequencies.
++   - Converting between angular frequency and period.
++   Pre-existing MA prerequisites:
++   - `Introduction to Ratios`
++   - `Equivalent Ratios`
++   - `Writing Ratios Using Fractions`
++   - `Reasoning With Equivalent Ratios`
++   - `Further Reasoning With Equivalent Ratios`
++   - `Introduction to Radians`
++   - `Trigonometric Ratios With Radians`
++   - `Graphing Sine and Cosine`
++   - `Describing Properties of the Sine Function`
++   - `Describing Properties of the Cosine Function`
++   This comes from sections 6-8.
++
++4. **Determining When Sums Stay Periodic** - determine whether a sum of periodic signals is periodic from their period ratio.
++   Core move: test whether two periods have a common multiple by checking whether their ratio is rational.
++   Prerequisite math topics:
++   - Ratios and rational numbers.
++   - Integer multiples and common multiples.
++   - Solving simple algebraic relations involving two periods.
++   - Equivalent fractions and proportional equivalence.
++   Pre-existing MA prerequisites:
++   - `Least Common Multiples`
++   - `Introduction to Ratios`
++   - `Equivalent Ratios`
++   - `Writing Ratios Using Fractions`
++   - `Reasoning With Equivalent Ratios`
++   - `Further Reasoning With Equivalent Ratios`
++   - `Periodic Functions`
++   This is section 9, with section 10 partly serving as setup.
++
++5. **Applying Product-to-Sum to Signal Products** - rewrite a product of sinusoids to identify the frequencies it contains.
++   Core move: use the product-to-sum identity to convert a product into sinusoidal components and read off the resulting frequencies.
++   Prerequisite math topics:
++   - Basic sine and cosine notation.
++   - Substituting values into an algebraic identity.
++   - Simplifying algebraic expressions with trigonometric terms.
++   - Reading frequency from expressions like `cos(k t)`.
++   Pre-existing MA prerequisites:
++   - `Introduction to Radians`
++   - `Trigonometric Ratios With Radians`
++   - `Graphing Sine and Cosine`
++   - `Describing Properties of the Sine Function`
++   - `Describing Properties of the Cosine Function`
++   - `The Sum and Difference Formulas for Sine`
++   - `The Sum and Difference Formulas for Cosine`
++   - `Writing Sums of Trigonometric Functions in Amplitude-Phase Form`
++   - `The Double-Angle Formula for Cosine`
++   This comes from sections 10-13.
++
++Section 14 should not become its own lesson. It is a summary.
+
+commit 0f974b9235c8eb2864ab7377cec690d9e4e2d251
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-08 08:08:44 -0700
+
+    .
+---
+ new/0-Context/Week 1/1.1 Topics.md | 93 --------------------------------------
+ 1 file changed, 93 deletions(-)
+
+diff --git a/new/0-Context/Week 1/1.1 Topics.md b/new/0-Context/Week 1/1.1 Topics.md
+deleted file mode 100644
+index 995608e..0000000
+--- a/new/0-Context/Week 1/1.1 Topics.md	
++++ /dev/null
+@@ -1,93 +0,0 @@
+-# 1.1 Topics
+-
+-1. **Recognizing Periodic Continuous-Time Signals** - determine whether a continuous-time signal is periodic and find its fundamental period.
+-   Core move: apply the periodicity condition to identify a repeating interval and decide whether it is fundamental.
+-   Prerequisite math topics:
+-   - Function notation and interpreting expressions like `x(t)`.
+-   - Integers and integer multiples.
+-   - Reading repeating structure from a graph or interval description.
+-   Pre-existing MA prerequisites:
+-   - `Introduction to Functions`
+-   - `Visual Representations of Functions`
+-   - `Graphs of Functions`
+-   - `Periodic Functions`
+-   This comes from sections 1-2.
+-
+-2. **Reading Parameters of Real-Valued Sinusoids** - read the amplitude, angular frequency, period, and phase of a sinusoid.
+-   Core move: extract the parameters of a sinusoid from its standard form and connect angular frequency to period.
+-   Prerequisite math topics:
+-   - Basic sine and cosine functions.
+-   - Radian measure and working with `pi`.
+-   - Solving simple equations such as `omega_0 = 2pi / T`.
+-   - Reading coefficients and constants from an algebraic expression.
+-   Pre-existing MA prerequisites:
+-   - `Introduction to Radians`
+-   - `Trigonometric Ratios With Radians`
+-   - `Graphing Sine and Cosine`
+-   - `Describing Properties of the Sine Function`
+-   - `Describing Properties of the Cosine Function`
+-   - `Horizontal Translations of Trigonometric Functions`
+-   - `Properties of Transformed Sine and Cosine Functions`
+-   - `Constructing Algebraic Expressions`
+-   - `Evaluating Linear Expressions`
+-   - `Identifying Coefficients and Constants`
+-   This comes from sections 3-5.
+-   The physical examples belong here as support, not as their own lesson.
+-
+-3. **Identifying Harmonics from Fundamental Frequency** - determine whether a sinusoid is a harmonic of a given fundamental frequency.
+-   Core move: compare a sinusoid's frequency to a fundamental frequency and identify the harmonic number.
+-   Prerequisite math topics:
+-   - Integer multiples and divisibility.
+-   - Ratios and proportional reasoning.
+-   - Radian measure with `pi`-based frequencies.
+-   - Converting between angular frequency and period.
+-   Pre-existing MA prerequisites:
+-   - `Introduction to Ratios`
+-   - `Equivalent Ratios`
+-   - `Writing Ratios Using Fractions`
+-   - `Reasoning With Equivalent Ratios`
+-   - `Further Reasoning With Equivalent Ratios`
+-   - `Introduction to Radians`
+-   - `Trigonometric Ratios With Radians`
+-   - `Graphing Sine and Cosine`
+-   - `Describing Properties of the Sine Function`
+-   - `Describing Properties of the Cosine Function`
+-   This comes from sections 6-8.
+-
+-4. **Determining When Sums Stay Periodic** - determine whether a sum of periodic signals is periodic from their period ratio.
+-   Core move: test whether two periods have a common multiple by checking whether their ratio is rational.
+-   Prerequisite math topics:
+-   - Ratios and rational numbers.
+-   - Integer multiples and common multiples.
+-   - Solving simple algebraic relations involving two periods.
+-   - Equivalent fractions and proportional equivalence.
+-   Pre-existing MA prerequisites:
+-   - `Least Common Multiples`
+-   - `Introduction to Ratios`
+-   - `Equivalent Ratios`
+-   - `Writing Ratios Using Fractions`
+-   - `Reasoning With Equivalent Ratios`
+-   - `Further Reasoning With Equivalent Ratios`
+-   - `Periodic Functions`
+-   This is section 9, with section 10 partly serving as setup.
+-
+-5. **Applying Product-to-Sum to Signal Products** - rewrite a product of sinusoids to identify the frequencies it contains.
+-   Core move: use the product-to-sum identity to convert a product into sinusoidal components and read off the resulting frequencies.
+-   Prerequisite math topics:
+-   - Basic sine and cosine notation.
+-   - Substituting values into an algebraic identity.
+-   - Simplifying algebraic expressions with trigonometric terms.
+-   - Reading frequency from expressions like `cos(k t)`.
+-   Pre-existing MA prerequisites:
+-   - `Introduction to Radians`
+-   - `Trigonometric Ratios With Radians`
+-   - `Graphing Sine and Cosine`
+-   - `Describing Properties of the Sine Function`
+-   - `Describing Properties of the Cosine Function`
+-   - `The Sum and Difference Formulas for Sine`
+-   - `The Sum and Difference Formulas for Cosine`
+-   - `Writing Sums of Trigonometric Functions in Amplitude-Phase Form`
+-   - `The Double-Angle Formula for Cosine`
+-   This comes from sections 10-13.
+-
+-Section 14 should not become its own lesson. It is a summary.
+
+commit 9a5dc75e2f8122262a9995c24968b541f6f1363f
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-07 17:55:04 -0700
+
+    .
+---
+ new/0-Context/Week 1/1.1 Topics.md | 93 ++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 93 insertions(+)
+
+diff --git a/new/0-Context/Week 1/1.1 Topics.md b/new/0-Context/Week 1/1.1 Topics.md
+new file mode 100644
+index 0000000..995608e
+--- /dev/null
++++ b/new/0-Context/Week 1/1.1 Topics.md	
+@@ -0,0 +1,93 @@
++# 1.1 Topics
++
++1. **Recognizing Periodic Continuous-Time Signals** - determine whether a continuous-time signal is periodic and find its fundamental period.
++   Core move: apply the periodicity condition to identify a repeating interval and decide whether it is fundamental.
++   Prerequisite math topics:
++   - Function notation and interpreting expressions like `x(t)`.
++   - Integers and integer multiples.
++   - Reading repeating structure from a graph or interval description.
++   Pre-existing MA prerequisites:
++   - `Introduction to Functions`
++   - `Visual Representations of Functions`
++   - `Graphs of Functions`
++   - `Periodic Functions`
++   This comes from sections 1-2.
++
++2. **Reading Parameters of Real-Valued Sinusoids** - read the amplitude, angular frequency, period, and phase of a sinusoid.
++   Core move: extract the parameters of a sinusoid from its standard form and connect angular frequency to period.
++   Prerequisite math topics:
++   - Basic sine and cosine functions.
++   - Radian measure and working with `pi`.
++   - Solving simple equations such as `omega_0 = 2pi / T`.
++   - Reading coefficients and constants from an algebraic expression.
++   Pre-existing MA prerequisites:
++   - `Introduction to Radians`
++   - `Trigonometric Ratios With Radians`
++   - `Graphing Sine and Cosine`
++   - `Describing Properties of the Sine Function`
++   - `Describing Properties of the Cosine Function`
++   - `Horizontal Translations of Trigonometric Functions`
++   - `Properties of Transformed Sine and Cosine Functions`
++   - `Constructing Algebraic Expressions`
++   - `Evaluating Linear Expressions`
++   - `Identifying Coefficients and Constants`
++   This comes from sections 3-5.
++   The physical examples belong here as support, not as their own lesson.
++
++3. **Identifying Harmonics from Fundamental Frequency** - determine whether a sinusoid is a harmonic of a given fundamental frequency.
++   Core move: compare a sinusoid's frequency to a fundamental frequency and identify the harmonic number.
++   Prerequisite math topics:
++   - Integer multiples and divisibility.
++   - Ratios and proportional reasoning.
++   - Radian measure with `pi`-based frequencies.
++   - Converting between angular frequency and period.
++   Pre-existing MA prerequisites:
++   - `Introduction to Ratios`
++   - `Equivalent Ratios`
++   - `Writing Ratios Using Fractions`
++   - `Reasoning With Equivalent Ratios`
++   - `Further Reasoning With Equivalent Ratios`
++   - `Introduction to Radians`
++   - `Trigonometric Ratios With Radians`
++   - `Graphing Sine and Cosine`
++   - `Describing Properties of the Sine Function`
++   - `Describing Properties of the Cosine Function`
++   This comes from sections 6-8.
++
++4. **Determining When Sums Stay Periodic** - determine whether a sum of periodic signals is periodic from their period ratio.
++   Core move: test whether two periods have a common multiple by checking whether their ratio is rational.
++   Prerequisite math topics:
++   - Ratios and rational numbers.
++   - Integer multiples and common multiples.
++   - Solving simple algebraic relations involving two periods.
++   - Equivalent fractions and proportional equivalence.
++   Pre-existing MA prerequisites:
++   - `Least Common Multiples`
++   - `Introduction to Ratios`
++   - `Equivalent Ratios`
++   - `Writing Ratios Using Fractions`
++   - `Reasoning With Equivalent Ratios`
++   - `Further Reasoning With Equivalent Ratios`
++   - `Periodic Functions`
++   This is section 9, with section 10 partly serving as setup.
++
++5. **Applying Product-to-Sum to Signal Products** - rewrite a product of sinusoids to identify the frequencies it contains.
++   Core move: use the product-to-sum identity to convert a product into sinusoidal components and read off the resulting frequencies.
++   Prerequisite math topics:
++   - Basic sine and cosine notation.
++   - Substituting values into an algebraic identity.
++   - Simplifying algebraic expressions with trigonometric terms.
++   - Reading frequency from expressions like `cos(k t)`.
++   Pre-existing MA prerequisites:
++   - `Introduction to Radians`
++   - `Trigonometric Ratios With Radians`
++   - `Graphing Sine and Cosine`
++   - `Describing Properties of the Sine Function`
++   - `Describing Properties of the Cosine Function`
++   - `The Sum and Difference Formulas for Sine`
++   - `The Sum and Difference Formulas for Cosine`
++   - `Writing Sums of Trigonometric Functions in Amplitude-Phase Form`
++   - `The Double-Angle Formula for Cosine`
++   This comes from sections 10-13.
++
++Section 14 should not become its own lesson. It is a summary.

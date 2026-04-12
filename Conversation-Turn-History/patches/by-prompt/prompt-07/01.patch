@@ -1,0 +1,246 @@
+*** Begin Patch
+*** Add File: /home/jake/Developer/codex-runner/new/2-Lesson-Gen/Lesson-Template.md
++# [Lesson Title]
++<!-- Use a topic-level title that matches the full lesson page. -->
++<!-- Example: Planar Graphs -->
++<!-- Example: Conditional Distributions for Discrete Random Variables -->
++
++## Table of Contents
++<!-- Include only the sections that actually appear in the lesson. -->
++<!-- Use anchored section links to match the production lesson format. -->
++
++- [Introduction](#introduction)
++- [Section 1 Title](#section-1-title)
++- [Section 2 Title](#section-2-title)
++- [Section 3 Title](#section-3-title)
++- [Section 4 Title](#section-4-title)
++
++## Prerequisites
++
++- [Prerequisite 1](#)
++- [Prerequisite 2](#)
++- [Prerequisite 3](#)
++
++---
++
++<a id="introduction"></a>
++## Introduction
++
++[Optional. Use this section only if the lesson needs a short setup, key definition, central formula, or high-level description before the first main section. Keep it brief and content-focused.]
++
++---
++
++<!-- Use as many anchored sections as the topic needs. -->
++<!-- Most lessons will mix two kinds of sections: -->
++<!-- 1. short concept/theorem sections, -->
++<!-- 2. example-and-practice sections. -->
++
++<a id="section-1-title"></a>
++## [Concept, Definition, or Theorem Section]
++
++[State the definition, theorem, or central idea directly.]
++
++[If useful, include a short illustrative example, image placeholder, or table.]
++
++---
++
++<a id="section-2-title"></a>
++## [Worked Example and Practice Section]
++
++**Example:** [State a clean, concrete task.]
++
++[Optional image placeholder, diagram placeholder, or data table.]
++
++**Explanation**
++
++[Explain the rule, method, or reasoning directly. Work the example clearly and step by step.]
++
++---
++
++**Question 1**
++
++[Give a closely related problem.]
++
++<!-- Use the question format that best fits the topic. -->
++<!-- Multiple choice example: -->
++- [ ] A. [Choice]
++- [ ] B. [Choice]
++- [ ] C. [Choice]
++- [ ] D. [Choice]
++- [ ] E. [Choice]
++
++<!-- Fill-in-the-blank example: -->
++<!-- The answer is $\underline{\hspace{1.5cm}}$. -->
++
++<!-- Table-based or image-based prompts are also acceptable when needed. -->
++
++---
++
++**Question 2**
++
++[Give one more closely related problem or a small variation.]
++
++- [ ] A. [Choice]
++- [ ] B. [Choice]
++- [ ] C. [Choice]
++- [ ] D. [Choice]
++- [ ] E. [Choice]
++
++---
++
++<a id="section-3-title"></a>
++## [Next Worked Example and Practice Section]
++
++**Example:** [State the next task type or controlled variation.]
++
++[Optional image placeholder, diagram placeholder, or data table.]
++
++**Explanation**
++
++[Work through the example. Keep notation and phrasing consistent with earlier sections.]
++
++---
++
++**Question 3**
++
++[Give a mirrored or closely related problem.]
++
++- [ ] A. [Choice]
++- [ ] B. [Choice]
++- [ ] C. [Choice]
++- [ ] D. [Choice]
++- [ ] E. [Choice]
++
++---
++
++**Question 4**
++
++[Give one more closely related problem.]
++
++- [ ] A. [Choice]
++- [ ] B. [Choice]
++- [ ] C. [Choice]
++- [ ] D. [Choice]
++- [ ] E. [Choice]
++
++---
++
++<a id="section-4-title"></a>
++## [Advanced Application, Proof, Construction, or Final Section]
++
++[Use this section for a later application, proof, construction task, classification task, or another natural endpoint for the topic.]
++
++**Example:** [State the task, claim, or construction.]
++
++[Optional image placeholder, diagram placeholder, or data table.]
++
++**Explanation**
++
++[Show the reasoning clearly. If this is a proof or construction, present the steps in a direct sequence.]
++
++---
++
++**Question 5**
++
++[Give a related application, guided proof prompt, or selection question.]
++
++- [ ] A. [Choice]
++- [ ] B. [Choice]
++- [ ] C. [Choice]
++- [ ] D. [Choice]
++- [ ] E. [Choice]
++
++---
++
++<!-- House style notes -->
++<!-- Keep question numbering continuous across the entire lesson. -->
++<!-- Keep section titles natural and topic-specific, not "Step 1" or "Step 2". -->
++<!-- Use short explanation paragraphs and consistent notation. -->
++<!-- Most practice should appear soon after the relevant example, but not every section must contain questions. -->
++<!-- Omit lesson-target, summary, watch-out, answer-key, and pedagogy-labeled sections unless explicitly requested. -->
+*** Add File: /home/jake/Developer/codex-runner/new/2-Lesson-Gen/Lesson-Prompt.md
++You are writing a single markdown lesson for the topic: [TOPIC].
++
++Goal: create a production-style lesson page that matches the exemplar lessons. The lesson should stay inside one coherent topic family and teach it through a sequence of tightly related sections. Each major skill or application should be taught with direct explanation, a worked example, and nearby practice when appropriate.
++
++Assume that decisions about what lesson comes before or after this one are handled elsewhere. Your job is to create one polished lesson page in the established house style.
++
++Follow these rules:
++
++1. Keep the lesson inside one coherent topic family.
++   Why: the exemplars are unified topic pages, not mixed-topic worksheets.
++
++2. Build the lesson as a sequence of 3 to 8 named sections.
++   Use natural section titles that name the content or task, such as:
++   - "Using Euler's Formula for Planar Graphs"
++   - "Computing a Conditional Probability"
++   - "Applying Subdivisions to a Graph"
++   Do not use generic headings like "Step 1" or "Step 2."
++   Why: the exemplars organize by topic-specific subskills and ideas.
++
++3. Include a Table of Contents and a Prerequisites section near the top.
++   Include an Introduction only if the student needs a short setup, central definition, or key formula before the first main section.
++   Why: this matches the production lesson layout.
++
++4. Let the lesson cover multiple closely related subskills when the topic needs it.
++   Each section should still have a clear local focus.
++   Why: the exemplars are broader than a one-move micro-lesson, but each block remains controlled.
++
++5. Most skill or application sections should include:
++   - one worked example,
++   - a direct explanation,
++   - one or two immediate questions.
++   Short concept, theorem, or definition sections may omit questions if their job is to prepare the next application section.
++   Why: the exemplars mix exposition sections with example-and-practice sections.
++
++6. Sequence the lesson from the cleanest foundational case to more advanced variants, applications, or proofs.
++   Change only one meaningful feature at a time when possible.
++   Why: the lesson should build cumulatively rather than jump around.
++
++7. Keep notation, phrasing, and formatting consistent across the whole lesson.
++   Number questions consecutively across the entire lesson.
++   Why: consistency reduces unnecessary friction.
++
++8. Use the question format that best fits the topic.
++   Acceptable formats include:
++   - multiple choice,
++   - fill in the blank,
++   - table-based choices,
++   - image-based prompts,
++   - short guided proof starters.
++   If the topic depends on a diagram, graph, or visual, include a clear image placeholder line in markdown.
++   Why: the exemplars use production-ready question formats rather than one fixed drill format.
++
++9. Keep the explanation clear, direct, and economical.
++   Constraints:
++   - no historical background,
++   - no motivational filler,
++   - no discussion of pedagogy,
++   - no meta commentary about lesson design,
++   - no unrelated enrichment.
++   Why: the lesson should stay focused on content and action.
++
++10. Do not force sections that belong to the old micro-lesson template.
++    By default, avoid sections such as:
++    - "Lesson Target"
++    - "When to Use This"
++    - "Core Idea"
++    - "Watch Out"
++    - "Mastery Check"
++    - "Answers"
++    - "Summary"
++    Use them only if the user explicitly asks for them.
++    Why: the exemplars are section-driven content pages, not pedagogy-labeled handouts.
++
++11. Use anchor tags and anchored Table of Contents links when listing sections.
++    Why: the exemplars use navigable section structure.
++
++Before finalizing, check:
++- Does the lesson read like one coherent topic page?
++- Does each section have a clear local focus?
++- Does the lesson move from foundation to controlled variation or higher application?
++- Are worked examples placed before nearby practice where needed?
++- Are the headings, question types, and formatting natural for the topic?
++
++Return only the lesson in markdown.
+*** End Patch

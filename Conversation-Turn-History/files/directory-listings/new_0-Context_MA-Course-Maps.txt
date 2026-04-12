@@ -1,0 +1,10 @@
+[F] Differential-Equations.md
+[F] Discrete-Mathematics.md
+[F] Linear-Algebra.md
+[F] Mathematical-Foundations-I.md
+[F] Mathematical-Foundations-II.md
+[F] Mathematical-Foundations-III.md
+[F] Mathematics-for-Machine-Learning.md
+[F] Methods-of-Proof.md
+[F] Multivariable-Calculus.md
+[F] Probability-and-Statistics.md

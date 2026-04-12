@@ -1,0 +1,1649 @@
+commit 971c4067f4c2764594e4a42ac5e45412da003334
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-11 11:06:04 -0700
+
+    .
+---
+ new/0-Context/Lessons/2754.md | 534 ++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 534 insertions(+)
+
+diff --git a/new/0-Context/Lessons/2754.md b/new/0-Context/Lessons/2754.md
+new file mode 100644
+index 0000000..0978ebe
+--- /dev/null
++++ b/new/0-Context/Lessons/2754.md
+@@ -0,0 +1,534 @@
++# Planar Graphs
++
++## Table of Contents
++
++- [Introduction](#introduction)
++- [Euler's Formula for Planar Graphs](#eulers-formula-for-planar-graphs)
++- [Determining the Number of Faces of a Planar Graph](#determining-the-number-of-faces-of-a-planar-graph)
++- [Using Euler's Formula for Planar Graphs](#using-eulers-formula-for-planar-graphs)
++- [The Complete Graph K(5) is not Planar](#the-complete-graph-k5-is-not-planar)
++- [The Complete Bipartite Graph K(3,3) is not Planar](#the-complete-bipartite-graph-k33-is-not-planar)
++- [Proving a Graph is Not Planar](#proving-a-graph-is-not-planar)
++- [Elementary Subdivisions](#elementary-subdivisions)
++- [Homeomorphic Graphs](#homeomorphic-graphs)
++- [Applying Subdivisions to a Graph](#applying-subdivisions-to-a-graph)
++- [Kuratowski's Theorem](#kuratowskis-theorem)
++
++## Prerequisites
++
++- [Connected Graphs](#)
++- [Proof by Contradiction](#)
++- [Complete and Bipartite Graphs](#)
++
++---
++
++<a id="introduction"></a>
++## Introduction
++
++A graph $G$ is **planar** if it can be drawn in the plane such that its edges intersect only at their endpoints (vertices). Such a drawing is called an *embedding* of $G$ in the plane.
++
++For example, all three graphs shown below are planar, and each image represents an embedding.
++
++[Image Placeholder: /graphics/0a2025a3d626587328d2cfa80ae6529b](#)
++
++An embedding of a planar graph divides the plane into regions called **faces**.
++
++A **face** is a connected region of the plane bounded by the graph's edges in a given embedding. The **outer face** is the unbounded region that extends infinitely beyond the graph.
++
++For example, consider the graph below.
++
++[Image Placeholder: /graphics/74bb796251bc3e0e534315525cd04f91](#)
++
++This graph is planar, and its image represents an embedding. The $3$ faces of the graph, including the outer face, are listed below.
++
++[Image Placeholder: /graphics/5555ecd790891fe0f7170bfac041971c](#)
++
++Each face is a region in the plane bounded by a cycle. For example:
++
++- Face I is bounded by the cycle $v_1-v_2-v_3-v_4-v_1$.
++- Face II is bounded by the cycle $v_1-v_2-v_4-v_1$.
++- Face III is bounded by the cycle $v_2-v_3-v_4-v_2$.
++
++For simple graphs, each of these bounding cycles must contain at least three edges. This fact becomes important in a proof that we'll study later.
++
++---
++
++<a id="eulers-formula-for-planar-graphs"></a>
++## Euler's Formula for Planar Graphs
++
++For any connected planar graph with $v$ vertices, $e$ edges, and $f$ faces, **Euler's formula** for planar graphs states that
++
++$$
++v - e + f = 2
++$$
++
++Recall that an undirected graph is *connected* if there is a path between every pair of vertices. If you've studied geometry, this is closely related to Euler's formula for polyhedra.
++
++For example, consider a planar graph with $8$ vertices and $12$ edges.
++
++Let's find the number of faces, $f$, by substituting $v=8$ and $e=12$ into Euler's formula:
++
++$$
++\begin{aligned}
++v - e + f &= 2 \\
++8 - 12 + f &= 2 \\
++-4 + f &= 2 \\
++f &= 6
++\end{aligned}
++$$
++
++Therefore, the graph has $6$ faces.
++
++We can verify this result by examining the graph below, which has $8$ vertices and $12$ edges. It indeed has $6$ faces.
++
++[Image Placeholder: /graphics/caff607ac2437d69900205aa13e850b7](#)
++
++---
++
++<a id="determining-the-number-of-faces-of-a-planar-graph"></a>
++## Determining the Number of Faces of a Planar Graph
++
++**Example:** How many faces does the planar graph below have?
++
++[Image Placeholder: /graphics/bdeb13bf1729391d12972c7c54243783](#)
++
++**Explanation**
++
++A *face* is a connected region in the plane enclosed by the edges of a planar graph. The *outer face* is the unbounded region surrounding the entire graph.
++
++The given graph is planar and is represented without crossing edges.
++
++Since the edges of the graph do not form any cycles, it has no internal faces. Hence, it has only one face: the outer face.
++
++[Image Placeholder: /graphics/2b8775e2bed9cfe9d3f3972e7a7e7a73](#)
++
++This graph has $1$ face.
++
++---
++
++**Question 1**
++
++[Image Placeholder: /graphics/q-257643](#)
++
++The planar graph above has $\underline{\hspace{1.5cm}}$ face(s).
++
++---
++
++**Question 2**
++
++[Image Placeholder: /graphics/q-244604](#)
++
++The planar graph above has $\underline{\hspace{1.5cm}}$ faces.
++
++---
++
++<a id="using-eulers-formula-for-planar-graphs"></a>
++## Using Euler's Formula for Planar Graphs
++
++**Example:** If a planar graph has $12$ edges and $8$ faces, then how many vertices does it have?
++
++**Explanation**
++
++Euler's formula for planar graphs states that
++
++$$
++v - e + f = 2
++$$
++
++where $v$ is the number of vertices, $e$ is the number of edges, and $f$ is the number of faces.
++
++Substituting $e=12$ and $f=8$ into the formula, we solve for $v$:
++
++$$
++\begin{aligned}
++v - e + f &= 2 \\
++v - 12 + 8 &= 2 \\
++v - 4 &= 2 \\
++v &= 6
++\end{aligned}
++$$
++
++Therefore, the graph has $6$ vertices.
++
++---
++
++**Question 3**
++
++If a planar graph has $6$ vertices and $8$ faces, then it has $\underline{\hspace{1.5cm}}$ edges.
++
++---
++
++**Question 4**
++
++If a planar graph has $10$ edges and $6$ faces, then it has $\underline{\hspace{1.5cm}}$ vertices.
++
++---
++
++<a id="the-complete-graph-k5-is-not-planar"></a>
++## The Complete Graph K(5) is not Planar
++
++The complete graphs $K_1$, $K_2$, $K_3$, and $K_4$ are planar, as illustrated below.
++
++[Image Placeholder: /graphics/f9204acc5955850c0c4766a228467b8b](#)
++
++However, the complete graph $K_5$ is not planar; it cannot be drawn in the plane without edges crossing.
++
++[Image Placeholder: /graphics/b567c420824bbcf1b9dc96a6bf4e6caf](#)
++
++To prove that $K_5$ is not planar, we use proof by contradiction.
++
++Assume, for contradiction, that $K_5$ is planar. Then it must satisfy Euler's formula:
++
++$$
++v - e + f = 2
++$$
++
++The number of edges in a complete graph $K_n$ is
++
++$$
++e = \frac{n(n-1)}{2}
++$$
++
++Since $K_5$ has $5$ vertices, it has
++
++$$
++e = \frac{5(5-1)}{2} = 10
++$$
++
++Substituting $v=5$ and $e=10$ into Euler's formula gives
++
++$$
++5 - 10 + f = 2
++$$
++
++so
++
++$$
++f = 7
++$$
++
++Because $K_5$ is a simple graph, each face boundary must contain at least $3$ edges. Thus, the graph must have at least
++
++$$
++3f = 3(7) = 21
++$$
++
++face-edge incidences.
++
++But each edge in a planar graph can be incident to at most two faces, so there can be at most
++
++$$
++2e = 2(10) = 20
++$$
++
++face-edge incidences.
++
++This gives the contradiction
++
++$$
++21 \le 20
++$$
++
++which is false.
++
++Therefore, $K_5$ is **not** planar.
++
++---
++
++<a id="the-complete-bipartite-graph-k33-is-not-planar"></a>
++## The Complete Bipartite Graph K(3,3) is not Planar
++
++The complete bipartite graph $K_{3,3}$ is not planar because it cannot be drawn in the plane without edges crossing.
++
++[Image Placeholder: /graphics/dc34e8020568f3d626322539d2b84401](#)
++
++To prove that $K_{3,3}$ is not planar, we use proof by contradiction.
++
++Assume, for contradiction, that $K_{3,3}$ is planar. Then it must satisfy Euler's formula:
++
++$$
++v - e + f = 2
++$$
++
++For a complete bipartite graph $K_{m,n}$,
++
++$$
++v = m+n
++\qquad \text{and} \qquad
++e = mn
++$$
++
++Hence, $K_{3,3}$ has
++
++$$
++v = 3+3 = 6
++\qquad \text{and} \qquad
++e = 3 \cdot 3 = 9
++$$
++
++Substituting $v=6$ and $e=9$ into Euler's formula gives
++
++$$
++6 - 9 + f = 2
++$$
++
++so
++
++$$
++f = 5
++$$
++
++Since a bipartite graph cannot contain odd cycles, each face boundary must contain at least $4$ edges. Thus, the graph must have at least
++
++$$
++4f = 4(5) = 20
++$$
++
++face-edge incidences.
++
++But each edge can be incident to at most two faces, so there can be at most
++
++$$
++2e = 2(9) = 18
++$$
++
++face-edge incidences.
++
++This gives the contradiction
++
++$$
++20 \le 18
++$$
++
++which is false.
++
++Therefore, $K_{3,3}$ is not planar.
++
++---
++
++<a id="proving-a-graph-is-not-planar"></a>
++## Proving a Graph is Not Planar
++
++**Example:** Prove the following statement:
++
++*The graph $K_6$, the complete graph with $6$ vertices, is not planar.*
++
++**Explanation**
++
++We use proof by contradiction. Assume that $K_6$ is planar. Then it must satisfy Euler's formula:
++
++$$
++v - e + f = 2
++$$
++
++The number of edges in a complete graph $K_n$ is
++
++$$
++e = \frac{n(n-1)}{2}
++$$
++
++Since $K_6$ has $6$ vertices, it has
++
++$$
++e = \frac{6(6-1)}{2} = 15
++$$
++
++Substituting $v=6$ and $e=15$ into Euler's formula gives
++
++$$
++6 - 15 + f = 2
++$$
++
++so
++
++$$
++f = 11
++$$
++
++Because each face boundary must contain at least $3$ edges, the graph must have at least
++
++$$
++3f = 3(11) = 33
++$$
++
++face-edge incidences.
++
++But each edge can be incident to at most two faces, so there can be at most
++
++$$
++2e = 2(15) = 30
++$$
++
++face-edge incidences.
++
++This gives the contradiction
++
++$$
++33 \le 30
++$$
++
++which is false.
++
++Therefore, $K_6$ is not planar.
++
++---
++
++**Question 5:** Prove the following statement:
++
++*The graph $K_7$, the complete graph with $7$ vertices, is not planar.*
++
++Seeking a contradiction, assume that $K_7$ is $\underline{\hspace{2cm}}$.
++
++Then, the graph must satisfy Euler's formula for planar graphs:
++
++$$
++v - e + f = 2
++$$
++
++where $v$, $e$, and $f$ are the numbers of vertices, edges, and faces, respectively.
++
++#### Select
++
++- [ ] planar
++- [ ] not planar
++
++---
++
++**Question 6:** Prove the following statement:
++
++*The complete bipartite graph $K_{3,4}$ is not planar.*
++
++Seeking a contradiction, assume that $K_{3,4}$ is $\underline{\hspace{2cm}}$.
++
++Then, the graph must satisfy Euler's formula for planar graphs:
++
++$$
++v - e + f = 2
++$$
++
++where $v$, $e$, and $f$ are the numbers of vertices, edges, and faces, respectively.
++
++#### Select
++
++- [ ] planar
++- [ ] not planar
++
++---
++
++<a id="elementary-subdivisions"></a>
++## Elementary Subdivisions
++
++An **elementary subdivision** of a loop-free graph occurs when an edge $u-v$ is removed, and a new vertex $w$ is introduced, with edges $u-w$ and $w-v$ added to the graph. In effect, this splits the original edge into two by inserting a new vertex.
++
++If $G'$ is an elementary subdivision of a planar graph $G$, then $G'$ is also planar. We can obtain a planar embedding of $G'$ by placing the new vertex in the middle of the edge being subdivided.
++
++For example, let's apply an elementary subdivision to the edge $v_2-v_3$ in the graph below.
++
++[Image Placeholder: /graphics/fd5345d1eb2321da9b1ca86d2a06f539](#)
++
++1. First, remove the edge $v_2-v_3$.
++
++   [Image Placeholder: /graphics/dfa0d10e3340e1b1845bd5600784784b](#)
++
++2. Next, add a new vertex $v_4$.
++
++   [Image Placeholder: /graphics/ec5ecbcd0c24523b87cf843ee23c4d0e](#)
++
++3. Finally, connect the new vertex to the two original vertices by adding the edges $v_2-v_4$ and $v_4-v_3$.
++
++   [Image Placeholder: /graphics/c21e28af9f28d5e8629109c6ac4d45ec](#)
++
++Note that the original graph was planar, and so is the new graph.
++
++---
++
++<a id="homeomorphic-graphs"></a>
++## Homeomorphic Graphs
++
++Two loop-free graphs are **homeomorphic** if they are isomorphic, or if both can be obtained from the same loop-free undirected graph through a sequence of elementary subdivisions.
++
++For example, consider the two graphs below.
++
++[Image Placeholder: /graphics/84c2d1a9915d36abbc7ea25ab85dd27e](#)
++
++1. First, remove the edge $v_2-v_3$.
++
++   [Image Placeholder: /graphics/bb81cda874f00af071984f091694ce1f](#)
++
++2. Next, add a new vertex $v_4$.
++
++   [Image Placeholder: /graphics/6faec3c981e6b37eb025918ff843dce1](#)
++
++3. Finally, connect the new vertex to the two original vertices by adding the edges $v_2-v_4$ and $v_4-v_3$.
++
++   [Image Placeholder: /graphics/c19065d6ab47b3a59cf7d27e894225e8](#)
++
++Therefore, since it is possible to obtain the graph $H$ by subdividing the edge $v_2-v_3$ in the graph $G$, the graphs $G$ and $H$ are homeomorphic.
++
++---
++
++<a id="applying-subdivisions-to-a-graph"></a>
++## Applying Subdivisions to a Graph
++
++**Example:** Sketch a possible result from subdivisions of the edges $v_1-v_2$ and $v_2-v_3$ in the graph below.
++
++[Image Placeholder: /graphics/603acb0c858361b571660e08acdf4b9c](#)
++
++**Explanation**
++
++Let $G$ be a loop-free graph with an edge $u-v$. An *elementary subdivision* of $G$ occurs when the edge $u-v$ is removed from $G$, and then a new vertex $w$, along with the edges $u-w$ and $w-v$, are added to the graph.
++
++You may think of an elementary subdivision as introducing a new vertex on an existing edge.
++
++In this case, one possible result is shown below after introducing the vertices $v_4$ and $v_5$ on the chosen edges.
++
++[Image Placeholder: /graphics/4b6357558a66e8bdd5831e21725cb749](#)
++
++---
++
++**Question 7**
++
++[Image Placeholder: /graphics/q-244619](#)
++
++Which of the following could result from a subdivision of the edge $v_1-v_3$ in the graph above?
++
++- [ ] A. [Image Placeholder: /graphics/q-244619-a-2](#)
++- [ ] B. [Image Placeholder: /graphics/q-244619-a-1](#)
++- [ ] C. [Image Placeholder: /graphics/q-244619-a-5](#)
++- [ ] D. [Image Placeholder: /graphics/q-244619-a-4](#)
++- [ ] E. [Image Placeholder: /graphics/q-244619-a-3](#)
++
++---
++
++**Question 8**
++
++[Image Placeholder: /graphics/q-257649](#)
++
++Which of the following could result from subdivisions of the edges $v_1-v_2$ and $v_2-v_3$ in the graph above?
++
++- [ ] A. [Image Placeholder: /graphics/q-257649-a-5](#)
++- [ ] B. [Image Placeholder: /graphics/q-257649-a-1](#)
++- [ ] C. [Image Placeholder: /graphics/q-257649-a-2](#)
++- [ ] D. [Image Placeholder: /graphics/q-257649-a-4](#)
++- [ ] E. [Image Placeholder: /graphics/q-257649-a-3](#)
++
++---
++
++<a id="kuratowskis-theorem"></a>
++## Kuratowski's Theorem
++
++**Kuratowski's Theorem** states that a graph is nonplanar if and only if it contains a subgraph that is homeomorphic to either $K_5$ or $K_{3,3}$.
++
++For example, consider the following graphs.
++
++[Image Placeholder: /graphics/55515c24101b5f8ce8e478d8d0e79187](#)
++
++They have the subgraphs shown below.
++
++[Image Placeholder: /graphics/a1aab7057a2c0b809573a44d6ed58b5e](#)
++
++These subgraphs are homeomorphic to $K_5$ and $K_{3,3}$, respectively.
++
++[Image Placeholder: /graphics/c047fc36b77df45a1d49a72ccc706793](#)
++
++Therefore, by Kuratowski's Theorem, the given graphs are not planar.
+
+commit 0f974b9235c8eb2864ab7377cec690d9e4e2d251
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-08 08:08:44 -0700
+
+    .
+---
+ new/0-Context/Lessons/2754.md | 534 ------------------------------------------
+ 1 file changed, 534 deletions(-)
+
+diff --git a/new/0-Context/Lessons/2754.md b/new/0-Context/Lessons/2754.md
+deleted file mode 100644
+index 0978ebe..0000000
+--- a/new/0-Context/Lessons/2754.md
++++ /dev/null
+@@ -1,534 +0,0 @@
+-# Planar Graphs
+-
+-## Table of Contents
+-
+-- [Introduction](#introduction)
+-- [Euler's Formula for Planar Graphs](#eulers-formula-for-planar-graphs)
+-- [Determining the Number of Faces of a Planar Graph](#determining-the-number-of-faces-of-a-planar-graph)
+-- [Using Euler's Formula for Planar Graphs](#using-eulers-formula-for-planar-graphs)
+-- [The Complete Graph K(5) is not Planar](#the-complete-graph-k5-is-not-planar)
+-- [The Complete Bipartite Graph K(3,3) is not Planar](#the-complete-bipartite-graph-k33-is-not-planar)
+-- [Proving a Graph is Not Planar](#proving-a-graph-is-not-planar)
+-- [Elementary Subdivisions](#elementary-subdivisions)
+-- [Homeomorphic Graphs](#homeomorphic-graphs)
+-- [Applying Subdivisions to a Graph](#applying-subdivisions-to-a-graph)
+-- [Kuratowski's Theorem](#kuratowskis-theorem)
+-
+-## Prerequisites
+-
+-- [Connected Graphs](#)
+-- [Proof by Contradiction](#)
+-- [Complete and Bipartite Graphs](#)
+-
+----
+-
+-<a id="introduction"></a>
+-## Introduction
+-
+-A graph $G$ is **planar** if it can be drawn in the plane such that its edges intersect only at their endpoints (vertices). Such a drawing is called an *embedding* of $G$ in the plane.
+-
+-For example, all three graphs shown below are planar, and each image represents an embedding.
+-
+-[Image Placeholder: /graphics/0a2025a3d626587328d2cfa80ae6529b](#)
+-
+-An embedding of a planar graph divides the plane into regions called **faces**.
+-
+-A **face** is a connected region of the plane bounded by the graph's edges in a given embedding. The **outer face** is the unbounded region that extends infinitely beyond the graph.
+-
+-For example, consider the graph below.
+-
+-[Image Placeholder: /graphics/74bb796251bc3e0e534315525cd04f91](#)
+-
+-This graph is planar, and its image represents an embedding. The $3$ faces of the graph, including the outer face, are listed below.
+-
+-[Image Placeholder: /graphics/5555ecd790891fe0f7170bfac041971c](#)
+-
+-Each face is a region in the plane bounded by a cycle. For example:
+-
+-- Face I is bounded by the cycle $v_1-v_2-v_3-v_4-v_1$.
+-- Face II is bounded by the cycle $v_1-v_2-v_4-v_1$.
+-- Face III is bounded by the cycle $v_2-v_3-v_4-v_2$.
+-
+-For simple graphs, each of these bounding cycles must contain at least three edges. This fact becomes important in a proof that we'll study later.
+-
+----
+-
+-<a id="eulers-formula-for-planar-graphs"></a>
+-## Euler's Formula for Planar Graphs
+-
+-For any connected planar graph with $v$ vertices, $e$ edges, and $f$ faces, **Euler's formula** for planar graphs states that
+-
+-$$
+-v - e + f = 2
+-$$
+-
+-Recall that an undirected graph is *connected* if there is a path between every pair of vertices. If you've studied geometry, this is closely related to Euler's formula for polyhedra.
+-
+-For example, consider a planar graph with $8$ vertices and $12$ edges.
+-
+-Let's find the number of faces, $f$, by substituting $v=8$ and $e=12$ into Euler's formula:
+-
+-$$
+-\begin{aligned}
+-v - e + f &= 2 \\
+-8 - 12 + f &= 2 \\
+--4 + f &= 2 \\
+-f &= 6
+-\end{aligned}
+-$$
+-
+-Therefore, the graph has $6$ faces.
+-
+-We can verify this result by examining the graph below, which has $8$ vertices and $12$ edges. It indeed has $6$ faces.
+-
+-[Image Placeholder: /graphics/caff607ac2437d69900205aa13e850b7](#)
+-
+----
+-
+-<a id="determining-the-number-of-faces-of-a-planar-graph"></a>
+-## Determining the Number of Faces of a Planar Graph
+-
+-**Example:** How many faces does the planar graph below have?
+-
+-[Image Placeholder: /graphics/bdeb13bf1729391d12972c7c54243783](#)
+-
+-**Explanation**
+-
+-A *face* is a connected region in the plane enclosed by the edges of a planar graph. The *outer face* is the unbounded region surrounding the entire graph.
+-
+-The given graph is planar and is represented without crossing edges.
+-
+-Since the edges of the graph do not form any cycles, it has no internal faces. Hence, it has only one face: the outer face.
+-
+-[Image Placeholder: /graphics/2b8775e2bed9cfe9d3f3972e7a7e7a73](#)
+-
+-This graph has $1$ face.
+-
+----
+-
+-**Question 1**
+-
+-[Image Placeholder: /graphics/q-257643](#)
+-
+-The planar graph above has $\underline{\hspace{1.5cm}}$ face(s).
+-
+----
+-
+-**Question 2**
+-
+-[Image Placeholder: /graphics/q-244604](#)
+-
+-The planar graph above has $\underline{\hspace{1.5cm}}$ faces.
+-
+----
+-
+-<a id="using-eulers-formula-for-planar-graphs"></a>
+-## Using Euler's Formula for Planar Graphs
+-
+-**Example:** If a planar graph has $12$ edges and $8$ faces, then how many vertices does it have?
+-
+-**Explanation**
+-
+-Euler's formula for planar graphs states that
+-
+-$$
+-v - e + f = 2
+-$$
+-
+-where $v$ is the number of vertices, $e$ is the number of edges, and $f$ is the number of faces.
+-
+-Substituting $e=12$ and $f=8$ into the formula, we solve for $v$:
+-
+-$$
+-\begin{aligned}
+-v - e + f &= 2 \\
+-v - 12 + 8 &= 2 \\
+-v - 4 &= 2 \\
+-v &= 6
+-\end{aligned}
+-$$
+-
+-Therefore, the graph has $6$ vertices.
+-
+----
+-
+-**Question 3**
+-
+-If a planar graph has $6$ vertices and $8$ faces, then it has $\underline{\hspace{1.5cm}}$ edges.
+-
+----
+-
+-**Question 4**
+-
+-If a planar graph has $10$ edges and $6$ faces, then it has $\underline{\hspace{1.5cm}}$ vertices.
+-
+----
+-
+-<a id="the-complete-graph-k5-is-not-planar"></a>
+-## The Complete Graph K(5) is not Planar
+-
+-The complete graphs $K_1$, $K_2$, $K_3$, and $K_4$ are planar, as illustrated below.
+-
+-[Image Placeholder: /graphics/f9204acc5955850c0c4766a228467b8b](#)
+-
+-However, the complete graph $K_5$ is not planar; it cannot be drawn in the plane without edges crossing.
+-
+-[Image Placeholder: /graphics/b567c420824bbcf1b9dc96a6bf4e6caf](#)
+-
+-To prove that $K_5$ is not planar, we use proof by contradiction.
+-
+-Assume, for contradiction, that $K_5$ is planar. Then it must satisfy Euler's formula:
+-
+-$$
+-v - e + f = 2
+-$$
+-
+-The number of edges in a complete graph $K_n$ is
+-
+-$$
+-e = \frac{n(n-1)}{2}
+-$$
+-
+-Since $K_5$ has $5$ vertices, it has
+-
+-$$
+-e = \frac{5(5-1)}{2} = 10
+-$$
+-
+-Substituting $v=5$ and $e=10$ into Euler's formula gives
+-
+-$$
+-5 - 10 + f = 2
+-$$
+-
+-so
+-
+-$$
+-f = 7
+-$$
+-
+-Because $K_5$ is a simple graph, each face boundary must contain at least $3$ edges. Thus, the graph must have at least
+-
+-$$
+-3f = 3(7) = 21
+-$$
+-
+-face-edge incidences.
+-
+-But each edge in a planar graph can be incident to at most two faces, so there can be at most
+-
+-$$
+-2e = 2(10) = 20
+-$$
+-
+-face-edge incidences.
+-
+-This gives the contradiction
+-
+-$$
+-21 \le 20
+-$$
+-
+-which is false.
+-
+-Therefore, $K_5$ is **not** planar.
+-
+----
+-
+-<a id="the-complete-bipartite-graph-k33-is-not-planar"></a>
+-## The Complete Bipartite Graph K(3,3) is not Planar
+-
+-The complete bipartite graph $K_{3,3}$ is not planar because it cannot be drawn in the plane without edges crossing.
+-
+-[Image Placeholder: /graphics/dc34e8020568f3d626322539d2b84401](#)
+-
+-To prove that $K_{3,3}$ is not planar, we use proof by contradiction.
+-
+-Assume, for contradiction, that $K_{3,3}$ is planar. Then it must satisfy Euler's formula:
+-
+-$$
+-v - e + f = 2
+-$$
+-
+-For a complete bipartite graph $K_{m,n}$,
+-
+-$$
+-v = m+n
+-\qquad \text{and} \qquad
+-e = mn
+-$$
+-
+-Hence, $K_{3,3}$ has
+-
+-$$
+-v = 3+3 = 6
+-\qquad \text{and} \qquad
+-e = 3 \cdot 3 = 9
+-$$
+-
+-Substituting $v=6$ and $e=9$ into Euler's formula gives
+-
+-$$
+-6 - 9 + f = 2
+-$$
+-
+-so
+-
+-$$
+-f = 5
+-$$
+-
+-Since a bipartite graph cannot contain odd cycles, each face boundary must contain at least $4$ edges. Thus, the graph must have at least
+-
+-$$
+-4f = 4(5) = 20
+-$$
+-
+-face-edge incidences.
+-
+-But each edge can be incident to at most two faces, so there can be at most
+-
+-$$
+-2e = 2(9) = 18
+-$$
+-
+-face-edge incidences.
+-
+-This gives the contradiction
+-
+-$$
+-20 \le 18
+-$$
+-
+-which is false.
+-
+-Therefore, $K_{3,3}$ is not planar.
+-
+----
+-
+-<a id="proving-a-graph-is-not-planar"></a>
+-## Proving a Graph is Not Planar
+-
+-**Example:** Prove the following statement:
+-
+-*The graph $K_6$, the complete graph with $6$ vertices, is not planar.*
+-
+-**Explanation**
+-
+-We use proof by contradiction. Assume that $K_6$ is planar. Then it must satisfy Euler's formula:
+-
+-$$
+-v - e + f = 2
+-$$
+-
+-The number of edges in a complete graph $K_n$ is
+-
+-$$
+-e = \frac{n(n-1)}{2}
+-$$
+-
+-Since $K_6$ has $6$ vertices, it has
+-
+-$$
+-e = \frac{6(6-1)}{2} = 15
+-$$
+-
+-Substituting $v=6$ and $e=15$ into Euler's formula gives
+-
+-$$
+-6 - 15 + f = 2
+-$$
+-
+-so
+-
+-$$
+-f = 11
+-$$
+-
+-Because each face boundary must contain at least $3$ edges, the graph must have at least
+-
+-$$
+-3f = 3(11) = 33
+-$$
+-
+-face-edge incidences.
+-
+-But each edge can be incident to at most two faces, so there can be at most
+-
+-$$
+-2e = 2(15) = 30
+-$$
+-
+-face-edge incidences.
+-
+-This gives the contradiction
+-
+-$$
+-33 \le 30
+-$$
+-
+-which is false.
+-
+-Therefore, $K_6$ is not planar.
+-
+----
+-
+-**Question 5:** Prove the following statement:
+-
+-*The graph $K_7$, the complete graph with $7$ vertices, is not planar.*
+-
+-Seeking a contradiction, assume that $K_7$ is $\underline{\hspace{2cm}}$.
+-
+-Then, the graph must satisfy Euler's formula for planar graphs:
+-
+-$$
+-v - e + f = 2
+-$$
+-
+-where $v$, $e$, and $f$ are the numbers of vertices, edges, and faces, respectively.
+-
+-#### Select
+-
+-- [ ] planar
+-- [ ] not planar
+-
+----
+-
+-**Question 6:** Prove the following statement:
+-
+-*The complete bipartite graph $K_{3,4}$ is not planar.*
+-
+-Seeking a contradiction, assume that $K_{3,4}$ is $\underline{\hspace{2cm}}$.
+-
+-Then, the graph must satisfy Euler's formula for planar graphs:
+-
+-$$
+-v - e + f = 2
+-$$
+-
+-where $v$, $e$, and $f$ are the numbers of vertices, edges, and faces, respectively.
+-
+-#### Select
+-
+-- [ ] planar
+-- [ ] not planar
+-
+----
+-
+-<a id="elementary-subdivisions"></a>
+-## Elementary Subdivisions
+-
+-An **elementary subdivision** of a loop-free graph occurs when an edge $u-v$ is removed, and a new vertex $w$ is introduced, with edges $u-w$ and $w-v$ added to the graph. In effect, this splits the original edge into two by inserting a new vertex.
+-
+-If $G'$ is an elementary subdivision of a planar graph $G$, then $G'$ is also planar. We can obtain a planar embedding of $G'$ by placing the new vertex in the middle of the edge being subdivided.
+-
+-For example, let's apply an elementary subdivision to the edge $v_2-v_3$ in the graph below.
+-
+-[Image Placeholder: /graphics/fd5345d1eb2321da9b1ca86d2a06f539](#)
+-
+-1. First, remove the edge $v_2-v_3$.
+-
+-   [Image Placeholder: /graphics/dfa0d10e3340e1b1845bd5600784784b](#)
+-
+-2. Next, add a new vertex $v_4$.
+-
+-   [Image Placeholder: /graphics/ec5ecbcd0c24523b87cf843ee23c4d0e](#)
+-
+-3. Finally, connect the new vertex to the two original vertices by adding the edges $v_2-v_4$ and $v_4-v_3$.
+-
+-   [Image Placeholder: /graphics/c21e28af9f28d5e8629109c6ac4d45ec](#)
+-
+-Note that the original graph was planar, and so is the new graph.
+-
+----
+-
+-<a id="homeomorphic-graphs"></a>
+-## Homeomorphic Graphs
+-
+-Two loop-free graphs are **homeomorphic** if they are isomorphic, or if both can be obtained from the same loop-free undirected graph through a sequence of elementary subdivisions.
+-
+-For example, consider the two graphs below.
+-
+-[Image Placeholder: /graphics/84c2d1a9915d36abbc7ea25ab85dd27e](#)
+-
+-1. First, remove the edge $v_2-v_3$.
+-
+-   [Image Placeholder: /graphics/bb81cda874f00af071984f091694ce1f](#)
+-
+-2. Next, add a new vertex $v_4$.
+-
+-   [Image Placeholder: /graphics/6faec3c981e6b37eb025918ff843dce1](#)
+-
+-3. Finally, connect the new vertex to the two original vertices by adding the edges $v_2-v_4$ and $v_4-v_3$.
+-
+-   [Image Placeholder: /graphics/c19065d6ab47b3a59cf7d27e894225e8](#)
+-
+-Therefore, since it is possible to obtain the graph $H$ by subdividing the edge $v_2-v_3$ in the graph $G$, the graphs $G$ and $H$ are homeomorphic.
+-
+----
+-
+-<a id="applying-subdivisions-to-a-graph"></a>
+-## Applying Subdivisions to a Graph
+-
+-**Example:** Sketch a possible result from subdivisions of the edges $v_1-v_2$ and $v_2-v_3$ in the graph below.
+-
+-[Image Placeholder: /graphics/603acb0c858361b571660e08acdf4b9c](#)
+-
+-**Explanation**
+-
+-Let $G$ be a loop-free graph with an edge $u-v$. An *elementary subdivision* of $G$ occurs when the edge $u-v$ is removed from $G$, and then a new vertex $w$, along with the edges $u-w$ and $w-v$, are added to the graph.
+-
+-You may think of an elementary subdivision as introducing a new vertex on an existing edge.
+-
+-In this case, one possible result is shown below after introducing the vertices $v_4$ and $v_5$ on the chosen edges.
+-
+-[Image Placeholder: /graphics/4b6357558a66e8bdd5831e21725cb749](#)
+-
+----
+-
+-**Question 7**
+-
+-[Image Placeholder: /graphics/q-244619](#)
+-
+-Which of the following could result from a subdivision of the edge $v_1-v_3$ in the graph above?
+-
+-- [ ] A. [Image Placeholder: /graphics/q-244619-a-2](#)
+-- [ ] B. [Image Placeholder: /graphics/q-244619-a-1](#)
+-- [ ] C. [Image Placeholder: /graphics/q-244619-a-5](#)
+-- [ ] D. [Image Placeholder: /graphics/q-244619-a-4](#)
+-- [ ] E. [Image Placeholder: /graphics/q-244619-a-3](#)
+-
+----
+-
+-**Question 8**
+-
+-[Image Placeholder: /graphics/q-257649](#)
+-
+-Which of the following could result from subdivisions of the edges $v_1-v_2$ and $v_2-v_3$ in the graph above?
+-
+-- [ ] A. [Image Placeholder: /graphics/q-257649-a-5](#)
+-- [ ] B. [Image Placeholder: /graphics/q-257649-a-1](#)
+-- [ ] C. [Image Placeholder: /graphics/q-257649-a-2](#)
+-- [ ] D. [Image Placeholder: /graphics/q-257649-a-4](#)
+-- [ ] E. [Image Placeholder: /graphics/q-257649-a-3](#)
+-
+----
+-
+-<a id="kuratowskis-theorem"></a>
+-## Kuratowski's Theorem
+-
+-**Kuratowski's Theorem** states that a graph is nonplanar if and only if it contains a subgraph that is homeomorphic to either $K_5$ or $K_{3,3}$.
+-
+-For example, consider the following graphs.
+-
+-[Image Placeholder: /graphics/55515c24101b5f8ce8e478d8d0e79187](#)
+-
+-They have the subgraphs shown below.
+-
+-[Image Placeholder: /graphics/a1aab7057a2c0b809573a44d6ed58b5e](#)
+-
+-These subgraphs are homeomorphic to $K_5$ and $K_{3,3}$, respectively.
+-
+-[Image Placeholder: /graphics/c047fc36b77df45a1d49a72ccc706793](#)
+-
+-Therefore, by Kuratowski's Theorem, the given graphs are not planar.
+
+commit 9a5dc75e2f8122262a9995c24968b541f6f1363f
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-07 17:55:04 -0700
+
+    .
+---
+ new/0-Context/Lessons/2754.md | 534 ++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 534 insertions(+)
+
+diff --git a/new/0-Context/Lessons/2754.md b/new/0-Context/Lessons/2754.md
+new file mode 100644
+index 0000000..0978ebe
+--- /dev/null
++++ b/new/0-Context/Lessons/2754.md
+@@ -0,0 +1,534 @@
++# Planar Graphs
++
++## Table of Contents
++
++- [Introduction](#introduction)
++- [Euler's Formula for Planar Graphs](#eulers-formula-for-planar-graphs)
++- [Determining the Number of Faces of a Planar Graph](#determining-the-number-of-faces-of-a-planar-graph)
++- [Using Euler's Formula for Planar Graphs](#using-eulers-formula-for-planar-graphs)
++- [The Complete Graph K(5) is not Planar](#the-complete-graph-k5-is-not-planar)
++- [The Complete Bipartite Graph K(3,3) is not Planar](#the-complete-bipartite-graph-k33-is-not-planar)
++- [Proving a Graph is Not Planar](#proving-a-graph-is-not-planar)
++- [Elementary Subdivisions](#elementary-subdivisions)
++- [Homeomorphic Graphs](#homeomorphic-graphs)
++- [Applying Subdivisions to a Graph](#applying-subdivisions-to-a-graph)
++- [Kuratowski's Theorem](#kuratowskis-theorem)
++
++## Prerequisites
++
++- [Connected Graphs](#)
++- [Proof by Contradiction](#)
++- [Complete and Bipartite Graphs](#)
++
++---
++
++<a id="introduction"></a>
++## Introduction
++
++A graph $G$ is **planar** if it can be drawn in the plane such that its edges intersect only at their endpoints (vertices). Such a drawing is called an *embedding* of $G$ in the plane.
++
++For example, all three graphs shown below are planar, and each image represents an embedding.
++
++[Image Placeholder: /graphics/0a2025a3d626587328d2cfa80ae6529b](#)
++
++An embedding of a planar graph divides the plane into regions called **faces**.
++
++A **face** is a connected region of the plane bounded by the graph's edges in a given embedding. The **outer face** is the unbounded region that extends infinitely beyond the graph.
++
++For example, consider the graph below.
++
++[Image Placeholder: /graphics/74bb796251bc3e0e534315525cd04f91](#)
++
++This graph is planar, and its image represents an embedding. The $3$ faces of the graph, including the outer face, are listed below.
++
++[Image Placeholder: /graphics/5555ecd790891fe0f7170bfac041971c](#)
++
++Each face is a region in the plane bounded by a cycle. For example:
++
++- Face I is bounded by the cycle $v_1-v_2-v_3-v_4-v_1$.
++- Face II is bounded by the cycle $v_1-v_2-v_4-v_1$.
++- Face III is bounded by the cycle $v_2-v_3-v_4-v_2$.
++
++For simple graphs, each of these bounding cycles must contain at least three edges. This fact becomes important in a proof that we'll study later.
++
++---
++
++<a id="eulers-formula-for-planar-graphs"></a>
++## Euler's Formula for Planar Graphs
++
++For any connected planar graph with $v$ vertices, $e$ edges, and $f$ faces, **Euler's formula** for planar graphs states that
++
++$$
++v - e + f = 2
++$$
++
++Recall that an undirected graph is *connected* if there is a path between every pair of vertices. If you've studied geometry, this is closely related to Euler's formula for polyhedra.
++
++For example, consider a planar graph with $8$ vertices and $12$ edges.
++
++Let's find the number of faces, $f$, by substituting $v=8$ and $e=12$ into Euler's formula:
++
++$$
++\begin{aligned}
++v - e + f &= 2 \\
++8 - 12 + f &= 2 \\
++-4 + f &= 2 \\
++f &= 6
++\end{aligned}
++$$
++
++Therefore, the graph has $6$ faces.
++
++We can verify this result by examining the graph below, which has $8$ vertices and $12$ edges. It indeed has $6$ faces.
++
++[Image Placeholder: /graphics/caff607ac2437d69900205aa13e850b7](#)
++
++---
++
++<a id="determining-the-number-of-faces-of-a-planar-graph"></a>
++## Determining the Number of Faces of a Planar Graph
++
++**Example:** How many faces does the planar graph below have?
++
++[Image Placeholder: /graphics/bdeb13bf1729391d12972c7c54243783](#)
++
++**Explanation**
++
++A *face* is a connected region in the plane enclosed by the edges of a planar graph. The *outer face* is the unbounded region surrounding the entire graph.
++
++The given graph is planar and is represented without crossing edges.
++
++Since the edges of the graph do not form any cycles, it has no internal faces. Hence, it has only one face: the outer face.
++
++[Image Placeholder: /graphics/2b8775e2bed9cfe9d3f3972e7a7e7a73](#)
++
++This graph has $1$ face.
++
++---
++
++**Question 1**
++
++[Image Placeholder: /graphics/q-257643](#)
++
++The planar graph above has $\underline{\hspace{1.5cm}}$ face(s).
++
++---
++
++**Question 2**
++
++[Image Placeholder: /graphics/q-244604](#)
++
++The planar graph above has $\underline{\hspace{1.5cm}}$ faces.
++
++---
++
++<a id="using-eulers-formula-for-planar-graphs"></a>
++## Using Euler's Formula for Planar Graphs
++
++**Example:** If a planar graph has $12$ edges and $8$ faces, then how many vertices does it have?
++
++**Explanation**
++
++Euler's formula for planar graphs states that
++
++$$
++v - e + f = 2
++$$
++
++where $v$ is the number of vertices, $e$ is the number of edges, and $f$ is the number of faces.
++
++Substituting $e=12$ and $f=8$ into the formula, we solve for $v$:
++
++$$
++\begin{aligned}
++v - e + f &= 2 \\
++v - 12 + 8 &= 2 \\
++v - 4 &= 2 \\
++v &= 6
++\end{aligned}
++$$
++
++Therefore, the graph has $6$ vertices.
++
++---
++
++**Question 3**
++
++If a planar graph has $6$ vertices and $8$ faces, then it has $\underline{\hspace{1.5cm}}$ edges.
++
++---
++
++**Question 4**
++
++If a planar graph has $10$ edges and $6$ faces, then it has $\underline{\hspace{1.5cm}}$ vertices.
++
++---
++
++<a id="the-complete-graph-k5-is-not-planar"></a>
++## The Complete Graph K(5) is not Planar
++
++The complete graphs $K_1$, $K_2$, $K_3$, and $K_4$ are planar, as illustrated below.
++
++[Image Placeholder: /graphics/f9204acc5955850c0c4766a228467b8b](#)
++
++However, the complete graph $K_5$ is not planar; it cannot be drawn in the plane without edges crossing.
++
++[Image Placeholder: /graphics/b567c420824bbcf1b9dc96a6bf4e6caf](#)
++
++To prove that $K_5$ is not planar, we use proof by contradiction.
++
++Assume, for contradiction, that $K_5$ is planar. Then it must satisfy Euler's formula:
++
++$$
++v - e + f = 2
++$$
++
++The number of edges in a complete graph $K_n$ is
++
++$$
++e = \frac{n(n-1)}{2}
++$$
++
++Since $K_5$ has $5$ vertices, it has
++
++$$
++e = \frac{5(5-1)}{2} = 10
++$$
++
++Substituting $v=5$ and $e=10$ into Euler's formula gives
++
++$$
++5 - 10 + f = 2
++$$
++
++so
++
++$$
++f = 7
++$$
++
++Because $K_5$ is a simple graph, each face boundary must contain at least $3$ edges. Thus, the graph must have at least
++
++$$
++3f = 3(7) = 21
++$$
++
++face-edge incidences.
++
++But each edge in a planar graph can be incident to at most two faces, so there can be at most
++
++$$
++2e = 2(10) = 20
++$$
++
++face-edge incidences.
++
++This gives the contradiction
++
++$$
++21 \le 20
++$$
++
++which is false.
++
++Therefore, $K_5$ is **not** planar.
++
++---
++
++<a id="the-complete-bipartite-graph-k33-is-not-planar"></a>
++## The Complete Bipartite Graph K(3,3) is not Planar
++
++The complete bipartite graph $K_{3,3}$ is not planar because it cannot be drawn in the plane without edges crossing.
++
++[Image Placeholder: /graphics/dc34e8020568f3d626322539d2b84401](#)
++
++To prove that $K_{3,3}$ is not planar, we use proof by contradiction.
++
++Assume, for contradiction, that $K_{3,3}$ is planar. Then it must satisfy Euler's formula:
++
++$$
++v - e + f = 2
++$$
++
++For a complete bipartite graph $K_{m,n}$,
++
++$$
++v = m+n
++\qquad \text{and} \qquad
++e = mn
++$$
++
++Hence, $K_{3,3}$ has
++
++$$
++v = 3+3 = 6
++\qquad \text{and} \qquad
++e = 3 \cdot 3 = 9
++$$
++
++Substituting $v=6$ and $e=9$ into Euler's formula gives
++
++$$
++6 - 9 + f = 2
++$$
++
++so
++
++$$
++f = 5
++$$
++
++Since a bipartite graph cannot contain odd cycles, each face boundary must contain at least $4$ edges. Thus, the graph must have at least
++
++$$
++4f = 4(5) = 20
++$$
++
++face-edge incidences.
++
++But each edge can be incident to at most two faces, so there can be at most
++
++$$
++2e = 2(9) = 18
++$$
++
++face-edge incidences.
++
++This gives the contradiction
++
++$$
++20 \le 18
++$$
++
++which is false.
++
++Therefore, $K_{3,3}$ is not planar.
++
++---
++
++<a id="proving-a-graph-is-not-planar"></a>
++## Proving a Graph is Not Planar
++
++**Example:** Prove the following statement:
++
++*The graph $K_6$, the complete graph with $6$ vertices, is not planar.*
++
++**Explanation**
++
++We use proof by contradiction. Assume that $K_6$ is planar. Then it must satisfy Euler's formula:
++
++$$
++v - e + f = 2
++$$
++
++The number of edges in a complete graph $K_n$ is
++
++$$
++e = \frac{n(n-1)}{2}
++$$
++
++Since $K_6$ has $6$ vertices, it has
++
++$$
++e = \frac{6(6-1)}{2} = 15
++$$
++
++Substituting $v=6$ and $e=15$ into Euler's formula gives
++
++$$
++6 - 15 + f = 2
++$$
++
++so
++
++$$
++f = 11
++$$
++
++Because each face boundary must contain at least $3$ edges, the graph must have at least
++
++$$
++3f = 3(11) = 33
++$$
++
++face-edge incidences.
++
++But each edge can be incident to at most two faces, so there can be at most
++
++$$
++2e = 2(15) = 30
++$$
++
++face-edge incidences.
++
++This gives the contradiction
++
++$$
++33 \le 30
++$$
++
++which is false.
++
++Therefore, $K_6$ is not planar.
++
++---
++
++**Question 5:** Prove the following statement:
++
++*The graph $K_7$, the complete graph with $7$ vertices, is not planar.*
++
++Seeking a contradiction, assume that $K_7$ is $\underline{\hspace{2cm}}$.
++
++Then, the graph must satisfy Euler's formula for planar graphs:
++
++$$
++v - e + f = 2
++$$
++
++where $v$, $e$, and $f$ are the numbers of vertices, edges, and faces, respectively.
++
++#### Select
++
++- [ ] planar
++- [ ] not planar
++
++---
++
++**Question 6:** Prove the following statement:
++
++*The complete bipartite graph $K_{3,4}$ is not planar.*
++
++Seeking a contradiction, assume that $K_{3,4}$ is $\underline{\hspace{2cm}}$.
++
++Then, the graph must satisfy Euler's formula for planar graphs:
++
++$$
++v - e + f = 2
++$$
++
++where $v$, $e$, and $f$ are the numbers of vertices, edges, and faces, respectively.
++
++#### Select
++
++- [ ] planar
++- [ ] not planar
++
++---
++
++<a id="elementary-subdivisions"></a>
++## Elementary Subdivisions
++
++An **elementary subdivision** of a loop-free graph occurs when an edge $u-v$ is removed, and a new vertex $w$ is introduced, with edges $u-w$ and $w-v$ added to the graph. In effect, this splits the original edge into two by inserting a new vertex.
++
++If $G'$ is an elementary subdivision of a planar graph $G$, then $G'$ is also planar. We can obtain a planar embedding of $G'$ by placing the new vertex in the middle of the edge being subdivided.
++
++For example, let's apply an elementary subdivision to the edge $v_2-v_3$ in the graph below.
++
++[Image Placeholder: /graphics/fd5345d1eb2321da9b1ca86d2a06f539](#)
++
++1. First, remove the edge $v_2-v_3$.
++
++   [Image Placeholder: /graphics/dfa0d10e3340e1b1845bd5600784784b](#)
++
++2. Next, add a new vertex $v_4$.
++
++   [Image Placeholder: /graphics/ec5ecbcd0c24523b87cf843ee23c4d0e](#)
++
++3. Finally, connect the new vertex to the two original vertices by adding the edges $v_2-v_4$ and $v_4-v_3$.
++
++   [Image Placeholder: /graphics/c21e28af9f28d5e8629109c6ac4d45ec](#)
++
++Note that the original graph was planar, and so is the new graph.
++
++---
++
++<a id="homeomorphic-graphs"></a>
++## Homeomorphic Graphs
++
++Two loop-free graphs are **homeomorphic** if they are isomorphic, or if both can be obtained from the same loop-free undirected graph through a sequence of elementary subdivisions.
++
++For example, consider the two graphs below.
++
++[Image Placeholder: /graphics/84c2d1a9915d36abbc7ea25ab85dd27e](#)
++
++1. First, remove the edge $v_2-v_3$.
++
++   [Image Placeholder: /graphics/bb81cda874f00af071984f091694ce1f](#)
++
++2. Next, add a new vertex $v_4$.
++
++   [Image Placeholder: /graphics/6faec3c981e6b37eb025918ff843dce1](#)
++
++3. Finally, connect the new vertex to the two original vertices by adding the edges $v_2-v_4$ and $v_4-v_3$.
++
++   [Image Placeholder: /graphics/c19065d6ab47b3a59cf7d27e894225e8](#)
++
++Therefore, since it is possible to obtain the graph $H$ by subdividing the edge $v_2-v_3$ in the graph $G$, the graphs $G$ and $H$ are homeomorphic.
++
++---
++
++<a id="applying-subdivisions-to-a-graph"></a>
++## Applying Subdivisions to a Graph
++
++**Example:** Sketch a possible result from subdivisions of the edges $v_1-v_2$ and $v_2-v_3$ in the graph below.
++
++[Image Placeholder: /graphics/603acb0c858361b571660e08acdf4b9c](#)
++
++**Explanation**
++
++Let $G$ be a loop-free graph with an edge $u-v$. An *elementary subdivision* of $G$ occurs when the edge $u-v$ is removed from $G$, and then a new vertex $w$, along with the edges $u-w$ and $w-v$, are added to the graph.
++
++You may think of an elementary subdivision as introducing a new vertex on an existing edge.
++
++In this case, one possible result is shown below after introducing the vertices $v_4$ and $v_5$ on the chosen edges.
++
++[Image Placeholder: /graphics/4b6357558a66e8bdd5831e21725cb749](#)
++
++---
++
++**Question 7**
++
++[Image Placeholder: /graphics/q-244619](#)
++
++Which of the following could result from a subdivision of the edge $v_1-v_3$ in the graph above?
++
++- [ ] A. [Image Placeholder: /graphics/q-244619-a-2](#)
++- [ ] B. [Image Placeholder: /graphics/q-244619-a-1](#)
++- [ ] C. [Image Placeholder: /graphics/q-244619-a-5](#)
++- [ ] D. [Image Placeholder: /graphics/q-244619-a-4](#)
++- [ ] E. [Image Placeholder: /graphics/q-244619-a-3](#)
++
++---
++
++**Question 8**
++
++[Image Placeholder: /graphics/q-257649](#)
++
++Which of the following could result from subdivisions of the edges $v_1-v_2$ and $v_2-v_3$ in the graph above?
++
++- [ ] A. [Image Placeholder: /graphics/q-257649-a-5](#)
++- [ ] B. [Image Placeholder: /graphics/q-257649-a-1](#)
++- [ ] C. [Image Placeholder: /graphics/q-257649-a-2](#)
++- [ ] D. [Image Placeholder: /graphics/q-257649-a-4](#)
++- [ ] E. [Image Placeholder: /graphics/q-257649-a-3](#)
++
++---
++
++<a id="kuratowskis-theorem"></a>
++## Kuratowski's Theorem
++
++**Kuratowski's Theorem** states that a graph is nonplanar if and only if it contains a subgraph that is homeomorphic to either $K_5$ or $K_{3,3}$.
++
++For example, consider the following graphs.
++
++[Image Placeholder: /graphics/55515c24101b5f8ce8e478d8d0e79187](#)
++
++They have the subgraphs shown below.
++
++[Image Placeholder: /graphics/a1aab7057a2c0b809573a44d6ed58b5e](#)
++
++These subgraphs are homeomorphic to $K_5$ and $K_{3,3}$, respectively.
++
++[Image Placeholder: /graphics/c047fc36b77df45a1d49a72ccc706793](#)
++
++Therefore, by Kuratowski's Theorem, the given graphs are not planar.

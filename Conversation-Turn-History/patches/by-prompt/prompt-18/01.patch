@@ -1,0 +1,184 @@
+*** Begin Patch
+*** Update File: /home/jake/Developer/codex-runner/new/2-Lesson-Gen/Lesson-Template.md
+@@
+ ## Table of Contents
+ <!-- Include only the sections that actually appear in the lesson. -->
+ <!-- Use anchored section links to match the production lesson format. -->
++<!-- Add or remove section links as needed. Do not force a lesson into a fixed section count. -->
+ 
+ - [Introduction](#introduction)
+ - [Section 1 Title](#section-1-title)
+ - [Section 2 Title](#section-2-title)
+ - [Section 3 Title](#section-3-title)
+ - [Section 4 Title](#section-4-title)
+@@
+-<!-- Use as many anchored sections as the topic needs. -->
++<!-- Use as many anchored sections as the topic needs. -->
+ <!-- Most lessons will mix two kinds of sections: -->
+ <!-- 1. short setup sections for a definition, formula, or theorem, -->
+ <!-- 2. example-and-practice sections that act like controlled learning steps. -->
+ <!-- Even though section titles should be natural and topic-specific, the internal logic should usually be: -->
+ <!-- clean base case -> same move with one new wrinkle -> same move with the next wrinkle -> edge case or higher application. -->
++<!-- Some lessons will need only 2 skill blocks. Others may need 3 or 4. -->
++<!-- Remove unused placeholders and add more blocks only when the content truly needs them. -->
+@@
+ <a id="section-3-title"></a>
+ ## [Second Skill Block: Same Move, One New Wrinkle]
+@@
+ **Question 4**
+@@
+ - [ ] D. [Choice]
+ - [ ] E. [Choice]
+ 
+ ---
+ 
+ <a id="section-4-title"></a>
+-## [Third Skill Block: Same Move, Further Variation, Edge Case, or Application]
++## [Additional Skill Block, Edge Case, or Application]
+ 
+-[Use this section for the next controlled variation, a common edge case, or a higher application that clearly rests on the earlier sections.]
++[Use this section only if the lesson needs another controlled variation, a common edge case, or a higher application that clearly rests on the earlier sections.]
+@@
+ **Explanation**
+ 
+ [Show the reasoning clearly. If this is a proof or construction, present the steps in a direct sequence.]
+-<!-- Do not open a completely new front here. It should feel like a reachable extension of the earlier blocks. -->
++<!-- Do not open a completely new front here. It should feel like a reachable extension of the earlier blocks. -->
++<!-- Duplicate this section pattern only when needed. Delete it if the lesson is complete without it. -->
+@@
+ <!-- Most practice should appear soon after the relevant example, but not every setup section must contain questions. -->
+ <!-- Within the topic-level page, the skill blocks should still progress like micro-steps. -->
+ <!-- Preserve the same underlying move when possible, and change only one meaningful feature at a time. -->
++<!-- Use the fewest sections that cleanly teach the progression. -->
+ <!-- Omit lesson-target, summary, watch-out, answer-key, and pedagogy-labeled sections unless explicitly requested. -->
+*** Update File: /home/jake/Developer/codex-runner/new/2-Lesson-Gen/Lesson-Prompt.md
+@@
+-2. Build the lesson as a sequence of 3 to 8 named sections.
++2. Build the lesson as a sequence of named sections sized to the content.
++   Most lessons will need about 2 to 6 main sections, but do not force a lesson to hit a target count.
+    Use natural section titles that name the content or task, such as:
+    - "Using Euler's Formula for Planar Graphs"
+    - "Computing a Conditional Probability"
+    - "Applying Subdivisions to a Graph"
+@@
+-   Even so, those sections should function like steps in a progression.
++   Even so, those sections should function like steps in a progression.
+    Why: the exemplars organize by topic-specific subskills and ideas, but the order still matters instructionally.
+@@
+ 5. Sequence the lesson from the cleanest foundational case to controlled variants, then to edge cases, applications, or proofs.
+    Change only one meaningful feature at a time when possible.
+    If a later section is more advanced, it should clearly rest on what the student just learned.
++   Use the fewest sections that cleanly support that progression.
+    Why: the page-level format is broad, but the learning progression should still be incremental.
+@@
+ Before finalizing, check:
+ - Does the lesson read like one coherent topic page?
+ - Does each section have a clear local focus?
++- Is the section count earned by the content rather than padded by the template?
+ - Does the lesson move from foundation to controlled variation or higher application?
+ - Does each new skill block preserve the same underlying move or extend it in one clear way?
+ - Are worked examples placed before nearby practice where needed?
+ - Does the first practice item in each block closely mirror the example?
+ - Are the headings, question types, and formatting natural for the topic?
+*** Update File: /home/jake/Developer/codex-runner/new/0-Context/Week 1/1.1 Lesson Outlines.md
+@@
+ # 1.1 Lesson Outlines
++
++Note
++- These outlines use the fewest sections that seem necessary for each lesson.
++- They should not be read as forcing every lesson into the same number of blocks.
+ 
+ ## 1. Recognizing Periodic Continuous-Time Signals
+@@
+-### Section 1: Recognizing Direct Repetition
+-- What changes: start with the cleanest case where the repetition interval is stated directly.
++### Section 1: Recognizing Direct Repetition
++- What changes: start with the cleanest case where the repetition interval is stated directly.
+ - Needs to cover:
+   - the definition of a periodic continuous-time signal,
+   - the meaning of `T > 0`,
+   - a simple pulse-train-style example with an obvious period.
+ 
+-### Section 2: Recognizing Repetition Over Integer Multiples
+-- What changes: keep the same move, but now distinguish the fundamental period from larger repeating intervals.
+-- Needs to cover:
+-  - the form `x(t) = x(t + nT)` for `n in Z`,
+-  - why `2T`, `3T`, and other multiples also repeat the signal,
+-  - why the fundamental period is the smallest positive period.
+-
+-### Section 3: Finding the Fundamental Period from a Repeating Description
+-- What changes: the repetition is no longer handed to the learner in the exact form `x(t) = x(t + T)`.
++### Section 2: Distinguishing the Fundamental Period from Other Repeats
++- What changes: keep the same move, but now distinguish the fundamental period from larger repeating intervals and infer it from a repeating description.
+ - Needs to cover:
++  - the form `x(t) = x(t + nT)` for `n in Z`,
++  - why `2T`, `3T`, and other multiples also repeat the signal,
+   - reading the repeating interval from a pulse train or verbal description,
+   - identifying the smallest repeating interval,
+   - rejecting a larger multiple as the fundamental period.
+@@
+-### Section 1: Identifying the First Few Harmonics
+-- What changes: start with the cleanest case where the harmonic number is easy to see from the frequency.
++### Section 1: Identifying Simple Harmonics
++- What changes: start with the cleanest case where the harmonic number is easy to see from the frequency.
+ - Needs to cover:
+   - the meaning of fundamental frequency,
+   - first, second, and third harmonics,
+   - examples where the frequency is written directly as an integer multiple of `omega_0`.
+ 
+-### Section 2: Finding the Harmonic Number from a Given Sinusoid
+-- What changes: keep the same move, but now the learner must compute or infer the harmonic number.
++### Section 2: Finding Harmonic Number and Harmonic Structure
++- What changes: keep the same move, but now the learner must infer the harmonic number and recognize a small family of harmonically related components.
+ - Needs to cover:
+   - comparing a given sinusoid's frequency to the fundamental,
+   - identifying `k` in `omega_k = k omega_0`,
+   - examples like `2pi`, `4pi`, and `6pi` relative to a base frequency.
+-
+-### Section 3: Recognizing Harmonic Structure in a Periodic Signal
+-- What changes: move from a single component to a small collection of harmonically related components.
+-- Needs to cover:
+   - recognizing that periodic signals can be built from harmonically related sinusoids,
+   - identifying which components belong to the same harmonic family,
+   - a short bridge to why harmonics matter later.
+@@
+-### Section 1: Finding a Common Period in the Clean Case
+-- What changes: start with periods that have an obvious common multiple.
++### Section 1: Finding a Common Period in the Clean Case
++- What changes: start with periods that have an obvious common multiple.
+ - Needs to cover:
+   - the condition `T = m T_1 = n T_2`,
+   - finding a shared period from simple values,
+   - seeing how the sum inherits periodicity when both signals line up again.
+ 
+-### Section 2: Using the Rational-Ratio Test
+-- What changes: keep the same move, but now decide periodicity from the relationship between the two periods.
+-- Needs to cover:
+-  - the equivalent condition `T_1 / T_2 = n / m`,
+-  - why a rational ratio implies a common period,
+-  - examples where the learner decides whether the sum is periodic from the ratio alone.
+-
+-### Section 3: Distinguishing This Rule from Other Operations
+-- What changes: keep the periodicity question, but clarify that this test applies to sums and linear combinations.
++### Section 2: Using the Rational-Ratio Test for Sums
++- What changes: keep the same move, but now decide periodicity from the relationship between the two periods and clarify that the rule is for sums and linear combinations.
+ - Needs to cover:
+-  - addition as a linear operation,
+-  - why this lesson's rule is about sums rather than products,
+-  - a short setup for the next lesson on multiplication.
++  - the equivalent condition `T_1 / T_2 = n / m`,
++  - why a rational ratio implies a common period,
++  - examples where the learner decides whether the sum is periodic from the ratio alone,
++  - addition as a linear operation,
++  - a short setup for the next lesson on multiplication.
+@@
+-### Section 1: Rewriting a Product with Different Frequencies
+-- What changes: start with the clean base case of two sinusoids with different frequencies.
++### Section 1: Rewriting a Product with Different Frequencies
++- What changes: start with the clean base case of two sinusoids with different frequencies.
+ - Needs to cover:
++  - multiplication as a nonlinear operation,
+   - the form `cos(omega_1 t) cos(omega_2 t)`,
+   - the product-to-sum identity,
+   - identifying the sum and difference frequencies that appear after rewriting.
+*** End Patch

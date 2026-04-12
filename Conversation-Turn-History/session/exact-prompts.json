@@ -1,0 +1,301 @@
+[
+  {
+    "prompt_number": 1,
+    "timestamp": 1775598395,
+    "text": "Can you read the full contents of new/0-Context/How-To.md new/0-Context/Perfect-Lesson-Template.md and new/0-Context/Perfect-Lesson.md and then tell me what you've learned?",
+    "patches": []
+  },
+  {
+    "prompt_number": 2,
+    "timestamp": 1775599604,
+    "text": "Ok, now check out all three lessons in new/0-Context/Lessons",
+    "patches": []
+  },
+  {
+    "prompt_number": 3,
+    "timestamp": 1775599662,
+    "text": "No, these are examples of a perfect lesson.",
+    "patches": []
+  },
+  {
+    "prompt_number": 4,
+    "timestamp": 1775599729,
+    "text": "why are active learning and direct instruction so important?",
+    "patches": []
+  },
+  {
+    "prompt_number": 5,
+    "timestamp": 1775599767,
+    "text": "and how do they play a role in our lesson format?",
+    "patches": []
+  },
+  {
+    "prompt_number": 6,
+    "timestamp": 1775599811,
+    "text": "and how are the exemplar lessons different than the template in its current state?",
+    "patches": []
+  },
+  {
+    "prompt_number": 7,
+    "timestamp": 1775600057,
+    "text": "Ok, can you create two .md files in new/2-Lesson-Gen one called Lesson-Template.md and another called Lesson-Prompt.md that more accurately reflect the exemplars in terms of what we're trying to create?",
+    "patches": [
+      {
+        "patch_number": 1,
+        "prompt_number": 7,
+        "timestamp": "2026-04-07T22:16:09.564539Z",
+        "submission_id": "019d6a02-bae8-7932-b6b2-675b49096c44",
+        "file_paths": [
+          "/home/jake/Developer/codex-runner/new/2-Lesson-Gen/Lesson-Template.md",
+          "/home/jake/Developer/codex-runner/new/2-Lesson-Gen/Lesson-Prompt.md"
+        ],
+        "bundle_copy": "patches/by-prompt/prompt-07/01.patch"
+      }
+    ]
+  },
+  {
+    "prompt_number": 8,
+    "timestamp": 1775600237,
+    "text": "Can you tell me, in new/0-Context/Lessons/14.md what is the difference between each step in the lesson? like the table of contents is segmented into steps, but what makes each step different?",
+    "patches": []
+  },
+  {
+    "prompt_number": 9,
+    "timestamp": 1775600342,
+    "text": "is this more in line with our earlier lesson template? or the new one?",
+    "patches": []
+  },
+  {
+    "prompt_number": 10,
+    "timestamp": 1775600416,
+    "text": "Can you update new/2-Lesson-Gen/Lesson-Template.md and new/2-Lesson-Gen/Lesson-Prompt.md to reflect that?",
+    "patches": [
+      {
+        "patch_number": 2,
+        "prompt_number": 10,
+        "timestamp": "2026-04-07T22:21:21.939745Z",
+        "submission_id": "019d6a08-3509-7890-8ec2-aca4e8ccc43a",
+        "file_paths": [
+          "/home/jake/Developer/codex-runner/new/2-Lesson-Gen/Lesson-Template.md",
+          "/home/jake/Developer/codex-runner/new/2-Lesson-Gen/Lesson-Prompt.md"
+        ],
+        "bundle_copy": "patches/by-prompt/prompt-10/01.patch"
+      }
+    ]
+  },
+  {
+    "prompt_number": 11,
+    "timestamp": 1775600699,
+    "text": "Based on our new template, how many topics or lessons should be built out from the contents of new/0-Context/Week 1/1.1 Periodic Signals.md ?",
+    "patches": []
+  },
+  {
+    "prompt_number": 12,
+    "timestamp": 1775600959,
+    "text": "Can you put those topics as written into new/0-Context/Week 1/1.1 Topics.md",
+    "patches": [
+      {
+        "patch_number": 3,
+        "prompt_number": 12,
+        "timestamp": "2026-04-07T22:29:31.575068Z",
+        "submission_id": "019d6a10-8162-7da1-8b6b-33e9c3d09093",
+        "file_paths": [
+          "/home/jake/Developer/codex-runner/new/0-Context/Week 1/1.1 Topics.md"
+        ],
+        "bundle_copy": "patches/by-prompt/prompt-12/01.patch"
+      }
+    ]
+  },
+  {
+    "prompt_number": 13,
+    "timestamp": 1775601005,
+    "text": "whoah, I said as written. Where's all the other stuff you wrote? like where's the core move, etc",
+    "patches": [
+      {
+        "patch_number": 4,
+        "prompt_number": 13,
+        "timestamp": "2026-04-07T22:30:21.511542Z",
+        "submission_id": "019d6a11-33e6-73c3-9203-63ee99092fb1",
+        "file_paths": [
+          "/home/jake/Developer/codex-runner/new/0-Context/Week 1/1.1 Topics.md"
+        ],
+        "bundle_copy": "patches/by-prompt/prompt-13/01.patch"
+      }
+    ]
+  },
+  {
+    "prompt_number": 14,
+    "timestamp": 1775601157,
+    "text": "Can you make it more like \n`[short, specific skill title] \u2013 [lowercase action verb] [exact thing the learner should be able to do or understand]`\n Title rules\n- Output the cleaned title text only.\n- Keep it short, specific, and teachable, usually 4 to 9 words.\n- Make it read like a lesson-sized skill name, not pasted lecture notes.\n- Prefer gerund-led titles such as `Recognizing...`, `Identifying...`, `Reading...`, `Interpreting...`, `Converting...`, `Extracting...`, `Applying...`, `Connecting...`, or `Using...`.\n- A compact noun phrase or title-case lesson title is acceptable only if it still clearly reads like one lesson-sized skill.\n- The title must name one skill or concept only.\n- Do not end the title with a period.\n\nDescription rules\n- Output the cleaned description text only.\n- Make it exactly one sentence.\n- Start it with a lowercase action verb.\n- Prefer concrete verbs such as `identify`, `read`, `rewrite`, `determine`, `evaluate`, `interpret`, `connect`, `convert`, `apply`, `recognize`, `distinguish`, `locate`, or `extract`.\n- Avoid vague verbs like `understand`, `know`, `learn`, or `treat` unless no sharper verb fits.\n- State the exact learning outcome or action.\n- Focus on one cognitive move only.\n- Keep it short and controlled, usually 8 to 18 words.\n- Keep the tone neutral, instructional, concrete, and precise.\n- Use notation only when it clearly anchors the concept.\n- End with a period.",
+    "patches": [
+      {
+        "patch_number": 5,
+        "prompt_number": 14,
+        "timestamp": "2026-04-07T22:33:09.836238Z",
+        "submission_id": "019d6a13-8657-7e02-b1b3-5c5fd1b691b4",
+        "file_paths": [
+          "/home/jake/Developer/codex-runner/new/0-Context/Week 1/1.1 Topics.md"
+        ],
+        "bundle_copy": "patches/by-prompt/prompt-14/01.patch"
+      }
+    ]
+  },
+  {
+    "prompt_number": 15,
+    "timestamp": 1775601229,
+    "text": "oh no, you deleted all the other stuff. I still want that other stuff, but with the updated titles",
+    "patches": [
+      {
+        "patch_number": 6,
+        "prompt_number": 15,
+        "timestamp": "2026-04-07T22:34:03.674867Z",
+        "submission_id": "019d6a14-9d8b-7632-bb13-1e5b228da4a2",
+        "file_paths": [
+          "/home/jake/Developer/codex-runner/new/0-Context/Week 1/1.1 Topics.md"
+        ],
+        "bundle_copy": "patches/by-prompt/prompt-15/01.patch"
+      }
+    ]
+  },
+  {
+    "prompt_number": 16,
+    "timestamp": 1775601255,
+    "text": "what about the core move?",
+    "patches": [
+      {
+        "patch_number": 7,
+        "prompt_number": 16,
+        "timestamp": "2026-04-07T22:34:33.519130Z",
+        "submission_id": "019d6a15-025e-7922-b4f9-3fcc79f0af2f",
+        "file_paths": [
+          "/home/jake/Developer/codex-runner/new/0-Context/Week 1/1.1 Topics.md"
+        ],
+        "bundle_copy": "patches/by-prompt/prompt-16/01.patch"
+      }
+    ]
+  },
+  {
+    "prompt_number": 17,
+    "timestamp": 1775601430,
+    "text": "Ok, now can you use the template to create an outline of the sections for each of the lessons? I don't want the full lesson, just an outline of what will change for each section, and what needs to be covered. Does that make sense? Remember what changed between each section in lesson 14",
+    "patches": [
+      {
+        "patch_number": 8,
+        "prompt_number": 17,
+        "timestamp": "2026-04-07T22:38:41.851369Z",
+        "submission_id": "019d6a17-b0b6-74c3-8e7d-b00546fa70c0",
+        "file_paths": [
+          "/home/jake/Developer/codex-runner/new/0-Context/Week 1/1.1 Lesson Outlines.md"
+        ],
+        "bundle_copy": "patches/by-prompt/prompt-17/01.patch"
+      }
+    ]
+  },
+  {
+    "prompt_number": 18,
+    "timestamp": 1775601572,
+    "text": "we shouldn't restrict or force three lesson blocks. Unless it's exactly what we need.",
+    "patches": [
+      {
+        "patch_number": 9,
+        "prompt_number": 18,
+        "timestamp": "2026-04-07T22:40:54.356784Z",
+        "submission_id": "019d6a19-dbb2-79c0-8b29-3182a009f237",
+        "file_paths": [
+          "/home/jake/Developer/codex-runner/new/2-Lesson-Gen/Lesson-Template.md",
+          "/home/jake/Developer/codex-runner/new/2-Lesson-Gen/Lesson-Prompt.md",
+          "/home/jake/Developer/codex-runner/new/0-Context/Week 1/1.1 Lesson Outlines.md"
+        ],
+        "bundle_copy": "patches/by-prompt/prompt-18/01.patch"
+      }
+    ]
+  },
+  {
+    "prompt_number": 19,
+    "timestamp": 1775602021,
+    "text": "fewest is too strict as well. It should be exactly the full progression. We shouldn't try to keep the section count down, nor try to meet a quota. This is the distribution for Math Academy. \u2022 Using the bullet items under each lesson\u2019s ## Table of Contents, I parsed 2608\n  lessons and counted 13929 total TOC sections. The average is 5.34 sections per\n  lesson.\n\n  Section-count distribution:\n\n  - 3 sections: 182 lessons\n  - 4 sections: 606 lessons\n  - 5 sections: 743 lessons\n  - 6 sections: 590 lessons\n  - 7 sections: 298 lessons\n  - 8 sections: 117 lessons\n  - 9 sections: 46 lessons\n  - 10 sections: 21 lessons\n  - 11 sections: 3 lessons\n  - 12 sections: 1 lesson\n  - 13 sections: 1 lesson\nso the vast majority of our lessons should be 4-7 sections long with a minimum of 3 sections and let's say a maximum of 8.",
+    "patches": [
+      {
+        "patch_number": 10,
+        "prompt_number": 19,
+        "timestamp": "2026-04-07T22:48:52.538377Z",
+        "submission_id": "019d6a20-b539-7180-b491-adeeba9ed45b",
+        "file_paths": [
+          "/home/jake/Developer/codex-runner/new/2-Lesson-Gen/Lesson-Template.md",
+          "/home/jake/Developer/codex-runner/new/2-Lesson-Gen/Lesson-Prompt.md",
+          "/home/jake/Developer/codex-runner/new/0-Context/Week 1/1.1 Lesson Outlines.md"
+        ],
+        "bundle_copy": "patches/by-prompt/prompt-19/01.patch"
+      }
+    ]
+  },
+  {
+    "prompt_number": 20,
+    "timestamp": 1775602816,
+    "text": "Can you also generate a list of prerequisite math topics needed for each of the selected topics?",
+    "patches": [
+      {
+        "patch_number": 11,
+        "prompt_number": 20,
+        "timestamp": "2026-04-07T23:01:03.388710Z",
+        "submission_id": "019d6a2c-d43b-7003-80eb-6f7270427ce6",
+        "file_paths": [
+          "/home/jake/Developer/codex-runner/new/0-Context/Week 1/1.1 Topics.md"
+        ],
+        "bundle_copy": "patches/by-prompt/prompt-20/01.patch"
+      }
+    ]
+  },
+  {
+    "prompt_number": 21,
+    "timestamp": 1775603210,
+    "text": "Without looking in the files, which of the following courses likely has relevant prerequisites to our topics? new/0-Context/MA-Course-Maps",
+    "patches": []
+  },
+  {
+    "prompt_number": 22,
+    "timestamp": 1775603344,
+    "text": "Ok, read the full maps from the most likely courses and find pre-existing prerequisites.",
+    "patches": []
+  },
+  {
+    "prompt_number": 23,
+    "timestamp": 1775603485,
+    "text": "yes please",
+    "patches": [
+      {
+        "patch_number": 12,
+        "prompt_number": 23,
+        "timestamp": "2026-04-07T23:11:50.141025Z",
+        "submission_id": "019d6a37-0b88-7d43-b141-c9c7f058aac3",
+        "file_paths": [
+          "/home/jake/Developer/codex-runner/new/0-Context/Week 1/1.1 Topics.md"
+        ],
+        "bundle_copy": "patches/by-prompt/prompt-23/01.patch"
+      }
+    ]
+  },
+  {
+    "prompt_number": 24,
+    "timestamp": 1775930412,
+    "text": "can you see the conversation history of this session?",
+    "patches": []
+  },
+  {
+    "prompt_number": 25,
+    "timestamp": 1775930467,
+    "text": "Can you create a turn by turn summary of the conversation we had and place it in \"Conversation Turn History.md\" ?",
+    "patches": [
+      {
+        "patch_number": 13,
+        "prompt_number": 25,
+        "timestamp": "2026-04-11T18:02:10.358337Z",
+        "submission_id": "019d7db4-666e-7713-935c-a899236b06e1",
+        "file_paths": [
+          "/home/jake/Developer/codex-runner/Conversation Turn History.md"
+        ],
+        "bundle_copy": "patches/by-prompt/prompt-25/01.patch"
+      }
+    ]
+  }
+]

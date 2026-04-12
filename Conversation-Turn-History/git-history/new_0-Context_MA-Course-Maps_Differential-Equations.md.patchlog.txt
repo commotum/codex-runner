@@ -1,0 +1,986 @@
+commit 971c4067f4c2764594e4a42ac5e45412da003334
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-11 11:06:04 -0700
+
+    .
+---
+ .../MA-Course-Maps/Differential-Equations.md       | 299 +++++++++++++++++++++
+ 1 file changed, 299 insertions(+)
+
+diff --git a/new/0-Context/MA-Course-Maps/Differential-Equations.md b/new/0-Context/MA-Course-Maps/Differential-Equations.md
+new file mode 100644
+index 0000000..178aa6a
+--- /dev/null
++++ b/new/0-Context/MA-Course-Maps/Differential-Equations.md
+@@ -0,0 +1,299 @@
++# Differential Equations
++
++## Course Description
++
++Differential Equations is a comprehensive, advanced course devoted to the theory, solution techniques, and applications of ordinary differential equations. Building on multivariable calculus (with prior foundations in linear algebra and Calculus I-II), this course develops the analytical, qualitative, and numerical tools used to model and understand dynamic systems across mathematics, physics, engineering, and the applied sciences.
++Students progress from first-order equations and modeling to higher-order linear theory, systems of equations, Laplace transforms, boundary value problems, Fourier series, and modern numerical methods. Along the way, they learn not only how to solve differential equations, but also how to analyze stability, interpret long-term behavior, and evaluate approximation error.
++
++## Course Overview
++
++The course begins with essential preliminaries, including techniques such as differentiating under the integral sign, the Newton-Raphson method, properties of even and odd functions, piecewise continuity, and related foundational tools.
++Students then study first-order differential equations in depth. Core techniques include separation of variables, integrating factors, substitution methods, and reduction to linear form. Special classes of equations—homogeneous, exact, Bernoulli, Riccati, Clairaut, and d'Alembert equations—are explored alongside slope fields, phase lines, equilibrium classification, and qualitative analysis. Extensive modeling applications include mixture problems, exponential and logistic growth, inhibited growth and decay, falling bodies with linear and quadratic drag, gravitational models, and RL/RC circuits.
++The course then develops the theory of linear differential equations. Students examine linear differential operators, superposition, reduction of order, linear independence, Abel's identity, and the structure of solution spaces. Techniques for solving second-order linear equations with constant coefficients are studied for distinct, repeated, and complex roots, as well as polynomial, exponential, and sinusoidal forcing. Cauchy-Euler equations and variation of parameters extend these methods to broader classes of equations. Applications include simple harmonic motion, damped and forced oscillators, resonance phenomena, and RCL circuit models.
++Systems of differential equations are introduced through matrix methods and eigenvalue analysis. Students solve homogeneous and inhomogeneous linear systems using eigenvalues, eigenvectors, matrix exponentials, and fundamental matrices. Phase planes, phase portraits, stability classification, linearization near equilibria, and shifted systems are studied in detail. Modeling applications include the Lotka-Volterra predator-prey system and extensions with carrying capacity.
++Laplace transforms provide an alternative framework for solving linear equations and systems. Topics include unit step functions, shifting theorems, smoothness properties, transforms of derivatives and integrals, inverse transforms, and the solution of initial value problems with time-delayed forcing.
++Boundary value problems and Fourier series expand the focus to eigenvalue problems and orthogonal expansions. Students study eigenvalues and eigenfunctions, Fourier sine and cosine series, convergence properties, arbitrary period expansions, and the use of Fourier methods to solve initial and boundary value problems.
++Finally, the course develops numerical and series-based approximation methods. Students construct Taylor and power series solutions, apply the method of Frobenius at regular singular points, and derive recurrence relations. Numerical techniques include Euler's method (standard and modified), higher-order methods such as RK4 and Adams-Bashforth-Milne schemes, implicit methods (Implicit Euler and trapezoidal), and stability and error analysis using big-O notation and order of accuracy.
++
++## Course Outcomes
++
++Upon successful completion of this course, students will have mastered the following:
++
++- Solve first-order differential equations using separation of variables, integrating factors, substitution methods, and reduction to linear form.
++- Analyze and solve special first-order equations, including homogeneous, exact, Bernoulli, Riccati, Clairaut, and d'Alembert equations.
++- Interpret slope fields, construct phase lines, classify equilibrium solutions, and perform qualitative analysis of autonomous and nonautonomous systems.
++- Model real-world phenomena using first-order equations, including mixture problems, exponential and logistic growth, falling bodies with drag, gravitational models, and electrical circuits.
++- Apply the theory of linear differential operators, superposition, reduction of order, and Abel's identity to determine solution structure.
++- Solve second-order linear equations with constant coefficients for distinct, repeated, and complex roots, including equations with polynomial, exponential, and sinusoidal forcing.
++- Use variation of parameters to solve first-, second-, and higher-order linear equations.
++- Model oscillatory systems, including simple harmonic, damped, and forced oscillators, resonance phenomena, and RCL circuits.
++- Formulate and solve systems of linear differential equations using eigenvalues, eigenvectors, matrix exponentials, and fundamental matrices.
++- Construct and interpret phase portraits, classify stability types, and linearize systems near equilibrium points.
++- Apply Laplace transforms and inverse transforms to solve initial value problems and systems with discontinuous or time-delayed forcing.
++- Solve boundary value problems and compute eigenvalues and eigenfunctions.
++- Develop and apply Fourier sine and cosine series, analyze convergence, and use Fourier methods to solve differential equations.
++- Construct Taylor and Frobenius series solutions about ordinary and regular singular points.
++- Implement numerical methods including Euler, modified Euler, RK4, Adams-Bashforth-Milne methods, implicit Euler, and trapezoidal methods.
++- Analyze truncation error, order of accuracy, and stability of numerical schemes using big-O notation.
++
++## Course Content
++
++### 1. Preliminaries 6 topics
++
++**1.1. Preliminaries**
++
++- 1.1.1. Differentiating Under the Integral Sign
++- 1.1.2. The Newton-Raphson Method
++- 1.1.3. Integrating Products of Trigonometric Functions
++- 1.1.4. Products of Even and Odd Functions
++- 1.1.5. The Floor and Ceiling Functions
++- 1.1.6. Piecewise Continuity
++
++### 2. First-Order Differential Equations 28 topics
++
++**2.1. Techniques for Solving First-Order ODEs**
++
++- 2.1.1. Solving First-Order ODEs Using Separation of Variables
++- 2.1.2. Solving First-Order IVPs Using Separation of Variables
++- 2.1.3. Introduction to First-Order Linear ODEs
++- 2.1.4. General Solutions of First-Order Linear ODEs
++- 2.1.5. Solving First-Order Linear ODEs With Exponential Forcing
++- 2.1.6. Solving First-Order Linear ODEs With Sinusoidal Forcing
++- 2.1.7. Solving First-Order Linear ODEs Using Integrating Factors
++- 2.1.8. Solving First-Order ODEs by Substitution
++- 2.1.9. Further Solving First-Order ODEs by Substitution
++- 2.1.10. Reducing ODEs to First-Order Linear by Substitution
++
++**2.2. Special First-Order Equations**
++
++- 2.2.1. Homogeneous Functions
++- 2.2.2. Homogeneous First-Order ODEs
++- 2.2.3. Exact Differential Equations
++- 2.2.4. Solving Exact ODEs Using Integrating Factors
++- 2.2.5. Bernoulli Differential Equations
++- 2.2.6. Riccati Differential Equations
++- 2.2.7. Clairaut Differential Equations
++- 2.2.8. d'Alembert Differential Equations
++
++**2.3. Slope Fields**
++
++- 2.3.1. Slope Fields for Directly Integrable Differential Equations
++- 2.3.2. Slope Fields for Autonomous Differential Equations
++- 2.3.3. Slope Fields for Nonautonomous Differential Equations
++- 2.3.4. Analyzing Slope Fields for Directly Integrable Differential Equations
++- 2.3.5. Analyzing Slope Fields for Autonomous Differential Equations
++- 2.3.6. Analyzing Slope Fields for Nonautonomous Differential Equations
++
++**2.4. Qualitative Techniques for Differential Equations**
++
++- 2.4.1. Qualitative Analysis of First-Order ODEs
++- 2.4.2. Equilibrium Solutions of First-Order ODEs
++- 2.4.3. Phase Lines of First-Order ODEs
++- 2.4.4. Classifying Equilibrium Solutions of First-Order ODEs
++
++### 3. Modeling With First-Order Differential Equations 21 topics
++
++**3.1. Applications of First-Order ODEs**
++
++- 3.1.1. Modeling With First-Order ODEs
++- 3.1.2. Further Modeling With First-Order ODEs
++- 3.1.3. Modeling Mixture Problems With First-Order Separable ODEs
++- 3.1.4. Modeling Mixture Problems With First-Order Linear ODEs
++- 3.1.5. Orthogonal Trajectories
++
++**3.2. Growth and Decay Models With First-Order ODEs**
++
++- 3.2.1. Exponential Growth and Decay Models With First-Order ODEs
++- 3.2.2. Exponential Growth and Decay Models With First-Order ODEs: Calculating Unknown Times and Initial Values
++- 3.2.3. Exponential Growth and Decay Models With First-Order ODEs: Half-Life Problems
++- 3.2.4. Inhibited Growth Models With First-Order ODEs
++- 3.2.5. Inhibited Decay Models With First-Order ODEs
++- 3.2.6. Logistic Growth Models With First-Order ODEs
++- 3.2.7. Qualitative Analysis of the Logistic Growth Equation
++- 3.2.8. Solving the Logistic Growth Equation
++
++**3.3. Physical Applications of First-Order ODEs**
++
++- 3.3.1. Velocity and Acceleration as Functions of Displacement
++- 3.3.2. Determining Properties of Objects Described as Functions of Displacement
++- 3.3.3. Falling Body Problems With Linear Drag
++- 3.3.4. Falling Body Problems With Quadratic Drag
++- 3.3.5. Newton's Law of Universal Gravitation
++- 3.3.6. Modeling Escape Velocity With First-Order ODEs
++- 3.3.7. Modeling RL Circuits With First-Order ODEs
++- 3.3.8. Modeling RC Circuits With First-Order ODEs
++
++### 4. Linear Differential Equations 29 topics
++
++**4.1. Theory of Solutions to Linear ODEs**
++
++- 4.1.1. Differential Operators
++- 4.1.2. Linear Differential Operators
++- 4.1.3. Introduction to Second-Order Linear ODEs
++- 4.1.4. The Superposition Principle
++- 4.1.5. Reduction of Order
++- 4.1.6. Linear Independence of Solutions to Homogeneous ODEs
++- 4.1.7. General Solutions of Linear ODEs
++- 4.1.8. Abel's Identity
++
++**4.2. Second-Order Linear ODEs With Constant Coefficients**
++
++- 4.2.1. Second-Order Homogeneous ODEs: Characteristic Equations With Distinct Real Roots
++- 4.2.2. Second-Order Homogeneous ODEs: Characteristic Equations With Repeated Roots
++- 4.2.3. Second-Order Homogeneous ODEs: Characteristic Equations With Complex Roots
++- 4.2.4. Second-Order Homogeneous Initial Value Problems
++- 4.2.5. Second-Order Inhomogeneous ODEs With Polynomial Forcing
++- 4.2.6. Second-Order Inhomogeneous ODEs With Exponential Forcing
++- 4.2.7. Second-Order Inhomogeneous ODEs With Sinusoidal Forcing
++
++**4.3. The Cauchy-Euler Equations**
++
++- 4.3.1. Cauchy-Euler Equations: Characteristic Equations With Distinct Real Roots
++- 4.3.2. Cauchy-Euler Equations: Characteristic Equations With Repeated Roots
++- 4.3.3. Cauchy-Euler Equations: Characteristic Equations With Complex Roots
++- 4.3.4. Cauchy-Euler Equations With Forcing
++
++**4.4. Variation of Parameters**
++
++- 4.4.1. Variation of Parameters for First-Order Linear ODEs
++- 4.4.2. Variation of Parameters for Second-Order ODEs
++- 4.4.3. Solving Second-Order ODEs Using Variation of Parameters
++- 4.4.4. Variation of Parameters With Higher-Order ODEs
++
++**4.5. Modeling With Second-Order ODEs**
++
++- 4.5.1. Simple Harmonic Oscillators
++- 4.5.2. Damped Oscillators
++- 4.5.3. Forced Oscillators
++- 4.5.4. Resonance in Vibrating Systems
++- 4.5.5. Modeling Capacitor Charge in RCL Circuits With Second-Order ODEs
++- 4.5.6. Modeling Current in RCL Circuits With Second-Order ODEs
++
++### 5. Systems of Differential Equations 27 topics
++
++**5.1. Systems of ODEs**
++
++- 5.1.1. Introduction to Systems of Linear ODEs
++- 5.1.2. Expressing Homogeneous ODEs as First-Order Systems
++- 5.1.3. Expressing Inhomogeneous ODEs as First-Order Systems
++- 5.1.4. Linear Independence for Homogeneous Systems of ODEs
++- 5.1.5. General Solutions of First-Order Linear Systems of ODEs
++
++**5.2. Solving Systems of Linear ODEs**
++
++- 5.2.1. Solving Decoupled Homogeneous Systems of ODEs
++- 5.2.2. Solving Homogeneous Systems of ODEs With Distinct Eigenvalues
++- 5.2.3. Solving Homogeneous Systems of ODEs With Distinct Eigenvalues and Initial Conditions
++- 5.2.4. Solving Homogeneous Systems of ODEs With Repeated Eigenvalues
++- 5.2.5. Solving Homogeneous Systems of ODEs With Complex Eigenvalues
++- 5.2.6. Solving Inhomogeneous Systems of ODEs
++
++**5.3. Phase Portraits for Systems of Linear ODEs**
++
++- 5.3.1. Phase Planes and Phase Portraits
++- 5.3.2. Equilibrium Points and Stability for Systems of ODEs
++- 5.3.3. Phase Portraits for Decoupled Linear Systems
++- 5.3.4. Phase Portraits for Linear Systems With Real Distinct Eigenvalues
++- 5.3.5. Phase Portraits for Linear Systems With Repeated Eigenvalues
++- 5.3.6. Phase Portraits for Linear Systems With Zero Eigenvalues
++- 5.3.7. Phase Portraits for Linear Systems With Complex Eigenvalues
++- 5.3.8. Shifted Systems of ODEs
++- 5.3.9. Linear Approximations Near Equilibria
++
++**5.4. Solving Systems of ODEs Using Matrix Methods**
++
++- 5.4.1. Matrix Exponentials
++- 5.4.2. Fundamental Matrices
++- 5.4.3. Solving Homogeneous Systems of ODEs Using Matrix Methods
++- 5.4.4. Solving Inhomogeneous Systems of ODEs Using Matrix Methods
++- 5.4.5. Solving Systems of ODEs Using Variation of Parameters
++
++**5.5. Modeling With Systems of Linear ODEs**
++
++- 5.5.1. The Lotka-Volterra Predator-Prey Model
++- 5.5.2. The Lotka-Volterra Model With Carrying Capacity
++
++### 6. Laplace Transforms 16 topics
++
++**6.1. Laplace Transforms**
++
++- 6.1.1. The Unit Step Function
++- 6.1.2. Introduction to Laplace Transforms
++- 6.1.3. Linearity of Laplace Transforms
++- 6.1.4. Laplace Transforms of Piecewise Continuous Functions
++- 6.1.5. The Smoothness Property of Laplace Transforms
++- 6.1.6. Laplace Transforms of Derivatives
++- 6.1.7. Laplace Transforms of Integrals
++- 6.1.8. The First Shifting Theorem of Laplace Transforms
++- 6.1.9. The Second Shifting Theorem of Laplace Transforms
++- 6.1.10. Inverse Laplace Transforms
++
++**6.2. Solving Linear ODEs Using Laplace Transforms**
++
++- 6.2.1. Solving First-Order ODEs Using Laplace Transforms
++- 6.2.2. Solving First-Order ODEs With Time-Delayed Forcing Using Laplace Transforms
++- 6.2.3. Solving Second-Order ODEs Using Laplace Transforms
++- 6.2.4. Solving Second-Order ODEs With Time-Delayed Forcing Using Laplace Transforms
++- 6.2.5. Solving Homogeneous Systems of ODEs Using Laplace Transforms
++- 6.2.6. Solving Inhomogeneous Systems of ODEs Using Laplace Transforms
++
++### 7. Boundary Value Problems 14 topics
++
++**7.1. Boundary Value Problems**
++
++- 7.1.1. Introduction to Boundary Value Problems
++- 7.1.2. Second-Order Homogeneous Boundary Value Problems
++- 7.1.3. Second-Order Inhomogeneous Boundary Value Problems
++- 7.1.4. Eigenvalues and Eigenfunctions of Homogeneous BVPs
++
++**7.2. Fourier Series**
++
++- 7.2.1. Introduction to Fourier Series
++- 7.2.2. Properties of Fourier Series
++- 7.2.3. Fourier Sine Series
++- 7.2.4. Fourier Cosine Series
++- 7.2.5. Fourier Series of Arbitrary Period
++- 7.2.6. Convergence of Fourier Series
++- 7.2.7. Differentiating and Integrating Fourier Series
++- 7.2.8. Solving ODEs Using Fourier Series
++- 7.2.9. Solving IVPs Using Fourier Series
++- 7.2.10. Solving BVPs Using Fourier Series
++
++### 8. Approximating Solutions to Differential Equations 22 topics
++
++**8.1. Series Solutions of Differential Equations**
++
++- 8.1.1. Introduction to Recurrence Relations
++- 8.1.2. Taylor Series Solutions of Differential Equations
++- 8.1.3. Power Series Solutions of Differential Equations
++- 8.1.4. Regular Singular Points
++- 8.1.5. The Method of Frobenius
++- 8.1.6. Finding Recurrence Relations for the Coefficients of a Frobenius Solution
++- 8.1.7. Finding General Solutions Using the Method of Frobenius
++
++**8.2. Euler's Method**
++
++- 8.2.1. Euler's Method: Calculating One Step
++- 8.2.2. Euler's Method: Calculating Multiple Steps
++- 8.2.3. The Modified Euler Method
++- 8.2.4. Euler's Method for Systems of ODEs
++- 8.2.5. Euler's Method for Second-Order ODEs
++
++**8.3. Higher-Order Numerical Methods**
++
++- 8.3.1. The RK4 Method
++- 8.3.2. The ABM2 Method
++
++**8.4. Implicit Numerical Methods**
++
++- 8.4.1. The Implicit Euler Method
++- 8.4.2. The Trapezoidal Method
++- 8.4.3. Using the Implicit Euler Method With Newton's Method
++- 8.4.4. Using the Trapezoidal Method With Newton's Method
++
++**8.5. Analyzing Numerical Methods**
++
++- 8.5.1. Big-O Notation
++- 8.5.2. Error in Numerical Methods
++- 8.5.3. Order of Numerical Methods
++- 8.5.4. Stability of Numerical Methods
+
+commit 0f974b9235c8eb2864ab7377cec690d9e4e2d251
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-08 08:08:44 -0700
+
+    .
+---
+ .../MA-Course-Maps/Differential-Equations.md       | 299 ---------------------
+ 1 file changed, 299 deletions(-)
+
+diff --git a/new/0-Context/MA-Course-Maps/Differential-Equations.md b/new/0-Context/MA-Course-Maps/Differential-Equations.md
+deleted file mode 100644
+index 178aa6a..0000000
+--- a/new/0-Context/MA-Course-Maps/Differential-Equations.md
++++ /dev/null
+@@ -1,299 +0,0 @@
+-# Differential Equations
+-
+-## Course Description
+-
+-Differential Equations is a comprehensive, advanced course devoted to the theory, solution techniques, and applications of ordinary differential equations. Building on multivariable calculus (with prior foundations in linear algebra and Calculus I-II), this course develops the analytical, qualitative, and numerical tools used to model and understand dynamic systems across mathematics, physics, engineering, and the applied sciences.
+-Students progress from first-order equations and modeling to higher-order linear theory, systems of equations, Laplace transforms, boundary value problems, Fourier series, and modern numerical methods. Along the way, they learn not only how to solve differential equations, but also how to analyze stability, interpret long-term behavior, and evaluate approximation error.
+-
+-## Course Overview
+-
+-The course begins with essential preliminaries, including techniques such as differentiating under the integral sign, the Newton-Raphson method, properties of even and odd functions, piecewise continuity, and related foundational tools.
+-Students then study first-order differential equations in depth. Core techniques include separation of variables, integrating factors, substitution methods, and reduction to linear form. Special classes of equations—homogeneous, exact, Bernoulli, Riccati, Clairaut, and d'Alembert equations—are explored alongside slope fields, phase lines, equilibrium classification, and qualitative analysis. Extensive modeling applications include mixture problems, exponential and logistic growth, inhibited growth and decay, falling bodies with linear and quadratic drag, gravitational models, and RL/RC circuits.
+-The course then develops the theory of linear differential equations. Students examine linear differential operators, superposition, reduction of order, linear independence, Abel's identity, and the structure of solution spaces. Techniques for solving second-order linear equations with constant coefficients are studied for distinct, repeated, and complex roots, as well as polynomial, exponential, and sinusoidal forcing. Cauchy-Euler equations and variation of parameters extend these methods to broader classes of equations. Applications include simple harmonic motion, damped and forced oscillators, resonance phenomena, and RCL circuit models.
+-Systems of differential equations are introduced through matrix methods and eigenvalue analysis. Students solve homogeneous and inhomogeneous linear systems using eigenvalues, eigenvectors, matrix exponentials, and fundamental matrices. Phase planes, phase portraits, stability classification, linearization near equilibria, and shifted systems are studied in detail. Modeling applications include the Lotka-Volterra predator-prey system and extensions with carrying capacity.
+-Laplace transforms provide an alternative framework for solving linear equations and systems. Topics include unit step functions, shifting theorems, smoothness properties, transforms of derivatives and integrals, inverse transforms, and the solution of initial value problems with time-delayed forcing.
+-Boundary value problems and Fourier series expand the focus to eigenvalue problems and orthogonal expansions. Students study eigenvalues and eigenfunctions, Fourier sine and cosine series, convergence properties, arbitrary period expansions, and the use of Fourier methods to solve initial and boundary value problems.
+-Finally, the course develops numerical and series-based approximation methods. Students construct Taylor and power series solutions, apply the method of Frobenius at regular singular points, and derive recurrence relations. Numerical techniques include Euler's method (standard and modified), higher-order methods such as RK4 and Adams-Bashforth-Milne schemes, implicit methods (Implicit Euler and trapezoidal), and stability and error analysis using big-O notation and order of accuracy.
+-
+-## Course Outcomes
+-
+-Upon successful completion of this course, students will have mastered the following:
+-
+-- Solve first-order differential equations using separation of variables, integrating factors, substitution methods, and reduction to linear form.
+-- Analyze and solve special first-order equations, including homogeneous, exact, Bernoulli, Riccati, Clairaut, and d'Alembert equations.
+-- Interpret slope fields, construct phase lines, classify equilibrium solutions, and perform qualitative analysis of autonomous and nonautonomous systems.
+-- Model real-world phenomena using first-order equations, including mixture problems, exponential and logistic growth, falling bodies with drag, gravitational models, and electrical circuits.
+-- Apply the theory of linear differential operators, superposition, reduction of order, and Abel's identity to determine solution structure.
+-- Solve second-order linear equations with constant coefficients for distinct, repeated, and complex roots, including equations with polynomial, exponential, and sinusoidal forcing.
+-- Use variation of parameters to solve first-, second-, and higher-order linear equations.
+-- Model oscillatory systems, including simple harmonic, damped, and forced oscillators, resonance phenomena, and RCL circuits.
+-- Formulate and solve systems of linear differential equations using eigenvalues, eigenvectors, matrix exponentials, and fundamental matrices.
+-- Construct and interpret phase portraits, classify stability types, and linearize systems near equilibrium points.
+-- Apply Laplace transforms and inverse transforms to solve initial value problems and systems with discontinuous or time-delayed forcing.
+-- Solve boundary value problems and compute eigenvalues and eigenfunctions.
+-- Develop and apply Fourier sine and cosine series, analyze convergence, and use Fourier methods to solve differential equations.
+-- Construct Taylor and Frobenius series solutions about ordinary and regular singular points.
+-- Implement numerical methods including Euler, modified Euler, RK4, Adams-Bashforth-Milne methods, implicit Euler, and trapezoidal methods.
+-- Analyze truncation error, order of accuracy, and stability of numerical schemes using big-O notation.
+-
+-## Course Content
+-
+-### 1. Preliminaries 6 topics
+-
+-**1.1. Preliminaries**
+-
+-- 1.1.1. Differentiating Under the Integral Sign
+-- 1.1.2. The Newton-Raphson Method
+-- 1.1.3. Integrating Products of Trigonometric Functions
+-- 1.1.4. Products of Even and Odd Functions
+-- 1.1.5. The Floor and Ceiling Functions
+-- 1.1.6. Piecewise Continuity
+-
+-### 2. First-Order Differential Equations 28 topics
+-
+-**2.1. Techniques for Solving First-Order ODEs**
+-
+-- 2.1.1. Solving First-Order ODEs Using Separation of Variables
+-- 2.1.2. Solving First-Order IVPs Using Separation of Variables
+-- 2.1.3. Introduction to First-Order Linear ODEs
+-- 2.1.4. General Solutions of First-Order Linear ODEs
+-- 2.1.5. Solving First-Order Linear ODEs With Exponential Forcing
+-- 2.1.6. Solving First-Order Linear ODEs With Sinusoidal Forcing
+-- 2.1.7. Solving First-Order Linear ODEs Using Integrating Factors
+-- 2.1.8. Solving First-Order ODEs by Substitution
+-- 2.1.9. Further Solving First-Order ODEs by Substitution
+-- 2.1.10. Reducing ODEs to First-Order Linear by Substitution
+-
+-**2.2. Special First-Order Equations**
+-
+-- 2.2.1. Homogeneous Functions
+-- 2.2.2. Homogeneous First-Order ODEs
+-- 2.2.3. Exact Differential Equations
+-- 2.2.4. Solving Exact ODEs Using Integrating Factors
+-- 2.2.5. Bernoulli Differential Equations
+-- 2.2.6. Riccati Differential Equations
+-- 2.2.7. Clairaut Differential Equations
+-- 2.2.8. d'Alembert Differential Equations
+-
+-**2.3. Slope Fields**
+-
+-- 2.3.1. Slope Fields for Directly Integrable Differential Equations
+-- 2.3.2. Slope Fields for Autonomous Differential Equations
+-- 2.3.3. Slope Fields for Nonautonomous Differential Equations
+-- 2.3.4. Analyzing Slope Fields for Directly Integrable Differential Equations
+-- 2.3.5. Analyzing Slope Fields for Autonomous Differential Equations
+-- 2.3.6. Analyzing Slope Fields for Nonautonomous Differential Equations
+-
+-**2.4. Qualitative Techniques for Differential Equations**
+-
+-- 2.4.1. Qualitative Analysis of First-Order ODEs
+-- 2.4.2. Equilibrium Solutions of First-Order ODEs
+-- 2.4.3. Phase Lines of First-Order ODEs
+-- 2.4.4. Classifying Equilibrium Solutions of First-Order ODEs
+-
+-### 3. Modeling With First-Order Differential Equations 21 topics
+-
+-**3.1. Applications of First-Order ODEs**
+-
+-- 3.1.1. Modeling With First-Order ODEs
+-- 3.1.2. Further Modeling With First-Order ODEs
+-- 3.1.3. Modeling Mixture Problems With First-Order Separable ODEs
+-- 3.1.4. Modeling Mixture Problems With First-Order Linear ODEs
+-- 3.1.5. Orthogonal Trajectories
+-
+-**3.2. Growth and Decay Models With First-Order ODEs**
+-
+-- 3.2.1. Exponential Growth and Decay Models With First-Order ODEs
+-- 3.2.2. Exponential Growth and Decay Models With First-Order ODEs: Calculating Unknown Times and Initial Values
+-- 3.2.3. Exponential Growth and Decay Models With First-Order ODEs: Half-Life Problems
+-- 3.2.4. Inhibited Growth Models With First-Order ODEs
+-- 3.2.5. Inhibited Decay Models With First-Order ODEs
+-- 3.2.6. Logistic Growth Models With First-Order ODEs
+-- 3.2.7. Qualitative Analysis of the Logistic Growth Equation
+-- 3.2.8. Solving the Logistic Growth Equation
+-
+-**3.3. Physical Applications of First-Order ODEs**
+-
+-- 3.3.1. Velocity and Acceleration as Functions of Displacement
+-- 3.3.2. Determining Properties of Objects Described as Functions of Displacement
+-- 3.3.3. Falling Body Problems With Linear Drag
+-- 3.3.4. Falling Body Problems With Quadratic Drag
+-- 3.3.5. Newton's Law of Universal Gravitation
+-- 3.3.6. Modeling Escape Velocity With First-Order ODEs
+-- 3.3.7. Modeling RL Circuits With First-Order ODEs
+-- 3.3.8. Modeling RC Circuits With First-Order ODEs
+-
+-### 4. Linear Differential Equations 29 topics
+-
+-**4.1. Theory of Solutions to Linear ODEs**
+-
+-- 4.1.1. Differential Operators
+-- 4.1.2. Linear Differential Operators
+-- 4.1.3. Introduction to Second-Order Linear ODEs
+-- 4.1.4. The Superposition Principle
+-- 4.1.5. Reduction of Order
+-- 4.1.6. Linear Independence of Solutions to Homogeneous ODEs
+-- 4.1.7. General Solutions of Linear ODEs
+-- 4.1.8. Abel's Identity
+-
+-**4.2. Second-Order Linear ODEs With Constant Coefficients**
+-
+-- 4.2.1. Second-Order Homogeneous ODEs: Characteristic Equations With Distinct Real Roots
+-- 4.2.2. Second-Order Homogeneous ODEs: Characteristic Equations With Repeated Roots
+-- 4.2.3. Second-Order Homogeneous ODEs: Characteristic Equations With Complex Roots
+-- 4.2.4. Second-Order Homogeneous Initial Value Problems
+-- 4.2.5. Second-Order Inhomogeneous ODEs With Polynomial Forcing
+-- 4.2.6. Second-Order Inhomogeneous ODEs With Exponential Forcing
+-- 4.2.7. Second-Order Inhomogeneous ODEs With Sinusoidal Forcing
+-
+-**4.3. The Cauchy-Euler Equations**
+-
+-- 4.3.1. Cauchy-Euler Equations: Characteristic Equations With Distinct Real Roots
+-- 4.3.2. Cauchy-Euler Equations: Characteristic Equations With Repeated Roots
+-- 4.3.3. Cauchy-Euler Equations: Characteristic Equations With Complex Roots
+-- 4.3.4. Cauchy-Euler Equations With Forcing
+-
+-**4.4. Variation of Parameters**
+-
+-- 4.4.1. Variation of Parameters for First-Order Linear ODEs
+-- 4.4.2. Variation of Parameters for Second-Order ODEs
+-- 4.4.3. Solving Second-Order ODEs Using Variation of Parameters
+-- 4.4.4. Variation of Parameters With Higher-Order ODEs
+-
+-**4.5. Modeling With Second-Order ODEs**
+-
+-- 4.5.1. Simple Harmonic Oscillators
+-- 4.5.2. Damped Oscillators
+-- 4.5.3. Forced Oscillators
+-- 4.5.4. Resonance in Vibrating Systems
+-- 4.5.5. Modeling Capacitor Charge in RCL Circuits With Second-Order ODEs
+-- 4.5.6. Modeling Current in RCL Circuits With Second-Order ODEs
+-
+-### 5. Systems of Differential Equations 27 topics
+-
+-**5.1. Systems of ODEs**
+-
+-- 5.1.1. Introduction to Systems of Linear ODEs
+-- 5.1.2. Expressing Homogeneous ODEs as First-Order Systems
+-- 5.1.3. Expressing Inhomogeneous ODEs as First-Order Systems
+-- 5.1.4. Linear Independence for Homogeneous Systems of ODEs
+-- 5.1.5. General Solutions of First-Order Linear Systems of ODEs
+-
+-**5.2. Solving Systems of Linear ODEs**
+-
+-- 5.2.1. Solving Decoupled Homogeneous Systems of ODEs
+-- 5.2.2. Solving Homogeneous Systems of ODEs With Distinct Eigenvalues
+-- 5.2.3. Solving Homogeneous Systems of ODEs With Distinct Eigenvalues and Initial Conditions
+-- 5.2.4. Solving Homogeneous Systems of ODEs With Repeated Eigenvalues
+-- 5.2.5. Solving Homogeneous Systems of ODEs With Complex Eigenvalues
+-- 5.2.6. Solving Inhomogeneous Systems of ODEs
+-
+-**5.3. Phase Portraits for Systems of Linear ODEs**
+-
+-- 5.3.1. Phase Planes and Phase Portraits
+-- 5.3.2. Equilibrium Points and Stability for Systems of ODEs
+-- 5.3.3. Phase Portraits for Decoupled Linear Systems
+-- 5.3.4. Phase Portraits for Linear Systems With Real Distinct Eigenvalues
+-- 5.3.5. Phase Portraits for Linear Systems With Repeated Eigenvalues
+-- 5.3.6. Phase Portraits for Linear Systems With Zero Eigenvalues
+-- 5.3.7. Phase Portraits for Linear Systems With Complex Eigenvalues
+-- 5.3.8. Shifted Systems of ODEs
+-- 5.3.9. Linear Approximations Near Equilibria
+-
+-**5.4. Solving Systems of ODEs Using Matrix Methods**
+-
+-- 5.4.1. Matrix Exponentials
+-- 5.4.2. Fundamental Matrices
+-- 5.4.3. Solving Homogeneous Systems of ODEs Using Matrix Methods
+-- 5.4.4. Solving Inhomogeneous Systems of ODEs Using Matrix Methods
+-- 5.4.5. Solving Systems of ODEs Using Variation of Parameters
+-
+-**5.5. Modeling With Systems of Linear ODEs**
+-
+-- 5.5.1. The Lotka-Volterra Predator-Prey Model
+-- 5.5.2. The Lotka-Volterra Model With Carrying Capacity
+-
+-### 6. Laplace Transforms 16 topics
+-
+-**6.1. Laplace Transforms**
+-
+-- 6.1.1. The Unit Step Function
+-- 6.1.2. Introduction to Laplace Transforms
+-- 6.1.3. Linearity of Laplace Transforms
+-- 6.1.4. Laplace Transforms of Piecewise Continuous Functions
+-- 6.1.5. The Smoothness Property of Laplace Transforms
+-- 6.1.6. Laplace Transforms of Derivatives
+-- 6.1.7. Laplace Transforms of Integrals
+-- 6.1.8. The First Shifting Theorem of Laplace Transforms
+-- 6.1.9. The Second Shifting Theorem of Laplace Transforms
+-- 6.1.10. Inverse Laplace Transforms
+-
+-**6.2. Solving Linear ODEs Using Laplace Transforms**
+-
+-- 6.2.1. Solving First-Order ODEs Using Laplace Transforms
+-- 6.2.2. Solving First-Order ODEs With Time-Delayed Forcing Using Laplace Transforms
+-- 6.2.3. Solving Second-Order ODEs Using Laplace Transforms
+-- 6.2.4. Solving Second-Order ODEs With Time-Delayed Forcing Using Laplace Transforms
+-- 6.2.5. Solving Homogeneous Systems of ODEs Using Laplace Transforms
+-- 6.2.6. Solving Inhomogeneous Systems of ODEs Using Laplace Transforms
+-
+-### 7. Boundary Value Problems 14 topics
+-
+-**7.1. Boundary Value Problems**
+-
+-- 7.1.1. Introduction to Boundary Value Problems
+-- 7.1.2. Second-Order Homogeneous Boundary Value Problems
+-- 7.1.3. Second-Order Inhomogeneous Boundary Value Problems
+-- 7.1.4. Eigenvalues and Eigenfunctions of Homogeneous BVPs
+-
+-**7.2. Fourier Series**
+-
+-- 7.2.1. Introduction to Fourier Series
+-- 7.2.2. Properties of Fourier Series
+-- 7.2.3. Fourier Sine Series
+-- 7.2.4. Fourier Cosine Series
+-- 7.2.5. Fourier Series of Arbitrary Period
+-- 7.2.6. Convergence of Fourier Series
+-- 7.2.7. Differentiating and Integrating Fourier Series
+-- 7.2.8. Solving ODEs Using Fourier Series
+-- 7.2.9. Solving IVPs Using Fourier Series
+-- 7.2.10. Solving BVPs Using Fourier Series
+-
+-### 8. Approximating Solutions to Differential Equations 22 topics
+-
+-**8.1. Series Solutions of Differential Equations**
+-
+-- 8.1.1. Introduction to Recurrence Relations
+-- 8.1.2. Taylor Series Solutions of Differential Equations
+-- 8.1.3. Power Series Solutions of Differential Equations
+-- 8.1.4. Regular Singular Points
+-- 8.1.5. The Method of Frobenius
+-- 8.1.6. Finding Recurrence Relations for the Coefficients of a Frobenius Solution
+-- 8.1.7. Finding General Solutions Using the Method of Frobenius
+-
+-**8.2. Euler's Method**
+-
+-- 8.2.1. Euler's Method: Calculating One Step
+-- 8.2.2. Euler's Method: Calculating Multiple Steps
+-- 8.2.3. The Modified Euler Method
+-- 8.2.4. Euler's Method for Systems of ODEs
+-- 8.2.5. Euler's Method for Second-Order ODEs
+-
+-**8.3. Higher-Order Numerical Methods**
+-
+-- 8.3.1. The RK4 Method
+-- 8.3.2. The ABM2 Method
+-
+-**8.4. Implicit Numerical Methods**
+-
+-- 8.4.1. The Implicit Euler Method
+-- 8.4.2. The Trapezoidal Method
+-- 8.4.3. Using the Implicit Euler Method With Newton's Method
+-- 8.4.4. Using the Trapezoidal Method With Newton's Method
+-
+-**8.5. Analyzing Numerical Methods**
+-
+-- 8.5.1. Big-O Notation
+-- 8.5.2. Error in Numerical Methods
+-- 8.5.3. Order of Numerical Methods
+-- 8.5.4. Stability of Numerical Methods
+
+commit 9a5dc75e2f8122262a9995c24968b541f6f1363f
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-07 17:55:04 -0700
+
+    .
+---
+ .../2-Not-Yet => new/0-Context}/MA-Course-Maps/Differential-Equations.md  | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+diff --git a/curriculum-builder/2-Not-Yet/MA-Course-Maps/Differential-Equations.md b/new/0-Context/MA-Course-Maps/Differential-Equations.md
+similarity index 100%
+copy from curriculum-builder/2-Not-Yet/MA-Course-Maps/Differential-Equations.md
+copy to new/0-Context/MA-Course-Maps/Differential-Equations.md
+
+commit d05233b44758fd319436ffa7b973fed37fecb544
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-06 14:52:05 -0700
+
+    .
+---
+ .../{1-Ingest => 2-Not-Yet}/MA-Course-Maps/Differential-Equations.md      | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+diff --git a/curriculum-builder/1-Ingest/MA-Course-Maps/Differential-Equations.md b/curriculum-builder/2-Not-Yet/MA-Course-Maps/Differential-Equations.md
+similarity index 100%
+rename from curriculum-builder/1-Ingest/MA-Course-Maps/Differential-Equations.md
+rename to curriculum-builder/2-Not-Yet/MA-Course-Maps/Differential-Equations.md
+
+commit f99ab753813899c982f22e9fc8e0c3b262291458
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-04 12:41:45 -0700
+
+    .
+---
+ .../1-Ingest/{Course-Maps => MA-Course-Maps}/Differential-Equations.md    | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+diff --git a/curriculum-builder/1-Ingest/Course-Maps/Differential-Equations.md b/curriculum-builder/1-Ingest/MA-Course-Maps/Differential-Equations.md
+similarity index 100%
+rename from curriculum-builder/1-Ingest/Course-Maps/Differential-Equations.md
+rename to curriculum-builder/1-Ingest/MA-Course-Maps/Differential-Equations.md
+
+commit 137d40454eb20dd1b66db21f5346fd5ed76e365f
+Author: JP <jneilpeterson@gmail.com>
+Date:   2026-04-04 11:40:01 -0700
+
+    .
+---
+ .../1-Ingest/Course-Maps/Differential-Equations.md | 299 +++++++++++++++++++++
+ 1 file changed, 299 insertions(+)
+
+diff --git a/curriculum-builder/1-Ingest/Course-Maps/Differential-Equations.md b/curriculum-builder/1-Ingest/Course-Maps/Differential-Equations.md
+new file mode 100644
+index 0000000..178aa6a
+--- /dev/null
++++ b/curriculum-builder/1-Ingest/Course-Maps/Differential-Equations.md
+@@ -0,0 +1,299 @@
++# Differential Equations
++
++## Course Description
++
++Differential Equations is a comprehensive, advanced course devoted to the theory, solution techniques, and applications of ordinary differential equations. Building on multivariable calculus (with prior foundations in linear algebra and Calculus I-II), this course develops the analytical, qualitative, and numerical tools used to model and understand dynamic systems across mathematics, physics, engineering, and the applied sciences.
++Students progress from first-order equations and modeling to higher-order linear theory, systems of equations, Laplace transforms, boundary value problems, Fourier series, and modern numerical methods. Along the way, they learn not only how to solve differential equations, but also how to analyze stability, interpret long-term behavior, and evaluate approximation error.
++
++## Course Overview
++
++The course begins with essential preliminaries, including techniques such as differentiating under the integral sign, the Newton-Raphson method, properties of even and odd functions, piecewise continuity, and related foundational tools.
++Students then study first-order differential equations in depth. Core techniques include separation of variables, integrating factors, substitution methods, and reduction to linear form. Special classes of equations—homogeneous, exact, Bernoulli, Riccati, Clairaut, and d'Alembert equations—are explored alongside slope fields, phase lines, equilibrium classification, and qualitative analysis. Extensive modeling applications include mixture problems, exponential and logistic growth, inhibited growth and decay, falling bodies with linear and quadratic drag, gravitational models, and RL/RC circuits.
++The course then develops the theory of linear differential equations. Students examine linear differential operators, superposition, reduction of order, linear independence, Abel's identity, and the structure of solution spaces. Techniques for solving second-order linear equations with constant coefficients are studied for distinct, repeated, and complex roots, as well as polynomial, exponential, and sinusoidal forcing. Cauchy-Euler equations and variation of parameters extend these methods to broader classes of equations. Applications include simple harmonic motion, damped and forced oscillators, resonance phenomena, and RCL circuit models.
++Systems of differential equations are introduced through matrix methods and eigenvalue analysis. Students solve homogeneous and inhomogeneous linear systems using eigenvalues, eigenvectors, matrix exponentials, and fundamental matrices. Phase planes, phase portraits, stability classification, linearization near equilibria, and shifted systems are studied in detail. Modeling applications include the Lotka-Volterra predator-prey system and extensions with carrying capacity.
++Laplace transforms provide an alternative framework for solving linear equations and systems. Topics include unit step functions, shifting theorems, smoothness properties, transforms of derivatives and integrals, inverse transforms, and the solution of initial value problems with time-delayed forcing.
++Boundary value problems and Fourier series expand the focus to eigenvalue problems and orthogonal expansions. Students study eigenvalues and eigenfunctions, Fourier sine and cosine series, convergence properties, arbitrary period expansions, and the use of Fourier methods to solve initial and boundary value problems.
++Finally, the course develops numerical and series-based approximation methods. Students construct Taylor and power series solutions, apply the method of Frobenius at regular singular points, and derive recurrence relations. Numerical techniques include Euler's method (standard and modified), higher-order methods such as RK4 and Adams-Bashforth-Milne schemes, implicit methods (Implicit Euler and trapezoidal), and stability and error analysis using big-O notation and order of accuracy.
++
++## Course Outcomes
++
++Upon successful completion of this course, students will have mastered the following:
++
++- Solve first-order differential equations using separation of variables, integrating factors, substitution methods, and reduction to linear form.
++- Analyze and solve special first-order equations, including homogeneous, exact, Bernoulli, Riccati, Clairaut, and d'Alembert equations.
++- Interpret slope fields, construct phase lines, classify equilibrium solutions, and perform qualitative analysis of autonomous and nonautonomous systems.
++- Model real-world phenomena using first-order equations, including mixture problems, exponential and logistic growth, falling bodies with drag, gravitational models, and electrical circuits.
++- Apply the theory of linear differential operators, superposition, reduction of order, and Abel's identity to determine solution structure.
++- Solve second-order linear equations with constant coefficients for distinct, repeated, and complex roots, including equations with polynomial, exponential, and sinusoidal forcing.
++- Use variation of parameters to solve first-, second-, and higher-order linear equations.
++- Model oscillatory systems, including simple harmonic, damped, and forced oscillators, resonance phenomena, and RCL circuits.
++- Formulate and solve systems of linear differential equations using eigenvalues, eigenvectors, matrix exponentials, and fundamental matrices.
++- Construct and interpret phase portraits, classify stability types, and linearize systems near equilibrium points.
++- Apply Laplace transforms and inverse transforms to solve initial value problems and systems with discontinuous or time-delayed forcing.
++- Solve boundary value problems and compute eigenvalues and eigenfunctions.
++- Develop and apply Fourier sine and cosine series, analyze convergence, and use Fourier methods to solve differential equations.
++- Construct Taylor and Frobenius series solutions about ordinary and regular singular points.
++- Implement numerical methods including Euler, modified Euler, RK4, Adams-Bashforth-Milne methods, implicit Euler, and trapezoidal methods.
++- Analyze truncation error, order of accuracy, and stability of numerical schemes using big-O notation.
++
++## Course Content
++
++### 1. Preliminaries 6 topics
++
++**1.1. Preliminaries**
++
++- 1.1.1. Differentiating Under the Integral Sign
++- 1.1.2. The Newton-Raphson Method
++- 1.1.3. Integrating Products of Trigonometric Functions
++- 1.1.4. Products of Even and Odd Functions
++- 1.1.5. The Floor and Ceiling Functions
++- 1.1.6. Piecewise Continuity
++
++### 2. First-Order Differential Equations 28 topics
++
++**2.1. Techniques for Solving First-Order ODEs**
++
++- 2.1.1. Solving First-Order ODEs Using Separation of Variables
++- 2.1.2. Solving First-Order IVPs Using Separation of Variables
++- 2.1.3. Introduction to First-Order Linear ODEs
++- 2.1.4. General Solutions of First-Order Linear ODEs
++- 2.1.5. Solving First-Order Linear ODEs With Exponential Forcing
++- 2.1.6. Solving First-Order Linear ODEs With Sinusoidal Forcing
++- 2.1.7. Solving First-Order Linear ODEs Using Integrating Factors
++- 2.1.8. Solving First-Order ODEs by Substitution
++- 2.1.9. Further Solving First-Order ODEs by Substitution
++- 2.1.10. Reducing ODEs to First-Order Linear by Substitution
++
++**2.2. Special First-Order Equations**
++
++- 2.2.1. Homogeneous Functions
++- 2.2.2. Homogeneous First-Order ODEs
++- 2.2.3. Exact Differential Equations
++- 2.2.4. Solving Exact ODEs Using Integrating Factors
++- 2.2.5. Bernoulli Differential Equations
++- 2.2.6. Riccati Differential Equations
++- 2.2.7. Clairaut Differential Equations
++- 2.2.8. d'Alembert Differential Equations
++
++**2.3. Slope Fields**
++
++- 2.3.1. Slope Fields for Directly Integrable Differential Equations
++- 2.3.2. Slope Fields for Autonomous Differential Equations
++- 2.3.3. Slope Fields for Nonautonomous Differential Equations
++- 2.3.4. Analyzing Slope Fields for Directly Integrable Differential Equations
++- 2.3.5. Analyzing Slope Fields for Autonomous Differential Equations
++- 2.3.6. Analyzing Slope Fields for Nonautonomous Differential Equations
++
++**2.4. Qualitative Techniques for Differential Equations**
++
++- 2.4.1. Qualitative Analysis of First-Order ODEs
++- 2.4.2. Equilibrium Solutions of First-Order ODEs
++- 2.4.3. Phase Lines of First-Order ODEs
++- 2.4.4. Classifying Equilibrium Solutions of First-Order ODEs
++
++### 3. Modeling With First-Order Differential Equations 21 topics
++
++**3.1. Applications of First-Order ODEs**
++
++- 3.1.1. Modeling With First-Order ODEs
++- 3.1.2. Further Modeling With First-Order ODEs
++- 3.1.3. Modeling Mixture Problems With First-Order Separable ODEs
++- 3.1.4. Modeling Mixture Problems With First-Order Linear ODEs
++- 3.1.5. Orthogonal Trajectories
++
++**3.2. Growth and Decay Models With First-Order ODEs**
++
++- 3.2.1. Exponential Growth and Decay Models With First-Order ODEs
++- 3.2.2. Exponential Growth and Decay Models With First-Order ODEs: Calculating Unknown Times and Initial Values
++- 3.2.3. Exponential Growth and Decay Models With First-Order ODEs: Half-Life Problems
++- 3.2.4. Inhibited Growth Models With First-Order ODEs
++- 3.2.5. Inhibited Decay Models With First-Order ODEs
++- 3.2.6. Logistic Growth Models With First-Order ODEs
++- 3.2.7. Qualitative Analysis of the Logistic Growth Equation
++- 3.2.8. Solving the Logistic Growth Equation
++
++**3.3. Physical Applications of First-Order ODEs**
++
++- 3.3.1. Velocity and Acceleration as Functions of Displacement
++- 3.3.2. Determining Properties of Objects Described as Functions of Displacement
++- 3.3.3. Falling Body Problems With Linear Drag
++- 3.3.4. Falling Body Problems With Quadratic Drag
++- 3.3.5. Newton's Law of Universal Gravitation
++- 3.3.6. Modeling Escape Velocity With First-Order ODEs
++- 3.3.7. Modeling RL Circuits With First-Order ODEs
++- 3.3.8. Modeling RC Circuits With First-Order ODEs
++
++### 4. Linear Differential Equations 29 topics
++
++**4.1. Theory of Solutions to Linear ODEs**
++
++- 4.1.1. Differential Operators
++- 4.1.2. Linear Differential Operators
++- 4.1.3. Introduction to Second-Order Linear ODEs
++- 4.1.4. The Superposition Principle
++- 4.1.5. Reduction of Order
++- 4.1.6. Linear Independence of Solutions to Homogeneous ODEs
++- 4.1.7. General Solutions of Linear ODEs
++- 4.1.8. Abel's Identity
++
++**4.2. Second-Order Linear ODEs With Constant Coefficients**
++
++- 4.2.1. Second-Order Homogeneous ODEs: Characteristic Equations With Distinct Real Roots
++- 4.2.2. Second-Order Homogeneous ODEs: Characteristic Equations With Repeated Roots
++- 4.2.3. Second-Order Homogeneous ODEs: Characteristic Equations With Complex Roots
++- 4.2.4. Second-Order Homogeneous Initial Value Problems
++- 4.2.5. Second-Order Inhomogeneous ODEs With Polynomial Forcing
++- 4.2.6. Second-Order Inhomogeneous ODEs With Exponential Forcing
++- 4.2.7. Second-Order Inhomogeneous ODEs With Sinusoidal Forcing
++
++**4.3. The Cauchy-Euler Equations**
++
++- 4.3.1. Cauchy-Euler Equations: Characteristic Equations With Distinct Real Roots
++- 4.3.2. Cauchy-Euler Equations: Characteristic Equations With Repeated Roots
++- 4.3.3. Cauchy-Euler Equations: Characteristic Equations With Complex Roots
++- 4.3.4. Cauchy-Euler Equations With Forcing
++
++**4.4. Variation of Parameters**
++
++- 4.4.1. Variation of Parameters for First-Order Linear ODEs
++- 4.4.2. Variation of Parameters for Second-Order ODEs
++- 4.4.3. Solving Second-Order ODEs Using Variation of Parameters
++- 4.4.4. Variation of Parameters With Higher-Order ODEs
++
++**4.5. Modeling With Second-Order ODEs**
++
++- 4.5.1. Simple Harmonic Oscillators
++- 4.5.2. Damped Oscillators
++- 4.5.3. Forced Oscillators
++- 4.5.4. Resonance in Vibrating Systems
++- 4.5.5. Modeling Capacitor Charge in RCL Circuits With Second-Order ODEs
++- 4.5.6. Modeling Current in RCL Circuits With Second-Order ODEs
++
++### 5. Systems of Differential Equations 27 topics
++
++**5.1. Systems of ODEs**
++
++- 5.1.1. Introduction to Systems of Linear ODEs
++- 5.1.2. Expressing Homogeneous ODEs as First-Order Systems
++- 5.1.3. Expressing Inhomogeneous ODEs as First-Order Systems
++- 5.1.4. Linear Independence for Homogeneous Systems of ODEs
++- 5.1.5. General Solutions of First-Order Linear Systems of ODEs
++
++**5.2. Solving Systems of Linear ODEs**
++
++- 5.2.1. Solving Decoupled Homogeneous Systems of ODEs
++- 5.2.2. Solving Homogeneous Systems of ODEs With Distinct Eigenvalues
++- 5.2.3. Solving Homogeneous Systems of ODEs With Distinct Eigenvalues and Initial Conditions
++- 5.2.4. Solving Homogeneous Systems of ODEs With Repeated Eigenvalues
++- 5.2.5. Solving Homogeneous Systems of ODEs With Complex Eigenvalues
++- 5.2.6. Solving Inhomogeneous Systems of ODEs
++
++**5.3. Phase Portraits for Systems of Linear ODEs**
++
++- 5.3.1. Phase Planes and Phase Portraits
++- 5.3.2. Equilibrium Points and Stability for Systems of ODEs
++- 5.3.3. Phase Portraits for Decoupled Linear Systems
++- 5.3.4. Phase Portraits for Linear Systems With Real Distinct Eigenvalues
++- 5.3.5. Phase Portraits for Linear Systems With Repeated Eigenvalues
++- 5.3.6. Phase Portraits for Linear Systems With Zero Eigenvalues
++- 5.3.7. Phase Portraits for Linear Systems With Complex Eigenvalues
++- 5.3.8. Shifted Systems of ODEs
++- 5.3.9. Linear Approximations Near Equilibria
++
++**5.4. Solving Systems of ODEs Using Matrix Methods**
++
++- 5.4.1. Matrix Exponentials
++- 5.4.2. Fundamental Matrices
++- 5.4.3. Solving Homogeneous Systems of ODEs Using Matrix Methods
++- 5.4.4. Solving Inhomogeneous Systems of ODEs Using Matrix Methods
++- 5.4.5. Solving Systems of ODEs Using Variation of Parameters
++
++**5.5. Modeling With Systems of Linear ODEs**
++
++- 5.5.1. The Lotka-Volterra Predator-Prey Model
++- 5.5.2. The Lotka-Volterra Model With Carrying Capacity
++
++### 6. Laplace Transforms 16 topics
++
++**6.1. Laplace Transforms**
++
++- 6.1.1. The Unit Step Function
++- 6.1.2. Introduction to Laplace Transforms
++- 6.1.3. Linearity of Laplace Transforms
++- 6.1.4. Laplace Transforms of Piecewise Continuous Functions
++- 6.1.5. The Smoothness Property of Laplace Transforms
++- 6.1.6. Laplace Transforms of Derivatives
++- 6.1.7. Laplace Transforms of Integrals
++- 6.1.8. The First Shifting Theorem of Laplace Transforms
++- 6.1.9. The Second Shifting Theorem of Laplace Transforms
++- 6.1.10. Inverse Laplace Transforms
++
++**6.2. Solving Linear ODEs Using Laplace Transforms**
++
++- 6.2.1. Solving First-Order ODEs Using Laplace Transforms
++- 6.2.2. Solving First-Order ODEs With Time-Delayed Forcing Using Laplace Transforms
++- 6.2.3. Solving Second-Order ODEs Using Laplace Transforms
++- 6.2.4. Solving Second-Order ODEs With Time-Delayed Forcing Using Laplace Transforms
++- 6.2.5. Solving Homogeneous Systems of ODEs Using Laplace Transforms
++- 6.2.6. Solving Inhomogeneous Systems of ODEs Using Laplace Transforms
++
++### 7. Boundary Value Problems 14 topics
++
++**7.1. Boundary Value Problems**
++
++- 7.1.1. Introduction to Boundary Value Problems
++- 7.1.2. Second-Order Homogeneous Boundary Value Problems
++- 7.1.3. Second-Order Inhomogeneous Boundary Value Problems
++- 7.1.4. Eigenvalues and Eigenfunctions of Homogeneous BVPs
++
++**7.2. Fourier Series**
++
++- 7.2.1. Introduction to Fourier Series
++- 7.2.2. Properties of Fourier Series
++- 7.2.3. Fourier Sine Series
++- 7.2.4. Fourier Cosine Series
++- 7.2.5. Fourier Series of Arbitrary Period
++- 7.2.6. Convergence of Fourier Series
++- 7.2.7. Differentiating and Integrating Fourier Series
++- 7.2.8. Solving ODEs Using Fourier Series
++- 7.2.9. Solving IVPs Using Fourier Series
++- 7.2.10. Solving BVPs Using Fourier Series
++
++### 8. Approximating Solutions to Differential Equations 22 topics
++
++**8.1. Series Solutions of Differential Equations**
++
++- 8.1.1. Introduction to Recurrence Relations
++- 8.1.2. Taylor Series Solutions of Differential Equations
++- 8.1.3. Power Series Solutions of Differential Equations
++- 8.1.4. Regular Singular Points
++- 8.1.5. The Method of Frobenius
++- 8.1.6. Finding Recurrence Relations for the Coefficients of a Frobenius Solution
++- 8.1.7. Finding General Solutions Using the Method of Frobenius
++
++**8.2. Euler's Method**
++
++- 8.2.1. Euler's Method: Calculating One Step
++- 8.2.2. Euler's Method: Calculating Multiple Steps
++- 8.2.3. The Modified Euler Method
++- 8.2.4. Euler's Method for Systems of ODEs
++- 8.2.5. Euler's Method for Second-Order ODEs
++
++**8.3. Higher-Order Numerical Methods**
++
++- 8.3.1. The RK4 Method
++- 8.3.2. The ABM2 Method
++
++**8.4. Implicit Numerical Methods**
++
++- 8.4.1. The Implicit Euler Method
++- 8.4.2. The Trapezoidal Method
++- 8.4.3. Using the Implicit Euler Method With Newton's Method
++- 8.4.4. Using the Trapezoidal Method With Newton's Method
++
++**8.5. Analyzing Numerical Methods**
++
++- 8.5.1. Big-O Notation
++- 8.5.2. Error in Numerical Methods
++- 8.5.3. Order of Numerical Methods
++- 8.5.4. Stability of Numerical Methods
